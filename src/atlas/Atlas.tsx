@@ -3,6 +3,7 @@ import { CircleMarker, MapContainer, TileLayer, Tooltip, useMap } from 'react-le
 import { ALL_CARDS, imageUrl, isVerified } from '../game/cards';
 import { YEAR_MAX, YEAR_MIN } from '../game/scoring';
 import type { Card, L10n } from '../game/types';
+import Guide from '../guide/Guide';
 import { useI18n } from '../i18n';
 import type { StringKey } from '../i18n/strings';
 import { KZ_BOUNDS } from '../map/GuessMap';
@@ -190,6 +191,10 @@ export default function Atlas() {
               </li>
             ))}
           </ul>
+          <details className="ask-guide">
+            <summary>💬 {t('guideAskAbout')}</summary>
+            <Guide key={selected.key} focus={selected.key} compact />
+          </details>
           {selected.card && (
             <p className="credit">
               {t('imageBy')}: {selected.card.image_credit.author} ·{' '}

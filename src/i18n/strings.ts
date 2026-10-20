@@ -106,6 +106,58 @@ export const STRINGS = {
   approxPlace: { kk: 'орны шамамен', ru: 'место указано примерно', en: 'approximate location' },
   timeline: { kk: 'Уақыт желісі', ru: 'Хронология', en: 'Timeline' },
   close: { kk: 'Жабу', ru: 'Закрыть', en: 'Close' },
+
+  modeGuide: { kk: 'ЖИ-гид: сұрақ қою', ru: 'ИИ-гид: задать вопрос', en: 'AI guide: ask a question' },
+  modeQuest: { kk: 'Семей бойынша квест', ru: 'Квест по Семею', en: 'Semey walking quest' },
+  guideTitle: { kk: 'ЖИ-гид', ru: 'ИИ-гид', en: 'AI guide' },
+  guideLead: {
+    kk: 'Қазақстан тарихы туралы кез келген сұрақ қойыңыз – қазақша, орысша немесе ағылшынша.',
+    ru: 'Задайте любой вопрос по истории Казахстана — на казахском, русском или английском.',
+    en: 'Ask anything about the history of Kazakhstan, in Kazakh, Russian or English.',
+  },
+  guideAskAbout: { kk: 'Гидтен сұрау', ru: 'Спросить гида', en: 'Ask the guide' },
+  guideAskMore: { kk: 'Бұл туралы толығырақ айтып беріңізші', ru: 'Расскажите об этом подробнее', en: 'Tell me more about this' },
+  guideEx1: { kk: 'Қазақ хандығы қашан құрылды?', ru: 'Когда образовалось Казахское ханство?', en: 'When was the Kazakh Khanate founded?' },
+  guideEx2: { kk: 'Абылай хан кім болған?', ru: 'Кто такой Абылай-хан?', en: 'Who was Ablai Khan?' },
+  guideEx3: { kk: 'Республика күні не үшін 25 қазанда?', ru: 'Почему День Республики 25 октября?', en: 'Why is Republic Day on 25 October?' },
+  guidePlaceholder: { kk: 'Сұрағыңызды жазыңыз…', ru: 'Напишите вопрос…', en: 'Type your question…' },
+  guideSend: { kk: 'Жіберу', ru: 'Отправить', en: 'Send' },
+  guideOffline: {
+    kk: 'ЖИ-гид қазір қолжетімсіз, ойын базасынан табылғаны:',
+    ru: 'ИИ-гид сейчас недоступен, вот что нашлось в базе игры:',
+    en: 'The AI guide is unavailable right now; here is what the game database has:',
+  },
+  guideNothingFound: {
+    kk: 'Ойын базасынан бұл туралы ештеңе табылмады. Сұрақты басқаша қойып көріңіз.',
+    ru: 'В базе игры об этом ничего не нашлось. Попробуйте спросить иначе.',
+    en: 'Nothing about this in the game database. Try asking another way.',
+  },
+  guideRefused: {
+    kk: 'Бұл сұраққа жауап бере алмаймын. Тарих туралы басқа сұрақ қойыңыз.',
+    ru: 'На этот вопрос я ответить не могу. Спросите о чём-нибудь другом из истории.',
+    en: "I can't answer that. Ask me something else about history.",
+  },
+  questTitle: { kk: 'Семей: тарихи жол', ru: 'Семей: исторический маршрут', en: 'Semey: a history walk' },
+  questLead: {
+    kk: 'Қаланың бес тарихи орнын аралаңыз. Әр аялдамада оқиғаны оқып, сұраққа жауап беріңіз немесе сол жерде «Мен осындамын» батырмасын басыңыз.',
+    ru: 'Пройдите пять исторических мест города. На каждой остановке прочитайте историю и ответьте на вопрос — или нажмите «Я на месте», стоя рядом.',
+    en: 'Visit five historic places in the city. At each stop read the story and answer the question, or tap "I\'m here" when you are on site.',
+  },
+  questProgress: { kk: 'Өтілді: {n} / {total}', ru: 'Пройдено: {n} из {total}', en: 'Visited: {n} of {total}' },
+  questFinished: {
+    kk: 'Құттықтаймыз! Сіз Семейдің тарихи жолынан толық өттіңіз.',
+    ru: 'Поздравляем! Вы прошли весь исторический маршрут Семея.',
+    en: "Congratulations! You've completed Semey's history walk.",
+  },
+  questWrong: { kk: 'Дұрыс емес, мәтінді қайта оқып көріңіз', ru: 'Неверно — перечитайте историю и попробуйте ещё', en: 'Not quite — reread the story and try again' },
+  questImHere: { kk: 'Мен осындамын', ru: 'Я на месте', en: "I'm here" },
+  questTooFar: { kk: 'Сіз бұл жерден {n} м қашықтасыз', ru: 'Вы в {n} м от этого места', en: 'You are {n} m away from this place' },
+  questNoGeo: {
+    kk: 'Орналасқан жерді анықтау мүмкін болмады. Сұраққа жауап беріңіз.',
+    ru: 'Не удалось определить местоположение. Ответьте на вопрос.',
+    en: "Couldn't get your location. Answer the question instead.",
+  },
+  questReset: { kk: 'Квесті басынан бастау', ru: 'Начать квест заново', en: 'Restart the quest' },
 } satisfies Record<string, L10n>;
 
 export type StringKey = keyof typeof STRINGS;

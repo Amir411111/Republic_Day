@@ -73,3 +73,25 @@ h3 { margin: 20px 0 6px; }
 .timeline button.on { background: #eef6f2; border-color: var(--accent); }
 .t-year { font-weight: 700; min-width: 92px; color: var(--accent); }
 .t-title { flex: 1; }
+
+/* AI guide */
+.guide .chat { display: flex; flex-direction: column; gap: 8px; margin: 12px 0; }
+.bubble { padding: 10px 14px; border-radius: 14px; max-width: 92%; line-height: 1.45; }
+.bubble p { margin: 0 0 6px; }
+.bubble p:last-child { margin: 0; }
+.bubble.user { align-self: flex-end; background: var(--accent); color: #fff; }
+.bubble.assistant { align-self: flex-start; background: #fff; border: 1px solid var(--line); }
+.offline-note { font-size: 0.85rem; color: var(--mute); margin-bottom: 6px; }
+.examples { display: flex; flex-direction: column; gap: 8px; margin-bottom: 10px; }
+.ask { display: flex; gap: 8px; }
+.ask input { flex: 1; min-width: 0; min-height: 48px; font: inherit; padding: 0 12px; border: 2px solid var(--line); border-radius: 10px; }
+.ask-guide { margin: 12px 0; }
+.ask-guide summary { cursor: pointer; font-weight: 700; color: var(--accent); min-height: 48px; display: flex; align-items: center; }
+
+/* Semey quest */
+.stops { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
+.stop { background: #fff; border: 1px solid var(--line); border-left: 6px solid #b5651d; border-radius: 10px; padding: 12px 16px; }
+.stop.done { border-left-color: #1a8f3c; }
+.stop h2 { font-size: 1.25rem; margin: 4px 0 8px; }
+.link-btn { background: none; border: 0; color: var(--accent); text-decoration: underline; padding: 0; margin-top: 10px; }
+.done-banner { background: #e3f4e8; padding: 12px; border-radius: 10px; font-weight: 700; }

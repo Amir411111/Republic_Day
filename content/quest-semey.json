@@ -1,0 +1,62 @@
+[
+{
+ "id": "yamyshev-gate", "lat": 50.40937, "lng": 80.23899,
+ "title": {"kk": "Ямышев қақпасы", "ru": "Ямышевские ворота", "en": "Yamyshev Gate"},
+ "story": {
+  "kk": "Семей 1718 жылы Ертіс бойындағы бекініс ретінде құрылды. Ямышев қақпасы – сол бекіністен сақталған жалғыз бөлік, ол 1776 жылмен белгіленеді. 1970 жылы қақпаны бөлшектеп, Ертіске 50 метр жақын жерге қайта құрастырды.",
+  "ru": "Семипалатинск основан в 1718 году как крепость на Иртыше. Ямышевские ворота — единственная сохранившаяся часть крепости, они датируются 1776 годом. В 1970 году ворота разобрали и собрали заново на 50 метров ближе к Иртышу.",
+  "en": "Semipalatinsk was founded in 1718 as a fortress on the Irtysh. The Yamyshev Gate, dated 1776, is the only surviving part of the fortress. In 1970 it was taken apart and rebuilt 50 metres closer to the river."
+ },
+ "question": {"kk": "Семей бекінісі қай жылы құрылды?", "ru": "В каком году основана Семипалатинская крепость?", "en": "When was the Semipalatinsk fortress founded?"},
+ "options": ["1718", "1776", "1854"], "answer": 0,
+ "sources": ["https://archaeology.kz/en/heritages/yamyshev-bekinis-qaqpasy"]
+},
+{
+ "id": "abai-museum", "lat": 50.40998, "lng": 80.25451,
+ "title": {"kk": "Абай мұражайы", "ru": "Музей Абая", "en": "Abai Museum"},
+ "story": {
+  "kk": "Абай Құнанбайұлының әдеби-мемориалдық мұражайы 1940 жылы ашылды. Оның құрамына Абай 1855–1859 жылдары оқыған Ахмет Риза медресесі кіреді.",
+  "ru": "Литературно-мемориальный музей Абая Кунанбаева открылся в 1940 году. В его комплекс входит медресе Ахмета Ризы, где Абай учился в 1855–1859 годах.",
+  "en": "The Abai Kunanbayev literary memorial museum opened in 1940. It includes the Akhmet Riza madrasa, where Abai studied in 1855–1859."
+ },
+ "question": {"kk": "Абай қай медреседе оқыды?", "ru": "В каком медресе учился Абай?", "en": "Which madrasa did Abai study at?"},
+ "options": ["Ахмет Риза", "Мир-Араб", "Көкелташ"], "answer": 0,
+ "sources": ["https://www.inform.kz/ru/kak-rabotal-muzey-abaya-v-semee-v-gody-voyny_a3647931", "https://kazakhstan.travel/en/attractions/563"]
+},
+{
+ "id": "shakarim-monument", "lat": 50.40909, "lng": 80.2518,
+ "title": {"kk": "Шәкәрім ескерткіші", "ru": "Памятник Шакариму", "en": "Shakarim Monument"},
+ "story": {
+  "kk": "Шәкәрім Құдайбердіұлы (1858–1931) – ақын, философ, Абайдың інісі әрі шәкірті. 1931 жылы ол саяси қуғын-сүргін кезінде өлтірілді, кейін ақталды; бүгін оның шығармалары қазақ әдебиетінің алтын қорында.",
+  "ru": "Шакарим Кудайбердиулы (1858–1931) — поэт и философ, племянник и ученик Абая. В 1931 году он был убит во время репрессий и позже реабилитирован; сегодня его произведения — золотой фонд казахской литературы.",
+  "en": "Shakarim Kudaiberdiuly (1858–1931) was a poet and philosopher, Abai's nephew and disciple. He was killed in 1931 during the repressions and later rehabilitated; his works are now classics of Kazakh literature."
+ },
+ "question": {"kk": "Шәкәрім Абайға кім болып келеді?", "ru": "Кем Шакарим приходился Абаю?", "en": "How was Shakarim related to Abai?"},
+ "options": {"kk": ["Інісі әрі шәкірті", "Ұстазы", "Ұлы"], "ru": ["Племянник и ученик", "Учитель", "Сын"], "en": ["Nephew and disciple", "Teacher", "Son"]}, "answer": 0,
+ "sources": ["https://ru.wikipedia.org/wiki/Кудайбердиев,_Шакарим"]
+},
+{
+ "id": "dostoevsky-museum", "lat": 50.40445, "lng": 80.2523,
+ "title": {"kk": "Достоевский мұражайы", "ru": "Музей Достоевского", "en": "Dostoevsky Museum"},
+ "story": {
+  "kk": "Фёдор Достоевский каторгадан кейін Семейде шамамен бес жыл әскери қызметте болды. Ол тұрған үйде 1971 жылы 7 мамырда әдеби-мемориалдық мұражай ашылды. Мұнда ол Шоқан Уәлихановпен дос болған.",
+  "ru": "После каторги Фёдор Достоевский около пяти лет служил в Семипалатинске. В доме, где он жил, 7 мая 1971 года открыли литературно-мемориальный музей. Здесь же он дружил с Чоканом Валихановым.",
+  "en": "After penal servitude Fyodor Dostoevsky served in Semipalatinsk for about five years. A literary memorial museum opened in the house where he lived on 7 May 1971. Here he befriended Shokan Valikhanov."
+ },
+ "question": {"kk": "Достоевский Семейде қай қазақ ғалымымен дос болды?", "ru": "С каким казахским учёным дружил Достоевский в Семипалатинске?", "en": "Which Kazakh scholar did Dostoevsky befriend in Semipalatinsk?"},
+ "options": {"kk": ["Шоқан Уәлиханов", "Ыбырай Алтынсарин", "Әлихан Бөкейхан"], "ru": ["Чокан Валиханов", "Ибрай Алтынсарин", "Алихан Букейханов"], "en": ["Shokan Valikhanov", "Ibrai Altynsarin", "Alikhan Bukeikhanov"]}, "answer": 0,
+ "sources": ["https://www.inform.kz/ru/istoriya-doma-dostoevskogo-muzey-vserdtse-semeya-bc524d"]
+},
+{
+ "id": "stronger-than-death", "lat": 50.392785, "lng": 80.262501,
+ "title": {"kk": "«Өлімнен де күшті» монументі", "ru": "Монумент «Сильнее смерти»", "en": "'Stronger than Death' monument"},
+ "story": {
+  "kk": "Семей ядролық полигонындағы сынақтар құрбандарына арналған монумент 2001 жылы 29 тамызда – полигон жабылғанына 10 жыл толған күні Полковничий аралында ашылды.",
+  "ru": "Мемориал жертвам ядерных испытаний на Семипалатинском полигоне открыли 29 августа 2001 года — через 10 лет после закрытия полигона — на острове Полковничьем.",
+  "en": "The memorial to the victims of nuclear testing at the Semipalatinsk site opened on 29 August 2001, ten years after the site closed, on Polkovnichy Island."
+ },
+ "question": {"kk": "Семей полигоны қай жылы жабылды?", "ru": "В каком году закрыли Семипалатинский полигон?", "en": "When was the Semipalatinsk test site closed?"},
+ "options": ["1989", "1991", "2001"], "answer": 1,
+ "sources": ["https://ru.wikipedia.org/wiki/Сильнее_смерти", "https://ru.wikipedia.org/wiki/Семипалатинский_испытательный_полигон"]
+}
+]

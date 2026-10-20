@@ -1,5 +1,32 @@
 [
  {
+  "id": "yasawi-mausoleum-1405",
+  "era": "khanate",
+  "year": 1405,
+  "lat": 43.293,
+  "lng": 68.271,
+  "approx": false,
+  "place": {
+   "kk": "Түркістан",
+   "ru": "Туркестан",
+   "en": "Turkistan"
+  },
+  "title": {
+   "kk": "Ясауи кесенесі аяқталмай қалды",
+   "ru": "Мавзолей Ясави остался недостроенным",
+   "en": "The Yasawi mausoleum is left unfinished"
+  },
+  "text": {
+   "kk": "Қожа Ахмет Ясауи кесенесі Әмір Темірдің бұйрығымен салына бастады. 1405 жылы Темір қайтыс болғаннан кейін құрылыс тоқтап, кесененің бір бөлігі аяқталмай қалды; 2003 жылы ол ЮНЕСКО-ның Бүкіләлемдік мұра тізіміне енді.",
+   "ru": "Мавзолей Ходжи Ахмеда Ясави начали строить по приказу Тимура. После смерти Тимура в 1405 году работы остановились, и часть здания так и осталась недостроенной; в 2003 году мавзолей включён в список Всемирного наследия ЮНЕСКО.",
+   "en": "The mausoleum of Khoja Ahmed Yasawi was begun on Timur's orders. When Timur died in 1405 work stopped and part of the building was never finished; in 2003 it became a UNESCO World Heritage Site."
+  },
+  "sources": [
+   "https://whc.unesco.org/en/list/1103",
+   "https://ru.wikipedia.org/wiki/Мавзолей_Ходжи_Ахмеда_Ясави"
+  ]
+ },
+ {
   "id": "khanate-founded-1465",
   "era": "khanate",
   "year": 1465,
@@ -214,6 +241,33 @@
   ]
  },
  {
+  "id": "syrym-datov-1783",
+  "era": "khanate",
+  "year": 1783,
+  "year_end": 1797,
+  "lat": 50.5,
+  "lng": 52.5,
+  "approx": true,
+  "place": {
+   "kk": "Кіші жүз жері (Батыс Қазақстан)",
+   "ru": "Земли Младшего жуза (Западный Казахстан)",
+   "en": "Junior Zhuz lands (West Kazakhstan)"
+  },
+  "title": {
+   "kk": "Сырым Датұлы көтерілісі",
+   "ru": "Восстание Сырыма Датова",
+   "en": "Syrym Datov's uprising"
+  },
+  "text": {
+   "kk": "1783 жылы Байбақты руының биі Сырым Датұлы жер мәселесінің шиеленісуіне және көшпелілердің Жайықтан өтуіне тыйым салуға қарсы Кіші жүзде көтеріліс бастады. Көтеріліс 1797 жылға дейін созылды.",
+   "ru": "В 1783 году бий рода Байбакты Сырым Датов поднял восстание в Младшем жузе против изъятия земель и запрета кочевать за Урал. Движение продолжалось до 1797 года.",
+   "en": "In 1783 Syrym Datov, a judge of the Baibakty clan, led an uprising in the Junior Zhuz against land seizures and the ban on migrating across the Ural. It lasted until 1797."
+  },
+  "sources": [
+   "https://www.inform.kz/ru/datuly-syrym_a238247"
+  ]
+ },
+ {
   "id": "bukey-horde-1801",
   "era": "empire",
   "year": 1801,
@@ -319,6 +373,58 @@
   "sources": [
    "https://en.wikipedia.org/wiki/Vasily_Perovsky",
    "https://ru.wikipedia.org/wiki/Кызылорда"
+  ]
+ },
+ {
+  "id": "altynsarin-school-1864",
+  "era": "empire",
+  "year": 1864,
+  "lat": 49.633,
+  "lng": 63.492,
+  "approx": false,
+  "place": {
+   "kk": "Торғай",
+   "ru": "Тургай",
+   "en": "Turgai"
+  },
+  "title": {
+   "kk": "Алтынсариннің алғашқы мектебі",
+   "ru": "Первая школа Алтынсарина",
+   "en": "Altynsarin's first school"
+  },
+  "text": {
+   "kk": "1864 жылы 8 қаңтарда ағартушы Ыбырай Алтынсарин Торғайда қазақ балаларына арналған мектеп ашты, оны халықтан жиналған қаражатқа салды. Мектептің жанында интернат жұмыс істеді.",
+   "ru": "8 января 1864 года просветитель Ибрай Алтынсарин открыл в Тургае школу для казахских детей, построенную на собранные у населения средства. При школе работал интернат.",
+   "en": "On 8 January 1864 the educator Ibrai Altynsarin opened a school for Kazakh children in Turgai, built with money collected from local people. It had a boarding house."
+  },
+  "sources": [
+   "https://e-history.kz/en/news/show/7980"
+  ]
+ },
+ {
+  "id": "kazak-newspaper-1913",
+  "era": "empire",
+  "year": 1913,
+  "lat": 51.768,
+  "lng": 55.097,
+  "approx": false,
+  "place": {
+   "kk": "Орынбор (қазір Ресей)",
+   "ru": "Оренбург (ныне Россия)",
+   "en": "Orenburg (now Russia)"
+  },
+  "title": {
+   "kk": "«Қазақ» газеті",
+   "ru": "Газета «Қазақ»",
+   "en": "The newspaper Qazaq"
+  },
+  "text": {
+   "kk": "1913 жылы 2 ақпанда Орынборда Ахмет Байтұрсынұлының бастамасымен «Қазақ» газетінің алғашқы нөмірі шықты, оның редакциясына Міржақып Дулатұлы мен Әлихан Бөкейхан кірді. 2 ақпан Қазақстанда Ұлттық баспасөз күні ретінде аталып өтеді.",
+   "ru": "2 февраля 1913 года в Оренбурге по инициативе Ахмета Байтурсынова вышел первый номер газеты «Қазақ», в её редакцию входили Миржакып Дулатов и Алихан Букейханов. 2 февраля в Казахстане отмечается как День национальной печати.",
+   "en": "On 2 February 1913, on Akhmet Baitursynov's initiative, the first issue of the newspaper Qazaq came out in Orenburg; its editors included Mirzhakyp Dulatov and Alikhan Bukeikhanov. Kazakhstan marks 2 February as National Press Day."
+  },
+  "sources": [
+   "https://24.kz/ru/news/culture/637193-111-let-nazad-vyshel-pervyj-tirazh-gazety-kazak-v-orenburge"
   ]
  },
  {
@@ -532,6 +638,32 @@
   ]
  },
  {
+  "id": "academy-of-sciences-1946",
+  "era": "soviet",
+  "year": 1946,
+  "lat": 43.256,
+  "lng": 76.945,
+  "approx": false,
+  "place": {
+   "kk": "Алматы",
+   "ru": "Алма-Ата",
+   "en": "Alma-Ata"
+  },
+  "title": {
+   "kk": "Ғылым академиясы құрылды",
+   "ru": "Основана Академия наук",
+   "en": "Academy of Sciences founded"
+  },
+  "text": {
+   "kk": "1946 жылы КСРО Ғылым академиясының Қазақ филиалы негізінде Қазақ КСР Ғылым академиясы құрылды. Оның тұңғыш президенті – геолог Қаныш Сәтбаев.",
+   "ru": "В 1946 году на базе Казахского филиала АН СССР была создана Академия наук Казахской ССР. Её первым президентом стал геолог Каныш Сатпаев.",
+   "en": "In 1946 the Academy of Sciences of the Kazakh SSR was created from the Kazakh branch of the USSR Academy. Its first president was the geologist Kanysh Satpayev."
+  },
+  "sources": [
+   "https://kazpravda.kz/n/tvorets-kazahstanskoy-nauki/"
+  ]
+ },
+ {
   "id": "first-atomic-test-1949",
   "era": "soviet",
   "year": 1949,
@@ -555,6 +687,32 @@
   },
   "sources": [
    "https://ru.wikipedia.org/wiki/Семипалатинский_испытательный_полигон"
+  ]
+ },
+ {
+  "id": "sputnik-1957",
+  "era": "soviet",
+  "year": 1957,
+  "lat": 45.92,
+  "lng": 63.342,
+  "approx": false,
+  "place": {
+   "kk": "Байқоңыр",
+   "ru": "Байконур",
+   "en": "Baikonur"
+  },
+  "title": {
+   "kk": "Алғашқы жасанды серік",
+   "ru": "Первый искусственный спутник",
+   "en": "The first artificial satellite"
+  },
+  "text": {
+   "kk": "1957 жылы 4 қазанда Байқоңырдан Жердің алғашқы жасанды серігі ұшырылды. Осы күннен бастап ғарыш дәуірі басталды.",
+   "ru": "4 октября 1957 года с Байконура запустили первый искусственный спутник Земли. С этого дня началась космическая эра.",
+   "en": "On 4 October 1957 the first artificial Earth satellite was launched from Baikonur, opening the space age."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Спутник-1"
   ]
  },
  {
@@ -712,6 +870,58 @@
   },
   "sources": [
    "https://ru.wikipedia.org/wiki/День_Независимости_Казахстана"
+  ]
+ },
+ {
+  "id": "aubakirov-1991",
+  "era": "independence",
+  "year": 1991,
+  "lat": 45.92,
+  "lng": 63.342,
+  "approx": false,
+  "place": {
+   "kk": "Байқоңыр",
+   "ru": "Байконур",
+   "en": "Baikonur"
+  },
+  "title": {
+   "kk": "Тоқтар Әубәкіров ғарышта",
+   "ru": "Токтар Аубакиров в космосе",
+   "en": "Toktar Aubakirov in space"
+  },
+  "text": {
+   "kk": "1991 жылы 2 қазанда Тоқтар Әубәкіров «Союз ТМ-13» кемесімен ғарышқа ұшып, тұңғыш қазақ ғарышкері атанды.",
+   "ru": "2 октября 1991 года Токтар Аубакиров стартовал на корабле «Союз ТМ-13» и стал первым казахским космонавтом.",
+   "en": "On 2 October 1991 Toktar Aubakirov flew on Soyuz TM-13 and became the first Kazakh cosmonaut."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Союз_ТМ-13"
+  ]
+ },
+ {
+  "id": "state-symbols-1992",
+  "era": "independence",
+  "year": 1992,
+  "lat": 43.256,
+  "lng": 76.945,
+  "approx": false,
+  "place": {
+   "kk": "Алматы",
+   "ru": "Алма-Ата",
+   "en": "Alma-Ata"
+  },
+  "title": {
+   "kk": "Мемлекеттік рәміздер қабылданды",
+   "ru": "Приняты государственные символы",
+   "en": "State symbols adopted"
+  },
+  "text": {
+   "kk": "1992 жылы 4 маусымда Қазақстанның Туы мен Елтаңбасы бекітілді. Ту авторы – Шәкен Ниязбеков, Елтаңба авторлары – Жандарбек Мәлібеков пен Шот-Аман Уәлиханов.",
+   "ru": "4 июня 1992 года были утверждены Флаг и Герб Казахстана. Автор флага — Шакен Ниязбеков, авторы герба — Жандарбек Малибеков и Шот-Аман Уалиханов.",
+   "en": "On 4 June 1992 Kazakhstan's Flag and Emblem were adopted. The flag was designed by Shaken Niyazbekov, the emblem by Zhandarbek Malibekov and Shot-Aman Ualikhanov."
+  },
+  "sources": [
+   "https://forbes.kz/news/newsid_226740"
   ]
  },
  {

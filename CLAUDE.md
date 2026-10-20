@@ -7,7 +7,8 @@
 - Карточки в `content/cards.json`, картинки в `content/images/`
 - События для карты истории и режима «Ханы и битвы» в `content/events.json` (без фото; `approx: true` — место примерное), код в `src/atlas/` (Vite отдаёт `content/` как статику, путь в карточке: `images/<file>`)
 - Прогресс в localStorage, без базы данных
-- Деплой: Vercel, ИИ-гид в `api/guide`, ключ только в переменных окружения Vercel
+- Деплой: Vercel, ИИ-гид в `api/guide.ts` (Claude API, модель `claude-opus-5-5`), ключ `ANTHROPIC_API_KEY` только в переменных окружения Vercel. Без ключа гид отвечает поиском по базе игры прямо в браузере (`src/guide/`)
+- Квест по Семею: маршрут в `content/quest-semey.json`, экран в `src/quest/`
 
 ## Команды
 - `npm run dev`: локальный сервер (в dev видны непроверенные карточки; на проде добавьте `?dev=1`)
