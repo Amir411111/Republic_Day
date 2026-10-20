@@ -531,39 +531,39 @@
       "kz"
     ],
     "year": 2017,
-    "lat": 51.089,
+    "lat": 51.09,
     "lng": 71.416,
     "place": {
       "kk": "Астана",
       "ru": "Астана",
       "en": "Astana"
     },
-    "image": "images/placeholder.svg",
+    "image": "images/expo-2017.jpg",
     "image_credit": {
-      "author": "",
-      "license": "",
-      "source_url": ""
+      "author": "颲風",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Expo_2017_EXPO_Park.jpg"
     },
     "title": {
-      "kk": "EXPO-2017 «Болашақ энергиясы»",
+      "kk": "ЭКСПО-2017 «Болашақ энергиясы»",
       "ru": "EXPO-2017 «Энергия будущего»",
-      "en": "EXPO 2017 \"Future Energy\""
+      "en": "EXPO 2017 'Future Energy'"
     },
     "explanation": {
-      "kk": "2017 жылғы маусым–қыркүйекте Астанада «Болашақ энергиясы» тақырыбымен халықаралық EXPO көрмесі өтті. Оның символы — «Нұр Әлем» шар тәрізді павильоны.",
-      "ru": "С июня по сентябрь 2017 года в Астане прошла международная выставка EXPO на тему «Энергия будущего». Её символом стал шарообразный павильон «Нур Алем».",
-      "en": "From June to September 2017 Astana hosted the international EXPO on the theme \"Future Energy\". Its symbol is the spherical Nur Alem pavilion."
+      "kk": "2017 жылы 10 маусым – 10 қыркүйек аралығында Астанада «Болашақ энергиясы» тақырыбымен халықаралық ЭКСПО көрмесі өтті. Оның басты нысаны – «Нұр Әлем» шар павильоны; сурет көрме аумағын жоғарыдан көрсетеді.",
+      "ru": "С 10 июня по 10 сентября 2017 года в Астане прошла международная выставка EXPO на тему «Энергия будущего». Её главный символ — павильон-шар «Нур Алем»; на снимке территория выставки сверху.",
+      "en": "From 10 June to 10 September 2017 Astana hosted the international EXPO exhibition on the theme 'Future Energy'. Its centrepiece was the spherical Nur Alem pavilion; the photo shows the exhibition grounds from above."
     },
     "clue": {
-      "kk": "Шыны шар тәрізді ғимарат, заманауи сәулет.",
-      "ru": "Стеклянное здание-шар, современная архитектура.",
-      "en": "A glass sphere-shaped building, modern architecture."
+      "kk": "Жаңа павильондар, шыны құрылыстар, алыстағы биік үйлер.",
+      "ru": "Новые павильоны, стеклянные конструкции, высотки на горизонте.",
+      "en": "New pavilions, glass structures, high-rises on the horizon."
     },
     "sources": [
-      "https://ru.wikipedia.org/wiki/Экспо-2017"
+      "https://ru.wikipedia.org/wiki/EXPO_2017"
     ],
     "difficulty": 1,
-    "verified_by": ""
+    "verified_by": "Claude (сверено по источникам)"
   },
   {
     "id": "semipalatinsk-bazaar-1885",
@@ -3085,6 +3085,451 @@
     "sources": [
       "https://ru.wikipedia.org/wiki/Тулпар-Тальго",
       "https://ru.wikipedia.org/wiki/Шымкент"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "arystan-bab-mausoleum-2018",
+    "pack": [
+      "kz"
+    ],
+    "year": 2018,
+    "lat": 42.852,
+    "lng": 68.268,
+    "place": {
+      "kk": "Арыстан баб кесенесі, Отырар ауданы",
+      "ru": "Мавзолей Арыстан-баба, Отрарский район",
+      "en": "Arystan Bab Mausoleum, Otrar district"
+    },
+    "image": "images/arystan-bab-mausoleum-2018.jpg",
+    "image_credit": {
+      "author": "Дмитрий Кошелев",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Arystan_Bab_mausoleum_center_01.jpg"
+    },
+    "title": {
+      "kk": "Арыстан баб кесенесі",
+      "ru": "Мавзолей Арыстан-баба",
+      "en": "Mausoleum of Arystan Bab"
+    },
+    "explanation": {
+      "kk": "Арыстан баб – Қожа Ахмет Ясауидің ұстазы; дәстүр бойынша Түркістанға зиярат етушілер алдымен оның басына барады. Кесене бірнеше рет қайта салынды, қазіргі ғимараттың басым бөлігі 1909 жылғы қайта құрылыстан қалған; сурет 2018 жылы түсірілген.",
+      "ru": "Арыстан-баб — наставник Ходжи Ахмеда Ясави; по традиции паломники сначала посещают его мавзолей и лишь потом едут в Туркестан. Здание не раз перестраивали, нынешний облик в основном сложился после реконструкции 1909 года; снимок 2018 года.",
+      "en": "Arystan Bab was the teacher of Khoja Ahmed Yasawi; by tradition pilgrims visit his mausoleum before going on to Turkistan. The building was rebuilt several times and its current form mostly dates from a 1909 reconstruction; the photo was taken in 2018."
+    },
+    "clue": {
+      "kk": "Күмбезді кесене, кірпіш жол, кең шөл дала.",
+      "ru": "Купольный мавзолей, мощёная дорожка, полупустыня вокруг.",
+      "en": "A domed mausoleum, a paved path, semi-desert around it."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Мавзолей_Арыстан-Баба",
+      "https://www.orexca.com/rus/kazakhstan/monuments/arystan_bab.htm"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "atyrau-europe-asia-2012",
+    "pack": [
+      "kz"
+    ],
+    "year": 2012,
+    "lat": 47.107,
+    "lng": 51.92,
+    "place": {
+      "kk": "Атырау, Жайық өзені",
+      "ru": "Атырау, река Урал",
+      "en": "Atyrau, Ural River"
+    },
+    "image": "images/atyrau-europe-asia-2012.jpg",
+    "image_credit": {
+      "author": "Vale81",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Atyrau_-_Europe_bank.jpg"
+    },
+    "title": {
+      "kk": "Атыраудағы «Еуропа» белгісі",
+      "ru": "Знак «Европа» в Атырау",
+      "en": "The 'Europe' marker in Atyrau"
+    },
+    "explanation": {
+      "kk": "Жайық (Орал) өзені Атырауды екіге бөледі: оның бір жағалауы шартты түрде Еуропа, екіншісі Азия саналады. Қазақстан – аумағы екі құрлықта орналасқан елдердің бірі; сурет 2012 жылы түсірілген.",
+      "ru": "Река Урал (Жайык) делит Атырау на две части: один берег условно считается Европой, другой — Азией. Казахстан — одна из стран, территория которой лежит в двух частях света; снимок 2012 года.",
+      "en": "The Ural (Zhaiyk) River divides Atyrau in two: one bank is conventionally Europe, the other Asia. Kazakhstan is one of the countries whose territory lies in two continents; the photo was taken in 2012."
+    },
+    "clue": {
+      "kk": "EUROPE жазуы бар беседка, заманауи сурет.",
+      "ru": "Беседка с надписью EUROPE, современное фото.",
+      "en": "A pavilion marked EUROPE, a modern photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Атырау"
+    ],
+    "difficulty": 1,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "burabay-2014",
+    "pack": [
+      "kz"
+    ],
+    "year": 2014,
+    "lat": 53.083,
+    "lng": 70.31,
+    "place": {
+      "kk": "Бурабай, Ақмола облысы",
+      "ru": "Бурабай (Боровое), Акмолинская область",
+      "en": "Burabay (Borovoe), Akmola region"
+    },
+    "image": "images/burabay-2014.jpg",
+    "image_credit": {
+      "author": "alexandrorodrigez",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Burabay_020000,_Kazakhstan_-_panoramio_(1).jpg"
+    },
+    "title": {
+      "kk": "Бурабай кенті",
+      "ru": "Посёлок Бурабай",
+      "en": "Burabay village"
+    },
+    "explanation": {
+      "kk": "Бурабай – көлдері, қарағайлы ормандары мен гранит жартастарымен белгілі курорттық аймақ, оны «Қазақстанның Швейцариясы» деп атайды. Мұнда Бурабай ұлттық паркі орналасқан; сурет 2014 жылы түсірілген.",
+      "ru": "Бурабай (Боровое) — курортный край озёр, сосновых лесов и гранитных скал, его называют «казахстанской Швейцарией». Здесь находится национальный парк «Бурабай»; снимок 2014 года.",
+      "en": "Burabay (Borovoe) is a resort area of lakes, pine forests and granite rocks, nicknamed 'the Switzerland of Kazakhstan'. It is home to Burabay National Park; the photo was taken in 2014."
+    },
+    "clue": {
+      "kk": "Гранит тастар, қарағайлар, жаңа үй, заманауи сурет.",
+      "ru": "Гранитные валуны, сосны, новый дом, современное фото.",
+      "en": "Granite boulders, pines, a new house, a modern photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Бурабай_(национальный_парк)"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "medeu-2021",
+    "pack": [
+      "kz"
+    ],
+    "year": 2021,
+    "lat": 43.157,
+    "lng": 77.059,
+    "place": {
+      "kk": "Медеу, Алматы маңы",
+      "ru": "Медеу, под Алматы",
+      "en": "Medeu, near Almaty"
+    },
+    "image": "images/medeu-2021.jpg",
+    "image_credit": {
+      "author": "Marat Rysbekov",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:10_%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%9C%D0%B5%D0%B4%D0%B5%D0%BE.jpg"
+    },
+    "title": {
+      "kk": "Медеу биік таулы мұз айдыны",
+      "ru": "Высокогорный каток «Медеу»",
+      "en": "Medeu high-altitude skating rink"
+    },
+    "explanation": {
+      "kk": "Бүгінгі Медеу мұз айдыны 1972 жылы ашылды; биік таудағы мұзда мұнда көптеген әлемдік рекордтар орнатылды. Мұз айдынының жоғарысында қаланы селден қорғайтын Медеу бөгеті тұр; сурет 2021 жылы түсірілген.",
+      "ru": "Нынешний каток «Медеу» открыли в 1972 году; на высокогорном льду здесь установили множество мировых рекордов. Выше катка стоит плотина, защищающая город от селей; снимок 2021 года.",
+      "en": "Today's Medeu rink opened in 1972, and many world records were set on its high-altitude ice. Above the rink stands a dam that protects the city from mudflows; the photo was taken in 2021."
+    },
+    "clue": {
+      "kk": "Таулар арасындағы стадион, шыршалар, заманауи сурет.",
+      "ru": "Стадион среди гор и елей, современное фото.",
+      "en": "A stadium among mountains and spruces, a modern photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Медеу_(спорткомплекс)"
+    ],
+    "difficulty": 1,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "otrar-aerial-2016",
+    "pack": [
+      "kz"
+    ],
+    "year": 2016,
+    "lat": 42.852,
+    "lng": 68.302,
+    "place": {
+      "kk": "Отырар қалашығы",
+      "ru": "Городище Отрар",
+      "en": "Otrar archaeological site"
+    },
+    "image": "images/otrar-aerial-2016.jpg",
+    "image_credit": {
+      "author": "Denis Sorokin",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Otrar_aerial_view_from_May_2016.jpg"
+    },
+    "title": {
+      "kk": "Отырар қалашығы жоғарыдан",
+      "ru": "Городище Отрар сверху",
+      "en": "Otrar from above"
+    },
+    "explanation": {
+      "kk": "Отырар – Ұлы Жібек жолындағы ортағасырлық ірі қала. 1218 жылы мұнда Шыңғыс хан жіберген сауда керуені қырылып, бұл моңғол шапқыншылығына сылтау болды; 1219–1220 жылдары қала қоршауда қалып, қиратылды.",
+      "ru": "Отрар — крупный средневековый город на Великом шёлковом пути. В 1218 году здесь перебили торговый караван Чингисхана, что стало поводом для монгольского нашествия; в 1219–1220 годах город был осаждён и разрушен.",
+      "en": "Otrar was a major medieval city on the Silk Road. In 1218 a trade caravan sent by Genghis Khan was massacred here, giving the pretext for the Mongol invasion; in 1219–1220 the city was besieged and destroyed."
+    },
+    "clue": {
+      "kk": "Жоғарыдан түсірілген қазба жұмыстары, дала, дрон суреті.",
+      "ru": "Раскопки и степь с высоты, снимок с дрона.",
+      "en": "Excavations and steppe from above, a drone shot."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Отрар",
+      "https://ru.wikipedia.org/wiki/Отрарская_катастрофа"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "palace-peace-astana-2012",
+    "pack": [
+      "kz"
+    ],
+    "year": 2012,
+    "lat": 51.123,
+    "lng": 71.464,
+    "place": {
+      "kk": "Астана",
+      "ru": "Астана",
+      "en": "Astana"
+    },
+    "image": "images/palace-peace-astana-2012.jpg",
+    "image_credit": {
+      "author": "jtstewart",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Astana_DSC04101_(7709603174).jpg"
+    },
+    "title": {
+      "kk": "Бейбітшілік және келісім сарайы",
+      "ru": "Дворец мира и согласия",
+      "en": "Palace of Peace and Reconciliation"
+    },
+    "explanation": {
+      "kk": "Пирамида пішінді Бейбітшілік және келісім сарайын британ сәулетшісі Норман Фостер жобалады, ол 2006 жылы ашылды. Мұнда Әлемдік және дәстүрлі діндер көшбасшыларының съездері өтеді; сурет 2012 жылы түсірілген.",
+      "ru": "Пирамиду Дворца мира и согласия спроектировал британский архитектор Норман Фостер, здание открыли в 2006 году. Здесь проходят съезды лидеров мировых и традиционных религий; снимок 2012 года.",
+      "en": "The pyramid-shaped Palace of Peace and Reconciliation was designed by British architect Norman Foster and opened in 2006. It hosts the Congress of Leaders of World and Traditional Religions; the photo was taken in 2012."
+    },
+    "clue": {
+      "kk": "Пирамида, жас саябақ, жаңа көп қабатты үйлер.",
+      "ru": "Пирамида, молодой парк, новые многоэтажки.",
+      "en": "A pyramid, a young park, new high-rises."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Дворец_мира_и_согласия"
+    ],
+    "difficulty": 1,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "shymbulak-2012",
+    "pack": [
+      "kz"
+    ],
+    "year": 2012,
+    "lat": 43.128,
+    "lng": 77.081,
+    "place": {
+      "kk": "Шымбұлақ, Алматы маңы",
+      "ru": "Шымбулак, под Алматы",
+      "en": "Shymbulak, near Almaty"
+    },
+    "image": "images/shymbulak-2012.jpg",
+    "image_credit": {
+      "author": "Екатерина Борисова",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2012_Shymbulak_01.jpg"
+    },
+    "title": {
+      "kk": "Шымбұлақ тау шаңғысы курорты",
+      "ru": "Горнолыжный курорт Шымбулак",
+      "en": "Shymbulak ski resort"
+    },
+    "explanation": {
+      "kk": "Шымбұлақ – Медеудің жоғарысындағы Іле Алатауындағы тау шаңғысы курорты. 2011 жылы мұнда VII қысқы Азия ойындарының тау шаңғысы жарыстары өтті; сурет 2012 жылы мамырда түсірілген.",
+      "ru": "Шымбулак — горнолыжный курорт в Заилийском Алатау, выше Медеу. В 2011 году здесь прошли соревнования по горным лыжам VII зимних Азиатских игр; снимок сделан в мае 2012 года.",
+      "en": "Shymbulak is a ski resort in the Trans-Ili Alatau above Medeu. In 2011 it hosted the alpine skiing events of the 7th Asian Winter Games; the photo was taken in May 2012."
+    },
+    "clue": {
+      "kk": "Қарлы шыңдар, шыршалар, тау үйлері.",
+      "ru": "Снежные вершины, ели, горные постройки.",
+      "en": "Snowy peaks, spruces, mountain buildings."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Шымбулак",
+      "https://ru.wikipedia.org/wiki/Зимние_Азиатские_игры_2011"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "tamgaly-petroglyphs-2012",
+    "pack": [
+      "kz"
+    ],
+    "year": 2012,
+    "lat": 43.777,
+    "lng": 75.58,
+    "place": {
+      "kk": "Тамғалы шатқалы",
+      "ru": "Урочище Тамгалы",
+      "en": "Tamgaly gorge"
+    },
+    "image": "images/tamgaly-petroglyphs-2012.jpg",
+    "image_credit": {
+      "author": "Ninara from Helsinki, Finland",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Almaty_IMG_9675_(8415353756).jpg"
+    },
+    "title": {
+      "kk": "Тамғалы петроглифтері",
+      "ru": "Петроглифы Тамгалы",
+      "en": "Tamgaly petroglyphs"
+    },
+    "explanation": {
+      "kk": "Тамғалы шатқалында шамамен 5 мың петроглиф бар, олардың көбі қола дәуірінде салынған. 2004 жылы бұл орын ЮНЕСКО-ның Бүкіләлемдік мұра тізіміне енген Орталық Азиядағы алғашқы жартас суреттері болды; сурет 2012 жылы түсірілген.",
+      "ru": "В урочище Тамгалы около 5 тысяч петроглифов, многие из них созданы в эпоху бронзы. В 2004 году это место стало первым памятником наскального искусства Центральной Азии в списке Всемирного наследия ЮНЕСКО; снимок 2012 года.",
+      "en": "The Tamgaly gorge holds about 5,000 petroglyphs, many from the Bronze Age. In 2004 it became the first rock-art site in Central Asia on the UNESCO World Heritage List; the photo was taken in 2012."
+    },
+    "clue": {
+      "kk": "Тасқа қашалған суреттер, қара жартастар.",
+      "ru": "Рисунки, выбитые на тёмных скалах.",
+      "en": "Images pecked into dark rocks."
+    },
+    "sources": [
+      "https://whc.unesco.org/en/list/1145",
+      "https://en.wikipedia.org/wiki/Tamgaly"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "taraz-shahristan-2023",
+    "pack": [
+      "kz"
+    ],
+    "year": 2023,
+    "lat": 42.9,
+    "lng": 71.367,
+    "place": {
+      "kk": "Тараз",
+      "ru": "Тараз",
+      "en": "Taraz"
+    },
+    "image": "images/taraz-shahristan-2023.jpg",
+    "image_credit": {
+      "author": "Bekbal",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%22Shahristan%22_kesheni_jane_sagat_munarasy._Photo_bir.jpg"
+    },
+    "title": {
+      "kk": "Тараздағы «Шахристан» кешені",
+      "ru": "Комплекс «Шахристан» в Таразе",
+      "en": "The Shahristan complex in Taraz"
+    },
+    "explanation": {
+      "kk": "Тараз – Қазақстанның ең көне қалаларының бірі, Ұлы Жібек жолының маңызды орталығы болған. Қала орталығында ежелгі Тараздың тарихына арналған «Шахристан» (Көне Тараз) кешені мен сағат мұнарасы салынған; сурет 2023 жылы түсірілген.",
+      "ru": "Тараз — один из древнейших городов Казахстана и важный центр Великого шёлкового пути. В центре города построен этно-исторический комплекс «Шахристан» (Көне Тараз) с часовой башней; снимок 2023 года.",
+      "en": "Taraz is one of Kazakhstan's oldest cities and was an important centre on the Silk Road. In the city centre stands the Shahristan (Kone Taraz) ethno-historical complex with a clock tower; the photo was taken in 2023."
+    },
+    "clue": {
+      "kk": "Сағат мұнарасы, жалаулар, жаңа алаң.",
+      "ru": "Часовая башня, флаги, новая площадь.",
+      "en": "A clock tower, flags, a new square."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Тараз"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "zharkent-mosque-2011",
+    "pack": [
+      "kz"
+    ],
+    "year": 2011,
+    "lat": 44.163,
+    "lng": 80.0,
+    "place": {
+      "kk": "Жаркент",
+      "ru": "Жаркент",
+      "en": "Zharkent"
+    },
+    "image": "images/zharkent-mosque-2011.jpg",
+    "image_credit": {
+      "author": "Yakov Fedorov",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zharkent_Mosque_2.jpg"
+    },
+    "title": {
+      "kk": "Жаркент мешіті",
+      "ru": "Жаркентская мечеть",
+      "en": "Zharkent Mosque"
+    },
+    "explanation": {
+      "kk": "Жаркент мешітін көпес Уәли Ахун Юлдашевтің тапсырысымен қытай сәулетшісі Хон Пик салған, құрылыс 1880–1890 жылдарға жатады. Мешіт қытай пагодасы мен Орта Азия сәулетін ұштастырады; сурет 2011 жылы түсірілген.",
+      "ru": "Жаркентскую мечеть построил китайский архитектор Хон Пик по заказу купца Вали Ахуна Юлдашева, строительство относят к 1880–1890-м годам. Здание сочетает черты китайской пагоды и среднеазиатской архитектуры; снимок 2011 года.",
+      "en": "The Zharkent Mosque was built by Chinese architect Hon Pik for the merchant Vali Akhun Yuldashev, with construction dated to the 1880s–1890s. It blends features of a Chinese pagoda and Central Asian architecture; the photo was taken in 2011."
+    },
+    "clue": {
+      "kk": "Пагода тәрізді шатыр, ағаш бағаналар, мұнара.",
+      "ru": "Крыша как у пагоды, деревянные колонны, минарет.",
+      "en": "A pagoda-like roof, wooden columns, a minaret."
+    },
+    "sources": [
+      "https://www.inform.kz/ru/v-chem-unikal-nost-130-letney-zharkentskoy-mecheti_a3995820",
+      "https://ru.wikipedia.org/wiki/Жаркентская_мечеть"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "zhezkazgan-2005",
+    "pack": [
+      "kz"
+    ],
+    "year": 2005,
+    "lat": 47.783,
+    "lng": 67.767,
+    "place": {
+      "kk": "Жезқазған",
+      "ru": "Жезказган",
+      "en": "Zhezkazgan"
+    },
+    "image": "images/zhezkazgan-2005.jpg",
+    "image_credit": {
+      "author": "Roman Plischke",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:City_of_Zhez.JPG"
+    },
+    "title": {
+      "kk": "Жезқазған – мыс қаласы",
+      "ru": "Жезказган — город меди",
+      "en": "Zhezkazgan, the copper city"
+    },
+    "explanation": {
+      "kk": "Жезқазған мыс кен орнының айналасында өсті, оның атауы «жез қазған жер» дегенді білдіреді. Қалада «Қазақмыс» компаниясының кәсіпорындары орналасқан; сурет 2005 жылы Металлургтер алаңында түсірілген.",
+      "ru": "Жезказган вырос вокруг медного месторождения, само название означает «место, где копали медь». В городе работают предприятия компании «Казахмыс»; снимок 2005 года сделан на площади Металлургов.",
+      "en": "Zhezkazgan grew around a copper deposit; its name means 'the place where copper was dug'. The city is home to Kazakhmys company enterprises; the photo was taken on Metallurgists' Square in 2005."
+    },
+    "clue": {
+      "kk": "Шыны кеңсе ғимараты, ескі кеңестік үй, 2000-жылдардың суреті.",
+      "ru": "Стеклянное офисное здание рядом со старым советским домом, фото 2000-х.",
+      "en": "A glass office building next to an old Soviet house, a 2000s photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Жезказган"
     ],
     "difficulty": 2,
     "verified_by": "Claude (сверено по источникам)"
