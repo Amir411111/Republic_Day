@@ -9,6 +9,17 @@ import type { StringKey } from '../i18n/strings';
 import { KZ_BOUNDS } from '../map/GuessMap';
 import { ERAS, EVENTS, eraColor, eraOfYear, yearLabel, type Era, type HistEvent } from './events';
 
+interface Monument {
+  id: number;
+  lat: number;
+  lng: number;
+  name: { kk: string; ru: string };
+  type: { kk: string; ru: string };
+  district: { kk: string; ru: string };
+}
+
+const MONUMENTS_SOURCE = 'https://data.egov.kz/datasets/view?index=respublikalyk_manyzy_bar_tarih';
+
 // One list for both layers: text events and photo cards share the map and the timeline
 interface Item {
   key: string;
@@ -24,6 +35,8 @@ interface Item {
   text: L10n;
   sources: string[];
   card?: Card;
+  image?: string;
+  credit?: { author: string; license: string; source_url: string };
 }
 
 const fromEvent = (e: HistEvent): Item => ({
@@ -39,6 +52,8 @@ const fromEvent = (e: HistEvent): Item => ({
   place: e.place,
   text: e.text,
   sources: e.sources,
+  image: e.image,
+  credit: e.image_credit,
 });
 
 const fromCard = (c: Card): Item => ({
@@ -54,6 +69,8 @@ const fromCard = (c: Card): Item => ({
   text: c.explanation,
   sources: c.sources,
   card: c,
+  image: c.image,
+  credit: c.image_credit,
 });
 
 const ERA_KEYS: Record<Era, StringKey> = {
@@ -72,12 +89,22 @@ function FlyTo({ item }: { item: Item | null }) {
 }
 
 export default function Atlas() {
-  const { t, l } = useI18n();
+  const { t, l, lang } = useI18n();
   const [showEvents, setShowEvents] = useState(true);
   const [showPhotos, setShowPhotos] = useState(true);
   const [era, setEra] = useState<Era | 'all'>('all');
   const [upTo, setUpTo] = useState(YEAR_MAX);
   const [selected, setSelected] = useState<Item | null>(null);
+  const [showMon, setShowMon] = useState(false);
+  const [monuments, setMonuments] = useState<Monument[] | null>(null);
+  const [mon, setMon] = useState<Monument | null>(null);
+
+  // 600 points from the open data portal: loaded only when the layer is switched on
+  useEffect(() => {
+    if (showMon && !monuments)
+      import('../../content/monuments-kostanay.json').then((m) => setMonuments(m.default as Monument[]));
+  }, [showMon, monuments]);
+  const ml = (x: { kk: string; ru: string }) => (lang === 'kk' ? x.kk : x.ru) || x.ru || x.kk;
 
   const all = useMemo(
     () =>
@@ -109,6 +136,9 @@ export default function Atlas() {
         <button type="button" className={showPhotos ? 'on' : ''} onClick={() => setShowPhotos(!showPhotos)}>
           {t('layerPhotos')}
         </button>
+        <button type="button" className={showMon ? 'on' : ''} onClick={() => setShowMon(!showMon)}>
+          {t('layerMonuments')}
+        </button>
       </div>
 
       <div className="toggle wrap eras">
@@ -136,12 +166,22 @@ export default function Atlas() {
         />
       </div>
 
-      <MapContainer bounds={KZ_BOUNDS} className="map atlas-map" scrollWheelZoom>
+      <MapContainer bounds={KZ_BOUNDS} className="map atlas-map" scrollWheelZoom preferCanvas>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; OpenStreetMap contributors"
         />
         <FlyTo item={selected} />
+        {showMon &&
+          monuments?.map((m) => (
+            <CircleMarker
+              key={`m${m.id}`}
+              center={[m.lat, m.lng]}
+              radius={4}
+              pathOptions={{ color: '#555', weight: 1, fillColor: '#999', fillOpacity: 0.8 }}
+              eventHandlers={{ click: () => setMon(m) }}
+            />
+          ))}
         {visible.map((i) => {
           const color = eraColor(i.era);
           const isSel = selected?.key === i.key;
@@ -165,6 +205,33 @@ export default function Atlas() {
         })}
       </MapContainer>
       <p className="hint">{t('atlasLegend')}</p>
+      {showMon && (
+        <p className="hint">
+          {t('monumentsNote')}{' '}
+          <a href={MONUMENTS_SOURCE} target="_blank" rel="noreferrer">
+            data.egov.kz
+          </a>
+          {monuments ? ` · ${monuments.length}` : ' …'}
+        </p>
+      )}
+      {mon && (
+        <article className="detail" style={{ borderColor: '#777' }}>
+          <div className="detail-head">
+            <span className="big">{ml(mon.type)}</span>
+            <button type="button" className="secondary" onClick={() => setMon(null)}>
+              {t('close')}
+            </button>
+          </div>
+          <h2>{ml(mon.name)}</h2>
+          <p className="place">{ml(mon.district)}</p>
+          <p className="credit">
+            {t('monumentsSource')}:{' '}
+            <a href={MONUMENTS_SOURCE} target="_blank" rel="noreferrer">
+              data.egov.kz
+            </a>
+          </p>
+        </article>
+      )}
 
       {selected && (
         <article className="detail" style={{ borderColor: eraColor(selected.era) }}>
@@ -179,7 +246,9 @@ export default function Atlas() {
             {l(selected.place)}
             {selected.approx && <em> · {t('approxPlace')}</em>}
           </p>
-          {selected.card && <img className="photo" src={imageUrl(selected.card)} alt={l(selected.title)} />}
+          {selected.image && (
+            <img className="photo" src={imageUrl({ image: selected.image } as Card)} alt={l(selected.title)} />
+          )}
           <p className="explanation">{l(selected.text)}</p>
           <h3>{t('sources')}</h3>
           <ul className="sources">
@@ -195,11 +264,11 @@ export default function Atlas() {
             <summary>💬 {t('guideAskAbout')}</summary>
             <Guide key={selected.key} focus={selected.key} compact />
           </details>
-          {selected.card && (
+          {selected.image && selected.credit && (
             <p className="credit">
-              {t('imageBy')}: {selected.card.image_credit.author} ·{' '}
-              <a href={selected.card.image_credit.source_url} target="_blank" rel="noreferrer">
-                {selected.card.image_credit.license}
+              {t('imageBy')}: {selected.credit.author} ·{' '}
+              <a href={selected.credit.source_url} target="_blank" rel="noreferrer">
+                {selected.credit.license}
               </a>
             </p>
           )}

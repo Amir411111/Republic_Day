@@ -6,14 +6,15 @@ import { QUIZ_EVENTS, eventToCard } from './atlas/events';
 import { cardsForPack, DEV_MODE } from './game/cards';
 import Game from './game/Game';
 import { pickDaily, pickRandom, todayKey } from './game/pick';
+import { ROUNDS } from './game/scoring';
 import type { Card, Pack } from './game/types';
 import { LANGS, useI18n } from './i18n';
 import { mistakeIds } from './progress/storage';
 
 type Mode = 'daily' | 'random' | 'training' | 'khans';
 
-// Modern photos stay in free play; the daily game keeps to older history
-const DAILY_MAX_YEAR = 2000;
+// The daily game is mostly history: 4 older pictures and 1 from after this year
+const MODERN_FROM = 2001;
 
 interface Session {
   cards: Card[];
@@ -35,7 +36,10 @@ export default function App() {
     let cards: Card[];
     if (mode === 'daily')
       cards = pickDaily(
-        pool.filter((c) => c.year <= DAILY_MAX_YEAR),
+        [
+          ...pickDaily(pool.filter((c) => c.year < MODERN_FROM), `${todayKey()}-${pack}-old`).slice(0, ROUNDS - 1),
+          ...pickDaily(pool.filter((c) => c.year >= MODERN_FROM), `${todayKey()}-${pack}-new`).slice(0, 1),
+        ],
         `${todayKey()}-${pack}`,
       );
     else if (mode === 'khans') cards = pickRandom(QUIZ_EVENTS.map(eventToCard));

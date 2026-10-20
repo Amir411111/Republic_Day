@@ -23,6 +23,10 @@ export function cardById(id: string): Card | undefined {
   return ALL_CARDS.find((c) => c.id === id) ?? EVENT_CARDS.find((c) => c.id === id);
 }
 
+export function isEventCard(c: Card): boolean {
+  return c.id.startsWith('event:');
+}
+
 export function imageUrl(c: Card): string {
   if (/^https?:\/\//.test(c.image)) return c.image;
   return import.meta.env.BASE_URL + c.image;

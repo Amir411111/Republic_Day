@@ -16,6 +16,9 @@ export interface HistEvent {
   title: L10n;
   text: L10n;
   sources: string[];
+  // Optional picture: portrait, engraving, monument or site photo (never with the year printed on it)
+  image?: string;
+  image_credit?: { author: string; license: string; source_url: string };
 }
 
 export const EVENTS = (raw as HistEvent[]).slice().sort((a, b) => a.year - b.year);
@@ -53,8 +56,8 @@ export function eventToCard(e: HistEvent): Card {
     lat: e.lat,
     lng: e.lng,
     place: e.place,
-    image: '',
-    image_credit: { author: '', license: '', source_url: '' },
+    image: e.image ?? '',
+    image_credit: e.image_credit ?? { author: '', license: '', source_url: '' },
     title: e.title,
     explanation: e.text,
     clue: EMPTY,

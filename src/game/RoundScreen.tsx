@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useI18n } from '../i18n';
 import GuessMap from '../map/GuessMap';
-import { imageUrl } from './cards';
+import { imageUrl, isEventCard } from './cards';
 import type { Card, LatLng } from './types';
 import YearPicker from './YearPicker';
 
@@ -22,9 +22,8 @@ export default function RoundScreen({ card, roundNo, total, onSubmit }: Props) {
   return (
     <div className="screen">
       <p className="round-no">{t('round', { n: roundNo, total })}</p>
-      {card.image ? (
-        <img className="photo" src={imageUrl(card)} alt="" />
-      ) : (
+      {card.image && <img className="photo" src={imageUrl(card)} alt="" />}
+      {isEventCard(card) && (
         <div className="text-card">
           <h2>{l(card.title)}</h2>
           <p>{t('textRoundHint')}</p>

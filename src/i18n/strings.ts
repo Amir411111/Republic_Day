@@ -70,9 +70,9 @@ export const STRINGS = {
     en: 'Rounds without photos: guess the year and place',
   },
   dailyNote: {
-    kk: 'Күннің ойынында тек 2000 жылға дейінгі суреттер',
-    ru: 'В игре дня только снимки до 2000 года',
-    en: 'The daily game only uses pictures before 2000',
+    kk: 'Күннің ойыны: 4 тарихи сурет және 1 заманауи сурет',
+    ru: 'Игра дня: 4 исторических снимка и 1 современный',
+    en: 'Daily game: 4 historical pictures and 1 modern one',
   },
   textRoundHint: {
     kk: 'Бұл оқиға қай жылы және қай жерде болды?',
@@ -104,6 +104,13 @@ export const STRINGS = {
     en: 'Coloured dot: event. White dot: photo. Dashed edge: approximate location.',
   },
   approxPlace: { kk: 'орны шамамен', ru: 'место указано примерно', en: 'approximate location' },
+  layerMonuments: { kk: 'Ескерткіштер (ашық деректер)', ru: 'Памятники (открытые данные)', en: 'Monuments (open data)' },
+  monumentsNote: {
+    kk: 'Сұр нүктелер – Қостанай облысының тарих және мәдениет ескерткіштері, мемлекеттік ашық деректер порталынан:',
+    ru: 'Серые точки — памятники истории и культуры Костанайской области из государственного портала открытых данных:',
+    en: 'Grey dots: historical and cultural monuments of Kostanay region from the government open data portal:',
+  },
+  monumentsSource: { kk: 'Дереккөз', ru: 'Источник', en: 'Source' },
   timeline: { kk: 'Уақыт желісі', ru: 'Хронология', en: 'Timeline' },
   close: { kk: 'Жабу', ru: 'Закрыть', en: 'Close' },
 
