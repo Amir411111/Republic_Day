@@ -3533,5 +3533,289 @@
     ],
     "difficulty": 2,
     "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "aktau-caspian-fisherman-2016",
+    "pack": [
+      "kz"
+    ],
+    "year": 2016,
+    "lat": 43.65,
+    "lng": 51.17,
+    "place": {
+      "kk": "Ақтау, Каспий теңізі",
+      "ru": "Актау, Каспийское море",
+      "en": "Aktau, Caspian Sea"
+    },
+    "image": "images/aktau-caspian-fisherman-2016.jpg",
+    "image_credit": {
+      "author": "JPetrlík",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aktau_fisherman.jpg"
+    },
+    "title": {
+      "kk": "Каспий жағасындағы жас балықшы",
+      "ru": "Юный рыбак на Каспии",
+      "en": "A young fisherman on the Caspian"
+    },
+    "explanation": {
+      "kk": "Ақтау Каспий теңізінің жағасында 1960-жылдары уран мен мұнай өндірушілердің қаласы ретінде салынды, 1991 жылға дейін Шевченко деп аталды. Бүгін ол Қазақстанның жалғыз теңіз порты бар облыс орталығы; сурет 2016 жылы түсірілген.",
+      "ru": "Актау построили на берегу Каспия в 1960-е годы как город добытчиков урана и нефти, до 1991 года он назывался Шевченко. Сегодня это главный морской порт Казахстана; снимок 2016 года.",
+      "en": "Aktau was built on the Caspian shore in the 1960s as a town for uranium and oil workers and was called Shevchenko until 1991. Today it is Kazakhstan's main seaport; the photo was taken in 2016."
+    },
+    "clue": {
+      "kk": "Теңіз, ескі пирс, алыстағы мұнай платформасы.",
+      "ru": "Море, старый пирс, вдали нефтяная платформа.",
+      "en": "The sea, an old pier, an oil rig in the distance."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Актау"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "bozjyra-mangystau-2023",
+    "pack": [
+      "kz"
+    ],
+    "year": 2023,
+    "lat": 43.42,
+    "lng": 54.07,
+    "place": {
+      "kk": "Бозжыра, Маңғыстау",
+      "ru": "Бозжыра, Мангистау",
+      "en": "Bozzhyra, Mangystau"
+    },
+    "image": "images/bozjyra-mangystau-2023.jpg",
+    "image_credit": {
+      "author": "Avventure nel Mangystau",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bozjira_morning_1.jpg"
+    },
+    "title": {
+      "kk": "Бозжыра шатқалы",
+      "ru": "Урочище Бозжыра",
+      "en": "Bozzhyra valley"
+    },
+    "explanation": {
+      "kk": "Бозжыра – Маңғыстаудағы Үстірт шыңының ақ әктас жартастары, олар миллиондаған жыл бұрын ежелгі Тетис мұхитының түбі болған. Бүгін бұл – Қазақстанның ең танымал табиғи көрікті жерлерінің бірі; сурет 2023 жылы түсірілген.",
+      "ru": "Бозжыра — белые известняковые останцы чинка Устюрта в Мангистау; миллионы лет назад здесь было дно древнего океана Тетис. Сегодня это одно из самых известных природных мест Казахстана; снимок 2023 года.",
+      "en": "Bozzhyra is a set of white limestone outliers on the Ustyurt escarpment in Mangystau; millions of years ago this was the floor of the ancient Tethys Ocean. Today it is one of Kazakhstan's best-known natural sights; the photo was taken in 2023."
+    },
+    "clue": {
+      "kk": "Ақ жартастар мен шыңдар, шөл, ашық көк аспан.",
+      "ru": "Белые скалы-пики, пустыня, ярко-синее небо.",
+      "en": "White rock pinnacles, desert, a deep blue sky."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Бозжыра"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "zhanaozen-street-2020",
+    "pack": [
+      "kz"
+    ],
+    "year": 2020,
+    "lat": 43.34,
+    "lng": 52.86,
+    "place": {
+      "kk": "Жаңаөзен",
+      "ru": "Жанаозен",
+      "en": "Zhanaozen"
+    },
+    "image": "images/zhanaozen-street-2020.jpg",
+    "image_credit": {
+      "author": "Liquorkaru",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Central_street_in_Zhanaozen.jpg"
+    },
+    "title": {
+      "kk": "Жаңаөзеннің орталық көшесі",
+      "ru": "Центральная улица Жанаозена",
+      "en": "Main street of Zhanaozen"
+    },
+    "explanation": {
+      "kk": "Жаңаөзен Өзен мұнай кен орнының маңында 1960-жылдары пайда болған мұнайшылар қаласы. 2011 жылы желтоқсанда мұнда мұнайшылар ереуілі қайғылы оқиғамен аяқталды, ал 2022 жылғы қаңтар наразылықтары да осы қаладан басталды; сурет 2020 жылы түсірілген.",
+      "ru": "Жанаозен — город нефтяников, выросший в 1960-е годы у месторождения Узень. В декабре 2011 года здесь трагически закончилась забастовка нефтяников, а в январе 2022 года именно отсюда начались общенациональные протесты; снимок 2020 года.",
+      "en": "Zhanaozen is an oil workers' town that grew up in the 1960s by the Uzen oil field. In December 2011 an oil workers' strike here ended in tragedy, and the nationwide protests of January 2022 also began here; the photo was taken in 2020."
+    },
+    "clue": {
+      "kk": "Кең көше, жарқыраған күн, шөлейт қала, заманауи сурет.",
+      "ru": "Широкая улица, слепящее солнце, город в полупустыне, современное фото.",
+      "en": "A wide street, glaring sun, a semi-desert town, a modern photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Жанаозен",
+      "https://ru.wikipedia.org/wiki/Беспорядки_в_Жанаозене"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "alma-ata-canteen-1934",
+    "pack": [
+      "kz"
+    ],
+    "year": 1934,
+    "lat": 43.256,
+    "lng": 76.945,
+    "place": {
+      "kk": "Алматы",
+      "ru": "Алма-Ата",
+      "en": "Alma-Ata (Almaty)"
+    },
+    "image": "images/alma-ata-canteen-1934.jpg",
+    "image_credit": {
+      "author": "Eleazar Langman",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1934._%D0%90%D0%BB%D0%BC%D0%B0-%D0%90%D1%82%D0%B0.jpg"
+    },
+    "title": {
+      "kk": "Алматыдағы асхана",
+      "ru": "Столовая в Алма-Ате",
+      "en": "A canteen in Alma-Ata"
+    },
+    "explanation": {
+      "kk": "1934 жылғы суретті кеңес фотографы Елеазар Лангман түсірген. 1929 жылы Қазақ АКСР-інің астанасы Қызылордадан Алматыға көшірілді, ал 1930-жылдары қала жаңа мекемелер мен қоғамдық орындарға толы жас астанаға айналды.",
+      "ru": "Снимок 1934 года сделал советский фотограф Елеазар Лангман. В 1929 году столицу Казахской АССР перенесли из Кзыл-Орды в Алма-Ату, и в 1930-е годы город быстро превращался в молодую столицу с новыми учреждениями.",
+      "en": "This 1934 photo was taken by Soviet photographer Eleazar Langman. In 1929 the capital of the Kazakh ASSR moved from Kzyl-Orda to Alma-Ata, and in the 1930s the city quickly grew into a young capital with new institutions."
+    },
+    "clue": {
+      "kk": "Ақ дастарқандар, үстелдер, ақ халаттылар, 1930-жылдардың суреті.",
+      "ru": "Столы с белыми скатертями, люди в белом, снимок 1930-х.",
+      "en": "Tables with white cloths, people in white, a 1930s photo."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/File:1934._Алма-Ата.jpg",
+      "https://ru.wikipedia.org/wiki/Алма-Ата"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "alma-ata-central-stadium-1957",
+    "pack": [
+      "kz"
+    ],
+    "year": 1957,
+    "lat": 43.235,
+    "lng": 76.922,
+    "place": {
+      "kk": "Алматы",
+      "ru": "Алма-Ата",
+      "en": "Alma-Ata (Almaty)"
+    },
+    "image": "images/alma-ata-central-stadium-1957.jpg",
+    "image_credit": {
+      "author": "IskanderOraz",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%BE_%D0%BF%D1%83%D1%82%D0%B8_%D0%9E%D1%80%D0%B0%D0%B7_%D0%9C%D0%B0%D0%BA%D0%B0%D0%B5%D0%B2%D0%B8%D1%87%D0%B0_%D1%86%D1%81.png"
+    },
+    "title": {
+      "kk": "Орталық стадион құрылысында",
+      "ru": "На стройке Центрального стадиона",
+      "en": "Building the Central Stadium"
+    },
+    "explanation": {
+      "kk": "1957 жылы қыркүйекте Алматыдағы Орталық стадион құрылысындағы жұмысшылар бригадасы. Стадион 1958 жылы ашылып, ұзақ жылдар бойы республиканың басты спорт аренасы болды.",
+      "ru": "Сентябрь 1957 года: бригада строителей на трибунах будущего Центрального стадиона Алма-Аты. Стадион открылся в 1958 году и долгие годы был главной спортивной ареной республики.",
+      "en": "September 1957: a construction brigade on the stands of Alma-Ata's future Central Stadium. The stadium opened in 1958 and for many years was the republic's main sports arena."
+    },
+    "clue": {
+      "kk": "Трибуналар, құрылыс краны, 1950-жылдардың киімі.",
+      "ru": "Трибуны, строительный кран, одежда 1950-х.",
+      "en": "Stands, a construction crane, 1950s clothing."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Центральный_стадион_(Алма-Ата)"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "pavlodar-derov-house-1912",
+    "pack": [
+      "kz"
+    ],
+    "year": 1912,
+    "lat": 52.287,
+    "lng": 76.967,
+    "place": {
+      "kk": "Павлодар",
+      "ru": "Павлодар",
+      "en": "Pavlodar"
+    },
+    "image": "images/pavlodar-derov-house-1912.jpg",
+    "image_credit": {
+      "author": "Dmitry Polikarpovich Bagayev",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%94%D0%BE%D0%BC_%D0%BA%D1%83%D0%BF%D1%86%D0%B0_%D0%94%D0%B5%D1%80%D0%BE%D0%B2%D0%B0,_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B4%D0%B0%D1%80.jpg"
+    },
+    "title": {
+      "kk": "Павлодардағы көпес Деровтың үйі",
+      "ru": "Дом купца Дерова в Павлодаре",
+      "en": "Merchant Derov's house in Pavlodar"
+    },
+    "explanation": {
+      "kk": "1912 жылғы ашықхат: Павлодардағы Телеграф көшесіндегі көпес Артемий Деровтың үйі. Суретті қаланың белгілі фотографы Дмитрий Багаев түсірген; ғасыр басында Павлодар Ертіс бойындағы сауда арқасында тез өсті.",
+      "ru": "Открытка 1912 года: дом купца Артемия Дерова на Телеграфной улице Павлодара. Снимок сделал известный павлодарский фотограф Дмитрий Багаев; в начале века город быстро рос благодаря торговле на Иртыше.",
+      "en": "A 1912 postcard: merchant Artemy Derov's house on Telegraph Street in Pavlodar. The photo was taken by the noted local photographer Dmitry Bagaev; in the early 1900s the town grew fast on Irtysh river trade."
+    },
+    "clue": {
+      "kk": "Көпестің тас үйі, арбалар, ескі ашықхат.",
+      "ru": "Каменный купеческий дом, телеги, старая открытка.",
+      "en": "A stone merchant's house, carts, an old postcard."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/File:Дом_купца_Дерова,_Павлодар.jpg",
+      "https://ru.wikipedia.org/wiki/Павлодар"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "petropavlovsk-lower-town-1902",
+    "pack": [
+      "kz"
+    ],
+    "year": 1902,
+    "lat": 54.875,
+    "lng": 69.16,
+    "place": {
+      "kk": "Петропавл",
+      "ru": "Петропавловск",
+      "en": "Petropavlovsk (Petropavl)"
+    },
+    "image": "images/petropavlovsk-lower-town-1902.jpg",
+    "image_credit": {
+      "author": "Кочешев Алексей Иванович",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%80%D0%BD%D1%83%D1%8E_%D1%87%D0%B0%D1%81%D1%82%D1%8C_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0.png"
+    },
+    "title": {
+      "kk": "Петропавлдың төменгі бөлігі",
+      "ru": "Подгорная часть Петропавловска",
+      "en": "The lower town of Petropavlovsk"
+    },
+    "explanation": {
+      "kk": "1902 жылғы сурет: Петропавлдың Есіл жағасындағы төменгі (Подгорная) бөлігі, алдыңғы жоспарда – сауда қатарлары. Транссібір темір жолы жеткеннен кейін қала Дала өлкесінің ірі сауда орталығына айналды.",
+      "ru": "Снимок 1902 года: Подгорная часть Петропавловска у Ишима, на переднем плане — торговые ряды. После прихода Транссибирской магистрали город стал крупным торговым центром Степного края.",
+      "en": "A 1902 photo of the lower town of Petropavlovsk by the Ishim, with market stalls in the foreground. After the Trans-Siberian Railway arrived, the town became a major trading centre of the Steppe region."
+    },
+    "clue": {
+      "kk": "Шіркеу, ұзын ғимарат, сауда дүкендері, ескі сурет.",
+      "ru": "Церковь, длинное здание, торговые лавки, старый снимок.",
+      "en": "A church, a long building, market stalls, an old photo."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/File:Вид_на_Подгорную_часть_Петропавловска.png",
+      "https://ru.wikipedia.org/wiki/Петропавловск"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
   }
 ]
