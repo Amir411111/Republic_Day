@@ -2846,5 +2846,329 @@
     ],
     "difficulty": 3,
     "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "pugachev-museum-uralsk-2004",
+    "pack": [
+      "kz"
+    ],
+    "year": 2004,
+    "lat": 51.233,
+    "lng": 51.367,
+    "place": {
+      "kk": "Орал",
+      "ru": "Уральск",
+      "en": "Uralsk (Oral)"
+    },
+    "image": "images/pugachev-museum-uralsk-2004.jpg",
+    "image_credit": {
+      "author": "ArsenG",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pugachev_home.JPG"
+    },
+    "title": {
+      "kk": "Оралдағы Пугачёв үй-мұражайы",
+      "ru": "Дом-музей Пугачёва в Уральске",
+      "en": "Pugachev House Museum in Uralsk"
+    },
+    "explanation": {
+      "kk": "1773–1775 жылдардағы Емельян Пугачёв көтерілісі Жайық казактарының ортасында басталды. Көтеріліс басылғаннан кейін II Екатерина Жайық өзенін Орал деп, ал Жайық қалашығын Орал қаласы деп өзгертті; ағаш үйде қазір мұражай бар, сурет 2004 жылы түсірілген.",
+      "ru": "Восстание Емельяна Пугачёва 1773–1775 годов началось среди яицких казаков. После его подавления Екатерина II переименовала реку Яик в Урал, а Яицкий городок — в Уральск; в бревенчатом доме теперь музей, снимок 2004 года.",
+      "en": "Yemelyan Pugachev's rebellion of 1773–1775 began among the Yaik Cossacks. After it was crushed, Catherine II renamed the Yaik River the Ural and the town of Yaitsky Gorodok became Uralsk; the log house is now a museum, photographed in 2004."
+    },
+    "clue": {
+      "kk": "Ескі бөрене үй, заманауи түсті сурет.",
+      "ru": "Старый бревенчатый дом, современное цветное фото.",
+      "en": "An old log house, a modern colour photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Восстание_Пугачёва",
+      "https://ru.wikipedia.org/wiki/Уральск"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "syr-darya-winter-fishing-2006",
+    "pack": [
+      "kz"
+    ],
+    "year": 2006,
+    "lat": 44.85,
+    "lng": 65.5,
+    "place": {
+      "kk": "Сырдария, Қызылорда облысы",
+      "ru": "Сырдарья, Кызылординская область",
+      "en": "Syr Darya, Kyzylorda region"
+    },
+    "image": "images/syr-darya-winter-fishing-2006.jpg",
+    "image_credit": {
+      "author": "Yuriy75",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Syr_Darya_river_(Qyzylorda_province)_winter_fishing_2006_00.jpg"
+    },
+    "title": {
+      "kk": "Сырдариядағы қысқы балық аулау",
+      "ru": "Зимняя рыбалка на Сырдарье",
+      "en": "Ice fishing on the Syr Darya"
+    },
+    "explanation": {
+      "kk": "2006 жылдың қысында Қызылорда облысында Сырдарияның мұзында балық аулап жатқан балықшылар. Сырдария – Орта Азияның ең ұзын өзендерінің бірі, оның суы Кіші Аралды толтыратын негізгі көз.",
+      "ru": "Зима 2006 года: рыбаки на льду Сырдарьи в Кызылординской области. Сырдарья — одна из самых длинных рек Средней Азии и главный источник воды для Малого Арала.",
+      "en": "Winter 2006: fishermen on the ice of the Syr Darya in Kyzylorda region. The Syr Darya is one of Central Asia's longest rivers and the main source of water for the Small Aral Sea."
+    },
+    "clue": {
+      "kk": "Мұз, ойық, қалың қысқы киім, сандық сурет.",
+      "ru": "Лёд, лунка, тёплая зимняя одежда, цифровое фото.",
+      "en": "Ice, a fishing hole, warm winter clothes, a digital photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Сырдарья"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "kaindy-lake-2006",
+    "pack": [
+      "kz"
+    ],
+    "year": 2006,
+    "lat": 42.985,
+    "lng": 78.466,
+    "place": {
+      "kk": "Қайыңды көлі",
+      "ru": "Озеро Каинды",
+      "en": "Lake Kaindy"
+    },
+    "image": "images/kaindy-lake-2006.jpg",
+    "image_credit": {
+      "author": "Jonas Satkauskas",
+      "license": "Attribution",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kaindy_lake_south-east_Kazakhstan.jpg"
+    },
+    "title": {
+      "kk": "Қайыңды көлі",
+      "ru": "Озеро Каинды",
+      "en": "Lake Kaindy"
+    },
+    "explanation": {
+      "kk": "Қайыңды көлі 1911 жылғы Кемин жер сілкінісінен кейін тау құлауы шатқалды бөгегенде пайда болды. Судан әлі күнге дейін су астында қалған шыршалардың діңдері шығып тұр; сурет 2006 жылы түсірілген.",
+      "ru": "Озеро Каинды образовалось после Кеминского землетрясения 1911 года, когда горный обвал перегородил ущелье. Из воды до сих пор торчат стволы затопленных елей; снимок 2006 года.",
+      "en": "Lake Kaindy formed after the 1911 Kemin earthquake, when a landslide dammed the gorge. Trunks of drowned spruce trees still rise out of the water; the photo dates from 2006."
+    },
+    "clue": {
+      "kk": "Судан шығып тұрған құрғақ діңдер, тау шыршалары.",
+      "ru": "Сухие стволы прямо из воды, горные ели.",
+      "en": "Bare trunks standing in the water, mountain spruces."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Каинды_(озеро)",
+      "https://ru.wikipedia.org/wiki/Кеминское_землетрясение"
+    ],
+    "difficulty": 1,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "korday-border-2007",
+    "pack": [
+      "kz"
+    ],
+    "year": 2007,
+    "lat": 43.04,
+    "lng": 74.71,
+    "place": {
+      "kk": "Қордай",
+      "ru": "Кордай",
+      "en": "Korday"
+    },
+    "image": "images/korday-border-2007.jpg",
+    "image_credit": {
+      "author": "Vmenkov",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:E8398-Korday-entering-KZ.jpg"
+    },
+    "title": {
+      "kk": "Қордай шекара бекеті",
+      "ru": "Пограничный переход Кордай",
+      "en": "Korday border crossing"
+    },
+    "explanation": {
+      "kk": "Қордай – Қазақстан мен Қырғызстан арасындағы ең көп адам өтетін шекара бекеттерінің бірі, ол Бішкекке жақын. 2007 жылғы суретте Қазақстанға кіре берістегі қақпа бейнеленген.",
+      "ru": "Кордай — один из самых оживлённых пограничных переходов между Казахстаном и Кыргызстаном, рядом с Бишкеком. На снимке 2007 года — въездные ворота в Казахстан.",
+      "en": "Korday is one of the busiest border crossings between Kazakhstan and Kyrgyzstan, close to Bishkek. The 2007 photo shows the entrance gate into Kazakhstan."
+    },
+    "clue": {
+      "kk": "Доға қақпа, шекара кедергілері, 2000-жылдардың көліктері.",
+      "ru": "Арка-ворота, пограничные блоки, машины 2000-х.",
+      "en": "An arched gate, border barriers, 2000s cars."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Кордай"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "dolinka-karlag-museum-2013",
+    "pack": [
+      "kz"
+    ],
+    "year": 2013,
+    "lat": 49.678,
+    "lng": 72.678,
+    "place": {
+      "kk": "Долинка, Қарағанды облысы",
+      "ru": "Долинка, Карагандинская область",
+      "en": "Dolinka, Karaganda region"
+    },
+    "image": "images/dolinka-karlag-museum-2013.jpg",
+    "image_credit": {
+      "author": "Yakov Fedorov",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dolinka_Museum_1.JPG"
+    },
+    "title": {
+      "kk": "Долинкадағы Қарлаг мұражайы",
+      "ru": "Музей Карлага в Долинке",
+      "en": "The Karlag museum in Dolinka"
+    },
+    "explanation": {
+      "kk": "Долинка кентінде ГУЛАГ-тың ең ірі лагерьлерінің бірі – Қарлагтың басқармасы орналасқан. Қазір бұл ғимаратта саяси қуғын-сүргін құрбандарына арналған мұражай жұмыс істейді; сурет 2013 жылы түсірілген.",
+      "ru": "В посёлке Долинка находилось управление Карлага — одного из крупнейших лагерей ГУЛАГа. Сейчас в этом здании работает музей памяти жертв политических репрессий; снимок 2013 года.",
+      "en": "The village of Dolinka housed the administration of Karlag, one of the largest camps of the Gulag. The building is now a museum to the victims of political repression; the photo dates from 2013."
+    },
+    "clue": {
+      "kk": "Бағаналы кеңестік ғимарат, қызыл жұлдыз, заманауи сурет.",
+      "ru": "Советское здание с колоннами и красной звездой, современное фото.",
+      "en": "A Soviet building with columns and a red star, a modern photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Карлаг"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "karaganda-miners-palace-2013",
+    "pack": [
+      "kz"
+    ],
+    "year": 2013,
+    "lat": 49.806,
+    "lng": 73.085,
+    "place": {
+      "kk": "Қарағанды",
+      "ru": "Караганда",
+      "en": "Karaganda"
+    },
+    "image": "images/karaganda-miners-palace-2013.jpg",
+    "image_credit": {
+      "author": "Grin1372Go",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%93._%D0%9A%D0%B0%D1%80%D0%B0%D0%B3%D0%B0%D0%BD%D0%B4%D0%B0._%D0%94%D0%B2%D0%BE%D1%80%D0%B5%D1%86_%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D1%8B_%D0%B3%D0%BE%D1%80%D0%BD%D1%8F%D0%BA%D0%BE%D0%B2_%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82_%D0%91-%D0%96%D0%B8%D1%80%D0%B0%D1%83_(%D1%80%D0%B0%D0%BD%D0%B5%D0%B5_%D0%BF%D1%80.%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9).jpg"
+    },
+    "title": {
+      "kk": "Қарағандыдағы Кеншілер мәдениет сарайы",
+      "ru": "Дворец культуры горняков в Караганде",
+      "en": "The Miners' Palace of Culture in Karaganda"
+    },
+    "explanation": {
+      "kk": "Қарағанды Қарағанды көмір бассейнінің арқасында өсті, оны «КСРО-ның үшінші көмір ошағы» деп атаған. Кеншілер мәдениет сарайы – қаланың кеншілік өткенінің символы; сурет 2013 жылы түсірілген.",
+      "ru": "Караганда выросла благодаря Карагандинскому угольному бассейну, который называли «третьей всесоюзной кочегаркой». Дворец культуры горняков — символ шахтёрского прошлого города; снимок 2013 года.",
+      "en": "Karaganda grew thanks to the Karaganda coal basin, called the 'third coal stoker of the USSR'. The Miners' Palace of Culture is a symbol of the city's mining past; the photo dates from 2013."
+    },
+    "clue": {
+      "kk": "Бағаналы сарай, түнгі жарық, фонтан, заманауи сурет.",
+      "ru": "Дворец с колоннами, ночная подсветка, фонтан, современное фото.",
+      "en": "A colonnaded palace, night lighting, a fountain, a modern photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Карагандинский_угольный_бассейн",
+      "https://ru.wikipedia.org/wiki/Караганда"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "korday-wind-farm-2016",
+    "pack": [
+      "kz"
+    ],
+    "year": 2016,
+    "lat": 43.31,
+    "lng": 74.934,
+    "place": {
+      "kk": "Мұзбел, Жамбыл облысы",
+      "ru": "Музбель, Жамбылская область",
+      "en": "Muzbel, Zhambyl region"
+    },
+    "image": "images/korday-wind-farm-2016.jpg",
+    "image_credit": {
+      "author": "МаратД",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Korday_wind_farm_near_Moozbel_village,_Kazakhstan.jpg"
+    },
+    "title": {
+      "kk": "Қордай жел электр станциясы",
+      "ru": "Кордайская ветровая электростанция",
+      "en": "Korday wind farm"
+    },
+    "explanation": {
+      "kk": "Жамбыл облысындағы Мұзбел ауылының маңындағы Қордай жел электр станциясы, сурет 2016 жылы түсірілген. Қазақстан көмірге тәуелділікті азайту үшін жел және күн энергетикасын дамытып келеді.",
+      "ru": "Кордайская ветровая электростанция у посёлка Музбель в Жамбылской области, снимок 2016 года. Казахстан развивает ветровую и солнечную энергетику, чтобы снизить зависимость от угля.",
+      "en": "The Korday wind farm near the village of Muzbel in Zhambyl region, photographed in 2016. Kazakhstan is developing wind and solar power to reduce its dependence on coal."
+    },
+    "clue": {
+      "kk": "Жел турбиналары, кең дала, заманауи сурет.",
+      "ru": "Ветряные турбины в широкой степи, современное фото.",
+      "en": "Wind turbines on open steppe, a modern photo."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/File:Korday_wind_farm_near_Moozbel_village,_Kazakhstan.jpg"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "shymkent-talgo-2021",
+    "pack": [
+      "kz"
+    ],
+    "year": 2021,
+    "lat": 42.31,
+    "lng": 69.6,
+    "place": {
+      "kk": "Шымкент",
+      "ru": "Шымкент",
+      "en": "Shymkent"
+    },
+    "image": "images/shymkent-talgo-2021.jpg",
+    "image_credit": {
+      "author": "TheGreatSteppe",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tulpar-Talgo-in-Train-Station-Shymkent-Kazakhstan.jpg"
+    },
+    "title": {
+      "kk": "Шымкент вокзалындағы «Тұлпар-Тальго»",
+      "ru": "«Тулпар-Тальго» на вокзале Шымкента",
+      "en": "A Tulpar-Talgo train at Shymkent station"
+    },
+    "explanation": {
+      "kk": "«Тұлпар-Тальго» – испандық Talgo технологиясы бойынша Қазақстанда құрастырылған жылдам жолаушылар пойыздары. 2018 жылы Шымкент республикалық маңызы бар қала болды; сурет 2021 жылы түсірілген.",
+      "ru": "«Тулпар-Тальго» — скоростные пассажирские поезда, собранные в Казахстане по испанской технологии Talgo. В 2018 году Шымкент стал городом республиканского значения; снимок 2021 года.",
+      "en": "Tulpar-Talgo are fast passenger trains assembled in Kazakhstan using Spanish Talgo technology. In 2018 Shymkent became a city of republican significance; the photo dates from 2021."
+    },
+    "clue": {
+      "kk": "Заманауи пойыз, перрон, ашық аспан.",
+      "ru": "Современный поезд, перрон, ясное небо.",
+      "en": "A modern train, a platform, a clear sky."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Тулпар-Тальго",
+      "https://ru.wikipedia.org/wiki/Шымкент"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
   }
 ]
