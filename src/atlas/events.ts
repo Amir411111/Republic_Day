@@ -1,11 +1,13 @@
 import raw from '../../content/events.json';
-import type { Card, L10n } from '../game/types';
-
-export type Era = 'khanate' | 'empire' | 'soviet' | 'independence';
+import { YEAR_MAX, YEAR_MIN } from '../game/scoring';
+import type { Card, L10n, Lang } from '../game/types';
+import { formatYear, type PeriodId } from './periods';
 
 export interface HistEvent {
   id: string;
-  era: Era;
+  // era on the history map; explicit because eras overlap (1731–1847)
+  era: PeriodId;
+  // negative years are BCE: such events are on the map only, never in the game
   year: number;
   year_end?: number;
   lat: number;
@@ -23,28 +25,18 @@ export interface HistEvent {
 
 export const EVENTS = (raw as HistEvent[]).slice().sort((a, b) => a.year - b.year);
 
-export const ERAS: { id: Era; from: number; to: number; color: string }[] = [
-  { id: 'khanate', from: 1400, to: 1800, color: '#b5651d' },
-  { id: 'empire', from: 1801, to: 1916, color: '#6a4c93' },
-  { id: 'soviet', from: 1917, to: 1989, color: '#c0392b' },
-  { id: 'independence', from: 1990, to: 2025, color: '#1f7a8c' },
-];
-
-export function eraOfYear(year: number): Era {
-  return (ERAS.find((e) => year >= e.from && year <= e.to) ?? ERAS[ERAS.length - 1]).id;
+export function yearLabel(e: { year: number; year_end?: number }, lang: Lang = 'ru'): string {
+  return e.year_end ? `${formatYear(e.year, lang)}–${formatYear(e.year_end, lang)}` : formatYear(e.year, lang);
 }
 
-export function eraColor(era: Era): string {
-  return ERAS.find((e) => e.id === era)!.color;
-}
+const inGameRange = (e: HistEvent) => e.year >= YEAR_MIN && e.year <= YEAR_MAX;
 
-export function yearLabel(e: { year: number; year_end?: number }): string {
-  return e.year_end ? `${e.year}–${e.year_end}` : String(e.year);
-}
+// Events before 1900 become rounds of the "Khans and battles" quiz:
+// the round shows the title (and picture, if any) and asks for year + place.
+export const QUIZ_EVENTS = EVENTS.filter((e) => inGameRange(e) && e.year < 1900);
 
-// Events before 1900 become text rounds for the "Khans and battles" quiz.
-// No image: the round shows the event title and asks for year + place.
-export const QUIZ_EVENTS = EVENTS.filter((e) => e.year < 1900);
+// Events with an exact site, for the satellite-view mode: the 3D scene is the place itself
+export const SCENE_EVENTS = EVENTS.filter((e) => inGameRange(e) && !e.approx);
 
 const EMPTY: L10n = { kk: '', ru: '', en: '' };
 

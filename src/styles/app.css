@@ -1,97 +1,204 @@
-/* Placeholder styling: large type and 48px+ tap targets. Real design comes later. */
+/* scan only src/: content/*.json would otherwise generate classes from every word in the data */
+@import 'tailwindcss' source('..');
+
+/*
+  Dark-only by decision: the pitch runs on a projector, where a light UI washes out.
+  Design: night blue surfaces, one gold accent, Spectral for display, Golos Text for text.
+*/
 :root {
-  --bg: #fafaf7;
-  --ink: #1b1b1b;
-  --mute: #666;
-  --accent: #0b6e4f;
-  --line: #ddd;
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  font-size: 18px;
-  color: var(--ink);
-  background: var(--bg);
+  color-scheme: dark;
+
+  --background: #070d18;
+  --foreground: #e9eef7;
+  --card: #0d1526;
+  --popover: #111c31;
+
+  /* gold carries the brand */
+  --primary: #d8af4f;
+  --primary-foreground: #0b1220;
+
+  --secondary: #111c31;
+  --accent: #152235;
+  --muted-foreground: #93a3bd;
+
+  /* answer / success and guess colours on maps */
+  --good: #4fa88c;
+  --sky: #5fb3e0;
+  --destructive: #c45b7c;
+
+  --border: #1e2d49;
+  --ring: #d8af4f;
 }
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); }
-main, .screen { max-width: 760px; margin: 0 auto; padding: 0 16px 32px; }
-.screen { padding: 0; }
-main.screen { padding: 0 16px 32px; }
 
-.top { display: flex; justify-content: space-between; align-items: center; padding: 8px 16px; border-bottom: 1px solid var(--line); }
-.top .link { background: none; border: 0; font-weight: 700; font-size: 1.1rem; cursor: pointer; min-height: 48px; color: var(--ink); }
-.langs, .toggle { display: flex; gap: 6px; }
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-popover: var(--popover);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-good: var(--good);
+  --color-sky: var(--sky);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
 
-button { font: inherit; min-height: 48px; padding: 0 18px; border-radius: 10px; cursor: pointer; border: 2px solid var(--accent); }
-button:disabled { opacity: 0.5; cursor: default; }
-button.primary { background: var(--accent); color: #fff; }
-button.secondary, .langs button, .toggle button, .year-steps button { background: #fff; color: var(--accent); }
-.langs button.on, .toggle button.on { background: var(--accent); color: #fff; }
+  --font-sans: 'Golos Text', ui-sans-serif, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Spectral', Georgia, 'Times New Roman', serif;
+}
 
-h1 { font-size: 2rem; margin: 24px 0 4px; }
-h2 { margin: 16px 0 8px; }
-h3 { margin: 20px 0 6px; }
-.lead { color: var(--mute); margin: 0 0 16px; }
-.warn { background: #fff3cd; padding: 10px 12px; border-radius: 8px; }
-.hint { color: var(--mute); margin: 0 0 8px; font-size: 0.9rem; }
-.round-no { color: var(--mute); margin: 12px 0 8px; }
+@layer base {
+  * {
+    border-color: var(--border);
+  }
 
-.menu, .actions { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
-@media (min-width: 600px) { .actions { flex-direction: row; } .actions button { flex: 1; } }
+  html,
+  body,
+  #root {
+    height: 100%;
+    /* Each screen scrolls inside its own container; the document itself never does */
+    overflow: hidden;
+  }
 
-.photo { display: block; width: 100%; max-height: 60vh; object-fit: contain; background: #222; border-radius: 8px; }
-.map { height: 360px; width: 100%; border-radius: 8px; border: 1px solid var(--line); }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
 
-.year-picker { margin-top: 16px; }
-.year-picker label { display: block; font-size: 1.1rem; }
-.year-value { font-size: 1.6rem; margin-left: 8px; }
-.year-picker input[type='range'] { width: 100%; height: 40px; }
-.year-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
 
-.score-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 12px 0; }
-.big { font-size: 1.6rem; font-weight: 700; }
-.pts { font-weight: 700; color: var(--accent); }
-.explanation { font-size: 1.05rem; line-height: 1.5; }
-.sources { padding-left: 20px; word-break: break-all; font-size: 0.9rem; }
-.credit { font-size: 0.85rem; color: var(--mute); }
-.summary { padding-left: 20px; line-height: 1.8; }
+  a {
+    color: var(--primary);
+    text-underline-offset: 3px;
+  }
+}
 
-/* Text rounds (khans and battles) */
-.text-card { background: #f3ead8; border: 2px solid #b5651d; border-radius: 12px; padding: 20px 18px; text-align: center; }
-.text-card h2 { font-size: 1.6rem; margin: 0 0 10px; }
-.text-card p { margin: 6px 0; }
+/* MapLibre controls, repainted for the dark theme and kept clear of the overlay chrome */
+.maplibregl-ctrl-group {
+  background: color-mix(in srgb, var(--card) 72%, transparent) !important;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem !important;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.35) !important;
+}
 
-/* History map */
-.toggle.wrap { flex-wrap: wrap; margin: 8px 0; }
-.toggle.eras button { display: inline-flex; align-items: center; gap: 6px; }
-.dot { display: inline-block; width: 14px; height: 14px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px #999; }
-.atlas-map { height: 460px; margin-top: 12px; }
-.detail { border-left: 6px solid var(--accent); background: #fff; border-radius: 10px; padding: 12px 16px; margin: 16px 0; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
-.detail-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-.detail h2 { margin: 8px 0 4px; }
-.detail .place { color: var(--mute); margin: 0 0 10px; }
-.timeline { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
-.timeline button { width: 100%; display: flex; gap: 12px; align-items: baseline; text-align: left; background: #fff; color: var(--ink); border: 1px solid var(--line); border-left: 6px solid var(--accent); border-radius: 8px; padding: 10px 12px; min-height: 52px; }
-.timeline button.on { background: #eef6f2; border-color: var(--accent); }
-.t-year { font-weight: 700; min-width: 92px; color: var(--accent); }
-.t-title { flex: 1; }
+.maplibregl-ctrl-group button {
+  width: 40px !important;
+  height: 40px !important;
+}
 
-/* AI guide */
-.guide .chat { display: flex; flex-direction: column; gap: 8px; margin: 12px 0; }
-.bubble { padding: 10px 14px; border-radius: 14px; max-width: 92%; line-height: 1.45; }
-.bubble p { margin: 0 0 6px; }
-.bubble p:last-child { margin: 0; }
-.bubble.user { align-self: flex-end; background: var(--accent); color: #fff; }
-.bubble.assistant { align-self: flex-start; background: #fff; border: 1px solid var(--line); }
-.offline-note { font-size: 0.85rem; color: var(--mute); margin-bottom: 6px; }
-.examples { display: flex; flex-direction: column; gap: 8px; margin-bottom: 10px; }
-.ask { display: flex; gap: 8px; }
-.ask input { flex: 1; min-width: 0; min-height: 48px; font: inherit; padding: 0 12px; border: 2px solid var(--line); border-radius: 10px; }
-.ask-guide { margin: 12px 0; }
-.ask-guide summary { cursor: pointer; font-weight: 700; color: var(--accent); min-height: 48px; display: flex; align-items: center; }
+.maplibregl-ctrl-group button + button {
+  border-top: 1px solid var(--border) !important;
+}
 
-/* Semey quest */
-.stops { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
-.stop { background: #fff; border: 1px solid var(--line); border-left: 6px solid #b5651d; border-radius: 10px; padding: 12px 16px; }
-.stop.done { border-left-color: #1a8f3c; }
-.stop h2 { font-size: 1.25rem; margin: 4px 0 8px; }
-.link-btn { background: none; border: 0; color: var(--accent); text-decoration: underline; padding: 0; margin-top: 10px; }
-.done-banner { background: #e3f4e8; padding: 12px; border-radius: 10px; font-weight: 700; }
+.maplibregl-ctrl-group button .maplibregl-ctrl-icon {
+  filter: invert(92%) sepia(6%) saturate(600%) hue-rotate(185deg);
+}
+
+.maplibregl-ctrl-group button:hover {
+  background: var(--accent) !important;
+}
+
+.maplibregl-ctrl-attrib.maplibregl-compact {
+  background: color-mix(in srgb, var(--card) 72%, transparent) !important;
+  color: var(--muted-foreground);
+}
+
+.maplibregl-ctrl-attrib a {
+  color: var(--muted-foreground) !important;
+}
+
+.maplibregl-popup-content {
+  background: var(--popover) !important;
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem !important;
+  font-size: 0.8rem;
+  padding: 6px 10px !important;
+}
+
+.maplibregl-popup-tip {
+  display: none;
+}
+
+/* Year slider: the one control the game is played with, so it gets a real thumb */
+input[type='range'].year-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 2rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type='range'].year-slider::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    var(--primary) 0%,
+    var(--primary) var(--fill, 50%),
+    var(--accent) var(--fill, 50%),
+    var(--accent) 100%
+  );
+}
+
+input[type='range'].year-slider::-moz-range-track {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+input[type='range'].year-slider::-moz-range-progress {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--primary);
+}
+
+input[type='range'].year-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -11px;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--primary);
+  border: 3px solid var(--background);
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.5);
+  transition: transform 0.12s ease;
+}
+
+input[type='range'].year-slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--primary);
+  border: 3px solid var(--background);
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.5);
+}
+
+input[type='range'].year-slider:active::-webkit-slider-thumb {
+  transform: scale(1.12);
+}
+
+/* History map: controls sit below the floating top bar */
+.atlas-map .maplibregl-ctrl-top-left,
+.atlas-map .maplibregl-ctrl-top-right {
+  top: 4.25rem;
+}
+
+@media (max-width: 639px) {
+  /* on a phone the era title needs the width; pinch zoom replaces the buttons */
+  .atlas-map .maplibregl-ctrl-top-right {
+    display: none;
+  }
+}

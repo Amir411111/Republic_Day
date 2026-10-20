@@ -1,13 +1,21 @@
-import { useEffect, useMemo, useState } from 'react';
-import { CircleMarker, MapContainer, TileLayer, Tooltip, useMap } from 'react-leaflet';
+import { AnimatePresence, motion } from 'framer-motion';
+import { Camera, Landmark, List, MessageCircle, X } from 'lucide-react';
+import { useEffect, useMemo, useState, type ReactNode } from 'react';
+import { Marker } from 'react-map-gl/maplibre';
+import type { FeatureCollection } from 'geojson';
+import regionsRaw from '../../content/regions.json';
 import { ALL_CARDS, imageUrl, isVerified } from '../game/cards';
-import { YEAR_MAX, YEAR_MIN } from '../game/scoring';
 import type { Card, L10n } from '../game/types';
 import Guide from '../guide/Guide';
 import { useI18n } from '../i18n';
-import type { StringKey } from '../i18n/strings';
-import { KZ_BOUNDS } from '../map/GuessMap';
-import { ERAS, EVENTS, eraColor, eraOfYear, yearLabel, type Era, type HistEvent } from './events';
+import { Button } from '../ui/Button';
+import { cn } from '../ui/cn';
+import { TopBar } from '../ui/TopBar';
+import { EVENTS, yearLabel, type HistEvent } from './events';
+import { CountryOutline, EraOverlay, ModernWithin, MONUMENT_LAYER_ID, MonumentsLayer, REGION_LAYER_ID, RegionsLayer } from './layers';
+import MapCanvas, { type Camera as Cam } from './MapCanvas';
+import { PERIODS, formatRange, periodById, periodOfYear, type PeriodId } from './periods';
+import Timeline from './Timeline';
 
 interface Monument {
   id: number;
@@ -18,13 +26,23 @@ interface Monument {
   district: { kk: string; ru: string };
 }
 
-const MONUMENTS_SOURCE = 'https://data.egov.kz/datasets/view?index=respublikalyk_manyzy_bar_tarih';
+interface RegionInfo {
+  note: L10n;
+  eras: PeriodId[];
+  reform?: L10n;
+  sources: string[];
+}
 
-// One list for both layers: text events and photo cards share the map and the timeline
+const REGIONS = regionsRaw as Record<string, RegionInfo>;
+const MONUMENTS_SOURCE = 'https://data.egov.kz/datasets/view?index=respublikalyk_manyzy_bar_tarih';
+const KOSTANAY: Cam = { center: [63.6, 51.9], zoom: 5.4 };
+const DEMO_STEP_MS = 5200;
+
+// Text events and photo cards share the map and the era list
 interface Item {
   key: string;
   kind: 'event' | 'photo';
-  era: Era;
+  era: PeriodId;
   year: number;
   year_end?: number;
   lat: number;
@@ -34,7 +52,6 @@ interface Item {
   place: L10n;
   text: L10n;
   sources: string[];
-  card?: Card;
   image?: string;
   credit?: { author: string; license: string; source_url: string };
 }
@@ -59,7 +76,7 @@ const fromEvent = (e: HistEvent): Item => ({
 const fromCard = (c: Card): Item => ({
   key: `p:${c.id}`,
   kind: 'photo',
-  era: eraOfYear(c.year),
+  era: periodOfYear(c.year).id,
   year: c.year,
   lat: c.lat,
   lng: c.lng,
@@ -68,234 +85,418 @@ const fromCard = (c: Card): Item => ({
   place: c.place,
   text: c.explanation,
   sources: c.sources,
-  card: c,
   image: c.image,
   credit: c.image_credit,
 });
 
-const ERA_KEYS: Record<Era, StringKey> = {
-  khanate: 'eraKhanate',
-  empire: 'eraEmpire',
-  soviet: 'eraSoviet',
-  independence: 'eraIndependence',
-};
+const ALL_ITEMS: Item[] = [...EVENTS.map(fromEvent), ...ALL_CARDS.filter(isVerified).map(fromCard)].sort(
+  (a, b) => a.year - b.year || (a.kind === 'event' ? -1 : 1),
+);
 
-function FlyTo({ item }: { item: Item | null }) {
-  const map = useMap();
-  useEffect(() => {
-    if (item) map.flyTo([item.lat, item.lng], Math.max(map.getZoom(), 6), { duration: 0.8 });
-  }, [item, map]);
+type Selection =
+  | { type: 'item'; item: Item }
+  | { type: 'monument'; mon: Monument }
+  | { type: 'region'; id: string; name: L10n }
+  | { type: 'list' };
+
+function readCenter(value: unknown): [number, number] | null {
+  // MapLibre serialises non-primitive feature properties, so the centre arrives as a string
+  try {
+    const parsed = typeof value === 'string' ? JSON.parse(value) : value;
+    if (Array.isArray(parsed) && parsed.length === 2) return [Number(parsed[0]), Number(parsed[1])];
+  } catch {
+    /* the camera simply stays where it is */
+  }
   return null;
 }
 
-export default function Atlas() {
+function Panel({ children, onClose, color }: { children: ReactNode; onClose: () => void; color?: string }) {
+  const { t } = useI18n();
+  return (
+    <motion.aside
+      initial={{ opacity: 0, y: 24 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 24 }}
+      transition={{ duration: 0.22 }}
+      className="pointer-events-auto relative max-h-[46svh] w-full overflow-y-auto rounded-2xl border border-border/80 bg-card/90 p-4 shadow-2xl backdrop-blur-xl sm:ml-auto sm:max-w-md sm:p-5"
+      style={color ? { borderTopColor: color, borderTopWidth: 3 } : undefined}
+    >
+      <button
+        type="button"
+        onClick={onClose}
+        aria-label={t('close')}
+        className="absolute top-2 right-2 grid size-11 place-items-center rounded-lg text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+      >
+        <X aria-hidden="true" className="size-5" />
+      </button>
+      {children}
+    </motion.aside>
+  );
+}
+
+function SourceLinks({ urls }: { urls: string[] }) {
+  const { t } = useI18n();
+  if (!urls.length) return null;
+  return (
+    <p className="mt-3 text-xs text-muted-foreground">
+      {t('sources')}:{' '}
+      {urls.map((u, k) => (
+        <a key={u} href={u} target="_blank" rel="noreferrer" className="mr-2">
+          [{k + 1}]
+        </a>
+      ))}
+    </p>
+  );
+}
+
+export default function Atlas({ onBack }: { onBack: () => void }) {
   const { t, l, lang } = useI18n();
+  const [index, setIndex] = useState(PERIODS.findIndex((p) => p.id === 'khanate'));
+  const [demo, setDemo] = useState(false);
   const [showEvents, setShowEvents] = useState(true);
   const [showPhotos, setShowPhotos] = useState(true);
-  const [era, setEra] = useState<Era | 'all'>('all');
-  const [upTo, setUpTo] = useState(YEAR_MAX);
-  const [selected, setSelected] = useState<Item | null>(null);
   const [showMon, setShowMon] = useState(false);
   const [monuments, setMonuments] = useState<Monument[] | null>(null);
-  const [mon, setMon] = useState<Monument | null>(null);
+  const [sel, setSel] = useState<Selection | null>(null);
+  const [camera, setCamera] = useState<Cam | null>(null);
+  const [ask, setAsk] = useState(false);
 
-  // 600 points from the open data portal: loaded only when the layer is switched on
+  const period = PERIODS[index];
+  const regionsOn = period.id === 'modern';
+  // eras where Kazakhstan is inside a larger state and needs to be picked out
+  const withinEmpire = period.id === 'russian' || period.id === 'soviet';
+
+  const items = useMemo(
+    () => ALL_ITEMS.filter((i) => i.era === period.id && (i.kind === 'event' ? showEvents : showPhotos)),
+    [period, showEvents, showPhotos],
+  );
+
+  // ~600 points from the open data portal: loaded only when the layer is switched on
   useEffect(() => {
     if (showMon && !monuments)
       import('../../content/monuments-kostanay.json').then((m) => setMonuments(m.default as Monument[]));
   }, [showMon, monuments]);
-  const ml = (x: { kk: string; ru: string }) => (lang === 'kk' ? x.kk : x.ru) || x.ru || x.kk;
 
-  const all = useMemo(
+  const monumentGeo = useMemo<FeatureCollection | null>(
     () =>
-      [...EVENTS.map(fromEvent), ...ALL_CARDS.filter(isVerified).map(fromCard)].sort(
-        (a, b) => a.year - b.year || (a.kind === 'event' ? -1 : 1),
-      ),
-    [],
+      monuments && {
+        type: 'FeatureCollection',
+        features: monuments.map((m) => ({
+          type: 'Feature',
+          properties: { id: m.id },
+          geometry: { type: 'Point', coordinates: [m.lng, m.lat] },
+        })),
+      },
+    [monuments],
   );
 
-  const visible = all.filter(
-    (i) =>
-      (i.kind === 'event' ? showEvents : showPhotos) && (era === 'all' || i.era === era) && i.year <= upTo,
-  );
+  useEffect(() => {
+    if (!demo) return;
+    const timer = window.setInterval(() => setIndex((i) => (i + 1) % PERIODS.length), DEMO_STEP_MS);
+    return () => window.clearInterval(timer);
+  }, [demo]);
 
-  const select = (i: Item) => {
-    setSelected(i);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  // a new era drops the selection that belonged to the old one
+  useEffect(() => {
+    setSel((s) => (s?.type === 'list' || s?.type === 'monument' ? s : null));
+    setCamera(null);
+  }, [index]);
+
+  const selectEra = (next: number) => {
+    setDemo(false);
+    setIndex(next);
   };
 
-  return (
-    <div className="screen atlas">
-      <h1>{t('atlasTitle')}</h1>
-      <p className="lead">{t('atlasLead')}</p>
+  const selectItem = (item: Item) => {
+    setAsk(false);
+    setSel({ type: 'item', item });
+    setCamera({ center: [item.lng, item.lat], zoom: 7 });
+  };
 
-      <div className="toggle wrap">
-        <button type="button" className={showEvents ? 'on' : ''} onClick={() => setShowEvents(!showEvents)}>
-          {t('layerEvents')}
-        </button>
-        <button type="button" className={showPhotos ? 'on' : ''} onClick={() => setShowPhotos(!showPhotos)}>
-          {t('layerPhotos')}
-        </button>
-        <button type="button" className={showMon ? 'on' : ''} onClick={() => setShowMon(!showMon)}>
-          {t('layerMonuments')}
-        </button>
-      </div>
+  const ml = (x: { kk: string; ru: string }) => (lang === 'kk' ? x.kk : x.ru) || x.ru || x.kk;
+  const interactive = [...(regionsOn ? [REGION_LAYER_ID] : []), ...(showMon && monumentGeo ? [MONUMENT_LAYER_ID] : [])];
+  const selectedKey = sel?.type === 'item' ? sel.item.key : null;
 
-      <div className="toggle wrap eras">
-        <button type="button" className={era === 'all' ? 'on' : ''} onClick={() => setEra('all')}>
-          {t('eraAll')}
-        </button>
-        {ERAS.map((e) => (
-          <button key={e.id} type="button" className={era === e.id ? 'on' : ''} onClick={() => setEra(e.id)}>
-            <span className="dot" style={{ background: e.color }} /> {t(ERA_KEYS[e.id])}
-          </button>
-        ))}
-      </div>
+  const panel = () => {
+    if (!sel) return null;
+    const close = () => setSel(null);
 
-      <div className="year-picker">
-        <label htmlFor="upto">
-          {t('upToYear')} <strong className="year-value">{upTo}</strong>
-        </label>
-        <input
-          id="upto"
-          type="range"
-          min={YEAR_MIN + 60}
-          max={YEAR_MAX}
-          value={upTo}
-          onChange={(e) => setUpTo(Number(e.target.value))}
-        />
-      </div>
+    if (sel.type === 'list')
+      return (
+        <Panel key="list" onClose={close} color={period.color}>
+          <h3 className="pr-10 text-xs font-semibold tracking-[0.16em] uppercase" style={{ color: period.color }}>
+            {t('eraList')} · {l(period.short)} ({items.length})
+          </h3>
+          {items.length === 0 ? (
+            <p className="mt-3 text-sm text-muted-foreground">{t('eraEmpty')}</p>
+          ) : (
+            <ol className="mt-3 flex flex-col gap-1">
+              {items.map((i) => (
+                <li key={i.key}>
+                  <button
+                    type="button"
+                    onClick={() => selectItem(i)}
+                    className="flex min-h-11 w-full items-baseline gap-3 rounded-lg px-2 py-1.5 text-left text-sm hover:bg-accent"
+                  >
+                    <span className="w-20 shrink-0 font-semibold tabular-nums" style={{ color: period.color }}>
+                      {yearLabel(i, lang)}
+                    </span>
+                    <span className="min-w-0">
+                      {i.kind === 'photo' && <Camera aria-hidden="true" className="mr-1 inline size-3.5 align-[-2px] opacity-70" />}
+                      {l(i.title)}
+                    </span>
+                  </button>
+                </li>
+              ))}
+            </ol>
+          )}
+        </Panel>
+      );
 
-      <MapContainer bounds={KZ_BOUNDS} className="map atlas-map" scrollWheelZoom preferCanvas>
-        <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution="&copy; OpenStreetMap contributors"
-        />
-        <FlyTo item={selected} />
-        {showMon &&
-          monuments?.map((m) => (
-            <CircleMarker
-              key={`m${m.id}`}
-              center={[m.lat, m.lng]}
-              radius={4}
-              pathOptions={{ color: '#555', weight: 1, fillColor: '#999', fillOpacity: 0.8 }}
-              eventHandlers={{ click: () => setMon(m) }}
-            />
-          ))}
-        {visible.map((i) => {
-          const color = eraColor(i.era);
-          const isSel = selected?.key === i.key;
-          return (
-            <CircleMarker
-              key={i.key}
-              center={[i.lat, i.lng]}
-              radius={i.kind === 'event' ? (isSel ? 13 : 10) : isSel ? 10 : 7}
-              pathOptions={
-                i.kind === 'event'
-                  ? { color: '#fff', weight: 2, fillColor: color, fillOpacity: 0.95, dashArray: i.approx ? '4 3' : undefined }
-                  : { color, weight: 3, fillColor: '#fff', fillOpacity: 1 }
-              }
-              eventHandlers={{ click: () => select(i) }}
-            >
-              <Tooltip>
-                {yearLabel(i)} · {l(i.title)}
-              </Tooltip>
-            </CircleMarker>
-          );
-        })}
-      </MapContainer>
-      <p className="hint">{t('atlasLegend')}</p>
-      {showMon && (
-        <p className="hint">
-          {t('monumentsNote')}{' '}
-          <a href={MONUMENTS_SOURCE} target="_blank" rel="noreferrer">
-            data.egov.kz
-          </a>
-          {monuments ? ` · ${monuments.length}` : ' …'}
-        </p>
-      )}
-      {mon && (
-        <article className="detail" style={{ borderColor: '#777' }}>
-          <div className="detail-head">
-            <span className="big">{ml(mon.type)}</span>
-            <button type="button" className="secondary" onClick={() => setMon(null)}>
-              {t('close')}
-            </button>
-          </div>
-          <h2>{ml(mon.name)}</h2>
-          <p className="place">{ml(mon.district)}</p>
-          <p className="credit">
+    if (sel.type === 'monument')
+      return (
+        <Panel key={`m${sel.mon.id}`} onClose={close} color="#cfd8e6">
+          <p className="pr-10 text-xs font-semibold tracking-[0.16em] text-muted-foreground uppercase">{ml(sel.mon.type)}</p>
+          <h3 className="mt-1 text-lg leading-tight font-bold text-pretty">{ml(sel.mon.name)}</h3>
+          <p className="mt-1 text-sm text-muted-foreground">{ml(sel.mon.district)}</p>
+          <p className="mt-3 text-xs text-muted-foreground">
             {t('monumentsSource')}:{' '}
             <a href={MONUMENTS_SOURCE} target="_blank" rel="noreferrer">
               data.egov.kz
             </a>
           </p>
-        </article>
-      )}
+        </Panel>
+      );
 
-      {selected && (
-        <article className="detail" style={{ borderColor: eraColor(selected.era) }}>
-          <div className="detail-head">
-            <span className="big">{yearLabel(selected)}</span>
-            <button type="button" className="secondary" onClick={() => setSelected(null)}>
-              {t('close')}
-            </button>
-          </div>
-          <h2>{l(selected.title)}</h2>
-          <p className="place">
-            {l(selected.place)}
-            {selected.approx && <em> · {t('approxPlace')}</em>}
+    if (sel.type === 'region') {
+      const info = REGIONS[sel.id];
+      return (
+        <Panel key={`r${sel.id}`} onClose={close} color="#d8af4f">
+          <h3 className="pr-10 text-lg leading-tight font-bold">{l(sel.name)}</h3>
+          {info && (
+            <>
+              <p className="mt-2 text-sm leading-relaxed text-pretty text-muted-foreground">{l(info.note)}</p>
+              {info.eras.length > 0 && (
+                <ul className="mt-3 flex flex-wrap gap-1.5">
+                  {info.eras.map((id) => {
+                    const era = periodById(id);
+                    return (
+                      <li key={id}>
+                        <button
+                          type="button"
+                          onClick={() => selectEra(PERIODS.indexOf(era))}
+                          className="min-h-9 rounded-md px-2.5 text-xs font-medium"
+                          style={{ color: era.color, backgroundColor: `color-mix(in srgb, ${era.color} 14%, transparent)` }}
+                        >
+                          {l(era.short)}
+                        </button>
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
+              {info.reform && (
+                <p className="mt-3 border-t border-border/70 pt-3 text-xs leading-relaxed text-muted-foreground/90">
+                  <span className="font-semibold tracking-wide text-primary/80 uppercase">{t('reformNote')}.</span>{' '}
+                  {l(info.reform)}
+                </p>
+              )}
+              <SourceLinks urls={info.sources} />
+            </>
+          )}
+        </Panel>
+      );
+    }
+
+    const it = sel.item;
+    const color = periodById(it.era).color;
+    return (
+      <Panel key={it.key} onClose={close} color={color}>
+        <p className="pr-10 text-xs font-semibold tracking-[0.16em] uppercase tabular-nums" style={{ color }}>
+          {yearLabel(it, lang)}
+          {it.kind === 'photo' && <Camera aria-hidden="true" className="ml-2 inline size-3.5 align-[-2px]" />}
+        </p>
+        <h3 className="mt-1 font-display text-xl leading-tight font-bold text-pretty">{l(it.title)}</h3>
+        <p className="mt-1 text-sm text-muted-foreground">
+          {l(it.place)}
+          {it.approx && <em> · {t('approxPlace')}</em>}
+        </p>
+        {it.image && (
+          <img
+            src={imageUrl({ image: it.image } as Card)}
+            alt={l(it.title)}
+            className="mt-3 max-h-56 w-full rounded-xl bg-black object-contain"
+            loading="lazy"
+          />
+        )}
+        <p className="mt-3 text-sm leading-relaxed text-pretty text-foreground/90">{l(it.text)}</p>
+        <SourceLinks urls={it.sources} />
+        {it.image && it.credit && (
+          <p className="mt-1 text-xs text-muted-foreground">
+            {t('imageBy')}: {it.credit.author} ·{' '}
+            <a href={it.credit.source_url} target="_blank" rel="noreferrer">
+              {it.credit.license}
+            </a>
           </p>
-          {selected.image && (
-            <img className="photo" src={imageUrl({ image: selected.image } as Card)} alt={l(selected.title)} />
+        )}
+        <div className="mt-3 border-t border-border/70 pt-3">
+          {ask ? (
+            <Guide key={it.key} focus={it.key} compact />
+          ) : (
+            <Button variant="chip" onClick={() => setAsk(true)}>
+              <MessageCircle aria-hidden="true" className="size-4" />
+              {t('guideAskAbout')}
+            </Button>
           )}
-          <p className="explanation">{l(selected.text)}</p>
-          <h3>{t('sources')}</h3>
-          <ul className="sources">
-            {selected.sources.map((s) => (
-              <li key={s}>
-                <a href={s} target="_blank" rel="noreferrer">
-                  {s}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <details className="ask-guide">
-            <summary>💬 {t('guideAskAbout')}</summary>
-            <Guide key={selected.key} focus={selected.key} compact />
-          </details>
-          {selected.image && selected.credit && (
-            <p className="credit">
-              {t('imageBy')}: {selected.credit.author} ·{' '}
-              <a href={selected.credit.source_url} target="_blank" rel="noreferrer">
-                {selected.credit.license}
-              </a>
-            </p>
-          )}
-        </article>
-      )}
+        </div>
+      </Panel>
+    );
+  };
 
-      <h3>
-        {t('timeline')} ({visible.length})
-      </h3>
-      <ol className="timeline">
-        {visible.map((i) => (
-          <li key={i.key}>
-            <button
-              type="button"
-              className={selected?.key === i.key ? 'on' : ''}
-              style={{ borderLeftColor: eraColor(i.era) }}
-              onClick={() => select(i)}
+  return (
+    <div className="relative h-full w-full overflow-hidden bg-background">
+      <MapCanvas
+        period={period}
+        flyTo={camera}
+        interactiveLayerIds={interactive.length ? interactive : undefined}
+        onFeatureClick={(layer, props) => {
+          if (layer === MONUMENT_LAYER_ID && props) {
+            const mon = monuments?.find((m) => m.id === Number(props.id));
+            if (mon) setSel({ type: 'monument', mon });
+          } else if (layer === REGION_LAYER_ID && props) {
+            const id = String(props.id);
+            setSel({
+              type: 'region',
+              id,
+              name: { kk: String(props.name_kk ?? ''), ru: String(props.name_ru ?? ''), en: String(props.name_en ?? '') },
+            });
+            const center = readCenter(props.center);
+            if (center) setCamera({ center, zoom: 5.4 });
+          }
+        }}
+      >
+        <EraOverlay period={period} />
+        {withinEmpire && <ModernWithin />}
+        {regionsOn && <RegionsLayer selectedId={sel?.type === 'region' ? sel.id : null} />}
+        <CountryOutline />
+        {showMon && monumentGeo && <MonumentsLayer data={monumentGeo} />}
+        {items.map((i) => {
+          const active = i.key === selectedKey;
+          return (
+            <Marker
+              key={i.key}
+              longitude={i.lng}
+              latitude={i.lat}
+              anchor="center"
+              onClick={(e) => {
+                e.originalEvent.stopPropagation();
+                selectItem(i);
+              }}
+              style={{ zIndex: active ? 2 : i.kind === 'event' ? 1 : 0 }}
             >
-              <span className="t-year">{yearLabel(i)}</span>
-              <span className="t-title">
-                {i.kind === 'photo' && '📷 '}
-                {l(i.title)}
+              <button type="button" aria-label={`${yearLabel(i, lang)} ${l(i.title)}`} title={`${yearLabel(i, lang)} · ${l(i.title)}`} className="group grid size-11 place-items-center">
+                {i.kind === 'event' ? (
+                  // a lozenge, as in Kazakh ornament; a dashed ring around it marks an approximate site
+                  <span className="relative grid place-items-center">
+                    {i.approx && (
+                      <span
+                        className="absolute size-8 rounded-full border border-dashed opacity-80"
+                        style={{ borderColor: period.color }}
+                      />
+                    )}
+                    <span
+                      className={cn(
+                        'block rotate-45 rounded-[3px] border-2 transition-all duration-200',
+                        active ? 'size-5 shadow-[0_0_0_6px_rgba(216,175,79,0.2)]' : 'size-3.5 group-hover:size-4.5',
+                      )}
+                      style={{ borderColor: period.color, backgroundColor: active ? period.color : 'rgba(7,13,24,0.75)' }}
+                    />
+                  </span>
+                ) : (
+                  <span
+                    className={cn('block rounded-full border-2 transition-all duration-200', active ? 'size-4' : 'size-2.5 group-hover:size-3.5')}
+                    style={{ borderColor: period.color, backgroundColor: '#e9eef7' }}
+                  />
+                )}
+              </button>
+            </Marker>
+          );
+        })}
+      </MapCanvas>
+
+      <TopBar onBack={onBack} className="absolute inset-x-0 top-0 z-20" />
+
+      {/* era title */}
+      <div className="pointer-events-none absolute inset-x-0 top-[4.5rem] z-10 px-4 sm:top-20">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={period.id}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.4 }}
+            className="mx-auto max-w-2xl text-center"
+          >
+            <p className="text-xs font-semibold tracking-[0.18em] uppercase" style={{ color: period.color }}>
+              {formatRange(period, lang)}
+            </p>
+            <h1 className="mt-1 font-display text-2xl font-bold tracking-tight text-balance drop-shadow-[0_2px_12px_rgba(7,13,24,0.9)] sm:text-4xl">
+              {l(period.name)}
+            </h1>
+            <p className="mt-1.5 flex flex-wrap items-center justify-center gap-x-2 gap-y-0.5 text-xs text-muted-foreground drop-shadow-[0_2px_8px_rgba(7,13,24,0.95)]">
+              <span className="font-medium" style={{ color: period.color }}>
+                {l(period.territory)}
               </span>
-            </button>
-          </li>
-        ))}
-      </ol>
+              {period.territory_approx && <span>· {t('approxOutline')}</span>}
+              <span>
+                · {regionsOn ? t('regionsHint') : withinEmpire ? t('withinHint') : t('outlineLegend')}
+              </span>
+            </p>
+            {showMon && (
+              <p className="mt-1 text-xs text-muted-foreground drop-shadow-[0_2px_8px_rgba(7,13,24,0.95)]">
+                {t('monumentsNote')} data.egov.kz {monuments ? `· ${monuments.length}` : '…'}
+              </p>
+            )}
+          </motion.div>
+        </AnimatePresence>
+      </div>
+
+      {/* bottom stack: panel, layer controls, timeline */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-5 sm:pb-5">
+        <div className="mx-auto flex max-w-6xl flex-col gap-2">
+          <AnimatePresence mode="wait">{panel()}</AnimatePresence>
+          <div className="pointer-events-auto flex gap-1.5 overflow-x-auto [scrollbar-width:none]">
+            <Button variant="chip" on={showEvents} onClick={() => setShowEvents(!showEvents)} className="shrink-0 px-3">
+              ◆ {t('layerEvents')}
+            </Button>
+            <Button variant="chip" on={showPhotos} onClick={() => setShowPhotos(!showPhotos)} className="shrink-0 px-3">
+              <Camera aria-hidden="true" className="size-4" /> {t('layerPhotos')}
+            </Button>
+            <Button
+              variant="chip"
+              on={showMon}
+              onClick={() => {
+                if (!showMon) setCamera(KOSTANAY);
+                setShowMon(!showMon);
+              }}
+              className="shrink-0 px-3"
+            >
+              <Landmark aria-hidden="true" className="size-4" /> {t('layerMonuments')}
+            </Button>
+            <Button
+              variant="chip"
+              on={sel?.type === 'list'}
+              onClick={() => setSel(sel?.type === 'list' ? null : { type: 'list' })}
+              className="ml-auto shrink-0 px-3"
+            >
+              <List aria-hidden="true" className="size-4" /> {items.length}
+            </Button>
+          </div>
+          <div className="pointer-events-auto">
+            <Timeline index={index} onChange={selectEra} demo={demo} onToggleDemo={() => setDemo((d) => !d)} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

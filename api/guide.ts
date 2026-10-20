@@ -49,12 +49,15 @@ function loadEntries(): Entry[] {
 let ENTRIES: Entry[] | null = null;
 const CONTEXT = new Map<Lang, string>();
 
+// Map-only events can be BCE: "700 BCE" reads unambiguously, "-700" does not
+const yr = (y: number) => (y < 0 ? `${-y} BCE` : String(y));
+
 // Built once per language and kept byte-identical so the system prompt stays cached
 function knowledge(lang: Lang): string {
   if (!CONTEXT.has(lang)) {
     ENTRIES ??= loadEntries();
     const lines = ENTRIES.map((e) => {
-      const years = e.year_end ? `${e.year}-${e.year_end}` : String(e.year);
+      const years = e.year_end ? `${yr(e.year)}-${yr(e.year_end)}` : yr(e.year);
       return `[${e.key}] ${years} | ${e.place[lang] || e.place.ru} | ${e.title[lang] || e.title.ru} | ${e.text[lang] || e.text.ru}`;
     });
     CONTEXT.set(lang, lines.join('\n'));

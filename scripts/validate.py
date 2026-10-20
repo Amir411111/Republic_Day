@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check content/cards.json. Prints every problem, exits 1 if any.
+"""Check content/cards.json and content/events.json. Prints every problem, exits 1 if any.
 
 Usage: python3 scripts/validate.py [--draft]
   --draft  treat missing verified_by as a warning, not an error
@@ -10,6 +10,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CARDS = ROOT / "content" / "cards.json"
+EVENTS = ROOT / "content" / "events.json"
+PERIODS = ROOT / "content" / "periods.json"
 LANGS = ("kk", "ru", "en")
 REQUIRED_LANGS = ("kk", "ru")
 L10N_FIELDS = ("place", "title", "explanation", "clue")
@@ -79,6 +81,70 @@ def check_card(c, seen, draft):
     return cid, errors, warnings
 
 
+def check_event(e, seen, eras):
+    errors = []
+    eid = e.get("id", "<no id>")
+    if not e.get("id"):
+        errors.append("missing id")
+    elif eid in seen:
+        errors.append("duplicate id")
+    seen.add(eid)
+
+    if e.get("era") not in eras:
+        errors.append(f"era {e.get('era')!r} not in periods.json")
+    # map-only events may be BCE; the game only uses 1400-2025
+    year = e.get("year")
+    if not isinstance(year, int) or not -1000 <= year <= YEAR_RANGE[1]:
+        errors.append(f"year {year!r} not an integer in (-1000, {YEAR_RANGE[1]})")
+    if "year_end" in e and (not isinstance(e["year_end"], int) or e["year_end"] < (year or 0)):
+        errors.append("year_end must be an integer after year")
+    if not isinstance(e.get("approx"), bool):
+        errors.append("approx must be true or false")
+
+    lat, lng = e.get("lat"), e.get("lng")
+    if not isinstance(lat, (int, float)) or not LAT_RANGE[0] <= lat <= LAT_RANGE[1]:
+        errors.append(f"lat {lat!r} outside Kazakhstan box {LAT_RANGE}")
+    if not isinstance(lng, (int, float)) or not LNG_RANGE[0] <= lng <= LNG_RANGE[1]:
+        errors.append(f"lng {lng!r} outside Kazakhstan box {LNG_RANGE}")
+
+    for field in ("place", "title", "text"):
+        val = e.get(field)
+        if not isinstance(val, dict):
+            errors.append(f"{field} missing")
+            continue
+        for lang in LANGS:
+            text = (val.get(lang) or "").strip()
+            if not text or "TODO" in text:
+                errors.append(f"{field}.{lang} empty or TODO")
+
+    sources = e.get("sources")
+    if not isinstance(sources, list) or not [s for s in sources if s.strip() and "TODO" not in s]:
+        errors.append("sources empty")
+
+    image = e.get("image")
+    if image is not None:
+        if not image.startswith("http") and not (ROOT / "content" / image).is_file():
+            errors.append(f"image file not found: content/{image}")
+        credit = e.get("image_credit") or {}
+        for key in ("author", "license", "source_url"):
+            if not (credit.get(key) or "").strip():
+                errors.append(f"image_credit.{key} empty")
+    return eid, errors
+
+
+def check_events():
+    eras = {p["id"] for p in json.loads(PERIODS.read_text(encoding="utf-8"))}
+    events = json.loads(EVENTS.read_text(encoding="utf-8"))
+    seen, n_err = set(), 0
+    for e in events:
+        eid, errors = check_event(e, seen, eras)
+        n_err += bool(errors)
+        for err in errors:
+            print(f"ERROR event {eid}: {err}")
+    print(f"{len(events)} events: {len(events) - n_err} ok, {n_err} with errors")
+    return n_err
+
+
 def main():
     draft = "--draft" in sys.argv
     try:
@@ -100,6 +166,7 @@ def main():
             print(f"warn  {cid}: {w}")
 
     print(f"\n{len(cards)} cards: {n_ok} ok, {n_err} with errors")
+    n_err += check_events()
     return 1 if n_err else 0
 
 

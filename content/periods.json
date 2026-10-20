@@ -1,0 +1,250 @@
+[
+  {
+    "id": "saka",
+    "name": {
+      "kk": "Сақ дәуірі",
+      "ru": "Сакская эпоха",
+      "en": "Saka era"
+    },
+    "short": {
+      "kk": "Сақтар",
+      "ru": "Саки",
+      "en": "Saka"
+    },
+    "territory": {
+      "kk": "Сақ тайпаларының аймағы",
+      "ru": "Ареал сакских племён",
+      "en": "Saka tribal range"
+    },
+    "territory_approx": true,
+    "start": -800,
+    "end": 300,
+    "color": "#9ec7d8",
+    "camera": {
+      "center": [
+        71.7,
+        45.5
+      ],
+      "zoom": 4.1,
+      "pitch": 55,
+      "bearing": -18
+    }
+  },
+  {
+    "id": "turk",
+    "name": {
+      "kk": "Түрік қағанаттары",
+      "ru": "Тюркские каганаты",
+      "en": "Türk Khaganates"
+    },
+    "short": {
+      "kk": "Түріктер",
+      "ru": "Тюрки",
+      "en": "Türks"
+    },
+    "territory": {
+      "kk": "Батыс түрік қағанаты",
+      "ru": "Западно-тюркский каганат",
+      "en": "Western Türk Khaganate"
+    },
+    "territory_approx": true,
+    "start": 552,
+    "end": 744,
+    "color": "#5fb3e0",
+    "camera": {
+      "center": [
+        76.0,
+        45.2
+      ],
+      "zoom": 4.5,
+      "pitch": 52,
+      "bearing": -10
+    }
+  },
+  {
+    "id": "karakhanid",
+    "name": {
+      "kk": "Қарахандар мен қыпшақтар",
+      "ru": "Караханиды и кипчаки",
+      "en": "Karakhanids and Kipchaks"
+    },
+    "short": {
+      "kk": "Қарахандар",
+      "ru": "Караханиды",
+      "en": "Karakhanids"
+    },
+    "territory": {
+      "kk": "Кимек-қыпшақ қағанаты",
+      "ru": "Кимако-кипчакский каганат",
+      "en": "Kimek–Kipchak Khaganate"
+    },
+    "territory_approx": false,
+    "start": 744,
+    "end": 1219,
+    "color": "#4fa88c",
+    "camera": {
+      "center": [
+        70.3,
+        46.5
+      ],
+      "zoom": 4.4,
+      "pitch": 50,
+      "bearing": -4
+    }
+  },
+  {
+    "id": "mongol",
+    "name": {
+      "kk": "Моңғолдар мен Алтын Орда",
+      "ru": "Монголы и Золотая Орда",
+      "en": "Mongols and the Golden Horde"
+    },
+    "short": {
+      "kk": "Алтын Орда",
+      "ru": "Золотая Орда",
+      "en": "Golden Horde"
+    },
+    "territory": {
+      "kk": "Ақ Орда",
+      "ru": "Ак Орда (Белая Орда)",
+      "en": "The White Horde"
+    },
+    "territory_approx": false,
+    "start": 1219,
+    "end": 1465,
+    "color": "#8a9b4f",
+    "camera": {
+      "center": [
+        60.0,
+        46.5
+      ],
+      "zoom": 4.5,
+      "pitch": 46,
+      "bearing": 6
+    }
+  },
+  {
+    "id": "khanate",
+    "name": {
+      "kk": "Қазақ хандығы",
+      "ru": "Казахское ханство",
+      "en": "Kazakh Khanate"
+    },
+    "short": {
+      "kk": "Хандық",
+      "ru": "Ханство",
+      "en": "Khanate"
+    },
+    "territory": {
+      "kk": "Қазақ хандығы",
+      "ru": "Казахское ханство",
+      "en": "Kazakh Khanate"
+    },
+    "territory_approx": false,
+    "start": 1465,
+    "end": 1847,
+    "color": "#d8af4f",
+    "camera": {
+      "center": [
+        63.0,
+        45.3
+      ],
+      "zoom": 4.2,
+      "pitch": 48,
+      "bearing": 0
+    }
+  },
+  {
+    "id": "russian",
+    "name": {
+      "kk": "Ресей империясы",
+      "ru": "Российская империя",
+      "en": "Russian Empire"
+    },
+    "short": {
+      "kk": "Ресей",
+      "ru": "Империя",
+      "en": "Empire"
+    },
+    "territory": {
+      "kk": "Ресей империясы",
+      "ru": "Российская империя",
+      "en": "Russian Empire"
+    },
+    "territory_approx": false,
+    "start": 1731,
+    "end": 1917,
+    "color": "#c4793f",
+    "camera": {
+      "center": [
+        69.0,
+        47.0
+      ],
+      "zoom": 4.2,
+      "pitch": 44,
+      "bearing": 4
+    }
+  },
+  {
+    "id": "soviet",
+    "name": {
+      "kk": "Кеңес кезеңі",
+      "ru": "Советский период",
+      "en": "Soviet period"
+    },
+    "short": {
+      "kk": "КСРО",
+      "ru": "СССР",
+      "en": "USSR"
+    },
+    "territory": {
+      "kk": "Кеңес Одағы",
+      "ru": "Советский Союз",
+      "en": "The Soviet Union"
+    },
+    "territory_approx": false,
+    "start": 1917,
+    "end": 1991,
+    "color": "#b05070",
+    "camera": {
+      "center": [
+        70.0,
+        48.0
+      ],
+      "zoom": 4.0,
+      "pitch": 42,
+      "bearing": -6
+    }
+  },
+  {
+    "id": "modern",
+    "name": {
+      "kk": "Қазіргі Қазақстан",
+      "ru": "Современный Казахстан",
+      "en": "Modern Kazakhstan"
+    },
+    "short": {
+      "kk": "Қазақстан",
+      "ru": "Казахстан",
+      "en": "Kazakhstan"
+    },
+    "territory": {
+      "kk": "Қазақстан",
+      "ru": "Казахстан",
+      "en": "Kazakhstan"
+    },
+    "territory_approx": false,
+    "start": 1991,
+    "end": 2025,
+    "color": "#7d6fc9",
+    "camera": {
+      "center": [
+        69.0,
+        48.0
+      ],
+      "zoom": 4.0,
+      "pitch": 58,
+      "bearing": 0
+    }
+  }
+]

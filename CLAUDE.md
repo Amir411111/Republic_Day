@@ -3,9 +3,13 @@
 Веб-игра для Republic Day Hackathon (трек 1 «Тарих тірілді»): игрок видит историческое фото, угадывает год (ползунок 1400–2025) и место на карте Казахстана, получает разбор события. 5 раундов, до 100 очков за год и до 100 за место, максимум 1000.
 
 ## Стек
-- Vite + React 18 + TypeScript, карта на react-leaflet 4 (тайлы OpenStreetMap)
-- Карточки в `content/cards.json`, картинки в `content/images/`
-- События для карты истории и режима «Ханы и битвы» в `content/events.json` (без фото; `approx: true` — место примерное), код в `src/atlas/` (Vite отдаёт `content/` как статику, путь в карточке: `images/<file>`)
+- Vite 6 + React 18 + TypeScript, Tailwind CSS 4, framer-motion, иконки lucide-react
+- Карты: MapLibre GL через react-map-gl (спутник Esri + рельеф AWS Terrain, без ключей; квест — тайлы OpenStreetMap). Воркер MapLibre подключается в `src/map/styles.ts`
+- Дизайн: тёмная тема, золотой акцент, шрифты Spectral (заголовки) и Golos Text. Цвета — токены в `src/styles/app.css`, компоненты в `src/ui/`
+- Карточки в `content/cards.json`, картинки в `content/images/` (Vite отдаёт `content/` как статику, путь в карточке: `images/<file>`)
+- События карты истории и режимов «Ханы и битвы» / «Вид со спутника» в `content/events.json` (`era` — id эпохи из `content/periods.json`, `approx: true` — место примерное, год до н.э. — отрицательный, такие события только на карте)
+- Эпохи и их контуры: `content/periods.json`, `content/geo/eras/*.geojson`; граница и области: `content/geo/`; заметки по областям: `content/regions.json`
+- Памятники Костанайской области с data.egov.kz: `content/monuments-kostanay.json` (`python3 scripts/import_monuments.py`)
 - Прогресс в localStorage, без базы данных
 - Деплой: Vercel, ИИ-гид в `api/guide.ts` (Claude API, модель `claude-opus-5-5`), ключ `ANTHROPIC_API_KEY` только в переменных окружения Vercel. Без ключа гид отвечает поиском по базе игры прямо в браузере (`src/guide/`)
 - Квест по Семею: маршрут в `content/quest-semey.json`, экран в `src/quest/`
@@ -13,14 +17,14 @@
 ## Команды
 - `npm run dev`: локальный сервер (в dev видны непроверенные карточки; на проде добавьте `?dev=1`)
 - `npm run build`: проверка типов + сборка. Запускать после каждого изменения.
-- `python3 scripts/validate.py`: проверка карточек (`--draft` пропускает пустой `verified_by`)
+- `python3 scripts/validate.py`: проверка карточек и событий (`--draft` пропускает пустой `verified_by`)
 - `python3 scripts/fetch_commons.py "File:Name.jpg"`: скачать фото с Wikimedia Commons и получить блок `image_credit`
 
 ## Папки и владельцы
 | Папка | Владелец |
 |---|---|
-| `src/game/`, `src/i18n/`, `src/App.tsx`, `src/main.tsx` | Участник 1 |
-| `src/map/`, `src/progress/`, `src/styles/` | Участник 2 |
+| `src/game/`, `src/i18n/`, `src/landing/`, `src/App.tsx`, `src/main.tsx` | Участник 1 |
+| `src/map/`, `src/atlas/`, `src/ui/`, `src/progress/`, `src/styles/` | Участник 2 |
 | `content/`, `scripts/` | Участник 3 |
 | `api/`, `pitch/`, настройки деплоя | Участник 4 |
 
@@ -32,7 +36,7 @@
 - Карточка без `sources`, `image_credit` или `verified_by` в прод-игру не попадает.
 - Никогда не придумывай даты, факты и источники. Не уверен — оставь TODO.
 - Только настоящие фото/картины/документы со свободной лицензией, без ИИ-картинок, без подписи с годом на изображении.
-- Интерфейс крупный (кнопки от 48px), сначала мобильная версия.
+- Интерфейс крупный (кнопки от 48px), сначала мобильная версия. Стили — классы Tailwind и токены темы, без новых цветов «на глаз».
 
 ## Формат карточки
 ```json

@@ -1,0 +1,202 @@
+{
+  "turkestan": {
+    "note": {
+      "kk": "Отырар, Сауран, Ясауи кесенесі және Ордабасы — хандықтың саяси өзегі осында болған.",
+      "ru": "Отрар, Сауран, мавзолей Ясави и Ордабасы — политическое ядро ханства было здесь.",
+      "en": "Otrar, Sauran, the Yasawi mausoleum and Ordabasy — the Khanate's political core sat here."
+    },
+    "eras": [
+      "karakhanid",
+      "mongol",
+      "khanate"
+    ],
+    "sources": [],
+    "reform": {
+      "kk": "2018 жылы Шымкент бөлініп, республикалық маңызы бар қала болды.",
+      "ru": "В 2018 году Шымкент выделен в город республиканского значения.",
+      "en": "In 2018 Shymkent was split off as a city of republican significance."
+    }
+  },
+  "almaty": {
+    "note": {
+      "kk": "Есік қорғаны мен Алтын адам, Жетісу — Батыс түрік қағанатының жүрегі, Аңырақай шайқасы.",
+      "ru": "Иссыкский курган и Золотой человек, Жетысу — сердце Западно-тюркского каганата, Аныракайская битва.",
+      "en": "The Issyk mound and the Golden Man, Jetysu as the heart of the Western Türk Khaganate, the battle of Anyraqai."
+    },
+    "eras": [
+      "saka",
+      "turk",
+      "khanate"
+    ],
+    "sources": [],
+    "reform": {
+      "kk": "2022 жылы шығыс бөлігінен Жетісу облысы құрылды.",
+      "ru": "В 2022 году из восточной части образована Жетысуская область.",
+      "en": "In 2022 the eastern part became Jetisu Region."
+    }
+  },
+  "astana": {
+    "note": {
+      "kk": "Ақмола — Целиноград — Астана. 1997 жылдан бері елорда.",
+      "ru": "Акмолинск — Целиноград — Астана. Столица с 1997 года.",
+      "en": "Akmolinsk, then Tselinograd, then Astana. The capital since 1997."
+    },
+    "eras": [
+      "soviet",
+      "modern"
+    ],
+    "sources": []
+  },
+  "akmola": {
+    "note": {
+      "kk": "1954 жылғы тың игеру және АЛЖИР лагері — кеңес кезеңінің екі беті.",
+      "ru": "Освоение целины 1954 года и лагерь АЛЖИР — две стороны советского периода.",
+      "en": "The 1954 Virgin Lands campaign and the ALZHIR camp — two faces of the Soviet period."
+    },
+    "eras": [
+      "soviet"
+    ],
+    "sources": []
+  },
+  "karaganda": {
+    "note": {
+      "kk": "Ұлытау — Жошы ханның кесенесі және үш жүздің жиналған жері; кейін Қарлаг.",
+      "ru": "Улытау — мавзолей Жошы-хана и место схода трёх жузов; позже Карлаг.",
+      "en": "Ulytau holds Jochi Khan's mausoleum and the meeting place of the three jüz; later, Karlag."
+    },
+    "eras": [
+      "mongol",
+      "soviet"
+    ],
+    "sources": [],
+    "reform": {
+      "kk": "2022 жылы Ұлытау облысы бөлек облыс болды.",
+      "ru": "В 2022 году Улытау выделен в отдельную область.",
+      "en": "In 2022 Ulytau became a separate region."
+    }
+  },
+  "vostochno": {
+    "note": {
+      "kk": "Берел қорғандары, Алтай — Түрік қағанатының бесігі; Семей полигоны мен Алаш-Орда.",
+      "ru": "Берельские курганы, Алтай — колыбель Тюркского каганата; Семипалатинский полигон и Алаш-Орда.",
+      "en": "The Berel mounds, the Altai as the Türk Khaganate's cradle, the Semipalatinsk test site and Alash-Orda."
+    },
+    "eras": [
+      "saka",
+      "turk",
+      "soviet"
+    ],
+    "sources": [],
+    "reform": {
+      "kk": "2022 жылы батыс бөлігінен Абай облысы құрылды.",
+      "ru": "В 2022 году из западной части образована область Абай.",
+      "en": "In 2022 the western part became Abai Region."
+    }
+  },
+  "pavlodar": {
+    "note": {
+      "kk": "Ертіс бойы — Кимек қағанатының негізгі аумағы.",
+      "ru": "Прииртышье — основная территория Кимакского каганата.",
+      "en": "The Irtysh basin was the core of the Kimek Khaganate."
+    },
+    "eras": [
+      "karakhanid"
+    ],
+    "sources": []
+  },
+  "kyzylorda": {
+    "note": {
+      "kk": "Жанкент — оғыздардың астанасы, Сығанақ — Ақ Орданың астанасы, кейін Байқоңыр.",
+      "ru": "Янгикент — столица огузов, Сыгнак — столица Ак Орды, позже Байконур.",
+      "en": "Yangikent, the Oghuz capital; Syghanaq, the White Horde's capital; later Baikonur."
+    },
+    "eras": [
+      "karakhanid",
+      "mongol",
+      "modern"
+    ],
+    "sources": []
+  },
+  "zhambyl": {
+    "note": {
+      "kk": "Тараз, 751 жылғы Талас шайқасы, Айша бибі кесенесі — ислам осы жерден бекіді.",
+      "ru": "Тараз, Таласская битва 751 года, мавзолей Айша-биби — ислам закрепился отсюда.",
+      "en": "Taraz, the 751 battle of Talas, the Aisha Bibi mausoleum — Islam took hold from here."
+    },
+    "eras": [
+      "turk",
+      "karakhanid"
+    ],
+    "sources": []
+  },
+  "mangystau": {
+    "note": {
+      "kk": "Жерасты мешіттері мен Бекет ата — Каспий жолындағы рухани орталық.",
+      "ru": "Подземные мечети и Бекет-ата — духовный центр на каспийском пути.",
+      "en": "Underground mosques and Beket-Ata — a spiritual centre on the Caspian route."
+    },
+    "eras": [
+      "khanate",
+      "modern"
+    ],
+    "sources": []
+  },
+  "atyrau": {
+    "note": {
+      "kk": "Сарайшық — Алтын Орда қаласы, кейін Ноғай Ордасының орталығы.",
+      "ru": "Сарайчик — город Золотой Орды, позже центр Ногайской Орды.",
+      "en": "Saraishyq, a Golden Horde city and later a Nogai Horde centre."
+    },
+    "eras": [
+      "mongol",
+      "khanate"
+    ],
+    "sources": []
+  },
+  "zapadno": {
+    "note": {
+      "kk": "Сырым Датұлы көтерілісі және Бөкей Ордасы — империямен шекараның ең ұзақ тартысы.",
+      "ru": "Восстание Сырыма Датулы и Букеевская орда — самый долгий спор о границе с империей.",
+      "en": "The Syrym Datuly uprising and the Bukey Horde — the longest border argument with the empire."
+    },
+    "eras": [
+      "khanate",
+      "russian"
+    ],
+    "sources": []
+  },
+  "aktobe": {
+    "note": {
+      "kk": "1731 жылы Әбілқайыр хан Ресей бодандығын қабылдады — осы даладан басталды.",
+      "ru": "В 1731 году Абулхаир принял российское подданство — всё началось в этой степи.",
+      "en": "In 1731 Abulkhair accepted Russian suzerainty — it began on this steppe."
+    },
+    "eras": [
+      "russian"
+    ],
+    "sources": []
+  },
+  "kostanay": {
+    "note": {
+      "kk": "Торғай даласы — 1916 жылғы көтеріліс пен тың игерудің аумағы.",
+      "ru": "Тургайская степь — территория восстания 1916 года и целины.",
+      "en": "The Turgai steppe, scene of the 1916 uprising and of the Virgin Lands campaign."
+    },
+    "eras": [
+      "russian",
+      "soviet"
+    ],
+    "sources": []
+  },
+  "severo": {
+    "note": {
+      "kk": "Петропавл және Есіл бойындағы бекіністер желісі — империя шекарасының тірегі.",
+      "ru": "Петропавловск и линия крепостей по Ишиму — опора имперской границы.",
+      "en": "Petropavl and the fort line along the Ishim — the backbone of the imperial frontier."
+    },
+    "eras": [
+      "russian"
+    ],
+    "sources": []
+  }
+}

@@ -1,7 +1,7 @@
 [
   {
     "id": "yasawi-mausoleum-1405",
-    "era": "khanate",
+    "era": "mongol",
     "year": 1405,
     "lat": 43.293,
     "lng": 68.271,
@@ -332,7 +332,7 @@
   },
   {
     "id": "bukey-horde-1801",
-    "era": "empire",
+    "era": "russian",
     "year": 1801,
     "year_end": 1845,
     "lat": 48.77,
@@ -359,7 +359,7 @@
   },
   {
     "id": "isatai-makhambet-1836",
-    "era": "empire",
+    "era": "russian",
     "year": 1836,
     "year_end": 1838,
     "lat": 48.77,
@@ -386,7 +386,7 @@
   },
   {
     "id": "kenesary-akmolinsk-1838",
-    "era": "empire",
+    "era": "russian",
     "year": 1838,
     "lat": 51.18,
     "lng": 71.446,
@@ -413,7 +413,7 @@
   },
   {
     "id": "ak-mechet-1853",
-    "era": "empire",
+    "era": "russian",
     "year": 1853,
     "lat": 44.848,
     "lng": 65.482,
@@ -446,7 +446,7 @@
   },
   {
     "id": "altynsarin-school-1864",
-    "era": "empire",
+    "era": "russian",
     "year": 1864,
     "lat": 49.633,
     "lng": 63.492,
@@ -478,7 +478,7 @@
   },
   {
     "id": "kazak-newspaper-1913",
-    "era": "empire",
+    "era": "russian",
     "year": 1913,
     "lat": 51.768,
     "lng": 55.097,
@@ -510,7 +510,7 @@
   },
   {
     "id": "turgai-1916",
-    "era": "empire",
+    "era": "russian",
     "year": 1916,
     "lat": 49.633,
     "lng": 63.492,
@@ -918,7 +918,7 @@
   },
   {
     "id": "sovereignty-1990",
-    "era": "independence",
+    "era": "modern",
     "year": 1990,
     "lat": 43.256,
     "lng": 76.945,
@@ -944,7 +944,7 @@
   },
   {
     "id": "polygon-closed-1991",
-    "era": "independence",
+    "era": "modern",
     "year": 1991,
     "lat": 50.438,
     "lng": 77.811,
@@ -977,7 +977,7 @@
   },
   {
     "id": "independence-1991",
-    "era": "independence",
+    "era": "modern",
     "year": 1991,
     "lat": 43.256,
     "lng": 76.945,
@@ -1009,7 +1009,7 @@
   },
   {
     "id": "aubakirov-1991",
-    "era": "independence",
+    "era": "modern",
     "year": 1991,
     "lat": 45.92,
     "lng": 63.342,
@@ -1035,7 +1035,7 @@
   },
   {
     "id": "state-symbols-1992",
-    "era": "independence",
+    "era": "modern",
     "year": 1992,
     "lat": 43.256,
     "lng": 76.945,
@@ -1067,7 +1067,7 @@
   },
   {
     "id": "tenge-1993",
-    "era": "independence",
+    "era": "modern",
     "year": 1993,
     "lat": 43.256,
     "lng": 76.945,
@@ -1093,7 +1093,7 @@
   },
   {
     "id": "constitution-1995",
-    "era": "independence",
+    "era": "modern",
     "year": 1995,
     "lat": 43.256,
     "lng": 76.945,
@@ -1125,7 +1125,7 @@
   },
   {
     "id": "capital-akmola-1997",
-    "era": "independence",
+    "era": "modern",
     "year": 1997,
     "lat": 51.128,
     "lng": 71.43,

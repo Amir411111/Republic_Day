@@ -1,8 +1,11 @@
+import { Send } from 'lucide-react';
 import { useRef, useState } from 'react';
 import { EVENTS, yearLabel } from '../atlas/events';
 import { ALL_CARDS, isVerified } from '../game/cards';
 import type { L10n, Lang } from '../game/types';
 import { useI18n } from '../i18n';
+import { Button } from '../ui/Button';
+import { cn } from '../ui/cn';
 
 interface Turn {
   role: 'user' | 'assistant';
@@ -65,7 +68,7 @@ export default function Guide({ focus, compact }: Props) {
   const offlineAnswer = (q: string): string => {
     const found = searchEntries(q, lang, focus);
     if (!found.length) return t('guideNothingFound');
-    return found.map((e) => `${yearLabel(e)} · ${e.title[lang]} (${e.place[lang]}). ${e.text[lang]}`).join('\n\n');
+    return found.map((e) => `${yearLabel(e, lang)} · ${e.title[lang]} (${e.place[lang]}). ${e.text[lang]}`).join('\n\n');
   };
 
   const ask = async (question: string) => {
@@ -97,31 +100,40 @@ export default function Guide({ focus, compact }: Props) {
   const examples = focus ? [t('guideAskMore')] : [t('guideEx1'), t('guideEx2'), t('guideEx3')];
 
   return (
-    <section className={compact ? 'guide compact' : 'guide'}>
-      {!compact && <p className="lead">{t('guideLead')}</p>}
-      <div className="chat" aria-live="polite">
+    <section className={cn('flex flex-col gap-3', !compact && 'min-h-0 flex-1')}>
+      <div aria-live="polite" className={cn('flex flex-col gap-2.5', !compact && 'min-h-0 flex-1 overflow-y-auto pr-1')}>
         {turns.map((x, i) => (
-          <div key={i} className={`bubble ${x.role}`}>
-            {x.offline && <div className="offline-note">{t('guideOffline')}</div>}
+          <div
+            key={i}
+            className={cn(
+              'max-w-[90%] rounded-2xl px-4 py-3 text-sm leading-relaxed',
+              x.role === 'user'
+                ? 'self-end rounded-br-md bg-primary text-primary-foreground'
+                : 'self-start rounded-bl-md border border-border/80 bg-card/80',
+            )}
+          >
+            {x.offline && <p className="mb-1.5 text-xs text-primary">{t('guideOffline')}</p>}
             {x.text.split('\n').map((line, j) => (
-              <p key={j}>{line}</p>
+              <p key={j} className={cn(line === '' && 'h-2')}>
+                {line}
+              </p>
             ))}
           </div>
         ))}
-        {busy && <div className="bubble assistant">…</div>}
+        {busy && <div className="self-start rounded-2xl border border-border/80 bg-card/80 px-4 py-3 text-sm">…</div>}
         <div ref={endRef} />
       </div>
       {turns.length === 0 && (
-        <div className="examples">
+        <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap">
           {examples.map((ex) => (
-            <button key={ex} type="button" className="secondary" onClick={() => ask(ex)}>
+            <Button key={ex} variant="chip" onClick={() => ask(ex)} className="justify-start text-left">
               {ex}
-            </button>
+            </Button>
           ))}
         </div>
       )}
       <form
-        className="ask"
+        className="flex gap-2"
         onSubmit={(e) => {
           e.preventDefault();
           ask(input);
@@ -133,10 +145,11 @@ export default function Guide({ focus, compact }: Props) {
           placeholder={t('guidePlaceholder')}
           maxLength={500}
           aria-label={t('guidePlaceholder')}
+          className="min-h-12 min-w-0 flex-1 rounded-xl border border-border bg-background/70 px-4 text-base placeholder:text-muted-foreground/70 focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
         />
-        <button type="submit" className="primary" disabled={busy || !input.trim()}>
-          {t('guideSend')}
-        </button>
+        <Button type="submit" disabled={busy || !input.trim()} aria-label={t('guideSend')} className="px-4">
+          <Send aria-hidden="true" className="size-5" />
+        </Button>
       </form>
     </section>
   );

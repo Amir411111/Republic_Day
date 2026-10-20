@@ -1,17 +1,23 @@
-import { useState } from 'react';
-import Atlas from './atlas/Atlas';
-import Guide from './guide/Guide';
-import Quest from './quest/Quest';
-import { QUIZ_EVENTS, eventToCard } from './atlas/events';
-import { cardsForPack, DEV_MODE } from './game/cards';
-import Game from './game/Game';
+import { lazy, Suspense, useState, type ReactNode } from 'react';
+import { QUIZ_EVENTS, SCENE_EVENTS, eventToCard } from './atlas/events';
+import { cardsForPack } from './game/cards';
+import type { RoundKind } from './game/Game';
 import { pickDaily, pickRandom, todayKey } from './game/pick';
 import { ROUNDS } from './game/scoring';
 import type { Card, Pack } from './game/types';
-import { LANGS, useI18n } from './i18n';
+import GuideScreen from './guide/GuideScreen';
+import { useI18n } from './i18n';
+import Landing, { type Mode, type Place } from './landing/Landing';
 import { mistakeIds } from './progress/storage';
 
-type Mode = 'daily' | 'random' | 'training' | 'khans';
+// Map screens carry MapLibre (~300 KB gzipped): loaded on first use, so the landing page opens fast
+const Atlas = lazy(() => import('./atlas/Atlas'));
+const Game = lazy(() => import('./game/Game'));
+const Quest = lazy(() => import('./quest/Quest'));
+
+const Loading = ({ children }: { children: ReactNode }) => (
+  <Suspense fallback={<div className="grid h-full place-items-center text-muted-foreground">…</div>}>{children}</Suspense>
+);
 
 // The daily game is mostly history: 4 older pictures and 1 from after this year
 const MODERN_FROM = 2001;
@@ -23,12 +29,20 @@ interface Session {
   run: number;
 }
 
+const KIND: Record<Mode, RoundKind> = {
+  daily: 'photo',
+  random: 'photo',
+  training: 'photo',
+  khans: 'text',
+  satellite: 'scene',
+};
+
 export default function App() {
-  const { t, lang, setLang } = useI18n();
+  const { t } = useI18n();
   const [pack, setPack] = useState<Pack>('kz');
   const [session, setSession] = useState<Session | null>(null);
   const [notice, setNotice] = useState('');
-  const [screen, setScreen] = useState<'home' | 'atlas' | 'guide' | 'quest'>('home');
+  const [place, setPlace] = useState<Place | null>(null);
 
   const pool = cardsForPack(pack);
 
@@ -43,6 +57,7 @@ export default function App() {
         `${todayKey()}-${pack}`,
       );
     else if (mode === 'khans') cards = pickRandom(QUIZ_EVENTS.map(eventToCard));
+    else if (mode === 'satellite') cards = pickRandom(SCENE_EVENTS.map(eventToCard));
     else if (mode === 'random') cards = pickRandom(pool);
     else {
       const ids = new Set(mistakeIds());
@@ -56,121 +71,55 @@ export default function App() {
     setSession((s) => ({ cards, mode, run: (s?.run ?? 0) + 1 }));
   };
 
-  const header = (
-    <header className="top">
-      <button
-        type="button"
-        className="link"
-        onClick={() => {
-          setSession(null);
-          setScreen('home');
-        }}
-      >
-        {t('appTitle')}
-      </button>
-      <div className="langs">
-        {LANGS.map((code) => (
-          <button
-            key={code}
-            type="button"
-            className={code === lang ? 'on' : ''}
-            onClick={() => setLang(code)}
-          >
-            {code.toUpperCase()}
-          </button>
-        ))}
-      </div>
-    </header>
-  );
-
-  if (screen !== 'home') {
-    return (
-      <>
-        {header}
-        <main>
-          {screen === 'atlas' && <Atlas />}
-          {screen === 'quest' && <Quest />}
-          {screen === 'guide' && (
-            <div className="screen">
-              <h1>{t('guideTitle')}</h1>
-              <Guide />
-            </div>
-          )}
-        </main>
-      </>
-    );
-  }
+  const home = () => {
+    setSession(null);
+    setPlace(null);
+  };
 
   if (session) {
     const shareTitle =
-      session.mode === 'daily' ? `${t('appTitle')} ${todayKey()} · ${t(pack === 'kz' ? 'packKz' : 'packSemey')}` : t('appTitle');
+      session.mode === 'daily'
+        ? `${t('appTitle')} ${todayKey()} · ${t(pack === 'kz' ? 'packKz' : 'packSemey')}`
+        : t('appTitle');
     return (
-      <>
-        {header}
-        <main>
-          <Game
-            key={session.run}
-            cards={session.cards}
-            shareTitle={shareTitle}
-            onPlayAgain={() => start(session.mode === 'daily' ? 'random' : session.mode)}
-            onHome={() => setSession(null)}
-          />
-        </main>
-      </>
+      <Loading>
+        <Game
+          key={session.run}
+          cards={session.cards}
+          kind={KIND[session.mode]}
+          shareTitle={shareTitle}
+          onPlayAgain={() => start(session.mode === 'daily' ? 'random' : session.mode)}
+          onHome={home}
+        />
+      </Loading>
     );
   }
 
+  if (place === 'atlas')
+    return (
+      <Loading>
+        <Atlas onBack={home} />
+      </Loading>
+    );
+  if (place === 'quest')
+    return (
+      <Loading>
+        <Quest onBack={home} />
+      </Loading>
+    );
+  if (place === 'guide') return <GuideScreen onBack={home} />;
+
   return (
-    <>
-      {header}
-      <main className="screen">
-        <h1>{t('appTitle')}</h1>
-        <p className="lead">{t('tagline')}</p>
-        {DEV_MODE && <p className="warn">{t('draftWarning')}</p>}
-
-        <h3>{t('chooseSet')}</h3>
-        <div className="toggle">
-          {(['kz', 'semey'] as Pack[]).map((p) => (
-            <button key={p} type="button" className={p === pack ? 'on' : ''} onClick={() => setPack(p)}>
-              {t(p === 'kz' ? 'packKz' : 'packSemey')}
-            </button>
-          ))}
-        </div>
-
-        {pool.length === 0 ? (
-          <p className="warn">{t('noCards')}</p>
-        ) : (
-          <div className="menu">
-            <button type="button" className="primary" onClick={() => start('daily')}>
-              {t('modeDaily')}
-            </button>
-            <p className="hint">{t('dailyNote')}</p>
-            <button type="button" className="secondary" onClick={() => start('random')}>
-              {t('modeRandom')}
-            </button>
-            <button type="button" className="secondary" onClick={() => start('training')}>
-              {t('modeTraining')}
-            </button>
-          </div>
-        )}
-
-        <div className="menu">
-          <button type="button" className="primary" onClick={() => setScreen('atlas')}>
-            🗺 {t('modeAtlas')}
-          </button>
-          <button type="button" className="secondary" onClick={() => setScreen('guide')}>
-            💬 {t('modeGuide')}
-          </button>
-          <button type="button" className="secondary" onClick={() => setScreen('quest')}>
-            🚶 {t('modeQuest')}
-          </button>
-          <button type="button" className="secondary" onClick={() => start('khans')}>
-            {t('modeKhans')}
-          </button>
-          <p className="hint">{t('modeKhansHint')}</p>
-        </div>
-        {notice && <p className="warn">{notice}</p>}
-      </main>
-    </>
+    <Landing
+      pack={pack}
+      onPack={setPack}
+      poolSize={pool.length}
+      notice={notice}
+      onStart={start}
+      onOpen={(p) => {
+        setNotice('');
+        setPlace(p);
+      }}
+    />
   );
 }

@@ -1,0 +1,119 @@
+[
+  {
+    "image": "images/tunnel/charyn.jpg",
+    "title": {
+      "kk": "Шарын шатқалы",
+      "ru": "Чарынский каньон",
+      "en": "Charyn Canyon"
+    },
+    "image_credit": {
+      "author": "Bgag",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Charyn_Canyon,_Kazakhstan_03.jpg"
+    }
+  },
+  {
+    "image": "images/tunnel/bozzhyra.jpg",
+    "title": {
+      "kk": "Бозжыра",
+      "ru": "Бозжыра",
+      "en": "Bozzhyra"
+    },
+    "image_credit": {
+      "author": "Sergio Agostinelli",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bozzhyra_Valley_in_Karakiya,_Mangystau,_Kazakhstan_(May_2024).jpg"
+    }
+  },
+  {
+    "image": "images/tunnel/yasawi.jpg",
+    "title": {
+      "kk": "Қожа Ахмет Ясауи кесенесі",
+      "ru": "Мавзолей Ясави",
+      "en": "The Yasawi Mausoleum"
+    },
+    "image_credit": {
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mausoleum_of_Khoja_Ahmed_Yasawi_in_Hazrat-e_Turkestan,_Kazakhstan.jpg"
+    }
+  },
+  {
+    "image": "images/tunnel/singdune.jpg",
+    "title": {
+      "kk": "Әнші бархан",
+      "ru": "Поющий бархан",
+      "en": "The Singing Dune"
+    },
+    "image_credit": {
+      "author": "Jjm2311",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:210723_Altyn_Emel_Singing_Dune_valley.jpg"
+    }
+  },
+  {
+    "image": "images/tunnel/steppe.jpg",
+    "title": {
+      "kk": "Едірей таулары",
+      "ru": "Горы Едрей",
+      "en": "The Edrey hills"
+    },
+    "image_credit": {
+      "author": "Astrobond",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Edrey_Mountains,_Karaganda_region,_Kazakhstan._May_2025_01.jpg"
+    }
+  },
+  {
+    "image": "images/tunnel/kolsai.jpg",
+    "title": {
+      "kk": "Көлсай таулары",
+      "ru": "Кольсайские горы",
+      "en": "The Kolsai mountains"
+    },
+    "image_credit": {
+      "author": "Dimash Kenesbek",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kolsai_lakes.Mountains.jpg"
+    }
+  },
+  {
+    "image": "images/tunnel/aral.jpg",
+    "title": {
+      "kk": "Арал кеме зираты",
+      "ru": "Аральское кладбище кораблей",
+      "en": "The Aral ship cemetery"
+    },
+    "image_credit": {
+      "author": "Zhanat Kulenov",
+      "license": "CC BY-SA 3.0 igo",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Aral_sea_is_drying_up._Bay_of_Zhalanash,_Ship_Cemetery,_Aralsk,_Kazakhstan.jpg"
+    }
+  },
+  {
+    "image": "images/tunnel/baikonur.jpg",
+    "title": {
+      "kk": "Байқоңыр",
+      "ru": "Байконур",
+      "en": "Baikonur"
+    },
+    "image_credit": {
+      "author": "Bill Ingalls",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Soyuz_TMA-09M_spacecraft_at_the_Baikonur_Cosmodrome_launch_pad_(4).jpg"
+    }
+  },
+  {
+    "image": "images/tunnel/bayterek.jpg",
+    "title": {
+      "kk": "Астана",
+      "ru": "Астана",
+      "en": "Astana"
+    },
+    "image_credit": {
+      "author": "Ken and Nyetta",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:New_Astana_Skyline_(9587635437).jpg"
+    }
+  }
+]
