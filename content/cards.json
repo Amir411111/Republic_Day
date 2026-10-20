@@ -1,13 +1,24 @@
 [
   {
     "id": "dostoevsky-valikhanov-1858",
-    "pack": ["kz", "semey"],
+    "pack": [
+      "kz",
+      "semey"
+    ],
     "year": 1858,
     "lat": 50.411,
     "lng": 80.227,
-    "place": { "kk": "Семей", "ru": "Семипалатинск", "en": "Semipalatinsk (Semey)" },
-    "image": "images/placeholder.svg",
-    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "place": {
+      "kk": "Семей",
+      "ru": "Семипалатинск",
+      "en": "Semipalatinsk (Semey)"
+    },
+    "image": "images/dostoevsky-valikhanov-1858.jpg",
+    "image_credit": {
+      "author": "N. Leybin",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Valikhanov.jpg"
+    },
     "title": {
       "kk": "Достоевский мен Шоқан Уәлиханов Семейде",
       "ru": "Достоевский и Чокан Валиханов в Семипалатинске",
@@ -28,17 +39,27 @@
       "https://ru.wikipedia.org/wiki/Достоевский,_Фёдор_Михайлович"
     ],
     "difficulty": 2,
-    "verified_by": ""
+    "verified_by": "Claude (сверено по источникам)"
   },
   {
     "id": "verny-earthquake-1911",
-    "pack": ["kz"],
+    "pack": [
+      "kz"
+    ],
     "year": 1911,
     "lat": 43.256,
     "lng": 76.945,
-    "place": { "kk": "Верный (Алматы)", "ru": "Верный (Алматы)", "en": "Verny (Almaty)" },
+    "place": {
+      "kk": "Верный (Алматы)",
+      "ru": "Верный (Алматы)",
+      "en": "Verny (Almaty)"
+    },
     "image": "images/placeholder.svg",
-    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "image_credit": {
+      "author": "",
+      "license": "",
+      "source_url": ""
+    },
     "title": {
       "kk": "1911 жылғы Кемин жер сілкінісі",
       "ru": "Кеминское землетрясение 1911 года",
@@ -54,19 +75,32 @@
       "ru": "Разрушенные кирпичные дома, конные повозки, на фоне горы Заилийского Алатау.",
       "en": "Ruined brick houses, horse carts, the Trans-Ili Alatau mountains behind."
     },
-    "sources": ["https://ru.wikipedia.org/wiki/Кеминское_землетрясение"],
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Кеминское_землетрясение"
+    ],
     "difficulty": 2,
     "verified_by": ""
   },
   {
     "id": "rds1-test-1949",
-    "pack": ["kz", "semey"],
+    "pack": [
+      "kz",
+      "semey"
+    ],
     "year": 1949,
     "lat": 50.438,
     "lng": 77.815,
-    "place": { "kk": "Семей полигоны", "ru": "Семипалатинский полигон", "en": "Semipalatinsk Test Site" },
+    "place": {
+      "kk": "Семей полигоны",
+      "ru": "Семипалатинский полигон",
+      "en": "Semipalatinsk Test Site"
+    },
     "image": "images/placeholder.svg",
-    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "image_credit": {
+      "author": "",
+      "license": "",
+      "source_url": ""
+    },
     "title": {
       "kk": "Алғашқы кеңестік атом бомбасының сынағы",
       "ru": "Испытание первой советской атомной бомбы",
@@ -91,13 +125,23 @@
   },
   {
     "id": "virgin-lands-1954",
-    "pack": ["kz"],
+    "pack": [
+      "kz"
+    ],
     "year": 1954,
     "lat": 51.169,
     "lng": 71.449,
-    "place": { "kk": "Ақмола облысы", "ru": "Акмолинская область", "en": "Akmola Region" },
+    "place": {
+      "kk": "Ақмола облысы",
+      "ru": "Акмолинская область",
+      "en": "Akmola Region"
+    },
     "image": "images/placeholder.svg",
-    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "image_credit": {
+      "author": "",
+      "license": "",
+      "source_url": ""
+    },
     "title": {
       "kk": "Тың игеру басталды",
       "ru": "Начало освоения целины",
@@ -113,19 +157,31 @@
       "ru": "Тракторы и палатки посреди бескрайней равнины.",
       "en": "Tractors and tents on an endless plain."
     },
-    "sources": ["https://ru.wikipedia.org/wiki/Освоение_целины"],
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Освоение_целины"
+    ],
     "difficulty": 1,
     "verified_by": ""
   },
   {
     "id": "sputnik-1957",
-    "pack": ["kz"],
+    "pack": [
+      "kz"
+    ],
     "year": 1957,
-    "lat": 45.920,
+    "lat": 45.92,
     "lng": 63.342,
-    "place": { "kk": "Байқоңыр", "ru": "Байконур", "en": "Baikonur" },
+    "place": {
+      "kk": "Байқоңыр",
+      "ru": "Байконур",
+      "en": "Baikonur"
+    },
     "image": "images/placeholder.svg",
-    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "image_credit": {
+      "author": "",
+      "license": "",
+      "source_url": ""
+    },
     "title": {
       "kk": "Алғашқы жасанды Жер серігі",
       "ru": "Первый искусственный спутник Земли",
@@ -141,19 +197,31 @@
       "ru": "Ракета Р-7, стартовая площадка, вокруг плоская пустынная степь.",
       "en": "An R-7 rocket on its pad, flat desert steppe all around."
     },
-    "sources": ["https://ru.wikipedia.org/wiki/Спутник-1"],
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Спутник-1"
+    ],
     "difficulty": 1,
     "verified_by": ""
   },
   {
     "id": "gagarin-1961",
-    "pack": ["kz"],
+    "pack": [
+      "kz"
+    ],
     "year": 1961,
-    "lat": 45.920,
+    "lat": 45.92,
     "lng": 63.342,
-    "place": { "kk": "Байқоңыр", "ru": "Байконур", "en": "Baikonur" },
+    "place": {
+      "kk": "Байқоңыр",
+      "ru": "Байконур",
+      "en": "Baikonur"
+    },
     "image": "images/placeholder.svg",
-    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "image_credit": {
+      "author": "",
+      "license": "",
+      "source_url": ""
+    },
     "title": {
       "kk": "Гагариннің ғарышқа ұшуы",
       "ru": "Полёт Гагарина",
@@ -169,19 +237,31 @@
       "ru": "Космонавт в скафандре или ракета «Восток».",
       "en": "A cosmonaut in a spacesuit or the Vostok rocket."
     },
-    "sources": ["https://ru.wikipedia.org/wiki/Восток-1"],
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Восток-1"
+    ],
     "difficulty": 1,
     "verified_by": ""
   },
   {
     "id": "medeu-1972",
-    "pack": ["kz"],
+    "pack": [
+      "kz"
+    ],
     "year": 1972,
     "lat": 43.157,
     "lng": 77.059,
-    "place": { "kk": "Медеу, Алматы", "ru": "Медеу, Алматы", "en": "Medeu, Almaty" },
+    "place": {
+      "kk": "Медеу, Алматы",
+      "ru": "Медеу, Алматы",
+      "en": "Medeu, Almaty"
+    },
     "image": "images/placeholder.svg",
-    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "image_credit": {
+      "author": "",
+      "license": "",
+      "source_url": ""
+    },
     "title": {
       "kk": "«Медеу» биік таулы мұз айдыны",
       "ru": "Высокогорный каток «Медеу»",
@@ -197,19 +277,31 @@
       "ru": "Большое ледовое поле между гор, советские трибуны.",
       "en": "A large ice field among mountains, Soviet-era stands."
     },
-    "sources": ["https://ru.wikipedia.org/wiki/Медеу_(каток)"],
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Медеу_(каток)"
+    ],
     "difficulty": 2,
     "verified_by": ""
   },
   {
     "id": "zheltoqsan-1986",
-    "pack": ["kz"],
+    "pack": [
+      "kz"
+    ],
     "year": 1986,
     "lat": 43.238,
     "lng": 76.945,
-    "place": { "kk": "Алматы, Республика алаңы", "ru": "Алматы, площадь Республики", "en": "Almaty, Republic Square" },
+    "place": {
+      "kk": "Алматы, Республика алаңы",
+      "ru": "Алматы, площадь Республики",
+      "en": "Almaty, Republic Square"
+    },
     "image": "images/placeholder.svg",
-    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "image_credit": {
+      "author": "",
+      "license": "",
+      "source_url": ""
+    },
     "title": {
       "kk": "Желтоқсан көтерілісі",
       "ru": "Желтоксан",
@@ -225,19 +317,32 @@
       "ru": "Молодёжь в зимней одежде, большая площадь, советское здание власти.",
       "en": "Young people in winter clothes, a large square, a Soviet government building."
     },
-    "sources": ["https://ru.wikipedia.org/wiki/Желтоксан"],
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Желтоксан"
+    ],
     "difficulty": 2,
     "verified_by": ""
   },
   {
     "id": "polygon-closure-1991",
-    "pack": ["kz", "semey"],
+    "pack": [
+      "kz",
+      "semey"
+    ],
     "year": 1991,
     "lat": 50.755,
-    "lng": 78.540,
-    "place": { "kk": "Семей полигоны (Курчатов)", "ru": "Семипалатинский полигон (Курчатов)", "en": "Semipalatinsk Test Site (Kurchatov)" },
+    "lng": 78.54,
+    "place": {
+      "kk": "Семей полигоны (Курчатов)",
+      "ru": "Семипалатинский полигон (Курчатов)",
+      "en": "Semipalatinsk Test Site (Kurchatov)"
+    },
     "image": "images/placeholder.svg",
-    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "image_credit": {
+      "author": "",
+      "license": "",
+      "source_url": ""
+    },
     "title": {
       "kk": "Семей ядролық полигонының жабылуы",
       "ru": "Закрытие Семипалатинского полигона",
@@ -262,13 +367,23 @@
   },
   {
     "id": "aubakirov-1991",
-    "pack": ["kz"],
+    "pack": [
+      "kz"
+    ],
     "year": 1991,
-    "lat": 45.920,
+    "lat": 45.92,
     "lng": 63.342,
-    "place": { "kk": "Байқоңыр", "ru": "Байконур", "en": "Baikonur" },
+    "place": {
+      "kk": "Байқоңыр",
+      "ru": "Байконур",
+      "en": "Baikonur"
+    },
     "image": "images/placeholder.svg",
-    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "image_credit": {
+      "author": "",
+      "license": "",
+      "source_url": ""
+    },
     "title": {
       "kk": "Тоқтар Әубәкіров — алғашқы қазақ ғарышкері",
       "ru": "Токтар Аубакиров — первый казахский космонавт",
@@ -284,19 +399,31 @@
       "ru": "Ракета «Союз», цветной снимок начала 1990-х.",
       "en": "A Soyuz rocket, a colour photo from the early 1990s."
     },
-    "sources": ["https://ru.wikipedia.org/wiki/Аубакиров,_Токтар_Онгарбаевич"],
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Аубакиров,_Токтар_Онгарбаевич"
+    ],
     "difficulty": 3,
     "verified_by": ""
   },
   {
     "id": "independence-1991",
-    "pack": ["kz"],
+    "pack": [
+      "kz"
+    ],
     "year": 1991,
     "lat": 43.238,
     "lng": 76.945,
-    "place": { "kk": "Алматы", "ru": "Алматы", "en": "Almaty" },
+    "place": {
+      "kk": "Алматы",
+      "ru": "Алматы",
+      "en": "Almaty"
+    },
     "image": "images/placeholder.svg",
-    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "image_credit": {
+      "author": "",
+      "license": "",
+      "source_url": ""
+    },
     "title": {
       "kk": "Қазақстан тәуелсіздігі",
       "ru": "Независимость Казахстана",
@@ -312,19 +439,31 @@
       "ru": "Новая государственная символика, здание власти в Алматы.",
       "en": "New state symbols, a government building in Almaty."
     },
-    "sources": ["https://ru.wikipedia.org/wiki/День_независимости_Казахстана"],
+    "sources": [
+      "https://ru.wikipedia.org/wiki/День_независимости_Казахстана"
+    ],
     "difficulty": 1,
     "verified_by": ""
   },
   {
     "id": "capital-move-1997",
-    "pack": ["kz"],
+    "pack": [
+      "kz"
+    ],
     "year": 1997,
     "lat": 51.128,
-    "lng": 71.430,
-    "place": { "kk": "Астана", "ru": "Астана", "en": "Astana" },
+    "lng": 71.43,
+    "place": {
+      "kk": "Астана",
+      "ru": "Астана",
+      "en": "Astana"
+    },
     "image": "images/placeholder.svg",
-    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "image_credit": {
+      "author": "",
+      "license": "",
+      "source_url": ""
+    },
     "title": {
       "kk": "Астананың Ақмолаға көшуі",
       "ru": "Перенос столицы в Акмолу",
@@ -340,19 +479,31 @@
       "ru": "Берег Ишима, строительные краны, ещё пустой левый берег.",
       "en": "The Ishim riverbank, construction cranes, a still-empty left bank."
     },
-    "sources": ["https://ru.wikipedia.org/wiki/Астана"],
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Астана"
+    ],
     "difficulty": 2,
     "verified_by": ""
   },
   {
     "id": "baiterek-2002",
-    "pack": ["kz"],
+    "pack": [
+      "kz"
+    ],
     "year": 2002,
     "lat": 51.128,
-    "lng": 71.430,
-    "place": { "kk": "Астана", "ru": "Астана", "en": "Astana" },
+    "lng": 71.43,
+    "place": {
+      "kk": "Астана",
+      "ru": "Астана",
+      "en": "Astana"
+    },
     "image": "images/placeholder.svg",
-    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "image_credit": {
+      "author": "",
+      "license": "",
+      "source_url": ""
+    },
     "title": {
       "kk": "«Бәйтерек» монументі",
       "ru": "Монумент «Байтерек»",
@@ -368,19 +519,31 @@
       "ru": "Белая башня с золотым шаром наверху.",
       "en": "A white tower topped with a golden sphere."
     },
-    "sources": ["https://ru.wikipedia.org/wiki/Байтерек_(монумент)"],
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Байтерек_(монумент)"
+    ],
     "difficulty": 3,
     "verified_by": ""
   },
   {
     "id": "expo-2017",
-    "pack": ["kz"],
+    "pack": [
+      "kz"
+    ],
     "year": 2017,
     "lat": 51.089,
     "lng": 71.416,
-    "place": { "kk": "Астана", "ru": "Астана", "en": "Astana" },
+    "place": {
+      "kk": "Астана",
+      "ru": "Астана",
+      "en": "Astana"
+    },
     "image": "images/placeholder.svg",
-    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "image_credit": {
+      "author": "",
+      "license": "",
+      "source_url": ""
+    },
     "title": {
       "kk": "EXPO-2017 «Болашақ энергиясы»",
       "ru": "EXPO-2017 «Энергия будущего»",
@@ -396,8 +559,1233 @@
       "ru": "Стеклянное здание-шар, современная архитектура.",
       "en": "A glass sphere-shaped building, modern architecture."
     },
-    "sources": ["https://ru.wikipedia.org/wiki/Экспо-2017"],
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Экспо-2017"
+    ],
     "difficulty": 1,
     "verified_by": ""
+  },
+  {
+    "id": "semipalatinsk-bazaar-1885",
+    "pack": [
+      "kz",
+      "semey"
+    ],
+    "year": 1885,
+    "lat": 50.411,
+    "lng": 80.227,
+    "place": {
+      "kk": "Семей",
+      "ru": "Семипалатинск",
+      "en": "Semipalatinsk (Semey)"
+    },
+    "image": "images/semipalatinsk-bazaar-1885.jpg",
+    "image_credit": {
+      "author": "Unknown photographer (Library of Congress)",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bazar_(i.e,_bazaar)_at_Semipalatinsk_(i.e,_Seme_i)_LCCN99615488.jpg"
+    },
+    "title": {
+      "kk": "Семейдегі базар",
+      "ru": "Базар в Семипалатинске",
+      "en": "Bazaar in Semipalatinsk"
+    },
+    "explanation": {
+      "kk": "Бұл суретті 1885 жылы Сібір мен Дала өлкесін аралаған америкалық журналист Джордж Кеннанның экспедициясы түсірген. Ертіс бойындағы Семей Ресей, қазақ даласы және Қытай арасындағы саудаға арналған ірі сауда орталығы болды.",
+      "ru": "Снимок сделан в 1885 году экспедицией американского журналиста Джорджа Кеннана, путешествовавшего по Сибири и Степному краю. Семипалатинск на Иртыше был крупным торговым центром на пути между Россией, казахской степью и Китаем.",
+      "en": "The photo was taken in 1885 by the expedition of American journalist George Kennan, who travelled across Siberia and the Steppe region. Semipalatinsk on the Irtysh was a major trading hub between Russia, the Kazakh steppe and China."
+    },
+    "clue": {
+      "kk": "Ерте фотосурет, ағаш дүкендер, арбалар және орыс пен қазақ киімдерінің араласуы.",
+      "ru": "Ранняя фотография, деревянные лавки, телеги и смесь русской и казахской одежды.",
+      "en": "An early photograph, wooden stalls, carts and a mix of Russian and Kazakh clothing."
+    },
+    "sources": [
+      "https://www.loc.gov/item/99615488/",
+      "https://en.wikipedia.org/wiki/George_Kennan_(explorer)"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "semipalatinsk-ferry-1885",
+    "pack": [
+      "kz",
+      "semey"
+    ],
+    "year": 1885,
+    "lat": 50.405,
+    "lng": 80.24,
+    "place": {
+      "kk": "Семей, Ертіс өзені",
+      "ru": "Семипалатинск, река Иртыш",
+      "en": "Semipalatinsk, Irtysh River"
+    },
+    "image": "images/semipalatinsk-ferry-1885.jpg",
+    "image_credit": {
+      "author": "Unknown photographer (Library of Congress)",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Ferry_at_Semapolatinsk_(i.e,_Seme_i)_LCCN99615508.jpg"
+    },
+    "title": {
+      "kk": "Ертіс арқылы өтетін паром",
+      "ru": "Паром через Иртыш",
+      "en": "The ferry across the Irtysh"
+    },
+    "explanation": {
+      "kk": "1885 жылы Джордж Кеннан экспедициясы түсірген Семейдегі паром. Ол кезде Ертістің үстінде көпір болмаған: адамдар мен жүктерді паромдармен өткізген, ал қаладағы алғашқы тұрақты көпірлер тек XX ғасырда салынды.",
+      "ru": "Паром в Семипалатинске на снимке экспедиции Джорджа Кеннана 1885 года. Моста через Иртыш тогда не было: людей и грузы переправляли паромами, а постоянные мосты в городе появились только в XX веке.",
+      "en": "The ferry at Semipalatinsk, photographed by George Kennan's expedition in 1885. There was no bridge across the Irtysh then: people and goods crossed by ferry, and permanent bridges appeared in the city only in the 20th century."
+    },
+    "clue": {
+      "kk": "Кең өзен, ағаш паром және XIX ғасырдағы ақ-қара сурет.",
+      "ru": "Широкая река, деревянный паром и чёрно-белый снимок XIX века.",
+      "en": "A wide river, a wooden ferry and a 19th-century black-and-white print."
+    },
+    "sources": [
+      "https://www.loc.gov/item/99615508/",
+      "https://en.wikipedia.org/wiki/George_Kennan_(explorer)"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "kazakh-aul-semipalatinsk-1885",
+    "pack": [
+      "kz",
+      "semey"
+    ],
+    "year": 1885,
+    "lat": 50.45,
+    "lng": 80.2,
+    "place": {
+      "kk": "Семей маңындағы ауыл",
+      "ru": "Аул под Семипалатинском",
+      "en": "Aul near Semipalatinsk"
+    },
+    "image": "images/kazakh-aul-semipalatinsk-1885.jpg",
+    "image_credit": {
+      "author": "Unknown photographer (Library of Congress)",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Group_in_Tatar,_Tartar_village_(i.e.,_Kazakh_aul)_near_Semipolatinsk_(i.e.,_Seme_i)_LCCN99615489.jpg"
+    },
+    "title": {
+      "kk": "Семей маңындағы қазақ ауылы",
+      "ru": "Казахский аул под Семипалатинском",
+      "en": "A Kazakh aul near Semipalatinsk"
+    },
+    "explanation": {
+      "kk": "1885 жылы Джордж Кеннан экспедициясы Семей маңындағы қазақ ауылын суретке түсірді. Ол кезде қазақтардың көбі әлі де киіз үйде тұрып, мал шаруашылығымен көшпелі немесе жартылай көшпелі өмір сүрген.",
+      "ru": "В 1885 году экспедиция Джорджа Кеннана сфотографировала казахский аул под Семипалатинском. Большинство казахов тогда ещё жили в юртах и вели кочевое или полукочевое скотоводческое хозяйство.",
+      "en": "In 1885 George Kennan's expedition photographed a Kazakh aul near Semipalatinsk. Most Kazakhs at the time still lived in yurts and practised nomadic or semi-nomadic herding."
+    },
+    "clue": {
+      "kk": "Аттылы адамдар, дәстүрлі киім және ерте фотосуреттің сапасы.",
+      "ru": "Всадники, традиционная одежда и качество ранней фотографии.",
+      "en": "Riders, traditional clothing and the quality of an early photograph."
+    },
+    "sources": [
+      "https://www.loc.gov/item/99615489/",
+      "https://en.wikipedia.org/wiki/George_Kennan_(explorer)"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "verny-cathedral-construction-1906",
+    "pack": [
+      "kz"
+    ],
+    "year": 1906,
+    "lat": 43.2586,
+    "lng": 76.9533,
+    "place": {
+      "kk": "Верный (Алматы)",
+      "ru": "Верный (Алма-Ата)",
+      "en": "Verny (Almaty)"
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Ascension_Cathedral_in_Verny88.jpg",
+    "image_credit": {
+      "author": "Фото неизвестного мастера",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ascension_Cathedral_in_Verny88.jpg"
+    },
+    "title": {
+      "kk": "Вознесение соборының құрылысы",
+      "ru": "Строительство Вознесенского собора",
+      "en": "Construction of the Ascension Cathedral"
+    },
+    "explanation": {
+      "kk": "Верный қаласындағы Вознесение соборы 1904–1907 жылдары салынды. Ағаштан салынған бұл ғимарат 1911 жылғы күшті жер сілкінісінен аман қалып, бүгін Алматыдағы Панфиловшылар саябағының басты көрікті жері.",
+      "ru": "Вознесенский собор в городе Верном строили в 1904–1907 годах. Деревянное здание пережило сильное землетрясение 1911 года и сегодня остаётся главной достопримечательностью парка 28 гвардейцев-панфиловцев в Алма-Ате.",
+      "en": "The Ascension Cathedral in the town of Verny was built in 1904–1907. The wooden building survived the strong 1911 earthquake and today is the main landmark of Panfilov Park in Almaty."
+    },
+    "clue": {
+      "kk": "Құрылыс ормандары, ағаш конструкциялар және тау етегіндегі қала.",
+      "ru": "Строительные леса, деревянные конструкции и город у подножия гор.",
+      "en": "Scaffolding, timber structures and a town at the foot of mountains."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Вознесенский_собор_(Алма-Ата)"
+    ],
+    "difficulty": 2,
+    "verified_by": ""
+  },
+  {
+    "id": "verny-romanov-tercentenary-1913",
+    "pack": [
+      "kz"
+    ],
+    "year": 1913,
+    "lat": 43.2586,
+    "lng": 76.9533,
+    "place": {
+      "kk": "Верный (Алматы)",
+      "ru": "Верный (Алма-Ата)",
+      "en": "Verny (Almaty)"
+    },
+    "image": "images/verny-romanov-tercentenary-1913.jpg",
+    "image_credit": {
+      "author": "Unknown Author",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ascension_Cathedral_1913.jpg"
+    },
+    "title": {
+      "kk": "Романовтар әулетінің 300 жылдығы Верныйда",
+      "ru": "300-летие дома Романовых в Верном",
+      "en": "Romanov Tercentenary in Verny"
+    },
+    "explanation": {
+      "kk": "1913 жылы бүкіл Ресей империясы Романовтар әулетінің 300 жылдығын тойлады. Верныйда адамдар жаңа ғана салынған Вознесение соборының алдына жиналды; төрт жылдан кейін империя құлады.",
+      "ru": "В 1913 году вся Российская империя праздновала 300-летие дома Романовых. В Верном люди собрались у недавно построенного Вознесенского собора; всего через четыре года империя пала.",
+      "en": "In 1913 the whole Russian Empire celebrated 300 years of the Romanov dynasty. In Verny crowds gathered in front of the recently built Ascension Cathedral; four years later the empire collapsed."
+    },
+    "clue": {
+      "kk": "Жаңа собор, мерекелік жиын және XX ғасыр басындағы киімдер.",
+      "ru": "Новый собор, праздничная толпа и одежда начала XX века.",
+      "en": "A new cathedral, a festive crowd and early 20th-century clothing."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/300-летие_дома_Романовых",
+      "https://ru.wikipedia.org/wiki/Вознесенский_собор_(Алма-Ата)"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "turksib-last-spike-1930",
+    "pack": [
+      "kz"
+    ],
+    "year": 1930,
+    "lat": 44.621,
+    "lng": 77.994,
+    "place": {
+      "kk": "Айнабұлақ стансасы",
+      "ru": "Станция Айна-Булак",
+      "en": "Aina-Bulak station"
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%A2%D1%83%D1%80%D0%BA%D1%81%D0%B8%D0%B1%D0%B0_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%A8%D0%B0%D1%82%D0%BE%D0%B2_%D0%B7%D0%B0%D0%B1%D0%B8%D0%B2%D0%B0%D0%B5%D1%82_%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%B8%D0%B9_%D0%BA%D0%BE%D1%81%D1%82%D1%8B%D0%BB%D1%8C_%D0%BC%D0%B0%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B8_%D0%BD%D0%B0_%D1%86%D0%B5%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D0%B8%D0%B8_%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D1%8F_%D0%A2%D1%83%D1%80%D0%BA%D1%81%D0%B8%D0%B1%D0%B0.jpg",
+    "image_credit": {
+      "author": "неизвестен",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%A2%D1%83%D1%80%D0%BA%D1%81%D0%B8%D0%B1%D0%B0_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%A8%D0%B0%D1%82%D0%BE%D0%B2_%D0%B7%D0%B0%D0%B1%D0%B8%D0%B2%D0%B0%D0%B5%D1%82_%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%B8%D0%B9_%D0%BA%D0%BE%D1%81%D1%82%D1%8B%D0%BB%D1%8C_%D0%BC%D0%B0%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B8_%D0%BD%D0%B0_%D1%86%D0%B5%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D0%B8%D0%B8_%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D1%8F_%D0%A2%D1%83%D1%80%D0%BA%D1%81%D0%B8%D0%B1%D0%B0.jpg"
+    },
+    "title": {
+      "kk": "Түрксібтің соңғы балдағы",
+      "ru": "Последний костыль Турксиба",
+      "en": "The last spike of the Turksib"
+    },
+    "explanation": {
+      "kk": "1930 жылы сәуірде Айнабұлақ стансасында Түркістан–Сібір темір жолының солтүстік және оңтүстік бөліктері түйісті. Түрксіб Сібірді Орта Азиямен байланыстырып, Қазақстан экономикасын түбегейлі өзгертті.",
+      "ru": "В апреле 1930 года на станции Айна-Булак сомкнулись северный и южный участки Туркестано-Сибирской железной дороги. Турксиб связал Сибирь со Средней Азией и сильно изменил экономику Казахстана.",
+      "en": "In April 1930 the northern and southern sections of the Turkestan–Siberia Railway met at Aina-Bulak station. The Turksib linked Siberia with Central Asia and transformed Kazakhstan's economy."
+    },
+    "clue": {
+      "kk": "Рельстер, балға, салтанатты жиын және 1930-жылдардағы киімдер.",
+      "ru": "Рельсы, молот, торжественная церемония и одежда 1930-х.",
+      "en": "Rails, a hammer, a ceremony and 1930s clothing."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Туркестано-Сибирская_железная_дорога"
+    ],
+    "difficulty": 1,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "aktobe-ferroalloy-plant-1942",
+    "pack": [
+      "kz"
+    ],
+    "year": 1942,
+    "lat": 50.35,
+    "lng": 57.13,
+    "place": {
+      "kk": "Ақтөбе",
+      "ru": "Актюбинск",
+      "en": "Aktyubinsk (Aktobe)"
+    },
+    "image": "images/aktobe-ferroalloy-plant-1942.jpg",
+    "image_credit": {
+      "author": "Unknown author",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aktobe_1942_(08).jpg"
+    },
+    "title": {
+      "kk": "Ақтөбе ферроқорытпа зауытының құрылысы",
+      "ru": "Строительство Актюбинского завода ферросплавов",
+      "en": "Building the Aktobe Ferroalloy Plant"
+    },
+    "explanation": {
+      "kk": "Соғыс жылдары Ақтөбеде ферроқорытпа зауыты асығыс салынды: майданға броньға қажетті хром қорытпалары керек болды. Бұл зауыт Қазақстанның қара металлургиясының тұңғышы болды.",
+      "ru": "В годы войны в Актюбинске спешно строили завод ферросплавов: фронту были нужны хромовые сплавы для брони. Этот завод стал первенцем чёрной металлургии Казахстана.",
+      "en": "During the war a ferroalloy plant was hastily built in Aktyubinsk: the front needed chromium alloys for armour. It became the first ferrous metallurgy plant in Kazakhstan."
+    },
+    "clue": {
+      "kk": "Зауыт цехы, қарапайым құрылыс техникасы және соғыс уақытының ақ-қара суреті.",
+      "ru": "Заводской цех, простая стройка и чёрно-белый снимок военного времени.",
+      "en": "A factory shop, basic construction work and a wartime black-and-white photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Актюбинский_завод_ферросплавов"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "zharma-shepherd-1942",
+    "pack": [
+      "kz",
+      "semey"
+    ],
+    "year": 1942,
+    "lat": 49.328,
+    "lng": 81.571,
+    "place": {
+      "kk": "Жарма ауданы, Семей облысы",
+      "ru": "Жарминский район, Семипалатинская область",
+      "en": "Zharma district, Semipalatinsk region"
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/%D0%A1%D1%82%D0%B0%D1%85%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%2C_%D1%87%D0%B0%D0%B1%D0%B0%D0%BD_%D0%BA%D0%BE%D0%BB%D1%85%D0%BE%D0%B7%D0%B0_%C2%AB%D0%A0%D0%B0%D1%81%D1%86%D0%B2%D0%B5%D1%82%C2%BB_%D0%A3%D1%80%D0%B0%D0%B7-%D0%B1%D0%B0%D0%B1%D0%B5_%D0%90%D0%B9%D1%82%D0%BF%D0%B0%D0%B5%D0%B2%D0%B0_%D0%BD%D0%B0_%D0%BF%D0%B0%D1%81%D1%82%D0%B1%D0%B8%D1%89%D0%B5_%D1%81_%D0%BE%D1%82%D0%B0%D1%80%D0%BE%D0%B9_%D0%BE%D0%B2%D0%B5%D1%86.jpg",
+    "image_credit": {
+      "author": "Georgy Ugrinovich",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%A1%D1%82%D0%B0%D1%85%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0,_%D1%87%D0%B0%D0%B1%D0%B0%D0%BD_%D0%BA%D0%BE%D0%BB%D1%85%D0%BE%D0%B7%D0%B0_%C2%AB%D0%A0%D0%B0%D1%81%D1%86%D0%B2%D0%B5%D1%82%C2%BB_%D0%A3%D1%80%D0%B0%D0%B7-%D0%B1%D0%B0%D0%B1%D0%B5_%D0%90%D0%B9%D1%82%D0%BF%D0%B0%D0%B5%D0%B2%D0%B0_%D0%BD%D0%B0_%D0%BF%D0%B0%D1%81%D1%82%D0%B1%D0%B8%D1%89%D0%B5_%D1%81_%D0%BE%D1%82%D0%B0%D1%80%D0%BE%D0%B9_%D0%BE%D0%B2%D0%B5%D1%86.jpg"
+    },
+    "title": {
+      "kk": "Шопан Ораз-бибі Айтпаева",
+      "ru": "Чабан Ураз-бабе Айтпаева",
+      "en": "Shepherd Uraz-babe Aitpayeva"
+    },
+    "explanation": {
+      "kk": "1942 жылы Семей облысының Жарма ауданында түсірілген: «Расцвет» колхозының стахановшы шопаны отарымен жайылымда. Ерлер майданға кеткенде ауылдағы ауыр жұмыстың көбі әйелдердің мойнына түсті.",
+      "ru": "Снимок 1942 года из Жарминского района Семипалатинской области: стахановка, чабан колхоза «Расцвет» с отарой на пастбище. Пока мужчины воевали, основную тяжёлую работу в аулах взяли на себя женщины.",
+      "en": "A 1942 photo from Zharma district, Semipalatinsk region: a Stakhanovite shepherd of the Rastsvet collective farm with her flock. While the men were at the front, women took on most of the hard work in the villages."
+    },
+    "clue": {
+      "kk": "Қой отары, дала және соғыс жылдарындағы үгіт суреттерінің стилі.",
+      "ru": "Отара овец, степь и стиль агитационной фотографии военных лет.",
+      "en": "A flock of sheep, the steppe and the style of wartime propaganda photography."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/Category:1942_in_Kazakhstan",
+      "https://ru.wikipedia.org/wiki/Казахская_ССР_в_Великой_Отечественной_войне"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "medeu-ussr-team-1951",
+    "pack": [
+      "kz"
+    ],
+    "year": 1951,
+    "lat": 43.157,
+    "lng": 77.059,
+    "place": {
+      "kk": "Медеу, Алматы маңы",
+      "ru": "Медеу, под Алма-Атой",
+      "en": "Medeu, near Almaty"
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/db/Soviet_Union_national_skating_team%2C_1951.jpg",
+    "image_credit": {
+      "author": "Hartson",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Soviet_Union_national_skating_team,_1951.jpg"
+    },
+    "title": {
+      "kk": "КСРО құрамасы Медеуде",
+      "ru": "Сборная СССР на Медеу",
+      "en": "The USSR team at Medeu"
+    },
+    "explanation": {
+      "kk": "Медеудегі алғашқы табиғи мұз айдыны 1951 жылы ашылды, оған КСРО-ның конькиші құрамасы жаттығуға келді. Таудағы таза мұз бен күн рекорд жаңартуға көмектесті, ал 1972 жылы мұнда бүгінгі үлкен мұз айдыны салынды.",
+      "ru": "Первый естественный каток в урочище Медеу открылся в 1951 году, и туда приехала тренироваться сборная СССР по конькобежному спорту. Высокогорный лёд и солнце помогали ставить рекорды, а в 1972 году здесь построили нынешний большой каток.",
+      "en": "The first natural ice rink at Medeu opened in 1951, and the USSR speed-skating team came to train there. High-altitude ice and sun helped set records, and in 1972 today's large rink was built on the site."
+    },
+    "clue": {
+      "kk": "Конькишілер, таулар және 1950-жылдардың спорт киімі.",
+      "ru": "Конькобежцы, горы и спортивная форма 1950-х.",
+      "en": "Speed skaters, mountains and 1950s sportswear."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Медеу_(спорткомплекс)"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "steplag-prisoners-1955",
+    "pack": [
+      "kz"
+    ],
+    "year": 1955,
+    "lat": 47.84,
+    "lng": 67.615,
+    "place": {
+      "kk": "Жезқазған (Кеңгір)",
+      "ru": "Джезказган (Кенгир)",
+      "en": "Zhezkazgan (Kengir)"
+    },
+    "image": "images/steplag-prisoners-1955.jpg",
+    "image_credit": {
+      "author": "Unknown author",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lithuanian_political_prisoners_(deportees)_in_a_gulag,_located_in_Jezkazgan-Rudnik,_Kazakhstan,_1955.jpg"
+    },
+    "title": {
+      "kk": "Степлагтағы литвалық тұтқындар",
+      "ru": "Литовские заключённые Степлага",
+      "en": "Lithuanian prisoners of Steplag"
+    },
+    "explanation": {
+      "kk": "Жезқазған маңындағы Степлаг – саяси тұтқындарға арналған ГУЛАГ лагері еді, тұтқындар мыс кеніштерінде жұмыс істеді. 1954 жылы Кеңгірде тұтқындар көтерілісі болды, ол ГУЛАГ тарихындағы ең ірі көтерілістердің бірі.",
+      "ru": "Степлаг под Джезказганом был лагерем ГУЛАГа для политических заключённых, которые работали на медных рудниках. В 1954 году здесь произошло Кенгирское восстание — одно из крупнейших в истории ГУЛАГа.",
+      "en": "Steplag near Zhezkazgan was a Gulag camp for political prisoners, who worked in the copper mines. In 1954 it saw the Kengir uprising, one of the largest in the history of the Gulag."
+    },
+    "clue": {
+      "kk": "Тұтқындардың киімі, барактар және 1950-жылдардың суреті.",
+      "ru": "Одежда заключённых, бараки и снимок 1950-х.",
+      "en": "Prisoners' clothing, barracks and a 1950s snapshot."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Степлаг",
+      "https://ru.wikipedia.org/wiki/Кенгирское_восстание_заключённых"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "virgin-lands-tractor-brigade-1955",
+    "pack": [
+      "kz"
+    ],
+    "year": 1955,
+    "lat": 49.877,
+    "lng": 82.484,
+    "place": {
+      "kk": "Ұлан ауданы, Шығыс Қазақстан",
+      "ru": "Уланский район, Восточный Казахстан",
+      "en": "Ulan district, East Kazakhstan"
+    },
+    "image": "images/virgin-lands-tractor-brigade-1955.jpg",
+    "image_credit": {
+      "author": "Емельянов Г. (ТАСС)",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%9E%D1%81%D0%B2%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5_%D1%86%D0%B5%D0%BB%D0%B8%D0%BD%D1%8B_%D0%B2_%D1%82%D1%80%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%BE%D0%B9_%D0%B1%D1%80%D0%B8%D0%B3%D0%B0%D0%B4%D0%B5_%D1%81%D0%BE%D0%B2%D1%85%D0%BE%D0%B7%D0%B0_%22%D0%9F%D0%B5%D1%80%D0%B5%D0%B4%D0%BE%D0%B2%D0%BE%D0%B9%22.jpg"
+    },
+    "title": {
+      "kk": "Тың игерудегі тракторшылар бригадасы",
+      "ru": "Тракторная бригада на целине",
+      "en": "A tractor brigade on the Virgin Lands"
+    },
+    "explanation": {
+      "kk": "1955 жылы сәуірде Шығыс Қазақстандағы «Передовой» кеңшарының тракторшылар бригадасы тың жерді жыртуда. Тың игеру науқаны 1954 жылы басталып, Қазақстанның солтүстігі мен шығысында миллиондаған гектар дала жыртылды.",
+      "ru": "Апрель 1955 года, тракторная бригада совхоза «Передовой» в Восточно-Казахстанской области поднимает целину. Кампания по освоению целины началась в 1954 году: на севере и востоке Казахстана распахали миллионы гектаров степи.",
+      "en": "April 1955: a tractor brigade of the Peredovoy state farm in East Kazakhstan ploughs virgin land. The Virgin Lands campaign began in 1954, and millions of hectares of steppe were ploughed in northern and eastern Kazakhstan."
+    },
+    "clue": {
+      "kk": "Тракторлар, жыртылған дала және кеңестік фотохроника.",
+      "ru": "Тракторы, вспаханная степь и советская фотохроника.",
+      "en": "Tractors, ploughed steppe and Soviet photo-chronicle style."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Освоение_целины"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "baikonur-corona-1962",
+    "pack": [
+      "kz"
+    ],
+    "year": 1962,
+    "lat": 45.965,
+    "lng": 63.305,
+    "place": {
+      "kk": "Байқоңыр ғарыш айлағы",
+      "ru": "Космодром Байконур",
+      "en": "Baikonur Cosmodrome"
+    },
+    "image": "images/baikonur-corona-1962.jpg",
+    "image_credit": {
+      "author": "Scanned Declassified Spy Satellite Imagery",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Baikonur_Cosmodrome_imaged_by_a_KH-4_on_1962-05-30.jpg"
+    },
+    "title": {
+      "kk": "Байқоңыр америкалық барлау спутнигінің көзімен",
+      "ru": "Байконур глазами американского спутника-шпиона",
+      "en": "Baikonur through an American spy satellite"
+    },
+    "explanation": {
+      "kk": "Бұл суретті 1962 жылы американың KH-4 (Corona) барлау спутнигі түсірген. Қырғи-қабақ соғыс кезінде АҚШ Байқоңырды ғарыштан бақылап, кеңестік зымырандар туралы мәлімет жинады.",
+      "ru": "Этот снимок сделал в 1962 году американский разведывательный спутник KH-4 программы Corona. В годы холодной войны США следили за Байконуром из космоса, собирая сведения о советских ракетах.",
+      "en": "This image was taken in 1962 by an American KH-4 reconnaissance satellite of the Corona programme. During the Cold War the USA watched Baikonur from space to learn about Soviet rockets."
+    },
+    "clue": {
+      "kk": "Ғарыштан түсірілген ақ-қара сурет: шөл далада жолдар мен ұшыру алаңдары.",
+      "ru": "Чёрно-белый снимок сверху: дороги и стартовые площадки посреди пустынной степи.",
+      "en": "A black-and-white view from above: roads and launch pads in a desert steppe."
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Corona_(satellite)",
+      "https://ru.wikipedia.org/wiki/Байконур_(космодром)"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "n1-mockup-baikonur-1967",
+    "pack": [
+      "kz"
+    ],
+    "year": 1967,
+    "lat": 45.965,
+    "lng": 63.305,
+    "place": {
+      "kk": "Байқоңыр ғарыш айлағы",
+      "ru": "Космодром Байконур",
+      "en": "Baikonur Cosmodrome"
+    },
+    "image": "images/n1-mockup-baikonur-1967.jpg",
+    "image_credit": {
+      "author": "National Reconnaissance Office",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:N1_1M1_mockup_on_the_launch_pad_at_the_Baikonur_Cosmodrome_in_late_1967.jpg"
+    },
+    "title": {
+      "kk": "Айға ұшатын Н-1 зымыранының макеті",
+      "ru": "Макет лунной ракеты Н-1",
+      "en": "Mock-up of the N1 Moon rocket"
+    },
+    "explanation": {
+      "kk": "1967 жылдың соңында Байқоңырдағы ұшыру алаңына алып Н-1 зымыранының макеті шығарылды. Бұл зымыран кеңес адамын Айға жеткізуге арналған еді, бірақ 1969–1972 жылдардағы төрт ұшырудың бәрі сәтсіз аяқталды.",
+      "ru": "В конце 1967 года на стартовую площадку Байконура вывезли макет сверхтяжёлой ракеты Н-1. Она предназначалась для полёта советского человека на Луну, но все четыре пуска в 1969–1972 годах закончились авариями.",
+      "en": "In late 1967 a mock-up of the super-heavy N1 rocket was rolled out to a launch pad at Baikonur. It was meant to send a Soviet cosmonaut to the Moon, but all four launches in 1969–1972 failed."
+    },
+    "clue": {
+      "kk": "Алып конус тәрізді зымыран және ұшыру мұнарасы.",
+      "ru": "Огромная коническая ракета и стартовая башня.",
+      "en": "A huge conical rocket and a launch tower."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Н-1"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "sary-shagan-radar-1967",
+    "pack": [
+      "kz"
+    ],
+    "year": 1967,
+    "lat": 46.03,
+    "lng": 73.7,
+    "place": {
+      "kk": "Сарышаған полигоны, Балқаш көлі",
+      "ru": "Полигон Сары-Шаган, озеро Балхаш",
+      "en": "Sary-Shagan test site, Lake Balkhash"
+    },
+    "image": "images/sary-shagan-radar-1967.jpg",
+    "image_credit": {
+      "author": "US Air Force",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:SaryShaganSpaceRadar.jpg"
+    },
+    "title": {
+      "kk": "Сарышағандағы радиолокациялық станция",
+      "ru": "Радиолокатор полигона Сары-Шаган",
+      "en": "Radar station at Sary-Shagan"
+    },
+    "explanation": {
+      "kk": "Балқаш көлінің жағасындағы Сарышаған – кеңестік зымыранға қарсы қорғаныс полигоны. 1967 жылы мамырда американың KH-7 спутнигі мұндағы ғарыштық нысандарды бақылайтын радиолокаторды суретке түсірді.",
+      "ru": "Сары-Шаган на берегу Балхаша — советский полигон противоракетной обороны. В мае 1967 года американский спутник KH-7 сфотографировал здесь радиолокатор для слежения за космическими объектами.",
+      "en": "Sary-Shagan on the shore of Lake Balkhash was a Soviet anti-ballistic missile test site. In May 1967 an American KH-7 satellite photographed its radar for tracking objects in space."
+    },
+    "clue": {
+      "kk": "Жоғарыдан түсірілген ақ-қара сурет, ұзын радиолокациялық ғимараттар.",
+      "ru": "Чёрно-белый снимок сверху, длинные здания радиолокаторов.",
+      "en": "A black-and-white overhead image of long radar buildings."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Сары-Шаган_(полигон)"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "savitskaya-baikonur-1982",
+    "pack": [
+      "kz"
+    ],
+    "year": 1982,
+    "lat": 45.965,
+    "lng": 63.305,
+    "place": {
+      "kk": "Байқоңыр ғарыш айлағы",
+      "ru": "Космодром Байконур",
+      "en": "Baikonur Cosmodrome"
+    },
+    "image": "images/savitskaya-baikonur-1982.jpg",
+    "image_credit": {
+      "author": "mos.ru",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Savitskaya_August_1982.jpg"
+    },
+    "title": {
+      "kk": "Светлана Савицкая ұшу алдында",
+      "ru": "Светлана Савицкая перед стартом",
+      "en": "Svetlana Savitskaya before launch"
+    },
+    "explanation": {
+      "kk": "1982 жылы 19 тамызда Светлана Савицкая Байқоңырдан «Союз Т-7» кемесімен ғарышқа ұшты. Ол Валентина Терешковадан кейін ғарышқа ұшқан екінші әйел болды, ал 1984 жылы ашық ғарышқа шыққан тұңғыш әйел атанды.",
+      "ru": "19 августа 1982 года Светлана Савицкая стартовала с Байконура на корабле «Союз Т-7». Она стала второй женщиной в космосе после Валентины Терешковой, а в 1984 году — первой женщиной, вышедшей в открытый космос.",
+      "en": "On 19 August 1982 Svetlana Savitskaya launched from Baikonur aboard Soyuz T-7. She became the second woman in space after Valentina Tereshkova, and in 1984 the first woman to perform a spacewalk."
+    },
+    "clue": {
+      "kk": "Ғарышкер скафандры және кеңестік фотохроника.",
+      "ru": "Скафандр космонавта и советская фотохроника.",
+      "en": "A cosmonaut spacesuit and Soviet photo-chronicle style."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Савицкая,_Светлана_Евгеньевна"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "soyuz-t8-arkalyk-1983",
+    "pack": [
+      "kz"
+    ],
+    "year": 1983,
+    "lat": 50.249,
+    "lng": 66.911,
+    "place": {
+      "kk": "Арқалық",
+      "ru": "Аркалык",
+      "en": "Arkalyk"
+    },
+    "image": "images/soyuz-t8-arkalyk-1983.jpg",
+    "image_credit": {
+      "author": "mos.ru",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lyakhov_and_Aleksandrov_in_Arkalyk.jpg"
+    },
+    "title": {
+      "kk": "Ғарышкерлер қонғаннан кейін Арқалықта",
+      "ru": "Космонавты в Аркалыке после посадки",
+      "en": "Cosmonauts in Arkalyk after landing"
+    },
+    "explanation": {
+      "kk": "1983 жылы сәуірде «Союз Т-8» экипажы Владимир Ляхов пен Александр Александров жерге қонғаннан кейін Арқалыққа жеткізілді. Кеңес ғарышкерлері әдетте Қазақстан даласына қонатын, ал Арқалық оларды қарсы алатын негізгі қалалардың бірі болды.",
+      "ru": "В апреле 1983 года экипаж «Союза Т-8» Владимир Ляхов и Александр Александров после посадки был доставлен в Аркалык. Советские космонавты обычно приземлялись в казахстанской степи, и Аркалык был одним из главных городов, где их встречали.",
+      "en": "In April 1983 the Soyuz T-8 crew, Vladimir Lyakhov and Aleksandr Aleksandrov, were brought to Arkalyk after landing. Soviet cosmonauts usually landed in the Kazakh steppe, and Arkalyk was one of the main towns where they were welcomed."
+    },
+    "clue": {
+      "kk": "Гүл шоқтары, ғарышкерлер және 1980-жылдардың суреті.",
+      "ru": "Цветы, космонавты и снимок 1980-х.",
+      "en": "Flowers, cosmonauts and a 1980s photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Союз_Т-8",
+      "https://ru.wikipedia.org/wiki/Аркалык"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "khorgos-border-guards-1984",
+    "pack": [
+      "kz"
+    ],
+    "year": 1984,
+    "lat": 44.222,
+    "lng": 80.38,
+    "place": {
+      "kk": "Қорғас",
+      "ru": "Хоргос",
+      "en": "Khorgos"
+    },
+    "image": "images/khorgos-border-guards-1984.jpg",
+    "image_credit": {
+      "author": "Yuriy Kuydin / Юрий Куйдин",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RIAN_archive_482282_Mounted_guards_at_frontier%27s_alpine_section.jpg"
+    },
+    "title": {
+      "kk": "Қорғас шекара заставасы",
+      "ru": "Пограничная застава Хоргос",
+      "en": "Khorgos border post"
+    },
+    "explanation": {
+      "kk": "1984 жылы Кеңес–Қытай шекарасындағы Қорғас заставасының атты шекарашылары. Ол кезде шекара жабық еді, ал бүгін Қорғаста «Қорғас» халықаралық шекара маңы ынтымақтастық орталығы мен құрғақ порт жұмыс істейді.",
+      "ru": "Конные пограничники заставы Хоргос на советско-китайской границе в 1984 году. Тогда граница была закрыта, а сегодня в Хоргосе работают международный центр приграничного сотрудничества и сухой порт.",
+      "en": "Mounted border guards of the Khorgos post on the Soviet–Chinese border in 1984. The border was closed then; today Khorgos hosts an international cross-border cooperation centre and a dry port."
+    },
+    "clue": {
+      "kk": "Атты әскерилер, таулар және кеңестік әскери форма.",
+      "ru": "Всадники в военной форме, горы и советская униформа.",
+      "en": "Riders in uniform, mountains and Soviet military dress."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Хоргос_(село)"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "energia-rollout-1987",
+    "pack": [
+      "kz"
+    ],
+    "year": 1987,
+    "lat": 45.965,
+    "lng": 63.305,
+    "place": {
+      "kk": "Байқоңыр ғарыш айлағы",
+      "ru": "Космодром Байконур",
+      "en": "Baikonur Cosmodrome"
+    },
+    "image": "images/energia-rollout-1987.jpg",
+    "image_credit": {
+      "author": "Аркадий Тарасов",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Energia-rocket-transporter-1.jpg"
+    },
+    "title": {
+      "kk": "«Энергия» зымыранын ұшыру алаңына шығару",
+      "ru": "Вывоз ракеты «Энергия» на старт",
+      "en": "Rolling out the Energia rocket"
+    },
+    "explanation": {
+      "kk": "Аса ауыр «Энергия» зымыраны алғаш рет 1987 жылы 15 мамырда Байқоңырдан ұшырылды. 1988 жылы ол «Буран» ғарыш кемесін орбитаға шығарды.",
+      "ru": "Сверхтяжёлая ракета «Энергия» впервые стартовала с Байконура 15 мая 1987 года. В 1988 году она вывела на орбиту космический корабль «Буран».",
+      "en": "The super-heavy Energia rocket first launched from Baikonur on 15 May 1987. In 1988 it carried the Buran space shuttle into orbit."
+    },
+    "clue": {
+      "kk": "Рельспен жүретін алып транспортер және түрлі-түсті кино кадры.",
+      "ru": "Огромный транспортёр на рельсах и цветной кинокадр.",
+      "en": "A giant rail transporter and a colour film still."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Энергия_(ракета-носитель)"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "saryozek-inf-1990",
+    "pack": [
+      "kz"
+    ],
+    "year": 1990,
+    "lat": 44.36,
+    "lng": 77.97,
+    "place": {
+      "kk": "Сарыөзек",
+      "ru": "Сарыозек",
+      "en": "Saryozek"
+    },
+    "image": "images/saryozek-inf-1990.jpg",
+    "image_credit": {
+      "author": "U.S. Department of State",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ambassador_Malloy_Witnesses_the_Elimination_of_the_Last_Soviet_Short-Range_Missiles_Under_the_INF_Treaty.jpg"
+    },
+    "title": {
+      "kk": "Сарыөзекте зымырандарды жою",
+      "ru": "Уничтожение ракет в Сарыозеке",
+      "en": "Destroying missiles at Saryozek"
+    },
+    "explanation": {
+      "kk": "1987 жылғы КСРО мен АҚШ арасындағы орта және кіші қашықтықтағы зымырандар туралы шарт бойынша зымырандар жойылды. 1990 жылы мамырда Сарыөзекте америкалық бақылаушылардың көзінше соңғы кеңестік кіші қашықтықтағы зымырандар жойылды.",
+      "ru": "По договору СССР и США 1987 года о ракетах средней и меньшей дальности целый класс ракет подлежал уничтожению. В мае 1990 года в Сарыозеке при американских инспекторах были уничтожены последние советские ракеты меньшей дальности.",
+      "en": "Under the 1987 Soviet–US Intermediate-Range Nuclear Forces Treaty a whole class of missiles had to be destroyed. In May 1990, at Saryozek, the last Soviet shorter-range missiles were eliminated in front of American inspectors."
+    },
+    "clue": {
+      "kk": "Шетелдік бақылаушылар, дала полигоны және 1990 жылдардың түсті суреті.",
+      "ru": "Иностранные инспекторы, степной полигон и цветное фото начала 1990-х.",
+      "en": "Foreign inspectors, a steppe test site and an early-1990s colour photo."
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Intermediate-Range_Nuclear_Forces_Treaty"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "zhangiztobe-silo-dismantlement-1995",
+    "pack": [
+      "kz"
+    ],
+    "year": 1995,
+    "lat": 49.22,
+    "lng": 81.214,
+    "place": {
+      "kk": "Жаңғызтөбе",
+      "ru": "Жангизтобе",
+      "en": "Zhangiztobe"
+    },
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/WMD_Dismantlement_-_Zhangiz_Tobe%2C_Kazakhstan_-_DPLA_-_7c05f949a7b6b8b58b9fbded3cf07d7b.JPG/960px-WMD_Dismantlement_-_Zhangiz_Tobe%2C_Kazakhstan_-_DPLA_-_7c05f949a7b6b8b58b9fbded3cf07d7b.JPG",
+    "image_credit": {
+      "author": "Department of Defense. Defense Threat Reduction Agency. 10/1/1998",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:WMD_Dismantlement_-_Zhangiz_Tobe,_Kazakhstan_-_DPLA_-_7c05f949a7b6b8b58b9fbded3cf07d7b.JPG"
+    },
+    "title": {
+      "kk": "Ядролық зымыран шахталарын жою",
+      "ru": "Ликвидация шахт ядерных ракет",
+      "en": "Dismantling nuclear missile silos"
+    },
+    "explanation": {
+      "kk": "КСРО ыдырағаннан кейін Қазақстан әлемдегі ең ірі ядролық арсеналдардың біріне ие болды, бірақ одан бас тартты. 1995 жылы Жаңғызтөбе маңында АҚШ-пен бірлескен бағдарлама бойынша ауыр баллистикалық зымырандардың шахталары жойыла бастады.",
+      "ru": "После распада СССР у Казахстана оказался один из крупнейших в мире ядерных арсеналов, но страна добровольно от него отказалась. В 1995 году под Жангизтобе по совместной с США программе начали уничтожать шахты тяжёлых баллистических ракет.",
+      "en": "After the USSR collapsed, Kazakhstan inherited one of the world's largest nuclear arsenals but chose to give it up. In 1995, near Zhangiztobe, silos for heavy ballistic missiles began to be dismantled under a joint programme with the USA."
+    },
+    "clue": {
+      "kk": "Бетон шахталар, техника және 1990-жылдардың түсті суреті.",
+      "ru": "Бетонные шахты, техника и цветной снимок 1990-х.",
+      "en": "Concrete silos, machinery and a 1990s colour photo."
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nunn–Lugar_Cooperative_Threat_Reduction",
+      "https://ru.wikipedia.org/wiki/Жангизтобе"
+    ],
+    "difficulty": 3,
+    "verified_by": ""
+  },
+  {
+    "id": "kokaral-dam-breach-1999",
+    "pack": [
+      "kz"
+    ],
+    "year": 1999,
+    "lat": 46.1,
+    "lng": 60.75,
+    "place": {
+      "kk": "Көкарал бөгеті, Арал теңізі",
+      "ru": "Кокаральская дамба, Аральское море",
+      "en": "Kokaral dam, Aral Sea"
+    },
+    "image": "images/kokaral-dam-breach-1999.jpg",
+    "image_credit": {
+      "author": "esri",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1999-04-30_KokaralBruch.jpg"
+    },
+    "title": {
+      "kk": "Көкарал бөгетінің бұзылуы",
+      "ru": "Прорыв Кокаральской дамбы",
+      "en": "Breach of the Kokaral dam"
+    },
+    "explanation": {
+      "kk": "Арал теңізі тартылып, екіге бөлінгеннен кейін Солтүстік (Кіші) Аралды сақтау үшін Көкарал бөгеті салынды. 1999 жылы сәуірде құмнан үйілген бөгетті су бұзып кетті; 2005 жылы оның орнына берік бөгет салынып, Кіші Арал қайта толыға бастады.",
+      "ru": "Когда Аральское море обмелело и разделилось на части, для спасения Северного (Малого) Арала насыпали Кокаральскую дамбу. В апреле 1999 года песчаную дамбу прорвало; в 2005 году на её месте построили прочную плотину, и Малый Арал начал снова наполняться.",
+      "en": "When the Aral Sea shrank and split apart, the Kokaral dam was piled up to save the Northern (Small) Aral. In April 1999 the sand dam was breached; in 2005 a solid dam was built in its place and the Small Aral began to refill."
+    },
+    "clue": {
+      "kk": "Ғарыштан түсірілген сурет: тартылған теңіз бен құрғақ түбі.",
+      "ru": "Спутниковый снимок: обмелевшее море и высохшее дно.",
+      "en": "A satellite view: a shrunken sea and a dried-up seabed."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Кокаральская_плотина",
+      "https://ru.wikipedia.org/wiki/Аральское_море"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "aral-school-dune-2006",
+    "pack": [
+      "kz"
+    ],
+    "year": 2006,
+    "lat": 46.8,
+    "lng": 61.67,
+    "place": {
+      "kk": "Арал қаласы",
+      "ru": "Аральск",
+      "en": "Aralsk"
+    },
+    "image": "images/aral-school-dune-2006.jpg",
+    "image_credit": {
+      "author": "Zhanat Kulenov",
+      "license": "CC BY-SA 3.0 igo",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_school_overtaken_by_the_dune,_Aral,_Kazakhstan.jpg"
+    },
+    "title": {
+      "kk": "Арал теңізінің құрғап қалған түбі",
+      "ru": "Высохшее дно Аральского моря",
+      "en": "The dried-up bed of the Aral Sea"
+    },
+    "explanation": {
+      "kk": "Бір кездері Арал қаласы балықшылар порты болған, бірақ теңіз ондаған шақырымға шегінді. Арал теңізінің тартылуы ХХ ғасырдың ең ірі экологиялық апаттарының бірі саналады: теңіздің орнында тұзды құмды шөл пайда болды.",
+      "ru": "Когда-то Аральск был портом рыбаков, но море отступило на десятки километров. Высыхание Арала считают одной из крупнейших экологических катастроф XX века: на месте моря возникла солёная песчаная пустыня.",
+      "en": "Aralsk was once a fishing port, but the sea retreated tens of kilometres away. The drying of the Aral is considered one of the largest environmental disasters of the 20th century: a salty sand desert appeared where the sea had been."
+    },
+    "clue": {
+      "kk": "Ұлу қабыршақтары шашылған құм, жалғыз бұта, заманауи сандық фото.",
+      "ru": "Песок с ракушками, одинокий куст, современное цифровое фото.",
+      "en": "Sand strewn with shells, a lone shrub, a modern digital photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Аральское_море",
+      "https://ru.wikipedia.org/wiki/Аральск"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "soyuz-tm31-iss-crew-2000",
+    "pack": [
+      "kz"
+    ],
+    "year": 2000,
+    "lat": 45.965,
+    "lng": 63.305,
+    "place": {
+      "kk": "Байқоңыр ғарыш айлағы",
+      "ru": "Космодром Байконур",
+      "en": "Baikonur Cosmodrome"
+    },
+    "image": "images/soyuz-tm31-iss-crew-2000.jpg",
+    "image_credit": {
+      "author": "NASA",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Soyuz_TM-31_launch.jpg"
+    },
+    "title": {
+      "kk": "ХҒС-ның алғашқы экипажының ұшырылуы",
+      "ru": "Старт первого экипажа МКС",
+      "en": "Launch of the first ISS crew"
+    },
+    "explanation": {
+      "kk": "2000 жылы 31 қазанда «Союз ТМ-31» Байқоңырдан Халықаралық ғарыш станциясына алғашқы ұзақ мерзімді экипажды алып ұшты. Сол күннен бері ғарыш станциясында адамдар үздіксіз тұрып келеді.",
+      "ru": "31 октября 2000 года «Союз ТМ-31» стартовал с Байконура с первым долговременным экипажем Международной космической станции. С тех пор на станции постоянно живут люди.",
+      "en": "On 31 October 2000 Soyuz TM-31 lifted off from Baikonur carrying the first long-duration crew of the International Space Station. Since then the station has been continuously inhabited."
+    },
+    "clue": {
+      "kk": "«Союз» зымыраны ұшып барады, түсті цифрлық сурет.",
+      "ru": "Взлетающая ракета «Союз», цветной цифровой снимок.",
+      "en": "A Soyuz rocket lifting off, a colour digital photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Союз_ТМ-31",
+      "https://en.wikipedia.org/wiki/Expedition_1"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "almaty-tram-2013",
+    "pack": [
+      "kz"
+    ],
+    "year": 2013,
+    "lat": 43.256,
+    "lng": 76.928,
+    "place": {
+      "kk": "Алматы",
+      "ru": "Алма-Ата",
+      "en": "Almaty"
+    },
+    "image": "images/almaty-tram-2013.jpg",
+    "image_credit": {
+      "author": "SkySex",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tram_in_Almaty_city.JPG"
+    },
+    "title": {
+      "kk": "Алматы трамвайы",
+      "ru": "Алматинский трамвай",
+      "en": "The Almaty tram"
+    },
+    "explanation": {
+      "kk": "Алматыда трамвай 1937 жылдан бастап жүрді. 2015 жылы трамвай қозғалысы тоқтатылып, жолдары бөлшектелді; сондықтан бұл сурет – жоғалып кеткен қала көлігінің соңғы жылдарының куәсі.",
+      "ru": "Трамвай ходил по Алма-Ате с 1937 года. В 2015 году движение закрыли, а пути разобрали, так что этот снимок — свидетельство последних лет исчезнувшего городского транспорта.",
+      "en": "Trams ran in Almaty from 1937. In 2015 the service was shut down and the tracks removed, so this photo captures the last years of a vanished form of city transport."
+    },
+    "clue": {
+      "kk": "Ескі трамвай вагоны, заманауи көліктер және тауға жақын қала.",
+      "ru": "Старый трамвайный вагон, современные машины и город у гор.",
+      "en": "An old tram car, modern cars and a city near the mountains."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Алматинский_трамвай"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "yasawi-mausoleum-turkestan-album-1870",
+    "pack": [
+      "kz"
+    ],
+    "year": 1870,
+    "lat": 43.2933,
+    "lng": 68.2711,
+    "place": {
+      "kk": "Түркістан",
+      "ru": "Туркестан",
+      "en": "Turkistan"
+    },
+    "image": "images/yasawi-mausoleum-turkestan-album-1870.jpg",
+    "image_credit": {
+      "author": "Bogaevskii, Nikolai V., 1843-1912",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Syr-Darya_Oblast._City_of_Turkestan._Main_Facade_of_Saint_Sultan_Akhmed_Iassavi%27s_Mausoleum_WDL3587.png"
+    },
+    "title": {
+      "kk": "Қожа Ахмет Ясауи кесенесі",
+      "ru": "Мавзолей Ходжи Ахмеда Ясави",
+      "en": "Mausoleum of Khoja Ahmed Yasawi"
+    },
+    "explanation": {
+      "kk": "Бұл сурет 1865–1872 жылдары жасалған «Түркістан альбомынан» алынған – Орта Азияның ең алғашқы фотошежірелерінің бірі. Кесене Әмір Темірдің бұйрығымен XIV ғасырдың соңында салына бастады, ал бүгін ол ЮНЕСКО-ның Бүкіләлемдік мұра тізімінде.",
+      "ru": "Снимок из «Туркестанского альбома» 1865–1872 годов — одной из первых больших фотолетописей Средней Азии. Мавзолей начали строить по приказу Тимура в конце XIV века, сегодня он входит в список Всемирного наследия ЮНЕСКО.",
+      "en": "A photo from the Turkestan Album of 1865–1872, one of the first large photographic surveys of Central Asia. The mausoleum was begun on Timur's orders at the end of the 14th century and is now a UNESCO World Heritage Site."
+    },
+    "clue": {
+      "kk": "Үлкен портал, күмбез және өте ерте фотосурет.",
+      "ru": "Огромный портал, купол и очень ранняя фотография.",
+      "en": "A huge portal, a dome and a very early photograph."
+    },
+    "sources": [
+      "https://www.loc.gov/collections/turkestan-album/",
+      "https://ru.wikipedia.org/wiki/Мавзолей_Ходжи_Ахмеда_Ясави"
+    ],
+    "difficulty": 1,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "chimkent-turkestan-album-1870",
+    "pack": [
+      "kz"
+    ],
+    "year": 1870,
+    "lat": 42.317,
+    "lng": 69.596,
+    "place": {
+      "kk": "Шымкент",
+      "ru": "Чимкент (Шымкент)",
+      "en": "Chimkent (Shymkent)"
+    },
+    "image": "images/chimkent-turkestan-album-1870.jpg",
+    "image_credit": {
+      "author": "Unknown photographer (Library of Congress)",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Syr-dar%27inskaia_oblast%27._Zapadnaia_chast%27_g._Chimkenda,_vid_s_tsitadeli_LCCN2007680449.jpg"
+    },
+    "title": {
+      "kk": "Шымкенттің бекіністен көрінісі",
+      "ru": "Вид Чимкента с цитадели",
+      "en": "Chimkent seen from the citadel"
+    },
+    "explanation": {
+      "kk": "1864 жылы Шымкентті орыс әскері алды, ал бірнеше жылдан кейін «Түркістан альбомының» фотографтары қаланы бекіністен суретке түсірді. Сол кездегі шағын саз балшықты қала бүгін Қазақстанның ең ірі үш қаласының біріне айналды.",
+      "ru": "В 1864 году Чимкент взяли русские войска, а через несколько лет фотографы «Туркестанского альбома» сняли город с цитадели. Тогдашний небольшой глинобитный город сегодня стал одним из трёх крупнейших городов Казахстана.",
+      "en": "Russian troops captured Chimkent in 1864, and a few years later photographers of the Turkestan Album shot the town from its citadel. That small mud-brick town is today one of Kazakhstan's three largest cities."
+    },
+    "clue": {
+      "kk": "Жалпақ төбелі саз үйлер, бақтар және ерте фотосурет.",
+      "ru": "Плоские глинобитные крыши, сады и ранняя фотография.",
+      "en": "Flat mud-brick roofs, gardens and an early photograph."
+    },
+    "sources": [
+      "https://www.loc.gov/item/2007680449/",
+      "https://ru.wikipedia.org/wiki/Шымкент"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "alash-intelligentsia-semey-1918",
+    "pack": [
+      "kz",
+      "semey"
+    ],
+    "year": 1918,
+    "lat": 50.411,
+    "lng": 80.227,
+    "place": {
+      "kk": "Семей",
+      "ru": "Семипалатинск",
+      "en": "Semipalatinsk (Semey)"
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Alash_intelligentsia%2C_Semipalatinsk%2C_1918.jpg",
+    "image_credit": {
+      "author": "Unknown author",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Alash_intelligentsia,_Semipalatinsk,_1918.jpg"
+    },
+    "title": {
+      "kk": "Семейдегі Алаш қайраткерлері",
+      "ru": "Деятели Алаша в Семипалатинске",
+      "en": "Alash leaders in Semipalatinsk"
+    },
+    "explanation": {
+      "kk": "1917 жылы желтоқсанда Орынборда өткен жалпықазақ съезінде Алаш автономиясы жарияланып, Алаш Орда үкіметі құрылды. Оның орталығы Семей болды; суретте 1918 жылы қалада түскен Алаш партиясының мүшелері бейнеленген.",
+      "ru": "В декабре 1917 года Всеказахский съезд в Оренбурге провозгласил автономию Алаш и создал правительство Алаш-Орда. Его центром стал Семипалатинск; на снимке члены партии Алаш в городе в 1918 году.",
+      "en": "In December 1917 the All-Kazakh Congress in Orenburg proclaimed the Alash autonomy and formed the Alash Orda government. Its centre was Semipalatinsk; the photo shows members of the Alash party in the city in 1918."
+    },
+    "clue": {
+      "kk": "Европалық костюмдер мен қазақ бас киімдері, топтық портрет.",
+      "ru": "Европейские костюмы рядом с казахскими головными уборами, групповой портрет.",
+      "en": "European suits next to Kazakh headwear in a group portrait."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Алаш-Орда",
+      "https://ru.wikipedia.org/wiki/Алашская_автономия"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "zaysan-post-1875",
+    "pack": [
+      "kz"
+    ],
+    "year": 1875,
+    "lat": 47.467,
+    "lng": 84.867,
+    "place": {
+      "kk": "Зайсан",
+      "ru": "Зайсан",
+      "en": "Zaysan"
+    },
+    "image": "images/zaysan-post-1875.jpg",
+    "image_credit": {
+      "author": "Adolf Nikolay Boyarsky",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zaysan_Post,_Kazakhstan,_1875_WDL2059.png"
+    },
+    "title": {
+      "kk": "Зайсан бекеті",
+      "ru": "Зайсанский пост",
+      "en": "Zaysan military post"
+    },
+    "explanation": {
+      "kk": "1874–1875 жылдары Ресей үкіметі Қытайға сауда жолдарын зерттеу үшін экспедиция жіберді, оның фотографы жол бойындағы жерлерді суретке түсірді. Қытай шекарасына жақын Зайсан бекеті кейін Зайсан қаласына айналды.",
+      "ru": "В 1874–1875 годах российское правительство отправило в Китай экспедицию для изучения торговых путей, и её фотограф снимал места по дороге. Зайсанский пост у китайской границы позже вырос в город Зайсан.",
+      "en": "In 1874–1875 the Russian government sent an expedition to China to study trade routes, and its photographer documented places along the way. The Zaysan post near the Chinese border later grew into the town of Zaysan."
+    },
+    "clue": {
+      "kk": "Тау етегіндегі аласа үйлер мен ерте фотосурет.",
+      "ru": "Низкие постройки у подножия гор и ранняя фотография.",
+      "en": "Low buildings at the foot of mountains and an early photograph."
+    },
+    "sources": [
+      "https://www.wdl.org/en/item/2059/",
+      "https://ru.wikipedia.org/wiki/Зайсан"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "auliekol-volost-school-1896",
+    "pack": [
+      "kz"
+    ],
+    "year": 1896,
+    "lat": 52.37,
+    "lng": 64.1,
+    "place": {
+      "kk": "Әулиекөл, Торғай облысы",
+      "ru": "Аулиеколь, Тургайская область",
+      "en": "Auliekol, Turgay region"
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/%D0%90%D1%83%D0%BB%D0%B8%D0%B5%D0%BA%D1%83%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D0%B2%D0%BE%D0%BB%D0%BE%D1%81%D1%82%D0%BD%D0%B0%D1%8F_%D1%88%D0%BA%D0%BE%D0%BB%D0%B0_%D0%A2%D1%83%D1%80%D0%B3%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8_%281896_%D0%B3.%29.jpg",
+    "image_credit": {
+      "author": "Unknown author",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%90%D1%83%D0%BB%D0%B8%D0%B5%D0%BA%D1%83%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D0%B2%D0%BE%D0%BB%D0%BE%D1%81%D1%82%D0%BD%D0%B0%D1%8F_%D1%88%D0%BA%D0%BE%D0%BB%D0%B0_%D0%A2%D1%83%D1%80%D0%B3%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8_(1896_%D0%B3.).jpg"
+    },
+    "title": {
+      "kk": "Әулиекөл болыстық мектебі",
+      "ru": "Аулиекольская волостная школа",
+      "en": "Auliekol volost school"
+    },
+    "explanation": {
+      "kk": "Торғай облысында қазақ балаларына арналған мектептерді ағартушы Ыбырай Алтынсарин ашуды бастады. 1896 жылғы бұл сурет ауылдағы болыстық мектепті көрсетеді, бұндай мектептерде балалар орыс және қазақ тілдерінде оқыды.",
+      "ru": "В Тургайской области школы для казахских детей начал открывать просветитель Ибрай Алтынсарин. На снимке 1896 года — волостная школа в Аулиеколе, где дети учились на русском и казахском языках.",
+      "en": "In Turgay region the educator Ibrai Altynsarin began opening schools for Kazakh children. This 1896 photo shows the volost school in Auliekol, where children studied in Russian and Kazakh."
+    },
+    "clue": {
+      "kk": "Балалар мен мұғалімдер, қарапайым мектеп үйі, XIX ғасыр соңы.",
+      "ru": "Ученики и учителя, простое здание школы, конец XIX века.",
+      "en": "Pupils and teachers, a simple school building, late 19th century."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Алтынсарин,_Ибрай",
+      "https://ru.wikipedia.org/wiki/Аулиеколь"
+    ],
+    "difficulty": 3,
+    "verified_by": ""
+  },
+  {
+    "id": "aulie-ata-citadel-1871",
+    "pack": [
+      "kz"
+    ],
+    "year": 1871,
+    "lat": 42.9,
+    "lng": 71.367,
+    "place": {
+      "kk": "Әулиеата (Тараз)",
+      "ru": "Аулие-Ата (Тараз)",
+      "en": "Aulie-Ata (Taraz)"
+    },
+    "image": "images/aulie-ata-citadel-1871.jpg",
+    "image_credit": {
+      "author": "Терентьев Т.А.",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aulie-ata_Razvaliny_citadeli.jpg"
+    },
+    "title": {
+      "kk": "Әулиеата бекінісінің қирандылары",
+      "ru": "Развалины цитадели Аулие-Аты",
+      "en": "Ruins of the Aulie-Ata citadel"
+    },
+    "explanation": {
+      "kk": "1871–1872 жылдардағы «Түркістан альбомындағы» сурет: Әулиеата бекінісінің қирандылары. Әулиеата – екі мың жылдан астам тарихы бар ежелгі Тараз қаласы, Ұлы Жібек жолындағы маңызды орталық.",
+      "ru": "Снимок из «Туркестанского альбома» 1871–1872 годов: развалины цитадели Аулие-Аты. Аулие-Ата — это древний Тараз, город с более чем двухтысячелетней историей и важный центр на Великом шёлковом пути.",
+      "en": "A photo from the 1871–1872 Turkestan Album: the ruins of the Aulie-Ata citadel. Aulie-Ata is ancient Taraz, a city with over two thousand years of history and an important centre on the Great Silk Road."
+    },
+    "clue": {
+      "kk": "Саз балшық қабырғалардың қирандылары, өте ерте фотосурет.",
+      "ru": "Руины глинобитных стен, очень ранняя фотография.",
+      "en": "Ruined mud-brick walls, a very early photograph."
+    },
+    "sources": [
+      "https://www.loc.gov/collections/turkestan-album/",
+      "https://ru.wikipedia.org/wiki/Тараз"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
   }
 ]
