@@ -704,7 +704,7 @@
       "ru": "Верный (Алма-Ата)",
       "en": "Verny (Almaty)"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Ascension_Cathedral_in_Verny88.jpg",
+    "image": "images/verny-cathedral-construction-1906.jpg",
     "image_credit": {
       "author": "Фото неизвестного мастера",
       "license": "Public domain",
@@ -729,7 +729,7 @@
       "https://ru.wikipedia.org/wiki/Вознесенский_собор_(Алма-Ата)"
     ],
     "difficulty": 2,
-    "verified_by": ""
+    "verified_by": "Claude (сверено по источникам)"
   },
   {
     "id": "verny-romanov-tercentenary-1913",
@@ -1338,47 +1338,6 @@
     "verified_by": "Claude (сверено по источникам)"
   },
   {
-    "id": "zhangiztobe-silo-dismantlement-1995",
-    "pack": [
-      "kz"
-    ],
-    "year": 1995,
-    "lat": 49.22,
-    "lng": 81.214,
-    "place": {
-      "kk": "Жаңғызтөбе",
-      "ru": "Жангизтобе",
-      "en": "Zhangiztobe"
-    },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/WMD_Dismantlement_-_Zhangiz_Tobe%2C_Kazakhstan_-_DPLA_-_7c05f949a7b6b8b58b9fbded3cf07d7b.JPG/960px-WMD_Dismantlement_-_Zhangiz_Tobe%2C_Kazakhstan_-_DPLA_-_7c05f949a7b6b8b58b9fbded3cf07d7b.JPG",
-    "image_credit": {
-      "author": "Department of Defense. Defense Threat Reduction Agency. 10/1/1998",
-      "license": "Public domain",
-      "source_url": "https://commons.wikimedia.org/wiki/File:WMD_Dismantlement_-_Zhangiz_Tobe,_Kazakhstan_-_DPLA_-_7c05f949a7b6b8b58b9fbded3cf07d7b.JPG"
-    },
-    "title": {
-      "kk": "Ядролық зымыран шахталарын жою",
-      "ru": "Ликвидация шахт ядерных ракет",
-      "en": "Dismantling nuclear missile silos"
-    },
-    "explanation": {
-      "kk": "КСРО ыдырағаннан кейін Қазақстан әлемдегі ең ірі ядролық арсеналдардың біріне ие болды, бірақ одан бас тартты. 1995 жылы Жаңғызтөбе маңында АҚШ-пен бірлескен бағдарлама бойынша ауыр баллистикалық зымырандардың шахталары жойыла бастады.",
-      "ru": "После распада СССР у Казахстана оказался один из крупнейших в мире ядерных арсеналов, но страна добровольно от него отказалась. В 1995 году под Жангизтобе по совместной с США программе начали уничтожать шахты тяжёлых баллистических ракет.",
-      "en": "After the USSR collapsed, Kazakhstan inherited one of the world's largest nuclear arsenals but chose to give it up. In 1995, near Zhangiztobe, silos for heavy ballistic missiles began to be dismantled under a joint programme with the USA."
-    },
-    "clue": {
-      "kk": "Бетон шахталар, техника және 1990-жылдардың түсті суреті.",
-      "ru": "Бетонные шахты, техника и цветной снимок 1990-х.",
-      "en": "Concrete silos, machinery and a 1990s colour photo."
-    },
-    "sources": [
-      "https://en.wikipedia.org/wiki/Nunn–Lugar_Cooperative_Threat_Reduction",
-      "https://ru.wikipedia.org/wiki/Жангизтобе"
-    ],
-    "difficulty": 3,
-    "verified_by": ""
-  },
-  {
     "id": "kokaral-dam-breach-1999",
     "pack": [
       "kz"
@@ -1719,7 +1678,7 @@
       "ru": "Аулиеколь, Тургайская область",
       "en": "Auliekol, Turgay region"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/%D0%90%D1%83%D0%BB%D0%B8%D0%B5%D0%BA%D1%83%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D0%B2%D0%BE%D0%BB%D0%BE%D1%81%D1%82%D0%BD%D0%B0%D1%8F_%D1%88%D0%BA%D0%BE%D0%BB%D0%B0_%D0%A2%D1%83%D1%80%D0%B3%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8_%281896_%D0%B3.%29.jpg",
+    "image": "images/auliekol-volost-school-1896.jpg",
     "image_credit": {
       "author": "Unknown author",
       "license": "Public domain",
@@ -1745,7 +1704,7 @@
       "https://ru.wikipedia.org/wiki/Аулиеколь"
     ],
     "difficulty": 3,
-    "verified_by": ""
+    "verified_by": "Claude (сверено по источникам)"
   },
   {
     "id": "aulie-ata-citadel-1871",
@@ -1910,47 +1869,6 @@
     ],
     "difficulty": 3,
     "verified_by": "Claude (сверено по источникам)"
-  },
-  {
-    "id": "kokshetau-railway-station-1952",
-    "pack": [
-      "kz"
-    ],
-    "year": 1952,
-    "lat": 53.288,
-    "lng": 69.422,
-    "place": {
-      "kk": "Көкшетау",
-      "ru": "Кокчетав (Кокшетау)",
-      "en": "Kokchetav (Kokshetau)"
-    },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/First_Railway_Station_in_Kokshetau%2C_Kazakhstan.jpg",
-    "image_credit": {
-      "author": "Unknown author",
-      "license": "Public domain",
-      "source_url": "https://commons.wikimedia.org/wiki/File:First_Railway_Station_in_Kokshetau,_Kazakhstan.jpg"
-    },
-    "title": {
-      "kk": "Көкшетаудың алғашқы теміржол вокзалы",
-      "ru": "Первый вокзал Кокчетава",
-      "en": "Kokchetav's first railway station"
-    },
-    "explanation": {
-      "kk": "1952 жылғы сурет: Көкшетаудағы алғашқы теміржол вокзалы. 1944 жылы Көкшетау облыс орталығы болды, ал 1950-жылдары тың игеру басталғанда қала солтүстік Қазақстанның маңызды көлік торабына айналды.",
-      "ru": "Снимок 1952 года: первый железнодорожный вокзал Кокчетава. В 1944 году город стал областным центром, а с началом освоения целины в 1950-х превратился в важный транспортный узел Северного Казахстана.",
-      "en": "A 1952 photo of Kokchetav's first railway station. The town became a regional centre in 1944, and with the Virgin Lands campaign of the 1950s it grew into an important transport hub of northern Kazakhstan."
-    },
-    "clue": {
-      "kk": "Бір қабатты вокзал ғимараты, кеңестік ақ-қара сурет.",
-      "ru": "Одноэтажное здание вокзала, советский чёрно-белый снимок.",
-      "en": "A single-storey station building, a Soviet black-and-white photo."
-    },
-    "sources": [
-      "https://ru.wikipedia.org/wiki/Кокшетау",
-      "https://ru.wikipedia.org/wiki/Кокчетавская_область"
-    ],
-    "difficulty": 3,
-    "verified_by": ""
   },
   {
     "id": "chagan-air-base-1965",
@@ -2128,7 +2046,7 @@
       "ru": "Устье Сырдарьи, Аральское море",
       "en": "Syr Darya mouth, Aral Sea"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/da/%D0%A8%D1%85%D1%83%D0%BD%D1%8B_%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD_%D0%B8_%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB.jpg",
+    "image": "images/aral-expedition-schooners-1848.jpg",
     "image_credit": {
       "author": "Т. Г. Шевченко",
       "license": "Public domain",
@@ -2154,7 +2072,7 @@
       "https://kazpravda.kz/n/kobzar-i-step"
     ],
     "difficulty": 3,
-    "verified_by": ""
+    "verified_by": "Claude (сверено по источникам)"
   },
   {
     "id": "alma-ata-mudflow-1921",
