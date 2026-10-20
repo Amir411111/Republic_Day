@@ -113,17 +113,40 @@ export function RegionsLayer({ selectedId }: { selectedId: string | null }) {
 
 export const MONUMENT_LAYER_ID = 'monuments';
 
-// ~600 open-data points: one GeoJSON layer instead of DOM markers
-export function MonumentsLayer({ data }: { data: FeatureCollection }) {
+// Classes from the Law on historical and cultural heritage; set by scripts/import_monument_lists.py
+export const MONUMENT_KINDS = ['archaeology', 'architecture', 'monumental', 'ensemble', 'sacral', 'history', 'other'] as const;
+export type MonumentKind = (typeof MONUMENT_KINDS)[number];
+
+// Distinct in hue and lightness, readable over both desert and mountains
+export const MONUMENT_COLORS: Record<MonumentKind, string> = {
+  archaeology: '#e0a458',
+  architecture: '#5fb3e0',
+  monumental: '#e46f93',
+  ensemble: '#a597f2',
+  sacral: '#4fbf98',
+  history: '#e9eef7',
+  other: '#93a3bd',
+};
+
+const COLOR_BY_KIND = [
+  'match',
+  ['get', 'kind'],
+  ...MONUMENT_KINDS.flatMap((k) => [k, MONUMENT_COLORS[k]]),
+  MONUMENT_COLORS.other,
+] as unknown as ExpressionSpecification;
+
+// ~1000+ points: one GeoJSON layer, filtered by class on the GPU instead of DOM markers
+export function MonumentsLayer({ data, kinds }: { data: FeatureCollection; kinds: MonumentKind[] }) {
   return (
     <Source id="monuments-src" type="geojson" data={data}>
       <Layer
         id={MONUMENT_LAYER_ID}
         type="circle"
+        filter={['in', ['get', 'kind'], ['literal', kinds]]}
         paint={{
-          'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 2.5, 8, 5, 12, 8],
-          'circle-color': '#cfd8e6',
-          'circle-opacity': 0.85,
+          'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 2.8, 8, 5, 12, 8],
+          'circle-color': COLOR_BY_KIND,
+          'circle-opacity': 0.9,
           'circle-stroke-color': '#070d18',
           'circle-stroke-width': 1,
         }}

@@ -6,13 +6,25 @@ import type { FeatureCollection } from 'geojson';
 import regionsRaw from '../../content/regions.json';
 import { ALL_CARDS, imageUrl, isVerified } from '../game/cards';
 import type { Card, L10n } from '../game/types';
+import type { StringKey } from '../i18n/strings';
 import Guide from '../guide/Guide';
 import { useI18n } from '../i18n';
 import { Button } from '../ui/Button';
 import { cn } from '../ui/cn';
 import { TopBar } from '../ui/TopBar';
 import { EVENTS, yearLabel, type HistEvent } from './events';
-import { CountryOutline, EraOverlay, ModernWithin, MONUMENT_LAYER_ID, MonumentsLayer, REGION_LAYER_ID, RegionsLayer } from './layers';
+import {
+  CountryOutline,
+  EraOverlay,
+  MONUMENT_COLORS,
+  MONUMENT_KINDS,
+  MONUMENT_LAYER_ID,
+  ModernWithin,
+  MonumentsLayer,
+  REGION_LAYER_ID,
+  RegionsLayer,
+  type MonumentKind,
+} from './layers';
 import MapCanvas, { type Camera as Cam } from './MapCanvas';
 import { PERIODS, formatRange, periodById, periodOfYear, type PeriodId } from './periods';
 import Timeline from './Timeline';
@@ -30,9 +42,20 @@ interface Monument {
   type: KkRu;
   district: KkRu;
   region: KkRu;
+  kind: MonumentKind;
   // the act or dataset this point comes from
   source: string;
 }
+
+const KIND_LABEL: Record<MonumentKind, StringKey> = {
+  archaeology: 'monArchaeology',
+  architecture: 'monArchitecture',
+  monumental: 'monMonumental',
+  ensemble: 'monEnsemble',
+  sacral: 'monSacral',
+  history: 'monHistory',
+  other: 'monOther',
+};
 
 interface RegionInfo {
   note: L10n;
@@ -163,6 +186,7 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
   const [showPhotos, setShowPhotos] = useState(true);
   const [showMon, setShowMon] = useState(false);
   const [monuments, setMonuments] = useState<Monument[] | null>(null);
+  const [monKinds, setMonKinds] = useState<MonumentKind[]>([...MONUMENT_KINDS]);
   const [sel, setSel] = useState<Selection | null>(null);
   const [camera, setCamera] = useState<Cam | null>(null);
   const [ask, setAsk] = useState(false);
@@ -183,13 +207,22 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
       import('../../content/monuments.json').then((m) => setMonuments(m.default as Monument[]));
   }, [showMon, monuments]);
 
+  // classes present in the data, with counts, in the fixed legend order
+  const kindCounts = useMemo(() => {
+    const n = new Map<MonumentKind, number>();
+    monuments?.forEach((m) => n.set(m.kind, (n.get(m.kind) ?? 0) + 1));
+    return MONUMENT_KINDS.filter((k) => n.has(k)).map((k) => [k, n.get(k)!] as const);
+  }, [monuments]);
+  const toggleKind = (k: MonumentKind) =>
+    setMonKinds((ks) => (ks.includes(k) ? ks.filter((x) => x !== k) : [...ks, k]));
+
   const monumentGeo = useMemo<FeatureCollection | null>(
     () =>
       monuments && {
         type: 'FeatureCollection',
         features: monuments.map((m) => ({
           type: 'Feature',
-          properties: { id: m.id },
+          properties: { id: m.id, kind: m.kind },
           geometry: { type: 'Point', coordinates: [m.lng, m.lat] },
         })),
       },
@@ -263,8 +296,10 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
       const m = sel.mon;
       const place = [ml(m.district), ml(m.region)].filter(Boolean).join(', ');
       return (
-        <Panel key={`m${m.id}`} onClose={close} color="#cfd8e6">
-          <p className="pr-10 text-xs font-semibold tracking-[0.16em] text-muted-foreground uppercase">{ml(m.type)}</p>
+        <Panel key={`m${m.id}`} onClose={close} color={MONUMENT_COLORS[m.kind]}>
+          <p className="pr-10 text-xs font-semibold tracking-[0.16em] uppercase" style={{ color: MONUMENT_COLORS[m.kind] }}>
+            {t(KIND_LABEL[m.kind])}
+          </p>
           <h3 className="mt-1 text-lg leading-tight font-bold text-pretty">{ml(m.name)}</h3>
           <p className="mt-1 text-sm text-muted-foreground">{place}</p>
           <p className="mt-3 text-xs text-muted-foreground">
@@ -388,7 +423,7 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
         {withinEmpire && <ModernWithin />}
         {regionsOn && <RegionsLayer selectedId={sel?.type === 'region' ? sel.id : null} />}
         <CountryOutline />
-        {showMon && monumentGeo && <MonumentsLayer data={monumentGeo} />}
+        {showMon && monumentGeo && <MonumentsLayer data={monumentGeo} kinds={monKinds} />}
         {items.map((i) => {
           const active = i.key === selectedKey;
           return (
@@ -474,6 +509,22 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-5 sm:pb-5">
         <div className="mx-auto flex max-w-6xl flex-col gap-2">
           <AnimatePresence mode="wait">{panel()}</AnimatePresence>
+          {showMon && kindCounts.length > 0 && (
+            <div className="pointer-events-auto flex gap-1.5 overflow-x-auto [scrollbar-width:none]">
+              {kindCounts.map(([k, n]) => (
+                <Button
+                  key={k}
+                  variant="chip"
+                  on={monKinds.includes(k)}
+                  onClick={() => toggleKind(k)}
+                  className={cn('min-h-10 shrink-0 px-3 text-xs', !monKinds.includes(k) && 'opacity-60')}
+                >
+                  <span aria-hidden="true" className="size-2.5 rounded-full" style={{ backgroundColor: MONUMENT_COLORS[k] }} />
+                  {t(KIND_LABEL[k])} <span className="tabular-nums opacity-70">{n}</span>
+                </Button>
+              ))}
+            </div>
+          )}
           <div className="pointer-events-auto flex gap-1.5 overflow-x-auto [scrollbar-width:none]">
             <Button variant="chip" on={showEvents} onClick={() => setShowEvents(!showEvents)} className="shrink-0 px-3">
               ◆ {t('layerEvents')}

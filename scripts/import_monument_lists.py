@@ -188,6 +188,27 @@ def in_regions(lat, lng, ids):
     return any(inside(lng, lat, r) or near(lng, lat, r) for i in ids for r in REGION_RINGS.get(i, []))
 
 
+# --- classes ------------------------------------------------------------------------------
+
+# Types of monuments named in the Law "On the protection and use of historical and cultural heritage"
+KINDS = [
+    ("archaeology", ("археолог",)),
+    ("architecture", ("градостро", "архитект", "сәулет")),
+    ("monumental", ("монумент",)),
+    ("ensemble", ("ансамбл", "комплекс", "кешен")),
+    ("sacral", ("сакрал", "киелі")),
+    ("history", ("истори", "тарих")),
+]
+
+
+def kind_of(type_ru, type_kk):
+    text = f"{type_ru} {type_kk}".lower()
+    for kind, keys in KINDS:
+        if any(k in text for k in keys):
+            return kind
+    return "other"
+
+
 # --- parsing one act -----------------------------------------------------------------------
 
 def find_columns(header):
@@ -288,9 +309,13 @@ def main():
             unique.append(m)
     for i, m in enumerate(unique, 1):
         m["id"] = i
+        m["kind"] = kind_of(m["type"]["ru"], m["type"]["kk"])
     OUT.write_text(json.dumps(unique, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     regions = sorted({m["region"]["ru"] for m in unique})
-    META.write_text(json.dumps({"count": len(unique), "regions": len(regions)}) + "\n", encoding="utf-8")
+    kinds = {}
+    for m in unique:
+        kinds[m["kind"]] = kinds.get(m["kind"], 0) + 1
+    META.write_text(json.dumps({"count": len(unique), "regions": len(regions), "kinds": kinds}) + "\n", encoding="utf-8")
     print(f"{len(unique)} monuments -> {OUT}")
 
 
