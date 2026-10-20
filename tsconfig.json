@@ -14,5 +14,5 @@
     "noEmit": true,
     "types": ["vite/client"]
   },
-  "include": ["src", "content/cards.json", "content/events.json", "content/quest-semey.json", "content/monuments-kostanay.json", "content/periods.json", "content/tunnel.json", "content/regions.json"]
+  "include": ["src", "content/cards.json", "content/events.json", "content/quest-semey.json", "content/monuments.json", "content/monuments-meta.json", "content/periods.json", "content/tunnel.json", "content/regions.json"]
 }

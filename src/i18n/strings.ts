@@ -94,9 +94,9 @@ export const STRINGS = {
   approxPlace: { kk: 'орны шамамен', ru: 'место указано примерно', en: 'approximate location' },
   layerMonuments: { kk: 'Ескерткіштер (ашық деректер)', ru: 'Памятники (открытые данные)', en: 'Monuments (open data)' },
   monumentsNote: {
-    kk: 'Сұр нүктелер – Қостанай облысының тарих және мәдениет ескерткіштері, мемлекеттік ашық деректер порталынан:',
-    ru: 'Серые точки — памятники истории и культуры Костанайской области из государственного портала открытых данных:',
-    en: 'Grey dots: historical and cultural monuments of Kostanay region from the government open data portal:',
+    kk: 'Сұр нүктелер – тарих және мәдениет ескерткіштері: облыстардың мемлекеттік тізімдері (Әділет) және data.egov.kz ашық деректері',
+    ru: 'Серые точки — памятники истории и культуры из государственных списков областей (Әділет) и открытых данных data.egov.kz',
+    en: 'Grey dots: historical and cultural monuments from the regional state lists (Adilet) and data.egov.kz open data',
   },
   monumentsSource: { kk: 'Дереккөз', ru: 'Источник', en: 'Source' },
   timeline: { kk: 'Уақыт желісі', ru: 'Хронология', en: 'Timeline' },
@@ -279,9 +279,14 @@ export const STRINGS = {
     en: 'Historical photos, paintings and documents',
   },
   srcEgov: {
-    kk: 'Қостанай облысының тарих және мәдениет ескерткіштері',
-    ru: 'Памятники истории и культуры Костанайской области',
-    en: 'Historical and cultural monuments of Kostanay region',
+    kk: 'Қостанай облысының тарих және мәдениет ескерткіштері (координаттарымен)',
+    ru: 'Памятники истории и культуры Костанайской области с координатами',
+    en: 'Historical and cultural monuments of Kostanay region, with coordinates',
+  },
+  srcAdilet: {
+    kk: 'Облыстардың жергілікті маңызы бар тарих және мәдениет ескерткіштерінің мемлекеттік тізімдері',
+    ru: 'Государственные списки памятников истории и культуры местного значения по областям',
+    en: 'State lists of historical and cultural monuments of local significance, by region',
   },
   srcNaturalEarth: { kk: 'Бүгінгі шекара және облыстар', ru: 'Современная граница и области', en: "Today's border and the regions" },
   srcBasemaps: {

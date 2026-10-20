@@ -17,13 +17,21 @@ import MapCanvas, { type Camera as Cam } from './MapCanvas';
 import { PERIODS, formatRange, periodById, periodOfYear, type PeriodId } from './periods';
 import Timeline from './Timeline';
 
+interface KkRu {
+  kk: string;
+  ru: string;
+}
+
 interface Monument {
   id: number;
   lat: number;
   lng: number;
-  name: { kk: string; ru: string };
-  type: { kk: string; ru: string };
-  district: { kk: string; ru: string };
+  name: KkRu;
+  type: KkRu;
+  district: KkRu;
+  region: KkRu;
+  // the act or dataset this point comes from
+  source: string;
 }
 
 interface RegionInfo {
@@ -34,8 +42,6 @@ interface RegionInfo {
 }
 
 const REGIONS = regionsRaw as Record<string, RegionInfo>;
-const MONUMENTS_SOURCE = 'https://data.egov.kz/datasets/view?index=respublikalyk_manyzy_bar_tarih';
-const KOSTANAY: Cam = { center: [63.6, 51.9], zoom: 5.4 };
 const DEMO_STEP_MS = 5200;
 
 // Text events and photo cards share the map and the era list
@@ -171,10 +177,10 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
     [period, showEvents, showPhotos],
   );
 
-  // ~600 points from the open data portal: loaded only when the layer is switched on
+  // ~1000+ points from open data and the state lists: loaded only when the layer is switched on
   useEffect(() => {
     if (showMon && !monuments)
-      import('../../content/monuments-kostanay.json').then((m) => setMonuments(m.default as Monument[]));
+      import('../../content/monuments.json').then((m) => setMonuments(m.default as Monument[]));
   }, [showMon, monuments]);
 
   const monumentGeo = useMemo<FeatureCollection | null>(
@@ -213,7 +219,7 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
     setCamera({ center: [item.lng, item.lat], zoom: 7 });
   };
 
-  const ml = (x: { kk: string; ru: string }) => (lang === 'kk' ? x.kk : x.ru) || x.ru || x.kk;
+  const ml = (x: KkRu) => (lang === 'kk' ? x.kk : x.ru) || x.ru || x.kk;
   const interactive = [...(regionsOn ? [REGION_LAYER_ID] : []), ...(showMon && monumentGeo ? [MONUMENT_LAYER_ID] : [])];
   const selectedKey = sel?.type === 'item' ? sel.item.key : null;
 
@@ -253,20 +259,23 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
         </Panel>
       );
 
-    if (sel.type === 'monument')
+    if (sel.type === 'monument') {
+      const m = sel.mon;
+      const place = [ml(m.district), ml(m.region)].filter(Boolean).join(', ');
       return (
-        <Panel key={`m${sel.mon.id}`} onClose={close} color="#cfd8e6">
-          <p className="pr-10 text-xs font-semibold tracking-[0.16em] text-muted-foreground uppercase">{ml(sel.mon.type)}</p>
-          <h3 className="mt-1 text-lg leading-tight font-bold text-pretty">{ml(sel.mon.name)}</h3>
-          <p className="mt-1 text-sm text-muted-foreground">{ml(sel.mon.district)}</p>
+        <Panel key={`m${m.id}`} onClose={close} color="#cfd8e6">
+          <p className="pr-10 text-xs font-semibold tracking-[0.16em] text-muted-foreground uppercase">{ml(m.type)}</p>
+          <h3 className="mt-1 text-lg leading-tight font-bold text-pretty">{ml(m.name)}</h3>
+          <p className="mt-1 text-sm text-muted-foreground">{place}</p>
           <p className="mt-3 text-xs text-muted-foreground">
             {t('monumentsSource')}:{' '}
-            <a href={MONUMENTS_SOURCE} target="_blank" rel="noreferrer">
-              data.egov.kz
+            <a href={m.source} target="_blank" rel="noreferrer">
+              {new URL(m.source).hostname}
             </a>
           </p>
         </Panel>
       );
+    }
 
     if (sel.type === 'region') {
       const info = REGIONS[sel.id];
@@ -454,7 +463,7 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
             </p>
             {showMon && (
               <p className="mt-1 text-xs text-muted-foreground drop-shadow-[0_2px_8px_rgba(7,13,24,0.95)]">
-                {t('monumentsNote')} data.egov.kz {monuments ? `· ${monuments.length}` : '…'}
+                {t('monumentsNote')} {monuments ? `· ${monuments.length}` : '…'}
               </p>
             )}
           </motion.div>
@@ -475,10 +484,7 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
             <Button
               variant="chip"
               on={showMon}
-              onClick={() => {
-                if (!showMon) setCamera(KOSTANAY);
-                setShowMon(!showMon);
-              }}
+              onClick={() => setShowMon(!showMon)}
               className="shrink-0 px-3"
             >
               <Landmark aria-hidden="true" className="size-4" /> {t('layerMonuments')}
