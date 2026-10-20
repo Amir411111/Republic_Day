@@ -66,7 +66,7 @@ function knowledge(lang: Lang): string {
 }
 
 function systemPrompt(lang: Lang): string {
-  return `You are the guide of "Tarih Guessr", a game about the history of Kazakhstan from the Kazakh Khanate to independence. Players range from schoolchildren to elderly people.
+  return `You are the guide of "Tarih Guessr", a game about the history of Kazakhstan from the Saka era to today. Players range from schoolchildren to elderly people.
 
 Answer in ${LANG_NAME[lang]}, in plain words, in 2-5 short sentences. If the player asks for more detail, you may write more.
 

@@ -15,7 +15,7 @@
 - Квест по Семею: маршрут в `content/quest-semey.json`, экран в `src/quest/`
 
 ## Команды
-- `npm run dev`: локальный сервер (в dev видны непроверенные карточки; на проде добавьте `?dev=1`)
+- `npm run dev`: локальный сервер (в dev видны непроверенные карточки; на проде добавьте `?dev=1`). ИИ-гид локально: ключ `ANTHROPIC_API_KEY` в `.env.local`, `vite.config.ts` отдаёт `api/guide.ts` по `/api/guide`
 - `npm run build`: проверка типов + сборка. Запускать после каждого изменения.
 - `python3 scripts/validate.py`: проверка карточек и событий (`--draft` пропускает пустой `verified_by`)
 - `python3 scripts/fetch_commons.py "File:Name.jpg"`: скачать фото с Wikimedia Commons и получить блок `image_credit`
@@ -57,6 +57,9 @@
   "verified_by": "имя проверившего"
 }
 ```
+
+## README
+`README.md` — описание для жюри: запуск, сценарий проверки, хранение данных, скриншоты (`docs/screenshots/`). Меняете поведение игры — обновите README.
 
 ## Где что лежит
 - `src/game/scoring.ts`: очки. Год: `round(100 * exp(-|Δ| / 25))`, место: `round(100 * exp(-км / 400))`
