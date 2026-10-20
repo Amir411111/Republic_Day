@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Tarih Guessr cards",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "pack", "year", "lat", "lng", "place", "image", "image_credit", "title", "explanation", "clue", "sources", "difficulty", "verified_by"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+      "pack": { "type": "array", "minItems": 1, "items": { "enum": ["kz", "semey"] } },
+      "year": { "type": "integer", "minimum": 1400, "maximum": 2025 },
+      "lat": { "type": "number", "minimum": 40.5, "maximum": 55.5 },
+      "lng": { "type": "number", "minimum": 46.5, "maximum": 87.5 },
+      "place": { "$ref": "#/$defs/l10n" },
+      "image": { "type": "string", "minLength": 1 },
+      "image_credit": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["author", "license", "source_url"],
+        "properties": {
+          "author": { "type": "string" },
+          "license": { "type": "string" },
+          "source_url": { "type": "string" }
+        }
+      },
+      "title": { "$ref": "#/$defs/l10n" },
+      "explanation": { "$ref": "#/$defs/l10n" },
+      "clue": { "$ref": "#/$defs/l10n" },
+      "sources": { "type": "array", "items": { "type": "string" } },
+      "difficulty": { "enum": [1, 2, 3] },
+      "verified_by": { "type": "string" }
+    }
+  },
+  "$defs": {
+    "l10n": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kk", "ru", "en"],
+      "properties": {
+        "kk": { "type": "string" },
+        "ru": { "type": "string" },
+        "en": { "type": "string" }
+      }
+    }
+  }
+}

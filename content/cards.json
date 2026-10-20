@@ -1,0 +1,403 @@
+[
+  {
+    "id": "dostoevsky-valikhanov-1858",
+    "pack": ["kz", "semey"],
+    "year": 1858,
+    "lat": 50.411,
+    "lng": 80.227,
+    "place": { "kk": "Семей", "ru": "Семипалатинск", "en": "Semipalatinsk (Semey)" },
+    "image": "images/placeholder.svg",
+    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "title": {
+      "kk": "Достоевский мен Шоқан Уәлиханов Семейде",
+      "ru": "Достоевский и Чокан Валиханов в Семипалатинске",
+      "en": "Dostoevsky and Shokan Valikhanov in Semipalatinsk"
+    },
+    "explanation": {
+      "kk": "Фёдор Достоевский каторгадан кейін 1854–1859 жылдары Семейде әскери қызметте болды. Мұнда ол қазақ ғалымы әрі саяхатшысы Шоқан Уәлихановпен дос болды; олардың бірге түскен суреті — қаланың ең танымал тарихи фотоларының бірі.",
+      "ru": "После каторги Фёдор Достоевский в 1854–1859 годах служил в Семипалатинске. Здесь он подружился с казахским учёным и путешественником Чоканом Валихановым; их совместный снимок — одна из самых известных исторических фотографий города.",
+      "en": "After penal servitude, Fyodor Dostoevsky served in Semipalatinsk in 1854–1859. There he befriended the Kazakh scholar and traveller Shokan Valikhanov; their joint photograph is one of the city's best-known historical images."
+    },
+    "clue": {
+      "kk": "Әскери мундир және XIX ғасыр ортасындағы ерте фотосуреттің түрі.",
+      "ru": "Военные мундиры и вид ранней фотографии середины XIX века.",
+      "en": "Military uniforms and the look of an early mid-19th-century photograph."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Валиханов,_Чокан_Чингисович",
+      "https://ru.wikipedia.org/wiki/Достоевский,_Фёдор_Михайлович"
+    ],
+    "difficulty": 2,
+    "verified_by": ""
+  },
+  {
+    "id": "verny-earthquake-1911",
+    "pack": ["kz"],
+    "year": 1911,
+    "lat": 43.256,
+    "lng": 76.945,
+    "place": { "kk": "Верный (Алматы)", "ru": "Верный (Алматы)", "en": "Verny (Almaty)" },
+    "image": "images/placeholder.svg",
+    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "title": {
+      "kk": "1911 жылғы Кемин жер сілкінісі",
+      "ru": "Кеминское землетрясение 1911 года",
+      "en": "The 1911 Kemin earthquake"
+    },
+    "explanation": {
+      "kk": "1911 жылдың қаңтарында болған қуатты жер сілкінісі Верный қаласының көптеген кірпіш үйлерін қиратты. Ағаштан салынған Вознесенский соборы аман қалды — бұл қала құрылысында сейсмикалық қауіпті ескеруге мысал болды.",
+      "ru": "Мощное землетрясение в январе 1911 года разрушило многие кирпичные дома города Верный. Деревянный Вознесенский собор устоял — пример того, почему в городе стали учитывать сейсмическую опасность.",
+      "en": "A powerful earthquake in January 1911 destroyed many brick buildings in the town of Verny. The wooden Ascension Cathedral survived, showing why the city began to build with earthquakes in mind."
+    },
+    "clue": {
+      "kk": "Қираған кірпіш үйлер, ат арбалар, артында Іле Алатауы.",
+      "ru": "Разрушенные кирпичные дома, конные повозки, на фоне горы Заилийского Алатау.",
+      "en": "Ruined brick houses, horse carts, the Trans-Ili Alatau mountains behind."
+    },
+    "sources": ["https://ru.wikipedia.org/wiki/Кеминское_землетрясение"],
+    "difficulty": 2,
+    "verified_by": ""
+  },
+  {
+    "id": "rds1-test-1949",
+    "pack": ["kz", "semey"],
+    "year": 1949,
+    "lat": 50.438,
+    "lng": 77.815,
+    "place": { "kk": "Семей полигоны", "ru": "Семипалатинский полигон", "en": "Semipalatinsk Test Site" },
+    "image": "images/placeholder.svg",
+    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "title": {
+      "kk": "Алғашқы кеңестік атом бомбасының сынағы",
+      "ru": "Испытание первой советской атомной бомбы",
+      "en": "First Soviet atomic bomb test"
+    },
+    "explanation": {
+      "kk": "1949 жылғы 29 тамызда Семей полигонында КСРО-ның алғашқы атом бомбасы РДС-1 жарылды. Келесі 40 жылда мұнда жүздеген ядролық сынақ өткізіліп, өңір тұрғындарының денсаулығына ауыр зардап тиді.",
+      "ru": "29 августа 1949 года на Семипалатинском полигоне взорвали первую советскую атомную бомбу РДС-1. За следующие 40 лет здесь провели сотни ядерных испытаний, которые тяжело отразились на здоровье жителей региона.",
+      "en": "On 29 August 1949 the first Soviet atomic bomb, RDS-1, was detonated at the Semipalatinsk Test Site. Hundreds of nuclear tests followed over 40 years, with severe health consequences for the region's people."
+    },
+    "clue": {
+      "kk": "Жалаң дала, ақ-қара сурет, жарылыс бұлты.",
+      "ru": "Голая степь, чёрно-белый снимок, облако взрыва.",
+      "en": "Bare steppe, black-and-white image, explosion cloud."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/РДС-1",
+      "https://ru.wikipedia.org/wiki/Семипалатинский_испытательный_полигон"
+    ],
+    "difficulty": 2,
+    "verified_by": ""
+  },
+  {
+    "id": "virgin-lands-1954",
+    "pack": ["kz"],
+    "year": 1954,
+    "lat": 51.169,
+    "lng": 71.449,
+    "place": { "kk": "Ақмола облысы", "ru": "Акмолинская область", "en": "Akmola Region" },
+    "image": "images/placeholder.svg",
+    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "title": {
+      "kk": "Тың игеру басталды",
+      "ru": "Начало освоения целины",
+      "en": "Start of the Virgin Lands Campaign"
+    },
+    "explanation": {
+      "kk": "1954 жылы КСРО Солтүстік Қазақстанның тың жерлерін жыртып, астық егуге кірісті. Республикаға жүз мыңдаған адам келіп, жаңа совхоздар мен қалалар пайда болды, ал Ақмола кейін Целиноград деп аталды.",
+      "ru": "В 1954 году СССР начал распахивать целинные земли Северного Казахстана под зерно. В республику приехали сотни тысяч человек, появились новые совхозы и посёлки, а Акмолинск позже переименовали в Целиноград.",
+      "en": "In 1954 the USSR began ploughing the virgin steppe of northern Kazakhstan for grain. Hundreds of thousands of people arrived, new state farms and towns appeared, and Akmolinsk was later renamed Tselinograd."
+    },
+    "clue": {
+      "kk": "Тракторлар мен шатырлар, шексіз жазық дала.",
+      "ru": "Тракторы и палатки посреди бескрайней равнины.",
+      "en": "Tractors and tents on an endless plain."
+    },
+    "sources": ["https://ru.wikipedia.org/wiki/Освоение_целины"],
+    "difficulty": 1,
+    "verified_by": ""
+  },
+  {
+    "id": "sputnik-1957",
+    "pack": ["kz"],
+    "year": 1957,
+    "lat": 45.920,
+    "lng": 63.342,
+    "place": { "kk": "Байқоңыр", "ru": "Байконур", "en": "Baikonur" },
+    "image": "images/placeholder.svg",
+    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "title": {
+      "kk": "Алғашқы жасанды Жер серігі",
+      "ru": "Первый искусственный спутник Земли",
+      "en": "The first artificial satellite"
+    },
+    "explanation": {
+      "kk": "1957 жылғы 4 қазанда Байқоңырдан әлемдегі алғашқы жасанды Жер серігі ұшырылды. Осы күннен бастап ғарыш дәуірі басталды, ал қазақ даласындағы ғарыш айлағы бүкіл әлемге белгілі болды.",
+      "ru": "4 октября 1957 года с Байконура запустили первый в мире искусственный спутник Земли. С этого дня началась космическая эра, а космодром в казахской степи стал известен всему миру.",
+      "en": "On 4 October 1957 the world's first artificial satellite was launched from Baikonur. It opened the space age and made the cosmodrome in the Kazakh steppe known worldwide."
+    },
+    "clue": {
+      "kk": "Р-7 зымыраны, ұшыру алаңы, айналасы жалпақ шөл дала.",
+      "ru": "Ракета Р-7, стартовая площадка, вокруг плоская пустынная степь.",
+      "en": "An R-7 rocket on its pad, flat desert steppe all around."
+    },
+    "sources": ["https://ru.wikipedia.org/wiki/Спутник-1"],
+    "difficulty": 1,
+    "verified_by": ""
+  },
+  {
+    "id": "gagarin-1961",
+    "pack": ["kz"],
+    "year": 1961,
+    "lat": 45.920,
+    "lng": 63.342,
+    "place": { "kk": "Байқоңыр", "ru": "Байконур", "en": "Baikonur" },
+    "image": "images/placeholder.svg",
+    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "title": {
+      "kk": "Гагариннің ғарышқа ұшуы",
+      "ru": "Полёт Гагарина",
+      "en": "Gagarin's flight"
+    },
+    "explanation": {
+      "kk": "1961 жылғы 12 сәуірде Юрий Гагарин «Восток-1» кемесімен Байқоңырдан ұшып, ғарышқа шыққан алғашқы адам атанды. Ол ұшырылған алаң кейін «Гагарин старты» деп аталды.",
+      "ru": "12 апреля 1961 года Юрий Гагарин на корабле «Восток-1» стартовал с Байконура и стал первым человеком в космосе. Площадку, с которой он улетел, называют «Гагаринским стартом».",
+      "en": "On 12 April 1961 Yuri Gagarin lifted off from Baikonur aboard Vostok 1 and became the first human in space. His launch pad is still known as Gagarin's Start."
+    },
+    "clue": {
+      "kk": "Скафандрдағы ғарышкер немесе «Восток» зымыраны.",
+      "ru": "Космонавт в скафандре или ракета «Восток».",
+      "en": "A cosmonaut in a spacesuit or the Vostok rocket."
+    },
+    "sources": ["https://ru.wikipedia.org/wiki/Восток-1"],
+    "difficulty": 1,
+    "verified_by": ""
+  },
+  {
+    "id": "medeu-1972",
+    "pack": ["kz"],
+    "year": 1972,
+    "lat": 43.157,
+    "lng": 77.059,
+    "place": { "kk": "Медеу, Алматы", "ru": "Медеу, Алматы", "en": "Medeu, Almaty" },
+    "image": "images/placeholder.svg",
+    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "title": {
+      "kk": "«Медеу» биік таулы мұз айдыны",
+      "ru": "Высокогорный каток «Медеу»",
+      "en": "Medeu high-altitude skating rink"
+    },
+    "explanation": {
+      "kk": "Алматы маңындағы «Медеу» мұз айдыны 1972 жылы ашылды. Теңіз деңгейінен 1600 метрдей биіктікте орналасқан бұл айдында жүздеген әлемдік рекорд орнатылды.",
+      "ru": "Каток «Медеу» под Алматы открылся в 1972 году. На высоте около 1600 метров над уровнем моря здесь были установлены сотни мировых рекордов по конькобежному спорту.",
+      "en": "The Medeu rink near Almaty opened in 1972. Set at about 1,600 metres above sea level, it has seen hundreds of speed-skating world records."
+    },
+    "clue": {
+      "kk": "Таулар арасындағы үлкен мұз алаңы, кеңестік трибуналар.",
+      "ru": "Большое ледовое поле между гор, советские трибуны.",
+      "en": "A large ice field among mountains, Soviet-era stands."
+    },
+    "sources": ["https://ru.wikipedia.org/wiki/Медеу_(каток)"],
+    "difficulty": 2,
+    "verified_by": ""
+  },
+  {
+    "id": "zheltoqsan-1986",
+    "pack": ["kz"],
+    "year": 1986,
+    "lat": 43.238,
+    "lng": 76.945,
+    "place": { "kk": "Алматы, Республика алаңы", "ru": "Алматы, площадь Республики", "en": "Almaty, Republic Square" },
+    "image": "images/placeholder.svg",
+    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "title": {
+      "kk": "Желтоқсан көтерілісі",
+      "ru": "Желтоксан",
+      "en": "Jeltoqsan (December 1986 protests)"
+    },
+    "explanation": {
+      "kk": "1986 жылдың желтоқсанында Қазақстан Компартиясының басшысы Дінмұхамед Қонаев орнына Мәскеу Геннадий Колбинді тағайындады. Наразылыққа шыққан жастар күшпен қуылды; бұл оқиға тәуелсіздікке апарған жолдың маңызды белесі саналады.",
+      "ru": "В декабре 1986 года Москва заменила главу Компартии Казахстана Динмухамеда Кунаева на Геннадия Колбина. Вышедшую на протест молодёжь разогнали силой; эти события считают важной вехой на пути к независимости.",
+      "en": "In December 1986 Moscow replaced Kazakhstan's Communist Party leader Dinmukhamed Kunaev with Gennady Kolbin. Young protesters were dispersed by force; the events are seen as a milestone on the road to independence."
+    },
+    "clue": {
+      "kk": "Қысқы киімдегі жастар, үлкен алаң, кеңестік үкімет ғимараты.",
+      "ru": "Молодёжь в зимней одежде, большая площадь, советское здание власти.",
+      "en": "Young people in winter clothes, a large square, a Soviet government building."
+    },
+    "sources": ["https://ru.wikipedia.org/wiki/Желтоксан"],
+    "difficulty": 2,
+    "verified_by": ""
+  },
+  {
+    "id": "polygon-closure-1991",
+    "pack": ["kz", "semey"],
+    "year": 1991,
+    "lat": 50.755,
+    "lng": 78.540,
+    "place": { "kk": "Семей полигоны (Курчатов)", "ru": "Семипалатинский полигон (Курчатов)", "en": "Semipalatinsk Test Site (Kurchatov)" },
+    "image": "images/placeholder.svg",
+    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "title": {
+      "kk": "Семей ядролық полигонының жабылуы",
+      "ru": "Закрытие Семипалатинского полигона",
+      "en": "Closure of the Semipalatinsk Test Site"
+    },
+    "explanation": {
+      "kk": "1991 жылғы 29 тамызда Семей ядролық полигоны Жарлықпен жабылды. Бұған Олжас Сүлейменов бастаған «Невада — Семей» қозғалысы үлкен ықпал етті; 29 тамыз кейін БҰҰ-да ядролық сынақтарға қарсы халықаралық күн болып бекітілді.",
+      "ru": "29 августа 1991 года Семипалатинский ядерный полигон закрыли указом. Большую роль сыграло движение «Невада — Семипалатинск» во главе с Олжасом Сулейменовым; позже ООН объявила 29 августа Международным днём действий против ядерных испытаний.",
+      "en": "On 29 August 1991 the Semipalatinsk nuclear test site was closed by decree. The Nevada–Semipalatinsk movement led by Olzhas Suleimenov played a major role; the UN later made 29 August the International Day against Nuclear Tests."
+    },
+    "clue": {
+      "kk": "Қозғалыс белгілері бар митинг немесе бос қалған полигон нысандары.",
+      "ru": "Митинг с символикой движения или заброшенные объекты полигона.",
+      "en": "A rally with the movement's symbols, or abandoned test-site structures."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Семипалатинский_испытательный_полигон",
+      "https://ru.wikipedia.org/wiki/Невада_—_Семипалатинск"
+    ],
+    "difficulty": 2,
+    "verified_by": ""
+  },
+  {
+    "id": "aubakirov-1991",
+    "pack": ["kz"],
+    "year": 1991,
+    "lat": 45.920,
+    "lng": 63.342,
+    "place": { "kk": "Байқоңыр", "ru": "Байконур", "en": "Baikonur" },
+    "image": "images/placeholder.svg",
+    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "title": {
+      "kk": "Тоқтар Әубәкіров — алғашқы қазақ ғарышкері",
+      "ru": "Токтар Аубакиров — первый казахский космонавт",
+      "en": "Toktar Aubakirov, the first Kazakh cosmonaut"
+    },
+    "explanation": {
+      "kk": "1991 жылдың қазанында сынақшы ұшқыш Тоқтар Әубәкіров «Союз ТМ-13» кемесімен Байқоңырдан ғарышқа ұшты. Ол ғарышқа шыққан алғашқы қазақ болды.",
+      "ru": "В октябре 1991 года лётчик-испытатель Токтар Аубакиров стартовал с Байконура на корабле «Союз ТМ-13». Он стал первым казахом в космосе.",
+      "en": "In October 1991 test pilot Toktar Aubakirov launched from Baikonur aboard Soyuz TM-13, becoming the first Kazakh in space."
+    },
+    "clue": {
+      "kk": "«Союз» зымыраны, 1990-жылдардың басындағы түрлі-түсті сурет.",
+      "ru": "Ракета «Союз», цветной снимок начала 1990-х.",
+      "en": "A Soyuz rocket, a colour photo from the early 1990s."
+    },
+    "sources": ["https://ru.wikipedia.org/wiki/Аубакиров,_Токтар_Онгарбаевич"],
+    "difficulty": 3,
+    "verified_by": ""
+  },
+  {
+    "id": "independence-1991",
+    "pack": ["kz"],
+    "year": 1991,
+    "lat": 43.238,
+    "lng": 76.945,
+    "place": { "kk": "Алматы", "ru": "Алматы", "en": "Almaty" },
+    "image": "images/placeholder.svg",
+    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "title": {
+      "kk": "Қазақстан тәуелсіздігі",
+      "ru": "Независимость Казахстана",
+      "en": "Independence of Kazakhstan"
+    },
+    "explanation": {
+      "kk": "1991 жылғы 16 желтоқсанда Жоғарғы Кеңес «Қазақстан Республикасының мемлекеттік тәуелсіздігі туралы» Конституциялық заң қабылдады. Ол кезде астана Алматы болатын.",
+      "ru": "16 декабря 1991 года Верховный Совет принял Конституционный закон «О государственной независимости Республики Казахстан». Столицей тогда была Алматы.",
+      "en": "On 16 December 1991 the Supreme Council adopted the Constitutional Law on the State Independence of the Republic of Kazakhstan. Almaty was the capital at the time."
+    },
+    "clue": {
+      "kk": "Жаңа мемлекеттік рәміздер, Алматыдағы үкімет ғимараты.",
+      "ru": "Новая государственная символика, здание власти в Алматы.",
+      "en": "New state symbols, a government building in Almaty."
+    },
+    "sources": ["https://ru.wikipedia.org/wiki/День_независимости_Казахстана"],
+    "difficulty": 1,
+    "verified_by": ""
+  },
+  {
+    "id": "capital-move-1997",
+    "pack": ["kz"],
+    "year": 1997,
+    "lat": 51.128,
+    "lng": 71.430,
+    "place": { "kk": "Астана", "ru": "Астана", "en": "Astana" },
+    "image": "images/placeholder.svg",
+    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "title": {
+      "kk": "Астананың Ақмолаға көшуі",
+      "ru": "Перенос столицы в Акмолу",
+      "en": "Capital moves to Akmola"
+    },
+    "explanation": {
+      "kk": "1997 жылғы 10 желтоқсанда Қазақстанның астанасы Алматыдан Ақмолаға көшірілді. 1998 жылы қала Астана деп аталып, жаңа астана ретінде халықаралық деңгейде таныстырылды.",
+      "ru": "10 декабря 1997 года столицу Казахстана перенесли из Алматы в Акмолу. В 1998 году город переименовали в Астану и представили миру как новую столицу.",
+      "en": "On 10 December 1997 Kazakhstan's capital moved from Almaty to Akmola. In 1998 the city was renamed Astana and presented internationally as the new capital."
+    },
+    "clue": {
+      "kk": "Есіл жағалауы, құрылыс крандары, әлі бос жатқан сол жағалау.",
+      "ru": "Берег Ишима, строительные краны, ещё пустой левый берег.",
+      "en": "The Ishim riverbank, construction cranes, a still-empty left bank."
+    },
+    "sources": ["https://ru.wikipedia.org/wiki/Астана"],
+    "difficulty": 2,
+    "verified_by": ""
+  },
+  {
+    "id": "baiterek-2002",
+    "pack": ["kz"],
+    "year": 2002,
+    "lat": 51.128,
+    "lng": 71.430,
+    "place": { "kk": "Астана", "ru": "Астана", "en": "Astana" },
+    "image": "images/placeholder.svg",
+    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "title": {
+      "kk": "«Бәйтерек» монументі",
+      "ru": "Монумент «Байтерек»",
+      "en": "Baiterek monument"
+    },
+    "explanation": {
+      "kk": "«Бәйтерек» — жаңа астананың басты символы, өмір ағашы мен Самұрық құс салған алтын жұмыртқа туралы аңызды бейнелейді. Монумент сол жағалаудың жаңа орталығында тұрғызылды.",
+      "ru": "«Байтерек» — главный символ новой столицы, он изображает легенду о древе жизни и золотом яйце птицы Самрук. Монумент построен в новом центре на левом берегу.",
+      "en": "Baiterek is the main symbol of the new capital, depicting the legend of the tree of life and the golden egg of the Samruk bird. It stands in the new centre on the left bank."
+    },
+    "clue": {
+      "kk": "Төбесінде алтын шары бар ақ мұнара.",
+      "ru": "Белая башня с золотым шаром наверху.",
+      "en": "A white tower topped with a golden sphere."
+    },
+    "sources": ["https://ru.wikipedia.org/wiki/Байтерек_(монумент)"],
+    "difficulty": 3,
+    "verified_by": ""
+  },
+  {
+    "id": "expo-2017",
+    "pack": ["kz"],
+    "year": 2017,
+    "lat": 51.089,
+    "lng": 71.416,
+    "place": { "kk": "Астана", "ru": "Астана", "en": "Astana" },
+    "image": "images/placeholder.svg",
+    "image_credit": { "author": "", "license": "", "source_url": "" },
+    "title": {
+      "kk": "EXPO-2017 «Болашақ энергиясы»",
+      "ru": "EXPO-2017 «Энергия будущего»",
+      "en": "EXPO 2017 \"Future Energy\""
+    },
+    "explanation": {
+      "kk": "2017 жылғы маусым–қыркүйекте Астанада «Болашақ энергиясы» тақырыбымен халықаралық EXPO көрмесі өтті. Оның символы — «Нұр Әлем» шар тәрізді павильоны.",
+      "ru": "С июня по сентябрь 2017 года в Астане прошла международная выставка EXPO на тему «Энергия будущего». Её символом стал шарообразный павильон «Нур Алем».",
+      "en": "From June to September 2017 Astana hosted the international EXPO on the theme \"Future Energy\". Its symbol is the spherical Nur Alem pavilion."
+    },
+    "clue": {
+      "kk": "Шыны шар тәрізді ғимарат, заманауи сәулет.",
+      "ru": "Стеклянное здание-шар, современная архитектура.",
+      "en": "A glass sphere-shaped building, modern architecture."
+    },
+    "sources": ["https://ru.wikipedia.org/wiki/Экспо-2017"],
+    "difficulty": 1,
+    "verified_by": ""
+  }
+]
