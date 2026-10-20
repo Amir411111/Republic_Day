@@ -16,7 +16,7 @@ export default function RevealScreen({ card, result, isLast, onNext }: Props) {
 
   return (
     <div className="screen">
-      <img className="photo" src={imageUrl(card)} alt={l(card.title)} />
+      {card.image && <img className="photo" src={imageUrl(card)} alt={l(card.title)} />}
       <h2>{l(card.title)}</h2>
 
       <div className="score-grid">
@@ -42,8 +42,12 @@ export default function RevealScreen({ card, result, isLast, onNext }: Props) {
       />
 
       <p className="explanation">{l(card.explanation)}</p>
-      <h3>{t('clue')}</h3>
-      <p>{l(card.clue)}</p>
+      {l(card.clue) && (
+        <>
+          <h3>{t('clue')}</h3>
+          <p>{l(card.clue)}</p>
+        </>
+      )}
 
       <h3>{t('sources')}</h3>
       <ul className="sources">
@@ -55,12 +59,14 @@ export default function RevealScreen({ card, result, isLast, onNext }: Props) {
           </li>
         ))}
       </ul>
-      <p className="credit">
-        {t('imageBy')}: {credit.author} ·{' '}
-        <a href={credit.source_url} target="_blank" rel="noreferrer">
-          {credit.license}
-        </a>
-      </p>
+      {card.image && (
+        <p className="credit">
+          {t('imageBy')}: {credit.author} ·{' '}
+          <a href={credit.source_url} target="_blank" rel="noreferrer">
+            {credit.license}
+          </a>
+        </p>
+      )}
 
       <div className="actions">
         <button type="button" className="primary" onClick={onNext}>

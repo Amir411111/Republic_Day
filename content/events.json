@@ -1,0 +1,795 @@
+[
+ {
+  "id": "khanate-founded-1465",
+  "era": "khanate",
+  "year": 1465,
+  "lat": 43.8,
+  "lng": 73.8,
+  "approx": true,
+  "place": {
+   "kk": "Шу өзені аңғары, Жетісу (Қозыбасы)",
+   "ru": "Долина реки Шу, Жетысу (Козыбасы)",
+   "en": "Chu River valley, Zhetysu (Kozybasy)"
+  },
+  "title": {
+   "kk": "Қазақ хандығының құрылуы",
+   "ru": "Образование Казахского ханства",
+   "en": "Founding of the Kazakh Khanate"
+  },
+  "text": {
+   "kk": "Керей мен Жәнібек сұлтандар өз ұлыстарымен Жетісуға көшіп, Қазақ хандығының негізін қалады. Мұхаммед Хайдар Дулатидің «Тарих-и Рашиди» еңбегінде бұл оқиға Қозыбасы деген жермен байланыстырылады; Қазақстанда хандықтың құрылған жылы ретінде 1465 жыл қабылданған.",
+   "ru": "Султаны Керей и Жанибек со своими улусами откочевали в Жетысу и положили начало Казахскому ханству. В «Тарихи Рашиди» Мухаммада Хайдара Дулати это событие связано с местностью Козыбасы; в Казахстане годом образования ханства принят 1465-й.",
+   "en": "Sultans Kerei and Zhanibek migrated with their people to Zhetysu and founded the Kazakh Khanate. Muhammad Haidar Dulati's Tarikh-i Rashidi links the event to a place called Kozybasy; Kazakhstan officially dates the founding to 1465."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Казахское_ханство",
+   "https://ru.wikipedia.org/wiki/Козыбасы"
+  ]
+ },
+ {
+  "id": "kasym-khan-1511",
+  "era": "khanate",
+  "year": 1511,
+  "year_end": 1521,
+  "lat": 47.5,
+  "lng": 51.73,
+  "approx": false,
+  "place": {
+   "kk": "Сарайшық, Атырау облысы",
+   "ru": "Сарайчик, Атырауская область",
+   "en": "Saraishyk, Atyrau region"
+  },
+  "title": {
+   "kk": "Қасым хан",
+   "ru": "Касым-хан",
+   "en": "Kasym Khan"
+  },
+  "text": {
+   "kk": "Жәнібек ханның ұлы Қасым хан (әр түрлі деректер бойынша 1511 немесе 1513 жылдан бастап билік құрды) кезінде хандық күшейіп, жерін кеңейтті. Оның есімімен «Қасым ханның қасқа жолы» заңдары байланысты; аңыз бойынша ол Жайық жағасындағы Сарайшықта жерленген.",
+   "ru": "При Касым-хане, сыне Жанибека (правил с 1511 или 1513 года, по разным данным), ханство укрепилось и расширило свои земли. С его именем связывают свод законов «Қасым ханның қасқа жолы»; по преданию, он похоронен в Сарайчике на Урале.",
+   "en": "Under Kasym Khan, son of Zhanibek (ruling from 1511 or 1513, sources differ), the khanate grew stronger and larger. The law code 'Kasym Khan's Bright Road' is linked to his name; by tradition he is buried at Saraishyk on the Ural River."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Касым-хан",
+   "https://ru.wikipedia.org/wiki/Сарайчик"
+  ]
+ },
+ {
+  "id": "esim-turkestan-1598",
+  "era": "khanate",
+  "year": 1598,
+  "year_end": 1628,
+  "lat": 43.297,
+  "lng": 68.271,
+  "approx": false,
+  "place": {
+   "kk": "Түркістан",
+   "ru": "Туркестан",
+   "en": "Turkistan"
+  },
+  "title": {
+   "kk": "Есім хан және Түркістан",
+   "ru": "Есим-хан и Туркестан",
+   "en": "Esim Khan and Turkistan"
+  },
+  "text": {
+   "kk": "Есім хан 1598–1628 жылдары билік құрды. Түркістан қаласы Қазақ хандығының саяси және рухани орталығына айналды, ал Қожа Ахмет Ясауи кесенесі хандар мен батырлардың жерленетін орны болды. Есім ханның заңдары «Есім ханның ескі жолы» деп аталады.",
+   "ru": "Есим-хан правил в 1598–1628 годах. Туркестан стал политическим и духовным центром Казахского ханства, а мавзолей Ходжи Ахмеда Ясави — местом погребения ханов и батыров. Законы Есим-хана известны как «Есім ханның ескі жолы».",
+   "en": "Esim Khan ruled in 1598–1628. Turkistan became the political and spiritual centre of the Kazakh Khanate, and the Yasawi mausoleum became the burial place of khans and batyrs. Esim's laws are known as 'Esim Khan's Old Road'."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Есим-хан"
+  ]
+ },
+ {
+  "id": "orbulak-1643",
+  "era": "khanate",
+  "year": 1643,
+  "lat": 44.6,
+  "lng": 78.6,
+  "approx": true,
+  "place": {
+   "kk": "Жетісу (нақты орны талқылануда)",
+   "ru": "Жетысу (точное место обсуждается)",
+   "en": "Zhetysu (exact site debated)"
+  },
+  "title": {
+   "kk": "Орбұлақ шайқасы",
+   "ru": "Орбулакская битва",
+   "en": "Battle of Orbulak"
+  },
+  "text": {
+   "kk": "1643 жылы Жәңгір хан бастаған шағын қазақ әскері Жалаңтөс батырдың көмегімен әлдеқайда көп жоңғар әскерін тоқтатты. Тау шатқалында қазылған ордың арқасында жеңіске жеткен бұл шайқас қазақ-жоңғар соғыстарының ең белгілі эпизодтарының бірі.",
+   "ru": "В 1643 году небольшое войско во главе с Жангир-ханом при поддержке Жалантоса остановило намного превосходящую армию джунгар. Победа, одержанная благодаря укреплениям в горном ущелье, стала одним из самых известных эпизодов казахско-джунгарских войн.",
+   "en": "In 1643 a small army led by Zhangir Khan, with help from Zhalantos, stopped a much larger Dzungar force. The victory, won thanks to fortifications in a mountain gorge, is one of the best-known episodes of the Kazakh–Dzungar wars."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Орбулакская_битва"
+  ]
+ },
+ {
+  "id": "tauke-zheti-zhargy-1680",
+  "era": "khanate",
+  "year": 1680,
+  "year_end": 1715,
+  "lat": 43.297,
+  "lng": 68.271,
+  "approx": false,
+  "place": {
+   "kk": "Түркістан",
+   "ru": "Туркестан",
+   "en": "Turkistan"
+  },
+  "title": {
+   "kk": "Тәуке хан және «Жеті жарғы»",
+   "ru": "Тауке-хан и «Жеты Жаргы»",
+   "en": "Tauke Khan and the Zheti Zhargy"
+  },
+  "text": {
+   "kk": "Тәуке хан 1680–1715 жылдары билік құрды. Ол Төле би, Қазыбек би және Әйтеке бимен бірге «Жеті жарғы» заңдар жинағын жасады; бұл кезең халық жадында тыныштық пен бірлік заманы ретінде сақталды.",
+   "ru": "Тауке-хан правил в 1680–1715 годах. Вместе с биями Толе, Казыбеком и Айтеке он создал свод законов «Жеты Жаргы»; в народной памяти это время осталось эпохой порядка и единства.",
+   "en": "Tauke Khan ruled in 1680–1715. Together with the judges Tole bi, Kazybek bi and Aiteke bi he created the Zheti Zhargy law code; folk memory recalls this as a time of order and unity."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Тауке-хан"
+  ]
+ },
+ {
+  "id": "bulanty-1727",
+  "era": "khanate",
+  "year": 1727,
+  "lat": 48.65,
+  "lng": 67.0,
+  "approx": true,
+  "place": {
+   "kk": "Бұланты өзені, Ұлытау өңірі",
+   "ru": "Река Буланты, район Улытау",
+   "en": "Bulanty River, Ulytau area"
+  },
+  "title": {
+   "kk": "Бұланты шайқасы",
+   "ru": "Булантинская битва",
+   "en": "Battle of Bulanty"
+  },
+  "text": {
+   "kk": "1727 жылы Бұланты мен Белеуті өзендері арасында қазақ жасақтары жоңғарларға қарсы ірі жеңіске жетті. Шайқас өткен жер «Қалмақ қырылған» деп аталып кетті; бұл жеңіс «Ақтабан шұбырынды» апатынан кейін халықтың рухын көтерді.",
+   "ru": "В 1727 году между реками Буланты и Белеуты казахские ополчения одержали крупную победу над джунгарами. Место битвы прозвали «Калмак кырылган» («где погибли калмыки»); победа подняла дух народа после бедствия «Актабан шубырынды».",
+   "en": "In 1727, between the Bulanty and Beleuty rivers, Kazakh forces won a major victory over the Dzungars. The site became known as 'Kalmak kyrylgan' ('where the Kalmyks fell'); the victory restored morale after the disaster of the Great Retreat."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Булантинская_битва"
+  ]
+ },
+ {
+  "id": "anyrakay-1730",
+  "era": "khanate",
+  "year": 1730,
+  "lat": 43.698,
+  "lng": 74.826,
+  "approx": true,
+  "place": {
+   "kk": "Аңырақай, Жамбыл облысы",
+   "ru": "Аныракай, Жамбылская область",
+   "en": "Anyrakay, Zhambyl region"
+  },
+  "title": {
+   "kk": "Аңырақай шайқасы",
+   "ru": "Аныракайская битва",
+   "en": "Battle of Anyrakay"
+  },
+  "text": {
+   "kk": "1730 жылдың көктемінде Аңырақай алқабында үш жүздің біріккен әскері жоңғарларды талқандады. Бұл жеңіс қазақ-жоңғар соғысындағы бетбұрыс болды; кей деректерде шайқас 1729 жылмен белгіленеді.",
+   "ru": "Весной 1730 года в урочище Аныракай объединённое войско трёх жузов разгромило джунгар. Победа стала переломной в казахско-джунгарской войне; в некоторых источниках битва датируется 1729 годом.",
+   "en": "In spring 1730, in the Anyrakay valley, the united army of the three Kazakh zhuzes routed the Dzungars. It was a turning point in the Kazakh–Dzungar war; some sources date the battle to 1729."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Аныракайское_сражение"
+  ]
+ },
+ {
+  "id": "abylai-khan-1771",
+  "era": "khanate",
+  "year": 1771,
+  "year_end": 1781,
+  "lat": 43.297,
+  "lng": 68.271,
+  "approx": false,
+  "place": {
+   "kk": "Түркістан",
+   "ru": "Туркестан",
+   "en": "Turkistan"
+  },
+  "title": {
+   "kk": "Абылай хан",
+   "ru": "Абылай-хан",
+   "en": "Ablai Khan"
+  },
+  "text": {
+   "kk": "Абылай (1711–1781) жоңғарлармен соғыстарда атағы шыққан қолбасшы еді, 1771 жылы Түркістанда хан болып жарияланды. Ол Ресей мен Цин империясы арасында тепе-теңдік сақтап, үш жүздің басым бөлігінің қолдауына ие болды.",
+   "ru": "Абылай (1711–1781) прославился как полководец в войнах с джунгарами и в 1771 году был провозглашён ханом в Туркестане. Он лавировал между Российской и Цинской империями и был признан большей частью трёх жузов.",
+   "en": "Ablai (1711–1781) won fame as a commander in the wars with the Dzungars and was proclaimed khan in Turkistan in 1771. He balanced between the Russian and Qing empires and was recognised by most of the three zhuzes."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Абылай-хан"
+  ]
+ },
+ {
+  "id": "bukey-horde-1801",
+  "era": "empire",
+  "year": 1801,
+  "year_end": 1845,
+  "lat": 48.77,
+  "lng": 47.43,
+  "approx": false,
+  "place": {
+   "kk": "Хан Ордасы, Батыс Қазақстан",
+   "ru": "Хан Ордасы, Западный Казахстан",
+   "en": "Khan Ordasy, West Kazakhstan"
+  },
+  "title": {
+   "kk": "Бөкей Ордасы",
+   "ru": "Букеевская Орда",
+   "en": "The Bukey Horde"
+  },
+  "text": {
+   "kk": "1801 жылы Бөкей сұлтан қол астындағы қазақтарға Жайық пен Еділ арасындағы жерлерге көшуге рұқсат алды – осылай Бөкей (Ішкі) Ордасы құрылды. Ол 1845 жылға дейін өмір сүрді; Жәңгір хан кезінде мұнда Хан Ордасы қаласы салынды.",
+   "ru": "В 1801 году султан Букей получил разрешение откочевать со своими людьми в междуречье Урала и Волги — так возникла Букеевская (Внутренняя) Орда. Она просуществовала до 1845 года; при Жангир-хане здесь вырос город Хан Ордасы.",
+   "en": "In 1801 Sultan Bukey was allowed to move his people to the lands between the Ural and the Volga, creating the Bukey (Inner) Horde. It existed until 1845; under Zhangir Khan the town of Khan Ordasy grew up here."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Букеевская_Орда"
+  ]
+ },
+ {
+  "id": "isatai-makhambet-1836",
+  "era": "empire",
+  "year": 1836,
+  "year_end": 1838,
+  "lat": 48.77,
+  "lng": 47.43,
+  "approx": true,
+  "place": {
+   "kk": "Бөкей Ордасы",
+   "ru": "Букеевская Орда",
+   "en": "Bukey Horde"
+  },
+  "title": {
+   "kk": "Исатай мен Махамбет көтерілісі",
+   "ru": "Восстание Исатая и Махамбета",
+   "en": "The Isatai and Makhambet uprising"
+  },
+  "text": {
+   "kk": "1836–1838 жылдары Исатай Тайманов пен ақын Махамбет Өтемісұлы бастаған шаруалар көтерілісі хан билігі мен отаршылдық езгіге қарсы бағытталды. Көтеріліс басылды, бірақ Махамбеттің жалынды өлеңдері қазақ әдебиетінің классикасына айналды.",
+   "ru": "В 1836–1838 годах крестьянское восстание под руководством Исатая Тайманова и поэта Махамбета Утемисова было направлено против ханского и колониального гнёта. Восстание подавили, но пламенные стихи Махамбета вошли в классику казахской литературы.",
+   "en": "In 1836–1838 a peasant uprising led by Isatai Taimanov and the poet Makhambet Utemisov rose against the khan's rule and colonial oppression. It was crushed, but Makhambet's fiery poems became classics of Kazakh literature."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Восстание_Исатая_Тайманова"
+  ]
+ },
+ {
+  "id": "kenesary-akmolinsk-1838",
+  "era": "empire",
+  "year": 1838,
+  "lat": 51.18,
+  "lng": 71.446,
+  "approx": false,
+  "place": {
+   "kk": "Ақмола (Астана)",
+   "ru": "Акмолинск (Астана)",
+   "en": "Akmolinsk (Astana)"
+  },
+  "title": {
+   "kk": "Кенесары Ақмола бекінісін қоршады",
+   "ru": "Кенесары осаждает Акмолинскую крепость",
+   "en": "Kenesary besieges Akmolinsk"
+  },
+  "text": {
+   "kk": "Кенесары Қасымұлы бастаған көтеріліс (1837–1847) хандық билікті қалпына келтіру үшін күрес болды. 1838 жылы мамыр–маусымда көтерілісшілер Ақмола бекінісін қоршап, оның маңын өртеді; 1841 жылы Кенесары хан болып жарияланды – ол соңғы қазақ ханы саналады.",
+   "ru": "Восстание Кенесары Касымова (1837–1847) было борьбой за восстановление ханской власти. В мае–июне 1838 года повстанцы осадили Акмолинскую крепость и сожгли её предместье; в 1841 году Кенесары провозгласили ханом — его считают последним казахским ханом.",
+   "en": "Kenesary Kasymov's uprising (1837–1847) fought to restore the khan's power. In May–June 1838 the rebels besieged the Akmolinsk fortress and burned its outskirts; in 1841 Kenesary was proclaimed khan and is considered the last Kazakh khan."
+  },
+  "sources": [
+   "https://en.wikipedia.org/wiki/Siege_of_Akmolinsk_(1838)",
+   "https://ru.wikipedia.org/wiki/Кенесары_Касымов"
+  ]
+ },
+ {
+  "id": "ak-mechet-1853",
+  "era": "empire",
+  "year": 1853,
+  "lat": 44.848,
+  "lng": 65.482,
+  "approx": false,
+  "place": {
+   "kk": "Ақмешіт (Қызылорда)",
+   "ru": "Ак-Мечеть (Кызылорда)",
+   "en": "Ak-Mechet (Kyzylorda)"
+  },
+  "title": {
+   "kk": "Ақмешіт бекінісінің алынуы",
+   "ru": "Взятие Ак-Мечети",
+   "en": "Capture of Ak-Mechet"
+  },
+  "text": {
+   "kk": "1853 жылы Василий Перовскийдің жасағы Сырдария бойындағы Қоқан бекінісі Ақмешітті алды. Бекініс Форт-Перовский, кейін Перовск деп аталды, ал 1925 жылы Қызылорда атанып, Қазақ АКСР-інің астанасы болды.",
+   "ru": "В 1853 году отряд Василия Перовского взял кокандскую крепость Ак-Мечеть на Сырдарье. Её назвали Форт-Перовский, затем Перовск, а в 1925 году город получил имя Кзыл-Орда и стал столицей Казахской АССР.",
+   "en": "In 1853 Vasily Perovsky's force captured the Kokand fortress of Ak-Mechet on the Syr Darya. It was renamed Fort Perovsky, then Perovsk, and in 1925 it became Kzyl-Orda, capital of the Kazakh ASSR."
+  },
+  "sources": [
+   "https://en.wikipedia.org/wiki/Vasily_Perovsky",
+   "https://ru.wikipedia.org/wiki/Кызылорда"
+  ]
+ },
+ {
+  "id": "turgai-1916",
+  "era": "empire",
+  "year": 1916,
+  "lat": 49.633,
+  "lng": 63.492,
+  "approx": false,
+  "place": {
+   "kk": "Торғай",
+   "ru": "Тургай",
+   "en": "Turgai"
+  },
+  "title": {
+   "kk": "1916 жылғы ұлт-азаттық көтеріліс",
+   "ru": "Восстание 1916 года",
+   "en": "The 1916 uprising"
+  },
+  "text": {
+   "kk": "1916 жылы қазақтарды майдандағы тыл жұмыстарына алу туралы жарлық бүкіл өлкеде көтеріліс тудырды. Торғай облысында Амангелді Иманов бастаған көтерілісшілер саны 50–60 мыңға жетті, олар Торғай қаласын қоршады.",
+   "ru": "В 1916 году указ о мобилизации казахов на тыловые работы вызвал восстание по всему краю. В Тургайской области повстанцы под руководством Амангельды Иманова, число которых доходило до 50–60 тысяч, осадили город Тургай.",
+   "en": "In 1916 a decree mobilising Kazakhs for labour behind the front sparked an uprising across the region. In Turgai region rebels led by Amangeldy Imanov, up to 50,000–60,000 strong, besieged the town of Turgai."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Тургайское_восстание_(1916—1917)"
+  ]
+ },
+ {
+  "id": "alash-autonomy-1917",
+  "era": "soviet",
+  "year": 1917,
+  "lat": 51.768,
+  "lng": 55.097,
+  "approx": false,
+  "place": {
+   "kk": "Орынбор (қазір Ресей)",
+   "ru": "Оренбург (ныне Россия)",
+   "en": "Orenburg (now Russia)"
+  },
+  "title": {
+   "kk": "Алаш автономиясы жарияланды",
+   "ru": "Провозглашение автономии Алаш",
+   "en": "The Alash autonomy proclaimed"
+  },
+  "text": {
+   "kk": "1917 жылы желтоқсанда Орынборда өткен екінші жалпықазақ съезі Алаш автономиясын жариялап, Әлихан Бөкейхан бастаған Алаш Орда үкіметін құрды. Алаш қайраткерлері кейін саяси қуғын-сүргін құрбаны болды.",
+   "ru": "В декабре 1917 года второй Всеказахский съезд в Оренбурге провозгласил автономию Алаш и создал правительство Алаш-Орда во главе с Алиханом Букейхановым. Многие деятели Алаша позже стали жертвами репрессий.",
+   "en": "In December 1917 the second All-Kazakh Congress in Orenburg proclaimed the Alash autonomy and formed the Alash Orda government led by Alikhan Bukeikhanov. Many Alash leaders later fell victim to the purges."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Алашская_автономия"
+  ]
+ },
+ {
+  "id": "kassr-1920",
+  "era": "soviet",
+  "year": 1920,
+  "lat": 51.768,
+  "lng": 55.097,
+  "approx": false,
+  "place": {
+   "kk": "Орынбор (қазір Ресей)",
+   "ru": "Оренбург (ныне Россия)",
+   "en": "Orenburg (now Russia)"
+  },
+  "title": {
+   "kk": "Автономиялық республиканың құрылуы",
+   "ru": "Образование автономной республики",
+   "en": "The autonomous republic is formed"
+  },
+  "text": {
+   "kk": "1920 жылы 26 тамызда Қырғыз (Қазақ) АКСР-і құрылды, оның алғашқы астанасы Орынбор болды. 1925 жылы республика Қазақ АКСР-і болып аталды, астанасы Қызылордаға көшті.",
+   "ru": "26 августа 1920 года была образована Киргизская (Казахская) АССР с первой столицей в Оренбурге. В 1925 году республику переименовали в Казакскую АССР, а столицу перенесли в Кзыл-Орду.",
+   "en": "On 26 August 1920 the Kirghiz (Kazakh) ASSR was formed with its first capital in Orenburg. In 1925 it was renamed the Kazak ASSR and the capital moved to Kzyl-Orda."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Казахская_Автономная_Социалистическая_Советская_Республика"
+  ]
+ },
+ {
+  "id": "kzyl-orda-capital-1925",
+  "era": "soviet",
+  "year": 1925,
+  "year_end": 1929,
+  "lat": 44.848,
+  "lng": 65.482,
+  "approx": false,
+  "place": {
+   "kk": "Қызылорда",
+   "ru": "Кзыл-Орда",
+   "en": "Kzyl-Orda"
+  },
+  "title": {
+   "kk": "Қызылорда – астана",
+   "ru": "Кзыл-Орда — столица",
+   "en": "Kzyl-Orda, the capital"
+  },
+  "text": {
+   "kk": "1925–1929 жылдары Қызылорда (бұрынғы Ақмешіт пен Перовск) Қазақ АКСР-інің астанасы болды. Мұнда алғашқы ұлттық театр мен газеттер жұмыс істеді, ал 1929 жылы астана Алматыға көшірілді.",
+   "ru": "В 1925–1929 годах Кзыл-Орда (бывшие Ак-Мечеть и Перовск) была столицей Казакской АССР. Здесь работали первый национальный театр и газеты, а в 1929 году столицу перенесли в Алма-Ату.",
+   "en": "In 1925–1929 Kzyl-Orda (formerly Ak-Mechet and Perovsk) was the capital of the Kazak ASSR. The first national theatre and newspapers worked here, and in 1929 the capital moved to Alma-Ata."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Кызылорда"
+  ]
+ },
+ {
+  "id": "alma-ata-capital-1929",
+  "era": "soviet",
+  "year": 1929,
+  "lat": 43.256,
+  "lng": 76.945,
+  "approx": false,
+  "place": {
+   "kk": "Алматы",
+   "ru": "Алма-Ата",
+   "en": "Alma-Ata"
+  },
+  "title": {
+   "kk": "Астана Алматыға көшті",
+   "ru": "Столица переезжает в Алма-Ату",
+   "en": "The capital moves to Alma-Ata"
+  },
+  "text": {
+   "kk": "1929 жылы республика астанасы Қызылордадан Алматыға көшірілді. Алматы 1997 жылға дейін, яғни алдымен Қазақ АКСР-інің, сосын Қазақ КСР-інің және тәуелсіз Қазақстанның астанасы болды.",
+   "ru": "В 1929 году столицу республики перенесли из Кзыл-Орды в Алма-Ату. Алма-Ата оставалась столицей до 1997 года — сначала Казакской АССР, затем Казахской ССР и независимого Казахстана.",
+   "en": "In 1929 the republic's capital moved from Kzyl-Orda to Alma-Ata. The city remained the capital until 1997, first of the Kazak ASSR, then of the Kazakh SSR and of independent Kazakhstan."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Алма-Ата"
+  ]
+ },
+ {
+  "id": "asharshylyk-1930",
+  "era": "soviet",
+  "year": 1930,
+  "year_end": 1933,
+  "lat": 48.5,
+  "lng": 67.5,
+  "approx": true,
+  "place": {
+   "kk": "Бүкіл Қазақстан",
+   "ru": "Весь Казахстан",
+   "en": "All of Kazakhstan"
+  },
+  "title": {
+   "kk": "Ашаршылық",
+   "ru": "Голод 1930–1933 годов (Ашаршылык)",
+   "en": "The famine of 1930–1933 (Asharshylyk)"
+  },
+  "text": {
+   "kk": "Күштеп ұжымдастыру мен малды тәркілеу 1930–1933 жылдары ашаршылыққа әкелді. Миллионнан астам адам қаза тапты, көптеген адам елден көшіп кетті; бұл – қазақ халқының тарихындағы ең ауыр трагедиялардың бірі.",
+   "ru": "Насильственная коллективизация и изъятие скота привели в 1930–1933 годах к страшному голоду. Погибли более миллиона человек, многие бежали за пределы республики; это одна из самых тяжёлых трагедий в истории казахского народа.",
+   "en": "Forced collectivisation and the seizure of livestock led to a terrible famine in 1930–1933. More than a million people died and many fled the republic; it is one of the gravest tragedies in Kazakh history."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Голод_в_Казахстане_(1932—1933)"
+  ]
+ },
+ {
+  "id": "kazssr-1936",
+  "era": "soviet",
+  "year": 1936,
+  "lat": 43.256,
+  "lng": 76.945,
+  "approx": false,
+  "place": {
+   "kk": "Алматы",
+   "ru": "Алма-Ата",
+   "en": "Alma-Ata"
+  },
+  "title": {
+   "kk": "Қазақ КСР-і",
+   "ru": "Казахская ССР",
+   "en": "The Kazakh SSR"
+  },
+  "text": {
+   "kk": "1936 жылы желтоқсанда Қазақ АКСР-і одақтас республикаға – Қазақ Кеңестік Социалистік Республикасына айналды. Ол 1991 жылға дейін КСРО құрамында болды.",
+   "ru": "В декабре 1936 года Казахская АССР была преобразована в союзную республику — Казахскую ССР. Она входила в состав СССР до 1991 года.",
+   "en": "In December 1936 the Kazakh ASSR became a full union republic, the Kazakh SSR. It remained part of the USSR until 1991."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Казахская_Советская_Социалистическая_Республика"
+  ]
+ },
+ {
+  "id": "panfilov-division-1941",
+  "era": "soviet",
+  "year": 1941,
+  "lat": 43.258,
+  "lng": 76.953,
+  "approx": false,
+  "place": {
+   "kk": "Алматы",
+   "ru": "Алма-Ата",
+   "en": "Alma-Ata"
+  },
+  "title": {
+   "kk": "Панфилов дивизиясы",
+   "ru": "Панфиловская дивизия",
+   "en": "The Panfilov Division"
+  },
+  "text": {
+   "kk": "316-атқыштар дивизиясы 1941 жылы шілде–тамызда Алматыда негізінен Қазақ және Қырғыз КСР-інің тұрғындарынан жасақталды. Генерал Иван Панфилов басқарған дивизия 1941 жылдың күзінде Мәскеуді қорғауда ерлік көрсетті.",
+   "ru": "316-я стрелковая дивизия была сформирована в июле–августе 1941 года в Алма-Ате, в основном из жителей Казахской и Киргизской ССР. Под командованием генерала Ивана Панфилова она стойко сражалась при обороне Москвы осенью 1941 года.",
+   "en": "The 316th Rifle Division was formed in July–August 1941 in Alma-Ata, mainly from people of the Kazakh and Kirghiz SSRs. Commanded by General Ivan Panfilov, it fought steadfastly in the defence of Moscow in autumn 1941."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/316-я_стрелковая_дивизия_(1-го_формирования)"
+  ]
+ },
+ {
+  "id": "first-atomic-test-1949",
+  "era": "soviet",
+  "year": 1949,
+  "lat": 50.438,
+  "lng": 77.811,
+  "approx": false,
+  "place": {
+   "kk": "Семей ядролық сынақ полигоны",
+   "ru": "Семипалатинский полигон",
+   "en": "Semipalatinsk Test Site"
+  },
+  "title": {
+   "kk": "Алғашқы кеңестік атом бомбасының сынағы",
+   "ru": "Испытание первой советской атомной бомбы",
+   "en": "The first Soviet atomic test"
+  },
+  "text": {
+   "kk": "1949 жылы 29 тамызда Семей полигонында алғашқы кеңестік атом бомбасы РДС-1 сыналды. Келесі 40 жылда мұнда 450-ден астам ядролық жарылыс жасалып, жүз мыңдаған адамның денсаулығына зиян келді.",
+   "ru": "29 августа 1949 года на Семипалатинском полигоне испытали первую советскую атомную бомбу РДС-1. За следующие 40 лет здесь провели более 450 ядерных взрывов, что нанесло огромный вред здоровью сотен тысяч людей.",
+   "en": "On 29 August 1949 the first Soviet atomic bomb, RDS-1, was tested at the Semipalatinsk Test Site. Over the next 40 years more than 450 nuclear explosions were carried out here, gravely harming the health of hundreds of thousands of people."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Семипалатинский_испытательный_полигон"
+  ]
+ },
+ {
+  "id": "gagarin-1961",
+  "era": "soviet",
+  "year": 1961,
+  "lat": 45.92,
+  "lng": 63.342,
+  "approx": false,
+  "place": {
+   "kk": "Байқоңыр",
+   "ru": "Байконур",
+   "en": "Baikonur"
+  },
+  "title": {
+   "kk": "Гагаринның ұшуы",
+   "ru": "Полёт Гагарина",
+   "en": "Gagarin's flight"
+  },
+  "text": {
+   "kk": "1961 жылы 12 сәуірде Юрий Гагарин Байқоңырдан «Восток» кемесімен ұшып, ғарышқа шыққан тұңғыш адам болды. Ол ұшқан алаң «Гагарин старты» деп аталады.",
+   "ru": "12 апреля 1961 года Юрий Гагарин стартовал с Байконура на корабле «Восток» и стал первым человеком в космосе. Площадку, с которой он улетел, называют «Гагаринским стартом».",
+   "en": "On 12 April 1961 Yuri Gagarin lifted off from Baikonur aboard Vostok and became the first human in space. The launch pad he flew from is called 'Gagarin's Start'."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Восток-1"
+  ]
+ },
+ {
+  "id": "zheltoqsan-1986",
+  "era": "soviet",
+  "year": 1986,
+  "lat": 43.238,
+  "lng": 76.945,
+  "approx": false,
+  "place": {
+   "kk": "Республика алаңы, Алматы",
+   "ru": "Площадь Республики, Алма-Ата",
+   "en": "Republic Square, Alma-Ata"
+  },
+  "title": {
+   "kk": "Желтоқсан көтерілісі",
+   "ru": "Желтоксан",
+   "en": "Zheltoqsan (December 1986)"
+  },
+  "text": {
+   "kk": "1986 жылы 17–18 желтоқсанда Алматыда жастар республика басшысының Мәскеудің шешімімен ауыстырылуына наразылық білдіріп алаңға шықты. Көтеріліс күшпен басылды; бүгін Желтоқсан тәуелсіздікке бастаған жолдың маңызды белесі ретінде еске алынады.",
+   "ru": "17–18 декабря 1986 года молодёжь Алма-Аты вышла на площадь в знак протеста против смены руководителя республики по решению Москвы. Выступление жестоко подавили; сегодня Желтоксан вспоминают как важную веху на пути к независимости.",
+   "en": "On 17–18 December 1986 young people in Alma-Ata took to the square to protest Moscow's replacement of the republic's leader. The protest was brutally suppressed; today Zheltoqsan is remembered as a milestone on the road to independence."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Декабрьские_события_1986_года_в_Казахской_ССР"
+  ]
+ },
+ {
+  "id": "nevada-semipalatinsk-1989",
+  "era": "soviet",
+  "year": 1989,
+  "lat": 43.256,
+  "lng": 76.945,
+  "approx": false,
+  "place": {
+   "kk": "Алматы",
+   "ru": "Алма-Ата",
+   "en": "Alma-Ata"
+  },
+  "title": {
+   "kk": "«Невада – Семей» қозғалысы",
+   "ru": "Движение «Невада — Семипалатинск»",
+   "en": "The Nevada–Semipalatinsk movement"
+  },
+  "text": {
+   "kk": "1989 жылы ақын Олжас Сүлейменов ядролық сынақтарға қарсы «Невада – Семей» халықаралық қозғалысын құрды. Қозғалыс миллиондаған қол жинап, Семей полигонының жабылуына ықпал етті.",
+   "ru": "В 1989 году поэт Олжас Сулейменов основал международное антиядерное движение «Невада — Семипалатинск». Движение собрало миллионы подписей и помогло добиться закрытия полигона.",
+   "en": "In 1989 the poet Olzhas Suleimenov founded the international anti-nuclear movement Nevada–Semipalatinsk. It gathered millions of signatures and helped bring about the closure of the test site."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Невада_—_Семипалатинск"
+  ]
+ },
+ {
+  "id": "sovereignty-1990",
+  "era": "independence",
+  "year": 1990,
+  "lat": 43.256,
+  "lng": 76.945,
+  "approx": false,
+  "place": {
+   "kk": "Алматы",
+   "ru": "Алма-Ата",
+   "en": "Alma-Ata"
+  },
+  "title": {
+   "kk": "Мемлекеттік егемендік туралы декларация",
+   "ru": "Декларация о государственном суверенитете",
+   "en": "Declaration of State Sovereignty"
+  },
+  "text": {
+   "kk": "1990 жылы 25 қазанда Қазақ КСР Жоғарғы Кеңесі Мемлекеттік егемендік туралы декларацияны қабылдады. Бұл күн Қазақстанда Республика күні ретінде аталып өтеді.",
+   "ru": "25 октября 1990 года Верховный Совет Казахской ССР принял Декларацию о государственном суверенитете. Этот день отмечается в Казахстане как День Республики.",
+   "en": "On 25 October 1990 the Supreme Soviet of the Kazakh SSR adopted the Declaration of State Sovereignty. Kazakhstan celebrates this date as Republic Day."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Декларация_о_государственном_суверенитете_Казахской_ССР"
+  ]
+ },
+ {
+  "id": "polygon-closed-1991",
+  "era": "independence",
+  "year": 1991,
+  "lat": 50.438,
+  "lng": 77.811,
+  "approx": false,
+  "place": {
+   "kk": "Семей ядролық сынақ полигоны",
+   "ru": "Семипалатинский полигон",
+   "en": "Semipalatinsk Test Site"
+  },
+  "title": {
+   "kk": "Семей полигоны жабылды",
+   "ru": "Закрытие Семипалатинского полигона",
+   "en": "The test site is closed"
+  },
+  "text": {
+   "kk": "1991 жылы 29 тамызда Семей ядролық сынақ полигонын жабу туралы жарлыққа қол қойылды. Кейін Қазақстан әлемдегі төртінші ірі ядролық арсеналдан ерікті түрде бас тартты; 29 тамыз БҰҰ шешімімен Ядролық сынақтарға қарсы халықаралық күн болып белгіленген.",
+   "ru": "29 августа 1991 года был подписан указ о закрытии Семипалатинского испытательного полигона. Позже Казахстан добровольно отказался от четвёртого по величине ядерного арсенала в мире; решением ООН 29 августа объявлено Международным днём действий против ядерных испытаний.",
+   "en": "On 29 August 1991 a decree closed the Semipalatinsk Test Site. Kazakhstan later voluntarily gave up the world's fourth-largest nuclear arsenal; the UN has declared 29 August the International Day against Nuclear Tests."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Семипалатинский_испытательный_полигон",
+   "https://www.un.org/en/observances/end-nuclear-tests-day"
+  ]
+ },
+ {
+  "id": "independence-1991",
+  "era": "independence",
+  "year": 1991,
+  "lat": 43.256,
+  "lng": 76.945,
+  "approx": false,
+  "place": {
+   "kk": "Алматы",
+   "ru": "Алма-Ата",
+   "en": "Alma-Ata"
+  },
+  "title": {
+   "kk": "Қазақстанның тәуелсіздігі",
+   "ru": "Независимость Казахстана",
+   "en": "Independence of Kazakhstan"
+  },
+  "text": {
+   "kk": "1991 жылы 16 желтоқсанда Жоғарғы Кеңес «Қазақстан Республикасының мемлекеттік тәуелсіздігі туралы» Конституциялық заң қабылдады. Қазақстан КСРО-дан шыққан соңғы республика болды.",
+   "ru": "16 декабря 1991 года Верховный Совет принял Конституционный закон «О государственной независимости Республики Казахстан». Казахстан стал последней республикой, вышедшей из состава СССР.",
+   "en": "On 16 December 1991 the Supreme Soviet adopted the Constitutional Law on the State Independence of the Republic of Kazakhstan. Kazakhstan was the last republic to leave the USSR."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/День_Независимости_Казахстана"
+  ]
+ },
+ {
+  "id": "tenge-1993",
+  "era": "independence",
+  "year": 1993,
+  "lat": 43.256,
+  "lng": 76.945,
+  "approx": false,
+  "place": {
+   "kk": "Алматы",
+   "ru": "Алма-Ата",
+   "en": "Alma-Ata"
+  },
+  "title": {
+   "kk": "Теңге енгізілді",
+   "ru": "Введение тенге",
+   "en": "The tenge is introduced"
+  },
+  "text": {
+   "kk": "1993 жылы 15 қарашада Қазақстан өзінің ұлттық валютасы – теңгені енгізді. Ол ресей рублін 1 теңгеге 500 рубль бағамымен алмастырды.",
+   "ru": "15 ноября 1993 года Казахстан ввёл собственную национальную валюту — тенге. Она заменила российский рубль по курсу 500 рублей за 1 тенге.",
+   "en": "On 15 November 1993 Kazakhstan introduced its own national currency, the tenge. It replaced the Russian rouble at 500 roubles to 1 tenge."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Казахстанский_тенге"
+  ]
+ },
+ {
+  "id": "constitution-1995",
+  "era": "independence",
+  "year": 1995,
+  "lat": 43.256,
+  "lng": 76.945,
+  "approx": false,
+  "place": {
+   "kk": "Алматы",
+   "ru": "Алма-Ата",
+   "en": "Alma-Ata"
+  },
+  "title": {
+   "kk": "Конституцияның қабылдануы",
+   "ru": "Принятие Конституции",
+   "en": "Adoption of the Constitution"
+  },
+  "text": {
+   "kk": "1995 жылы 30 тамызда жалпыхалықтық референдумда Қазақстан Республикасының қазіргі Конституциясы қабылданды. 30 тамыз – Конституция күні.",
+   "ru": "30 августа 1995 года на всенародном референдуме была принята действующая Конституция Республики Казахстан. 30 августа — День Конституции.",
+   "en": "On 30 August 1995 the current Constitution of the Republic of Kazakhstan was adopted by national referendum. 30 August is Constitution Day."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Конституция_Казахстана"
+  ]
+ },
+ {
+  "id": "capital-akmola-1997",
+  "era": "independence",
+  "year": 1997,
+  "lat": 51.128,
+  "lng": 71.43,
+  "approx": false,
+  "place": {
+   "kk": "Ақмола (Астана)",
+   "ru": "Акмола (Астана)",
+   "en": "Akmola (Astana)"
+  },
+  "title": {
+   "kk": "Астана Ақмолаға көшті",
+   "ru": "Перенос столицы в Акмолу",
+   "en": "The capital moves to Akmola"
+  },
+  "text": {
+   "kk": "1997 жылы 10 желтоқсанда Қазақстанның астанасы Алматыдан Ақмолаға көшірілді, 1998 жылы қала Астана деп аталды. 2019–2022 жылдары ол Нұр-Сұлтан деп аталып, 2022 жылы қайтадан Астана атауы қайтарылды.",
+   "ru": "10 декабря 1997 года столица Казахстана переехала из Алматы в Акмолу, в 1998 году город переименовали в Астану. В 2019–2022 годах он назывался Нур-Султан, а в 2022 году ему вернули имя Астана.",
+   "en": "On 10 December 1997 Kazakhstan's capital moved from Almaty to Akmola, renamed Astana in 1998. From 2019 to 2022 it was called Nur-Sultan, and in 2022 the name Astana was restored."
+  },
+  "sources": [
+   "https://ru.wikipedia.org/wiki/Астана"
+  ]
+ }
+]

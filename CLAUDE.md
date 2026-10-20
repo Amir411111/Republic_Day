@@ -4,7 +4,8 @@
 
 ## Стек
 - Vite + React 18 + TypeScript, карта на react-leaflet 4 (тайлы OpenStreetMap)
-- Карточки в `content/cards.json`, картинки в `content/images/` (Vite отдаёт `content/` как статику, путь в карточке: `images/<file>`)
+- Карточки в `content/cards.json`, картинки в `content/images/`
+- События для карты истории и режима «Ханы и битвы» в `content/events.json` (без фото; `approx: true` — место примерное), код в `src/atlas/` (Vite отдаёт `content/` как статику, путь в карточке: `images/<file>`)
 - Прогресс в localStorage, без базы данных
 - Деплой: Vercel, ИИ-гид в `api/guide`, ключ только в переменных окружения Vercel
 

@@ -15,14 +15,22 @@ interface Props {
 const DEFAULT_YEAR = 1900;
 
 export default function RoundScreen({ card, roundNo, total, onSubmit }: Props) {
-  const { t } = useI18n();
+  const { t, l } = useI18n();
   const [year, setYear] = useState(DEFAULT_YEAR);
   const [guess, setGuess] = useState<LatLng | null>(null);
 
   return (
     <div className="screen">
       <p className="round-no">{t('round', { n: roundNo, total })}</p>
-      <img className="photo" src={imageUrl(card)} alt="" />
+      {card.image ? (
+        <img className="photo" src={imageUrl(card)} alt="" />
+      ) : (
+        <div className="text-card">
+          <h2>{l(card.title)}</h2>
+          <p>{t('textRoundHint')}</p>
+          <p className="hint">{t('textRoundYearHint')}</p>
+        </div>
+      )}
 
       <YearPicker value={year} onChange={setYear} label={t('whatYear')} />
 

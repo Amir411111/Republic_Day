@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import Atlas from './atlas/Atlas';
+import { QUIZ_EVENTS, eventToCard } from './atlas/events';
 import { cardsForPack, DEV_MODE } from './game/cards';
 import Game from './game/Game';
 import { pickDaily, pickRandom, todayKey } from './game/pick';
@@ -6,7 +8,10 @@ import type { Card, Pack } from './game/types';
 import { LANGS, useI18n } from './i18n';
 import { mistakeIds } from './progress/storage';
 
-type Mode = 'daily' | 'random' | 'training';
+type Mode = 'daily' | 'random' | 'training' | 'khans';
+
+// Modern photos stay in free play; the daily game keeps to older history
+const DAILY_MAX_YEAR = 2000;
 
 interface Session {
   cards: Card[];
@@ -20,12 +25,18 @@ export default function App() {
   const [pack, setPack] = useState<Pack>('kz');
   const [session, setSession] = useState<Session | null>(null);
   const [notice, setNotice] = useState('');
+  const [atlas, setAtlas] = useState(false);
 
   const pool = cardsForPack(pack);
 
   const start = (mode: Mode) => {
     let cards: Card[];
-    if (mode === 'daily') cards = pickDaily(pool, `${todayKey()}-${pack}`);
+    if (mode === 'daily')
+      cards = pickDaily(
+        pool.filter((c) => c.year <= DAILY_MAX_YEAR),
+        `${todayKey()}-${pack}`,
+      );
+    else if (mode === 'khans') cards = pickRandom(QUIZ_EVENTS.map(eventToCard));
     else if (mode === 'random') cards = pickRandom(pool);
     else {
       const ids = new Set(mistakeIds());
@@ -41,7 +52,14 @@ export default function App() {
 
   const header = (
     <header className="top">
-      <button type="button" className="link" onClick={() => setSession(null)}>
+      <button
+        type="button"
+        className="link"
+        onClick={() => {
+          setSession(null);
+          setAtlas(false);
+        }}
+      >
         {t('appTitle')}
       </button>
       <div className="langs">
@@ -58,6 +76,17 @@ export default function App() {
       </div>
     </header>
   );
+
+  if (atlas) {
+    return (
+      <>
+        {header}
+        <main>
+          <Atlas />
+        </main>
+      </>
+    );
+  }
 
   if (session) {
     const shareTitle =
@@ -102,6 +131,7 @@ export default function App() {
             <button type="button" className="primary" onClick={() => start('daily')}>
               {t('modeDaily')}
             </button>
+            <p className="hint">{t('dailyNote')}</p>
             <button type="button" className="secondary" onClick={() => start('random')}>
               {t('modeRandom')}
             </button>
@@ -110,6 +140,16 @@ export default function App() {
             </button>
           </div>
         )}
+
+        <div className="menu">
+          <button type="button" className="primary" onClick={() => setAtlas(true)}>
+            🗺 {t('modeAtlas')}
+          </button>
+          <button type="button" className="secondary" onClick={() => start('khans')}>
+            {t('modeKhans')}
+          </button>
+          <p className="hint">{t('modeKhansHint')}</p>
+        </div>
         {notice && <p className="warn">{notice}</p>}
       </main>
     </>

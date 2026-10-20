@@ -61,6 +61,51 @@ export const STRINGS = {
   copied: { kk: 'Көшірілді', ru: 'Скопировано', en: 'Copied' },
   playAgain: { kk: 'Тағы ойнау', ru: 'Сыграть ещё', en: 'Play again' },
   home: { kk: 'Басты бет', ru: 'На главную', en: 'Home' },
+
+  modeAtlas: { kk: 'Тарих картасы', ru: 'Карта истории', en: 'History map' },
+  modeKhans: { kk: 'Хандар мен шайқастар', ru: 'Ханы и битвы', en: 'Khans and battles' },
+  modeKhansHint: {
+    kk: 'Суретсіз раундтар: оқиғаның жылы мен орнын табыңыз',
+    ru: 'Раунды без фото: угадайте год и место события',
+    en: 'Rounds without photos: guess the year and place',
+  },
+  dailyNote: {
+    kk: 'Күннің ойынында тек 2000 жылға дейінгі суреттер',
+    ru: 'В игре дня только снимки до 2000 года',
+    en: 'The daily game only uses pictures before 2000',
+  },
+  textRoundHint: {
+    kk: 'Бұл оқиға қай жылы және қай жерде болды?',
+    ru: 'В каком году и где это произошло?',
+    en: 'When and where did this happen?',
+  },
+  textRoundYearHint: {
+    kk: 'Бірнеше жылға созылса – басталған жылын көрсетіңіз',
+    ru: 'Если событие длилось несколько лет — укажите год начала',
+    en: 'If it lasted several years, give the starting year',
+  },
+  atlasTitle: { kk: 'Тарих картасы', ru: 'Карта истории', en: 'History map' },
+  atlasLead: {
+    kk: 'Нүктені басыңыз – сол жерде не болғанын оқыңыз. Жылды жылжытып, тарихтың қалай өрбігенін көріңіз.',
+    ru: 'Нажмите на точку — узнайте, что здесь произошло. Двигайте год, чтобы увидеть, как разворачивалась история.',
+    en: 'Tap a point to learn what happened there. Move the year to watch history unfold.',
+  },
+  layerEvents: { kk: 'Оқиғалар', ru: 'События', en: 'Events' },
+  layerPhotos: { kk: 'Фотосуреттер', ru: 'Фотографии', en: 'Photos' },
+  eraAll: { kk: 'Барлығы', ru: 'Все эпохи', en: 'All eras' },
+  eraKhanate: { kk: 'Қазақ хандығы', ru: 'Казахское ханство', en: 'Kazakh Khanate' },
+  eraEmpire: { kk: 'Ресей империясы', ru: 'Российская империя', en: 'Russian Empire' },
+  eraSoviet: { kk: 'Кеңес дәуірі', ru: 'Советская эпоха', en: 'Soviet era' },
+  eraIndependence: { kk: 'Тәуелсіз Қазақстан', ru: 'Независимый Казахстан', en: 'Independent Kazakhstan' },
+  upToYear: { kk: 'Осы жылға дейін:', ru: 'До года:', en: 'Up to year:' },
+  atlasLegend: {
+    kk: 'Түрлі түсті нүкте – оқиға, ақ нүкте – фотосурет. Үзік шеті – орны шамамен көрсетілген.',
+    ru: 'Цветная точка — событие, белая — фотография. Пунктирный край — место указано примерно.',
+    en: 'Coloured dot: event. White dot: photo. Dashed edge: approximate location.',
+  },
+  approxPlace: { kk: 'орны шамамен', ru: 'место указано примерно', en: 'approximate location' },
+  timeline: { kk: 'Уақыт желісі', ru: 'Хронология', en: 'Timeline' },
+  close: { kk: 'Жабу', ru: 'Закрыть', en: 'Close' },
 } satisfies Record<string, L10n>;
 
 export type StringKey = keyof typeof STRINGS;
