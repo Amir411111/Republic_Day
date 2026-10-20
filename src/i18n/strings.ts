@@ -106,6 +106,14 @@ export const STRINGS = {
   monSacral: { kk: 'Киелі нысандар', ru: 'Сакральные объекты', en: 'Sacred sites' },
   monHistory: { kk: 'Тарих ескерткіштері', ru: 'Памятники истории', en: 'Historical sites' },
   monOther: { kk: 'Басқа', ru: 'Другое', en: 'Other' },
+  monApprox: { kk: 'Шамамен орны', ru: 'Примерные места', en: 'Approximate sites' },
+  monApproxNote: {
+    kk: 'Тізімде координат жоқ: нүкте сипаттамадағы елді мекенге қойылған, нақты орны одан бірнеше шақырым болуы мүмкін.',
+    ru: 'В списке нет координат: точка стоит у населённого пункта из описания, сам памятник может быть в нескольких километрах.',
+    en: 'The list gives no coordinates: the dot marks the settlement named in the description; the site may be several km away.',
+  },
+  monPlace: { kk: 'Орналасқан жері', ru: 'Местонахождение', en: 'Location' },
+  monHere: { kk: 'Осы нүктеде {n} ескерткіш', ru: 'В этой точке памятников: {n}', en: '{n} monuments at this point' },
   timeline: { kk: 'Уақыт желісі', ru: 'Хронология', en: 'Timeline' },
   close: { kk: 'Жабу', ru: 'Закрыть', en: 'Close' },
 

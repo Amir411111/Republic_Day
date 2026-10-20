@@ -42,6 +42,10 @@ interface Monument {
   type: KkRu;
   district: KkRu;
   region: KkRu;
+  // location as worded in the list
+  place: KkRu;
+  // true when placed at the settlement named in the description, not by coordinates
+  approx: boolean;
   kind: MonumentKind;
   // the act or dataset this point comes from
   source: string;
@@ -124,7 +128,7 @@ const ALL_ITEMS: Item[] = [...EVENTS.map(fromEvent), ...ALL_CARDS.filter(isVerif
 
 type Selection =
   | { type: 'item'; item: Item }
-  | { type: 'monument'; mon: Monument }
+  | { type: 'monument'; mons: Monument[] }
   | { type: 'region'; id: string; name: L10n }
   | { type: 'list' };
 
@@ -187,6 +191,7 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
   const [showMon, setShowMon] = useState(false);
   const [monuments, setMonuments] = useState<Monument[] | null>(null);
   const [monKinds, setMonKinds] = useState<MonumentKind[]>([...MONUMENT_KINDS]);
+  const [showApprox, setShowApprox] = useState(true);
   const [sel, setSel] = useState<Selection | null>(null);
   const [camera, setCamera] = useState<Cam | null>(null);
   const [ask, setAsk] = useState(false);
@@ -213,6 +218,7 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
     monuments?.forEach((m) => n.set(m.kind, (n.get(m.kind) ?? 0) + 1));
     return MONUMENT_KINDS.filter((k) => n.has(k)).map((k) => [k, n.get(k)!] as const);
   }, [monuments]);
+  const approxCount = useMemo(() => monuments?.filter((m) => m.approx).length ?? 0, [monuments]);
   const toggleKind = (k: MonumentKind) =>
     setMonKinds((ks) => (ks.includes(k) ? ks.filter((x) => x !== k) : [...ks, k]));
 
@@ -222,7 +228,7 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
         type: 'FeatureCollection',
         features: monuments.map((m) => ({
           type: 'Feature',
-          properties: { id: m.id, kind: m.kind },
+          properties: { id: m.id, kind: m.kind, approx: m.approx },
           geometry: { type: 'Point', coordinates: [m.lng, m.lat] },
         })),
       },
@@ -293,15 +299,30 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
       );
 
     if (sel.type === 'monument') {
-      const m = sel.mon;
+      const [m, ...more] = sel.mons;
       const place = [ml(m.district), ml(m.region)].filter(Boolean).join(', ');
       return (
         <Panel key={`m${m.id}`} onClose={close} color={MONUMENT_COLORS[m.kind]}>
-          <p className="pr-10 text-xs font-semibold tracking-[0.16em] uppercase" style={{ color: MONUMENT_COLORS[m.kind] }}>
-            {t(KIND_LABEL[m.kind])}
-          </p>
-          <h3 className="mt-1 text-lg leading-tight font-bold text-pretty">{ml(m.name)}</h3>
-          <p className="mt-1 text-sm text-muted-foreground">{place}</p>
+          {more.length > 0 && (
+            <p className="mb-2 pr-10 text-xs text-muted-foreground">{t('monHere', { n: sel.mons.length })}</p>
+          )}
+          <ol className="flex flex-col gap-4">
+            {sel.mons.map((x) => (
+              <li key={x.id}>
+                <p className="pr-10 text-xs font-semibold tracking-[0.16em] uppercase" style={{ color: MONUMENT_COLORS[x.kind] }}>
+                  {t(KIND_LABEL[x.kind])}
+                </p>
+                <h3 className="mt-1 text-lg leading-tight font-bold text-pretty">{ml(x.name)}</h3>
+                {ml(x.place) && (
+                  <p className="mt-1 text-sm text-pretty text-foreground/85">
+                    <span className="text-muted-foreground">{t('monPlace')}:</span> {ml(x.place)}
+                  </p>
+                )}
+              </li>
+            ))}
+          </ol>
+          <p className="mt-2 text-sm text-muted-foreground">{place}</p>
+          {m.approx && <p className="mt-2 text-xs leading-relaxed text-primary/90">≈ {t('monApproxNote')}</p>}
           <p className="mt-3 text-xs text-muted-foreground">
             {t('monumentsSource')}:{' '}
             <a href={m.source} target="_blank" rel="noreferrer">
@@ -405,8 +426,10 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
         interactiveLayerIds={interactive.length ? interactive : undefined}
         onFeatureClick={(layer, props) => {
           if (layer === MONUMENT_LAYER_ID && props) {
-            const mon = monuments?.find((m) => m.id === Number(props.id));
-            if (mon) setSel({ type: 'monument', mon });
+            const hit = monuments?.find((m) => m.id === Number(props.id));
+            // monuments placed at the same settlement share one dot: list them all
+            const mons = hit ? monuments!.filter((m) => m.lat === hit.lat && m.lng === hit.lng) : [];
+            if (hit) setSel({ type: 'monument', mons: [hit, ...mons.filter((m) => m !== hit)] });
           } else if (layer === REGION_LAYER_ID && props) {
             const id = String(props.id);
             setSel({
@@ -423,7 +446,7 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
         {withinEmpire && <ModernWithin />}
         {regionsOn && <RegionsLayer selectedId={sel?.type === 'region' ? sel.id : null} />}
         <CountryOutline />
-        {showMon && monumentGeo && <MonumentsLayer data={monumentGeo} kinds={monKinds} />}
+        {showMon && monumentGeo && <MonumentsLayer data={monumentGeo} kinds={monKinds} showApprox={showApprox} />}
         {items.map((i) => {
           const active = i.key === selectedKey;
           return (
@@ -523,6 +546,17 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
                   {t(KIND_LABEL[k])} <span className="tabular-nums opacity-70">{n}</span>
                 </Button>
               ))}
+              {approxCount > 0 && (
+                <Button
+                  variant="chip"
+                  on={showApprox}
+                  onClick={() => setShowApprox(!showApprox)}
+                  className={cn('min-h-10 shrink-0 px-3 text-xs', !showApprox && 'opacity-60')}
+                >
+                  <span aria-hidden="true" className="size-2.5 rounded-full border border-foreground/80" />
+                  {t('monApprox')} <span className="tabular-nums opacity-70">{approxCount}</span>
+                </Button>
+              )}
             </div>
           )}
           <div className="pointer-events-auto flex gap-1.5 overflow-x-auto [scrollbar-width:none]">

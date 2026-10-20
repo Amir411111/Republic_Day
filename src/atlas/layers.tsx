@@ -135,20 +135,31 @@ const COLOR_BY_KIND = [
   MONUMENT_COLORS.other,
 ] as unknown as ExpressionSpecification;
 
-// ~1000+ points: one GeoJSON layer, filtered by class on the GPU instead of DOM markers
-export function MonumentsLayer({ data, kinds }: { data: FeatureCollection; kinds: MonumentKind[] }) {
+// Several thousand points: one GeoJSON layer, filtered on the GPU instead of DOM markers.
+// Approximate sites (placed at the settlement named in the list) are drawn as hollow rings.
+export function MonumentsLayer({
+  data,
+  kinds,
+  showApprox,
+}: {
+  data: FeatureCollection;
+  kinds: MonumentKind[];
+  showApprox: boolean;
+}) {
+  const approx: ExpressionSpecification = ['==', ['get', 'approx'], true];
+  const byKind: ExpressionSpecification = ['in', ['get', 'kind'], ['literal', kinds]];
   return (
     <Source id="monuments-src" type="geojson" data={data}>
       <Layer
         id={MONUMENT_LAYER_ID}
         type="circle"
-        filter={['in', ['get', 'kind'], ['literal', kinds]]}
+        filter={showApprox ? byKind : ['all', byKind, ['!', approx]]}
         paint={{
           'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 2.8, 8, 5, 12, 8],
           'circle-color': COLOR_BY_KIND,
-          'circle-opacity': 0.9,
-          'circle-stroke-color': '#070d18',
-          'circle-stroke-width': 1,
+          'circle-opacity': ['case', approx, 0.15, 0.9],
+          'circle-stroke-color': ['case', approx, COLOR_BY_KIND, '#070d18'],
+          'circle-stroke-width': ['case', approx, 1.4, 1],
         }}
       />
     </Source>

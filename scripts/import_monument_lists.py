@@ -11,7 +11,13 @@ the source tables contain typos (e.g. 68º79´35.3 - 79 minutes), and a wrong po
 is worse than a missing one. Kostanay region comes from the data.egov.kz open dataset
 (content/monuments-kostanay.json, scripts/import_monuments.py) and is merged in as is.
 
-Usage: python3 scripts/import_monument_lists.py
+Most lists give no coordinates at all, only a description such as "12 km south-west of the
+village of Sagiz". For those the monument is placed at that settlement, found in OpenStreetMap
+(Nominatim), and marked approx: true; descriptions more than 15 km from the settlement are left
+out. Lookups are cached in scripts/geocode-cache.json, so a rerun without --geocode needs no network
+for them and gives the same result.
+
+Usage: python3 scripts/import_monument_lists.py [--geocode]
 """
 import html
 import json
@@ -19,6 +25,7 @@ import math
 import re
 import sys
 import time
+import urllib.parse
 import urllib.request
 from html.parser import HTMLParser
 from pathlib import Path
@@ -41,9 +48,26 @@ ACTS = [
     {"code": "V20L0007411", "region": {"kk": "Қызылорда облысы", "ru": "Кызылординская область"}, "geo": ["kyzylorda"]},
     {"code": "V20S0006296", "region": {"kk": "Солтүстік Қазақстан облысы", "ru": "Северо-Казахстанская область"}, "geo": ["severo"]},
     {"code": "V20U0005804", "region": {"kk": "Түркістан облысы", "ru": "Туркестанская область"}, "geo": ["turkestan"]},
+    # lists without coordinates: placed by settlement, approximately
+    {"code": "G26F000063A", "region": {"kk": "Абай облысы", "ru": "Область Абай"}, "geo": ["vostochno"]},
+    {"code": "V20C0007334", "region": {"kk": "Ақтөбе облысы", "ru": "Актюбинская область"}, "geo": ["aktobe"]},
+    {"code": "V24D0614905", "region": {"kk": "Алматы облысы", "ru": "Алматинская область"}, "geo": ["almaty"]},
+    {"code": "V20T0004728", "region": {"kk": "Атырау облысы", "ru": "Атырауская область"}, "geo": ["atyrau"]},
+    {"code": "V23V0892716", "region": {"kk": "Шығыс Қазақстан облысы", "ru": "Восточно-Казахстанская область"}, "geo": ["vostochno"]},
+    {"code": "V24I0020219", "region": {"kk": "Жетісу облысы", "ru": "Область Жетісу"}, "geo": ["almaty"]},
+    {"code": "V24K0663409", "region": {"kk": "Қарағанды облысы", "ru": "Карагандинская область"}, "geo": ["karaganda"]},
+    {"code": "V20M0004310", "region": {"kk": "Маңғыстау облысы", "ru": "Мангистауская область"}, "geo": ["mangystau"]},
+    {"code": "V20P0006840", "region": {"kk": "Павлодар облысы", "ru": "Павлодарская область"}, "geo": ["pavlodar"]},
+    {"code": "G25H007801A", "region": {"kk": "Ұлытау облысы", "ru": "Область Ұлытау"}, "geo": ["karaganda"]},
+    {"code": "V20A0001295", "region": {"kk": "Астана қаласы", "ru": "город Астана"}, "geo": ["astana", "akmola"], "city": "Астана"},
+    {"code": "V21R0001693", "region": {"kk": "Алматы қаласы", "ru": "город Алматы"}, "geo": ["almaty-city", "almaty"], "city": "Алматы"},
+    {"code": "V20E0000107", "region": {"kk": "Шымкент қаласы", "ru": "город Шымкент"}, "geo": ["turkestan"], "city": "Шымкент"},
 ]
 
 UA = {"User-Agent": "Mozilla/5.0 (TarihGuessr open-data import)"}
+NOMINATIM_UA = {"User-Agent": "TarihGuessr/1.0 (Republic Day hackathon; https://github.com/Amir411111/Republic_Day)"}
+CACHE = ROOT / "scripts" / "geocode-cache.json"
+MAX_KM_FROM_SETTLEMENT = 15
 
 
 def fetch(url):
@@ -256,7 +280,7 @@ def find_columns(header):
             cols.setdefault("name", i)
         elif "вид" in low or "тип" in low or "түр" in low:
             cols.setdefault("type", i)
-        elif "местонахожд" in low or "адрес" in low or "орналас" in low:
+        elif "местонахожд" in low or "место нахожд" in low or "адрес" in low or "орналас" in low:
             cols.setdefault("place", i)
     return cols
 
@@ -314,37 +338,115 @@ def monument_rows(page):
     return []
 
 
-def import_act(act):
+# --- approximate placement by settlement ---------------------------------------------------
+
+SETTLEMENT = re.compile(
+    r"(?:села|селе|село|с\.|поселка|посёлка|поселке|пос\.|п\.|аула|ауле|аул|города|городе|город|г\.|станции|ст\.)"
+    r"\s*([А-ЯЁӘҒҚҢӨҰҮҺІ][а-яёәғқңөұүһі\-]+(?:[ -](?:[А-ЯЁӘҒҚҢӨҰҮҺІ0-9][а-яёәғқңөұүһі\-]*))?)"
+)
+STREET = re.compile(r"(улица|ул\.|проспект|пр\.|переулок|бульвар|площадь|микрорайон|мкр)", re.I)
+DISTANCE = re.compile(r"(\d+(?:[.,]\d+)?)\s*(км|километр\w*|м\b|метр\w*)")
+
+
+def distance_km(text):
+    """Largest distance mentioned in the description, in km (0 when none)."""
+    best = 0.0
+    for num, unit in DISTANCE.findall(text):
+        v = float(num.replace(",", "."))
+        best = max(best, v if unit.startswith("к") else v / 1000)
+    return best
+
+
+class Geocoder:
+    def __init__(self, online):
+        self.online = online
+        self.cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
+        self.asked = 0
+
+    def lookup(self, query):
+        if query not in self.cache:
+            if not self.online:
+                return None
+            url = "https://nominatim.openstreetmap.org/search?" + urllib.parse.urlencode(
+                {"q": query, "countrycodes": "kz", "format": "json", "limit": 5, "accept-language": "ru"}
+            )
+            time.sleep(1.1)  # Nominatim usage policy: at most one request per second
+            try:
+                req = urllib.request.Request(url, headers=NOMINATIM_UA)
+                hits = json.loads(urllib.request.urlopen(req, timeout=60).read())
+            except OSError:
+                return None
+            self.cache[query] = [[float(h["lat"]), float(h["lon"]), h.get("class", ""), h.get("type", "")] for h in hits]
+            self.asked += 1
+            if self.asked % 50 == 0:
+                self.save()
+                print(f"  ... {self.asked} lookups", flush=True)
+        return self.cache[query]
+
+    def save(self):
+        CACHE.write_text(json.dumps(self.cache, ensure_ascii=False, indent=0, sort_keys=True) + "\n", encoding="utf-8")
+
+    def place(self, text, act):
+        """Approximate point for a description, or None when it cannot be placed honestly."""
+        flat = re.sub(r"\s+", " ", text)
+        city = act.get("city")
+        if city or (STREET.search(flat) and SETTLEMENT.search(flat) and "город" in flat.lower()):
+            # a street address: geocode it inside its city
+            town = city or SETTLEMENT.search(flat).group(1)
+            addr = re.sub(r"\(.*?\)", "", flat).split(";")[0].strip(" ,.")
+            queries = [f"{addr}, {town}", town] if STREET.search(flat) else [town]
+        else:
+            m = SETTLEMENT.search(flat)
+            if not m or distance_km(flat) > MAX_KM_FROM_SETTLEMENT:
+                return None
+            queries = [f"{m.group(1)}, {act['region']['ru']}", m.group(1)]
+        for q in queries:
+            for lat, lng, cls, typ in self.lookup(q) or []:
+                if cls in ("place", "boundary", "highway", "building", "amenity", "tourism", "historic", "landuse") \
+                        and in_regions(lat, lng, act["geo"]):
+                    return round(lat, 5), round(lng, 5)
+        return None
+
+
+def import_act(act, geo):
     url = f"https://zakon.uchet.kz/rus/docs/{act['code']}"
     ru = monument_rows(fetch(url))
     kk = monument_rows(fetch(f"https://zakon.uchet.kz/kaz/docs/{act['code']}"))
     paired = len(kk) == len(ru)
-    kept, bad, nocoord = [], 0, 0
+    kept, bad, nocoord, approx = [], 0, 0, 0
     for i, r in enumerate(ru):
         if r is None or not r["name"]:
             continue
         pt = first_point(r["coord"])
-        if not pt:
-            if not parse_values(r["coord"]) and not UTM.search(r["coord"]):
-                nocoord += 1
-            else:
-                bad += 1
-            continue
-        if not in_regions(pt[0], pt[1], act["geo"]):
+        is_approx = False
+        if pt and not in_regions(pt[0], pt[1], act["geo"]):
             bad += 1
             continue
+        if not pt:
+            if parse_values(r["coord"]) or UTM.search(r["coord"]):
+                bad += 1  # coordinates are given but wrong: do not guess around them
+                continue
+            pt = geo.place(r["coord"], act)
+            if not pt:
+                nocoord += 1
+                continue
+            is_approx = True
+            approx += 1
         k = kk[i] if paired and kk[i] else None
         kept.append({
             "lat": pt[0],
             "lng": pt[1],
+            "approx": is_approx,
             "name": {"kk": k["name"] if k else "", "ru": r["name"]},
             "type": {"kk": k["type"] if k else "", "ru": r["type"]},
             "district": {"kk": k["district"] if k else "", "ru": r["district"]},
+            "place": {"kk": re.sub(r"\s+", " ", k["coord"]).strip() if k else "", "ru": re.sub(r"\s+", " ", r["coord"]).strip()},
             "region": act["region"],
             "source": f"https://adilet.zan.kz/rus/docs/{act['code']}",
         })
-    print(f"{act['code']} {act['region']['ru']}: {len(kept)} kept, {bad} bad or outside the region, "
-          f"{nocoord} without coordinates, kk names {'paired' if paired else 'NOT paired'}")
+    print(f"{act['code']} {act['region']['ru']}: {len(kept)} kept ({approx} placed by settlement), "
+          f"{bad} with wrong coordinates, {nocoord} could not be placed, kk names {'paired' if paired else 'NOT paired'}",
+          flush=True)
     return kept
 
 
@@ -358,13 +460,18 @@ def main():
     out = []
     for m in json.loads(KOSTANAY.read_text(encoding="utf-8")):
         out.append({
-            "lat": m["lat"], "lng": m["lng"], "name": m["name"], "type": m["type"], "district": m["district"],
+            "lat": m["lat"], "lng": m["lng"], "approx": False, "name": m["name"], "type": m["type"],
+            "district": m["district"], "place": {"kk": "", "ru": ""},
             "region": {"kk": "Қостанай облысы", "ru": "Костанайская область"},
             "source": EGOV_URL,
         })
-    for act in ACTS:
-        out += import_act(act)
-        time.sleep(1)
+    geo = Geocoder(online="--geocode" in sys.argv)
+    try:
+        for act in ACTS:
+            out += import_act(act, geo)
+            time.sleep(1)
+    finally:
+        geo.save()
 
     # one point per monument: the same name within ~500 m is a duplicate
     unique, buckets = [], {}
@@ -388,7 +495,9 @@ def main():
     kinds = {}
     for m in unique:
         kinds[m["kind"]] = kinds.get(m["kind"], 0) + 1
-    META.write_text(json.dumps({"count": len(unique), "regions": len(regions), "kinds": kinds}) + "\n", encoding="utf-8")
+    exact = sum(not m["approx"] for m in unique)
+    META.write_text(json.dumps({"count": len(unique), "exact": exact, "regions": len(regions), "kinds": kinds}) + "\n",
+                    encoding="utf-8")
     print(f"{len(unique)} monuments ({len(out) - len(unique)} duplicates dropped) -> {OUT}")
 
 
