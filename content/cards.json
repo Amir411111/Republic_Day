@@ -2114,5 +2114,330 @@
     ],
     "difficulty": 1,
     "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "aral-expedition-schooners-1848",
+    "pack": [
+      "kz"
+    ],
+    "year": 1848,
+    "lat": 46.1,
+    "lng": 61.1,
+    "place": {
+      "kk": "Сырдария сағасы, Арал теңізі",
+      "ru": "Устье Сырдарьи, Аральское море",
+      "en": "Syr Darya mouth, Aral Sea"
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/da/%D0%A8%D1%85%D1%83%D0%BD%D1%8B_%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD_%D0%B8_%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB.jpg",
+    "image_credit": {
+      "author": "Т. Г. Шевченко",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%A8%D1%85%D1%83%D0%BD%D1%8B_%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD_%D0%B8_%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB.jpg"
+    },
+    "title": {
+      "kk": "Арал экспедициясының шхуналары",
+      "ru": "Шхуны Аральской экспедиции",
+      "en": "Schooners of the Aral expedition"
+    },
+    "explanation": {
+      "kk": "1848 жылы лейтенант Алексей Бутаков басқарған экспедиция «Константин» шхунасымен Арал теңізін алғаш рет толық зерттеп, картасын жасады. Экспедицияға жер аударылған ақын әрі суретші Тарас Шевченко қатысып, теңіз бен жағалауды суретке салды.",
+      "ru": "В 1848 году экспедиция лейтенанта Алексея Бутакова на шхуне «Константин» впервые подробно исследовала и нанесла на карту Аральское море. В ней участвовал ссыльный поэт и художник Тарас Шевченко, который зарисовывал море и берега.",
+      "en": "In 1848 Lieutenant Alexey Butakov's expedition aboard the schooner Konstantin made the first detailed survey and map of the Aral Sea. The exiled poet and artist Taras Shevchenko took part and sketched the sea and its shores."
+    },
+    "clue": {
+      "kk": "Желкенді кемелер және фотосуреттен бұрынғы қолмен салынған сурет.",
+      "ru": "Парусные суда и рисунок от руки — ещё до эпохи фотографии.",
+      "en": "Sailing ships in a hand-drawn picture from before photography."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Аральская_флотилия",
+      "https://kazpravda.kz/n/kobzar-i-step"
+    ],
+    "difficulty": 3,
+    "verified_by": ""
+  },
+  {
+    "id": "alma-ata-mudflow-1921",
+    "pack": [
+      "kz"
+    ],
+    "year": 1921,
+    "lat": 43.256,
+    "lng": 76.95,
+    "place": {
+      "kk": "Алматы",
+      "ru": "Алма-Ата",
+      "en": "Alma-Ata (Almaty)"
+    },
+    "image": "images/alma-ata-mudflow-1921.jpg",
+    "image_credit": {
+      "author": "Unknown author",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Almaty1921_Sel_Malaya_Almatinka.jpg"
+    },
+    "title": {
+      "kk": "1921 жылғы сел Алматыда",
+      "ru": "Сель 1921 года в Алма-Ате",
+      "en": "The 1921 mudflow in Alma-Ata"
+    },
+    "explanation": {
+      "kk": "1921 жылы шілдеде Іле Алатауындағы жаңбырдан кейін пайда болған сел Алматы көшелерін басып, қаланы қатты қиратты. Дәл сол жылы Верный қаласы Алматы болып аталды; кейін қаланы селден қорғау үшін Медеу бөгеті салынды.",
+      "ru": "Летом 1921 года сель, сформировавшийся после дождей в горах Заилийского Алатау, прошёл по улицам Алма-Аты и сильно разрушил город. В том же году Верный переименовали в Алма-Ату; позже для защиты от селей построили плотину в Медеу.",
+      "en": "In summer 1921 a mudflow, formed after rains in the Trans-Ili Alatau, swept through the streets of Alma-Ata and caused heavy damage. That same year Verny was renamed Alma-Ata; later the Medeu dam was built to protect the city from mudflows."
+    },
+    "clue": {
+      "kk": "Лаймен көмілген көше, бір қабатты үйлер, ескі ақ-қара сурет.",
+      "ru": "Улица, заваленная грязью и камнями, одноэтажные дома, старый чёрно-белый снимок.",
+      "en": "A street buried in mud and rocks, low houses, an old black-and-white photo."
+    },
+    "sources": [
+      "https://tengrinews.kz/mixnews/muzcinu-proneslo-potokom-ves-gorod-samye-razrusitelnye-seli-376452/"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "aktobe-january-protests-2022",
+    "pack": [
+      "kz"
+    ],
+    "year": 2022,
+    "lat": 50.283,
+    "lng": 57.167,
+    "place": {
+      "kk": "Ақтөбе",
+      "ru": "Актобе",
+      "en": "Aktobe"
+    },
+    "image": "images/aktobe-january-protests-2022.jpg",
+    "image_credit": {
+      "author": "Esetok",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2022_Kazakhstan_protests_%E2%80%94_Aqtobe,_January_4_(01).jpg"
+    },
+    "title": {
+      "kk": "Ақтөбедегі қаңтар наразылығы",
+      "ru": "Январские протесты в Актобе",
+      "en": "January protests in Aktobe"
+    },
+    "explanation": {
+      "kk": "2022 жылдың қаңтарында Жаңаөзенде сұйытылған газ бағасының өсуіне қарсы басталған наразылық бүкіл елге тарады. 4 қаңтарда Ақтөбенің орталық алаңына да көп адам жиналды; бұл оқиғалар Қазақстанның жаңа тарихындағы ең қайғылы оқиғалардың бірі болды.",
+      "ru": "В январе 2022 года протесты против роста цен на сжиженный газ начались в Жанаозене и быстро охватили всю страну. 4 января люди вышли и на центральную площадь Актобе; эти события стали одними из самых трагических в новейшей истории Казахстана.",
+      "en": "In January 2022 protests against rising liquefied gas prices began in Zhanaozen and quickly spread across the country. On 4 January people also gathered on the central square of Aktobe; these events became among the most tragic in Kazakhstan's recent history."
+    },
+    "clue": {
+      "kk": "Түнгі алаң, алау оттары, көп адам, заманауи сандық сурет.",
+      "ru": "Ночная площадь, костры, толпа людей, современное цифровое фото.",
+      "en": "A square at night, bonfires, a crowd, a modern digital photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Протесты_в_Казахстане_(2022)"
+    ],
+    "difficulty": 1,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "temirtau-karmet-2013",
+    "pack": [
+      "kz"
+    ],
+    "year": 2013,
+    "lat": 50.068,
+    "lng": 73.015,
+    "place": {
+      "kk": "Теміртау",
+      "ru": "Темиртау",
+      "en": "Temirtau"
+    },
+    "image": "images/temirtau-karmet-2013.jpg",
+    "image_credit": {
+      "author": "Nikolay Olkhovoy",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%A2%D1%80%D0%B0%D0%BC%D0%B2%D0%B0%D0%B9_%D0%B8_%D1%82%D1%80%D1%83%D0%B1%D1%8B_%D0%9A%D0%B0%D1%80%D0%BC%D0%B5%D1%82%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%82%D0%B0_%D0%B2_%D0%A2%D0%B5%D0%BC%D0%B8%D1%80%D1%82%D0%B0%D1%83.jpg"
+    },
+    "title": {
+      "kk": "Теміртау: трамвай мен Қармет мұржалары",
+      "ru": "Темиртау: трамвай и трубы Карметкомбината",
+      "en": "Temirtau: a tram and the Karmet chimneys"
+    },
+    "explanation": {
+      "kk": "Теміртау – Қарағанды металлургиялық комбинатының айналасында өскен қала, оны «қазақ Магниткасы» деп атаған. Қаланың трамвайы зауыт пен тұрғын аудандарды байланыстырды; сурет 2013 жылы түсірілген.",
+      "ru": "Темиртау вырос вокруг Карагандинского металлургического комбината — его называли «казахстанской Магниткой». Городской трамвай связывал завод с жилыми районами; снимок сделан в 2013 году.",
+      "en": "Temirtau grew up around the Karaganda Metallurgical Combine, nicknamed the 'Kazakh Magnitka'. The city's tram connected the plant with residential districts; the photo was taken in 2013."
+    },
+    "clue": {
+      "kk": "Зауыт мұржалары, ескі трамвай, сандық түсті сурет.",
+      "ru": "Заводские трубы, старый трамвай, цифровое цветное фото.",
+      "en": "Factory chimneys, an old tram, a digital colour photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Карагандинский_металлургический_комбинат",
+      "https://ru.wikipedia.org/wiki/Темиртау"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "balkhash-copper-smelter-2004",
+    "pack": [
+      "kz"
+    ],
+    "year": 2004,
+    "lat": 46.843,
+    "lng": 74.977,
+    "place": {
+      "kk": "Балқаш",
+      "ru": "Балхаш",
+      "en": "Balkhash"
+    },
+    "image": "images/balkhash-copper-smelter-2004.jpg",
+    "image_credit": {
+      "author": "Юрий Иванков at Russian Wikipedia",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%9E_%D0%91%D0%B0%D0%BB%D1%85%D0%B0%D1%88%D1%86%D0%B2%D0%B5%D1%82%D0%BC%D0%B5%D1%82.jpg"
+    },
+    "title": {
+      "kk": "Балқаш тау-кен металлургия комбинаты",
+      "ru": "Балхашский горно-металлургический комбинат",
+      "en": "Balkhash Mining and Metallurgical Combine"
+    },
+    "explanation": {
+      "kk": "Балқаш мыс балқыту зауыты алғашқы мысты 1938 жылы 24 қарашада берді – бұл Қазақстанның алғашқы қара мысы еді. 1958 жылы оның негізінде комбинат құрылды; сурет 2004 жылы түсірілген, алдыңғы жоспарда – Балқаш ЖЭО.",
+      "ru": "Балхашский медеплавильный завод выдал первую медь 24 ноября 1938 года — это была первая черновая медь Казахстана. В 1958 году на его базе создали комбинат; снимок сделан в 2004 году, на переднем плане — Балхашская ТЭЦ.",
+      "en": "The Balkhash copper smelter produced its first copper on 24 November 1938, the first blister copper in Kazakhstan. In 1958 a combine was formed on its basis; the photo was taken in 2004, with the Balkhash power plant in front."
+    },
+    "clue": {
+      "kk": "Үлкен зауыт пен мұржалар, шөлейт жер, түсті сурет.",
+      "ru": "Огромный завод с трубами в полупустыне, цветное фото.",
+      "en": "A huge plant with chimneys in semi-desert, a colour photo."
+    },
+    "sources": [
+      "https://ru.ruwiki.ru/wiki/Балхашцветмет",
+      "https://www.nur.kz/nurfin/economy/2011156-kak-zabilos-serdtse-bmz-metallurgi-otmetili-85-letie-pervoy-balhashskoy-medi/"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "cis-heads-alma-ata-1991",
+    "pack": [
+      "kz"
+    ],
+    "year": 1991,
+    "lat": 43.238,
+    "lng": 76.946,
+    "place": {
+      "kk": "Алматы",
+      "ru": "Алма-Ата",
+      "en": "Alma-Ata (Almaty)"
+    },
+    "image": "images/cis-heads-alma-ata-1991.jpg",
+    "image_credit": {
+      "author": "Dmitryi Donskoy / Дмитрий Донской",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RIAN_archive_41059_CIS_heads_of_state.jpg"
+    },
+    "title": {
+      "kk": "Алматы кездесуі: ТМД басшылары",
+      "ru": "Алма-Атинская встреча глав СНГ",
+      "en": "The Alma-Ata meeting of CIS leaders"
+    },
+    "explanation": {
+      "kk": "1991 жылы 21 желтоқсанда Алматыда 11 республиканың басшылары Тәуелсіз Мемлекеттер Достастығын құру туралы декларацияға қол қойды. Бұл КСРО-ның өмір сүруін іс жүзінде тоқтатты; Қазақстан өз тәуелсіздігін бес күн бұрын, 16 желтоқсанда жариялаған еді.",
+      "ru": "21 декабря 1991 года в Алма-Ате лидеры 11 республик подписали декларацию о создании Содружества Независимых Государств. Это фактически поставило точку в существовании СССР; Казахстан провозгласил независимость за пять дней до этого, 16 декабря.",
+      "en": "On 21 December 1991 in Alma-Ata the leaders of 11 republics signed the declaration establishing the Commonwealth of Independent States. It effectively ended the existence of the USSR; Kazakhstan had declared independence five days earlier, on 16 December."
+    },
+    "clue": {
+      "kk": "Ресми кездесу, костюм киген саясаткерлер, ерте 1990-жылдардың суреті.",
+      "ru": "Официальная встреча, политики в костюмах, снимок начала 1990-х.",
+      "en": "An official meeting, politicians in suits, an early-1990s photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Алма-Атинская_декларация"
+    ],
+    "difficulty": 1,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "kazalinsk-trade-stalls-1870",
+    "pack": [
+      "kz"
+    ],
+    "year": 1870,
+    "lat": 45.762,
+    "lng": 62.107,
+    "place": {
+      "kk": "Қазалы",
+      "ru": "Казалинск",
+      "en": "Kazalinsk (Kazaly)"
+    },
+    "image": "images/kazalinsk-trade-stalls-1870.jpg",
+    "image_credit": {
+      "author": "Kun, Aleksandr L., 1840-1888",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Syr_Darya_Oblast._City_of_Kazalinsk._Trade_Stalls_WDL10926.png"
+    },
+    "title": {
+      "kk": "Қазалыдағы сауда дүкендері",
+      "ru": "Торговые лавки Казалинска",
+      "en": "Trade stalls in Kazalinsk"
+    },
+    "explanation": {
+      "kk": "Қазалы 1853 жылы Сырдария бойындағы әскери бекініс ретінде салынып, Арал теңізі мен Орта Азияға баратын жолдағы маңызды сауда пунктіне айналды. Сурет 1865–1872 жылдардағы «Түркістан альбомынан» алынған.",
+      "ru": "Казалинск возник в 1853 году как военное укрепление на Сырдарье и стал важным торговым пунктом на пути к Аральскому морю и в Среднюю Азию. Снимок из «Туркестанского альбома» 1865–1872 годов.",
+      "en": "Kazalinsk was founded in 1853 as a military fort on the Syr Darya and became an important trading post on the way to the Aral Sea and Central Asia. A photo from the Turkestan Album of 1865–1872."
+    },
+    "clue": {
+      "kk": "Саз балшық дүкендер, сауда адамдары және өте ерте фотосурет.",
+      "ru": "Глинобитные лавки, торговцы и очень ранняя фотография.",
+      "en": "Mud-brick stalls, traders and a very early photograph."
+    },
+    "sources": [
+      "https://www.loc.gov/collections/turkestan-album/",
+      "https://ru.wikipedia.org/wiki/Казалинск"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "aulie-ata-koumis-vendor-1870",
+    "pack": [
+      "kz"
+    ],
+    "year": 1870,
+    "lat": 42.9,
+    "lng": 71.367,
+    "place": {
+      "kk": "Әулиеата (Тараз)",
+      "ru": "Аулие-Ата (Тараз)",
+      "en": "Aulie-Ata (Taraz)"
+    },
+    "image": "images/aulie-ata-koumis-vendor-1870.jpg",
+    "image_credit": {
+      "author": "Kun, Aleksandr L., 1840-1888",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Syr_Darya_Oblast._Aulie-Ata._Vendor_of_Koumis,_Fermented_Mare%27s_Milk_WDL10905.png"
+    },
+    "title": {
+      "kk": "Әулиеатадағы қымыз сатушы",
+      "ru": "Продавец кумыса в Аулие-Ате",
+      "en": "A koumis seller in Aulie-Ata"
+    },
+    "explanation": {
+      "kk": "«Түркістан альбомындағы» (1865–1872) сурет: Әулиеата базарындағы қымыз сатушы. Бие сүтінен ашытылған қымыз – қазақтардың ежелгі және ең сүйікті сусындарының бірі.",
+      "ru": "Снимок из «Туркестанского альбома» (1865–1872): продавец кумыса на базаре Аулие-Аты. Кумыс из кобыльего молока — один из древнейших и самых любимых напитков казахов.",
+      "en": "A photo from the Turkestan Album (1865–1872): a koumis seller at the Aulie-Ata bazaar. Koumis, fermented mare's milk, is one of the oldest and best-loved Kazakh drinks."
+    },
+    "clue": {
+      "kk": "Сусын құятын ыдыстар, дәстүрлі киім және ерте студиялық сурет.",
+      "ru": "Сосуды для напитка, традиционная одежда и ранний снимок.",
+      "en": "Vessels for the drink, traditional dress and an early photograph."
+    },
+    "sources": [
+      "https://www.loc.gov/collections/turkestan-album/",
+      "https://ru.wikipedia.org/wiki/Кумыс"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
   }
 ]
