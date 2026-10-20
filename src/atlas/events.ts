@@ -26,7 +26,10 @@ export interface HistEvent {
 export const EVENTS = (raw as HistEvent[]).slice().sort((a, b) => a.year - b.year);
 
 export function yearLabel(e: { year: number; year_end?: number }, lang: Lang = 'ru'): string {
-  return e.year_end ? `${formatYear(e.year, lang)}–${formatYear(e.year_end, lang)}` : formatYear(e.year, lang);
+  if (!e.year_end) return formatYear(e.year, lang);
+  // "730–690 BCE" rather than "730 BCE–690 BCE"
+  if (e.year_end < 0) return `${-e.year}–${formatYear(e.year_end, lang)}`;
+  return `${formatYear(e.year, lang)}–${formatYear(e.year_end, lang)}`;
 }
 
 const inGameRange = (e: HistEvent) => e.year >= YEAR_MIN && e.year <= YEAR_MAX;

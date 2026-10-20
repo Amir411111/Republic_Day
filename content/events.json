@@ -1,5 +1,389 @@
 [
   {
+    "id": "shilikty-bce-730",
+    "era": "saka",
+    "year": -730,
+    "year_end": -690,
+    "lat": 47.171,
+    "lng": 84.531,
+    "approx": true,
+    "place": {
+      "kk": "Шілікті жазығы, Зайсан ауданы",
+      "ru": "Шиликтинская долина, Зайсанский район",
+      "en": "Shilikty valley, Zaisan District"
+    },
+    "title": {
+      "kk": "Шілікті: Бәйгетөбедегі «алтын адам»",
+      "ru": "Шиликты: «золотой человек» из Байгетобе",
+      "en": "Shilikty: the “golden man” of Baigetobe"
+    },
+    "text": {
+      "kk": "Шілікті жазығында ерте сақ дәуірінің 200-ден астам қорғаны бар, оның елуге жуығы — патша обалары. 2003 жылы Ә. Т. Төлеубаев бастаған экспедиция Бәйгетөбе қорғанын қазып, 4 мыңнан астам алтын бұйыммен жерленген сақ ақсүйегінің қабірін тапты. Бұл олжа Есіктен 34 жыл кейін табылды, бірақ қорғанның өзі әлдеқайда көне: радиокөміртекті талдау Шілікті қорғандарын шамамен б.з.б. 730–690 жылдарға жатқызады.",
+      "ru": "В Шиликтинской долине известно более 200 курганов ранних саков, около 50 из них — «царские». В 2003 году экспедиция А. Т. Толеубаева раскопала курган Байгетобе и нашла погребение знатного сака с более чем 4 тысячами золотых предметов. Находку сделали через 34 года после Иссыка, но сам курган намного древнее: радиоуглеродный анализ датирует курганы Шиликты примерно 730–690 годами до н. э.",
+      "en": "The Shilikty valley holds more than 200 early Saka burial mounds, about 50 of them “royal”. In 2003 an expedition led by A. T. Toleubaev excavated the Baigetobe mound and found the burial of a Saka noble with more than 4,000 gold items. The find came 34 years after Issyk, but the mound itself is far older: radiocarbon dating places the Shilikty kurgans at roughly 730–690 BCE."
+    },
+    "sources": [
+      "https://kk.wikipedia.org/wiki/Шілікті_қорымы",
+      "https://en.wikipedia.org/wiki/Shilikty",
+      "https://ru.wikipedia.org/wiki/Шиликты_(курганы)"
+    ]
+  },
+  {
+    "id": "besshatyr-bce-600",
+    "era": "saka",
+    "year": -600,
+    "year_end": -300,
+    "lat": 43.9227,
+    "lng": 78.2106,
+    "approx": false,
+    "place": {
+      "kk": "Іле өзенінің оң жағалауы, «Алтынемел» ұлттық паркі",
+      "ru": "Правый берег Или, нацпарк «Алтын-Эмель»",
+      "en": "Right bank of the Ili, Altyn-Emel National Park"
+    },
+    "title": {
+      "kk": "Бесшатыр қорымы",
+      "ru": "Курганы Бесшатыр",
+      "en": "The Besshatyr burial mounds"
+    },
+    "text": {
+      "kk": "Іле өзенінің оң жағалауындағы Бесшатыр қорымы б.з.б. VI–IV ғасырларға жатады. Ең үлкен қорғанның диаметрі 105 м, биіктігі 17 м. К. А. Ақышевтің қазбалары үлкен обаларға көсемдер мен әскербасылар, орташаларына дәрежесі төменірек әскербасылар мен белгілі жауынгерлер, кішілеріне қатардағы жауынгерлер мен қарапайым адамдар жерленгенін көрсетті.",
+      "ru": "Некрополь Бесшатыр («пять шатров») на правом берегу Или датируется VI–IV веками до н. э. Самый большой курган имеет диаметр 105 м и высоту 17 м. Раскопки К. А. Акишева показали, что в больших курганах хоронили вождей и военачальников, в средних — военачальников рангом ниже и известных воинов, в малых — рядовых воинов и простых людей.",
+      "en": "The Besshatyr (“five tents”) necropolis on the right bank of the Ili dates to the 6th–4th centuries BCE. Its largest mound is 105 m across and 17 m high. Excavations led by Kemal Akishev showed that chiefs and commanders were buried in the large mounds, lower-ranking commanders and renowned warriors in the middle-sized ones, and ordinary warriors and commoners in the small ones."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Бесшатыр"
+    ]
+  },
+  {
+    "id": "issyk-bce-500",
+    "era": "saka",
+    "year": -500,
+    "year_end": -300,
+    "lat": 43.394,
+    "lng": 77.396,
+    "approx": false,
+    "place": {
+      "kk": "Есік қаласы маңы, Алматы облысы",
+      "ru": "Окрестности города Есик, Алматинская область",
+      "en": "Near Yesik (Issyk), Almaty Region"
+    },
+    "title": {
+      "kk": "Есік қорғаны және Алтын адам",
+      "ru": "Иссыкский курган и «Золотой человек»",
+      "en": "The Issyk mound and the Golden Man"
+    },
+    "text": {
+      "kk": "1969–1970 жылдары К. А. Ақышев бастаған археологтар Есік қорғанынан 4 мыңнан астам алтын әшекей тігілген киім киген сақ жауынгерінің тоналмаған қабірін тапты. Қабірден 26 таңбалы жазуы бар күміс тостаған шықты, бұл жазу әлі күнге дейін оқылмаған. Қорған көбіне б.з.б. V–IV ғасырларға жатқызылады (басқа мерзімдер де ұсынылған), ал Алтын адам Қазақстанның ұлттық нышандарының біріне айналды — оның бейнесі Алматыдағы Тәуелсіздік монументінің басында тұр.",
+      "ru": "В 1969–1970 годах археологи под руководством К. А. Акишева нашли в кургане Иссык неразграбленное погребение сакского воина в одежде, расшитой более чем 4 тысячами золотых украшений. В погребении лежала серебряная чаша с надписью из 26 знаков, которая до сих пор не расшифрована. Курган чаще всего датируют V–IV веками до н. э. (предлагаются и другие даты), а «Золотой человек» стал одним из национальных символов Казахстана — его фигура венчает монумент Независимости в Алматы.",
+      "en": "In 1969–1970 archaeologists led by Kemal Akishev found in the Issyk mound the unlooted burial of a Saka warrior whose clothing was sewn with more than 4,000 gold ornaments. The grave held a silver bowl with an inscription of 26 signs that has still not been deciphered. The mound is most often dated to the 5th–4th centuries BCE (other dates have been proposed), and the Golden Man has become one of Kazakhstan's national symbols; his figure tops the Independence Monument in Almaty."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Иссыкский_курган",
+      "https://ru.wikipedia.org/wiki/Иссыкский_золотой_человек"
+    ]
+  },
+  {
+    "id": "turgesh-699",
+    "era": "turk",
+    "year": 699,
+    "year_end": 766,
+    "lat": 42.883,
+    "lng": 71.367,
+    "approx": false,
+    "place": {
+      "kk": "Тараз",
+      "ru": "Тараз",
+      "en": "Taraz"
+    },
+    "title": {
+      "kk": "Түргеш қағанаты және оның теңгелері",
+      "ru": "Тюргешский каганат и его монеты",
+      "en": "The Türgesh Khaganate and its coins"
+    },
+    "text": {
+      "kk": "Түргеш қағанаты Жетісуда 699–766 жылдары өмір сүрді; оның астанасы Шу аңғарындағы Суяб қаласы болды (қазір Қырғызстан аумағы). Түргеш дәуірінде мыс теңгелер соғылды: Түркістандағы Күлтөбе қалашығынан табылған VIII ғасырдағы сондай теңгеде «түргеш қағаны» деген жазу бар. Ежелгі Таразды қазу кезінде де түргеш дәуірінің жүздеген теңгесі табылды.",
+      "ru": "Тюргешский каганат существовал в Жетысу с 699 по 766 год; его столицей был Суяб в долине Чу (ныне Кыргызстан). В тюргешское время чеканили медные монеты: на одной из них, VIII века, найденной на городище Культобе в Туркестане, читается надпись «Господин тюргешский каган». Сотни монет тюргешской эпохи найдены и при раскопках древнего Тараза.",
+      "en": "The Türgesh Khaganate ruled Zhetysu from 699 to 766; its capital was Suyab in the Chu valley (now in Kyrgyzstan). Copper coins were struck in the Türgesh period: one 8th-century example found at the Kultobe site in Turkestan bears the legend “Lord Türgesh Khagan”. Hundreds of Türgesh-era coins have also been found in the excavations of ancient Taraz."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Тюргешский_каганат",
+      "https://www.inform.kz/ru/gospodin-tyurgeshskiy-kagan-istoriya-tarazskogo-monetnogo-dvora_a3892749",
+      "https://forbes.kz/news/newsid_213866"
+    ]
+  },
+  {
+    "id": "talas-751",
+    "era": "karakhanid",
+    "year": 751,
+    "lat": 42.9,
+    "lng": 71.4,
+    "approx": true,
+    "place": {
+      "kk": "Талас өзені, Тараз маңы (болжаммен)",
+      "ru": "Река Талас, окрестности Тараза (предположительно)",
+      "en": "Talas River near Taraz (approximate)"
+    },
+    "title": {
+      "kk": "Талас шайқасы",
+      "ru": "Таласская битва",
+      "en": "The Battle of Talas"
+    },
+    "text": {
+      "kk": "751 жылы шілдеде Талас өзенінің бойында Аббасид халифатының әскері Гао Сяньчжи бастаған Таң империясының әскерін жеңді; шайқастың бесінші күні Таң жағындағы қарлұқтар арабтар жағына шықты. Шайқастың нақты орны анықталмаған: оны Тараз бен Қырғызстандағы Талас қаласының маңынан іздейді. Бұл жеңіліс Таң империясының батысқа, Орта Азияға қарай жылжуын тоқтатты.",
+      "ru": "В июле 751 года на реке Талас войско Аббасидского халифата разбило армию империи Тан под командованием Гао Сяньчжи; на пятый день битвы карлуки, воевавшие за Тан, перешли на сторону арабов. Точное место сражения не установлено — его ищут в районе Тараза и киргизского города Талас. Поражение остановило продвижение Тан на запад, в Среднюю Азию.",
+      "en": "In July 751, on the Talas River, the army of the Abbasid Caliphate defeated the Tang Chinese army led by Gao Xianzhi; on the fifth day of the battle the Karluks fighting for the Tang went over to the Arab side. The exact battlefield is unknown and is sought near Taraz and near the town of Talas in Kyrgyzstan. The defeat halted Tang expansion westward into Central Asia."
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Battle_of_Talas"
+    ]
+  },
+  {
+    "id": "karluk-766",
+    "era": "karakhanid",
+    "year": 766,
+    "lat": 44.0,
+    "lng": 76.5,
+    "approx": true,
+    "place": {
+      "kk": "Жетісу (болжаммен)",
+      "ru": "Жетысу (Семиречье), примерно",
+      "en": "Zhetysu (Semirechye), approximate"
+    },
+    "title": {
+      "kk": "Қарлұқтар Жетісуды иеленді",
+      "ru": "Карлуки занимают Жетысу",
+      "en": "The Karluks take Zhetysu"
+    },
+    "text": {
+      "kk": "766 жылы қарлұқтар түргештерді бағындырып, Жетісуды иеленді және астанасын Шу өзені бойындағы Суябқа көшірді (қазір Қырғызстан аумағы). Қарлұқ билеушісінің ордаларының бірі Тараз болды, оны IX ғасырдың соңында Саманилер басып алды. Жетісудағы қарлұқ, шігіл, ягма және басқа тайпалардың бірлестігі Қарахан мемлекетінің негізіне айналды.",
+      "ru": "В 766 году карлуки подчинили тюргешей, заняли Жетысу и перенесли свою столицу в Суяб на реке Чу (ныне Кыргызстан). Одной из ставок карлукского правителя был Тараз, который в конце IX века захватили Саманиды. Конфедерация карлуков, чигилей, ягма и других племён Жетысу стала основой Караханидского государства.",
+      "en": "In 766 the Karluks subdued the Türgesh, took Zhetysu and moved their capital to Suyab on the Chu (now in Kyrgyzstan). Taraz was one of the Karluk ruler's seats until the Samanids captured it in the late 9th century. The confederation of Karluks, Chigils, Yaghmas and other Zhetysu tribes became the basis of the Karakhanid state."
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Karluks",
+      "https://en.wikipedia.org/wiki/Kara-Khanid_Khanate"
+    ]
+  },
+  {
+    "id": "yangikent-900",
+    "era": "karakhanid",
+    "year": 900,
+    "year_end": 999,
+    "lat": 45.6122,
+    "lng": 61.9211,
+    "approx": false,
+    "place": {
+      "kk": "Жанкент қалашығы, Қазалы маңы",
+      "ru": "Городище Джанкент, у Казалинска",
+      "en": "Jankent ruins near Kazaly"
+    },
+    "title": {
+      "kk": "Янгикент — оғыз ябғуының ордасы",
+      "ru": "Янгикент — ставка огузского ябгу",
+      "en": "Yangikent, seat of the Oghuz yabgu"
+    },
+    "text": {
+      "kk": "Х ғасырдағы араб географтары оғыздардың Янгикент («Жаңа қала») деген қаласын атайды, ал Ибн Руста мен Ибн Хаукаль оны оғыз ябғуының ордасы дейді. В. В. Бартольд бұл қаланы Сырдарияның төменгі ағысындағы, Қазалыдан 25 км оңтүстік-батыстағы Жанкент қалашығымен сәйкестендірді. 2005 жылдан бері жүріп жатқан қазбалар қаланың IX–X ғасырларда өмір сүргенін растап, қоныстың одан да ерте пайда болғанын көрсетті.",
+      "ru": "Арабские географы X века упоминают город огузов Янгикент («Новый город»), а Ибн Руста и Ибн Хаукаль называют его резиденцией огузского ябгу. В. В. Бартольд отождествил его с городищем Джанкент в низовьях Сырдарьи, в 25 км к юго-западу от Казалинска. Раскопки, которые идут с 2005 года, подтвердили, что город жил в IX–X веках, и показали, что поселение возникло ещё раньше.",
+      "en": "Arab geographers of the 10th century mention an Oghuz town called Yangikent (“New Town”), and Ibn Rustah and Ibn Hawqal call it the seat of the Oghuz yabgu. V. V. Bartold identified it with the Jankent ruins on the lower Syr Darya, 25 km southwest of Kazaly. Excavations since 2005 have confirmed that the town was occupied in the 9th–10th centuries and shown that the settlement is even older."
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jankent"
+    ]
+  },
+  {
+    "id": "kimek-900",
+    "era": "karakhanid",
+    "year": 900,
+    "lat": 52.29,
+    "lng": 76.95,
+    "approx": true,
+    "place": {
+      "kk": "Ертістің орта ағысы (болжаммен)",
+      "ru": "Среднее течение Иртыша (примерно)",
+      "en": "Middle Irtysh (approximate)"
+    },
+    "title": {
+      "kk": "Қимақ қағанаты",
+      "ru": "Кимакский каганат",
+      "en": "The Kimek Khaganate"
+    },
+    "text": {
+      "kk": "IX ғасырдың соңы – X ғасырдың басында Ертіс бойында қимақтар бастаған жеті тайпаның бірлестігі мемлекетке айналды, оны қаған басқарды. Араб және парсы авторлары Ертіс бойындағы Имақия қаласын атайды, қаған жазда сонда тұрған, бірақ қаланың нақты орны белгісіз. Бірлестіктің батыс бөлігін қыпшақтар құрады, олар XI ғасырда күшейіп, қимақтардың өзін тәуелді етті.",
+      "ru": "В конце IX — начале X века союз семи племён во главе с кимаками сложился на Иртыше в государство, которым правил каган. Арабские и персидские авторы пишут о городе Имакия на Иртыше, где летом жил каган, но точное место этого города неизвестно. Западную часть союза составляли кипчаки, которые в XI веке усилились и поставили самих кимаков в зависимость.",
+      "en": "In the late 9th and early 10th centuries a union of seven tribes led by the Kimeks became a state on the Irtysh, ruled by a khagan. Arab and Persian authors describe a town called Imakia on the Irtysh where the khagan spent the summer, but its exact site is unknown. The western part of the union was made up of Kipchaks, who grew stronger in the 11th century and made the Kimeks themselves dependent on them."
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kimak–Kipchak_confederation",
+      "https://ru.wikipedia.org/wiki/Кимакский_каганат"
+    ]
+  },
+  {
+    "id": "aisha-bibi-1000",
+    "era": "karakhanid",
+    "year": 1000,
+    "year_end": 1199,
+    "lat": 42.8336,
+    "lng": 71.2103,
+    "approx": false,
+    "place": {
+      "kk": "Айша бибі ауылы, Тараз маңы",
+      "ru": "Село Айша-Биби под Таразом",
+      "en": "Aisha Bibi village near Taraz"
+    },
+    "title": {
+      "kk": "Айша бибі кесенесі",
+      "ru": "Мавзолей Айша-Биби",
+      "en": "The Aisha Bibi mausoleum"
+    },
+    "text": {
+      "kk": "Тараздан 18 км батыста орналасқан Айша бибі кесенесі XI немесе XII ғасырда салынған. Ғимараттың бүкіл сырты 60-қа жуық түрлі өрнегі мен стильдендірілген жазуы бар ойылған терракота тақталармен қапталған. Аңыз бойынша кесенені қарахан билеушісі өзінің қалыңдығы Айша бибіге арнап салдырған, сондықтан ол халық арасында махаббат пен адалдықтың ескерткіші ретінде белгілі.",
+      "ru": "Мавзолей Айша-Биби в 18 км к западу от Тараза построен в XI или XII веке. Всё здание облицовано резными терракотовыми плитами, на которых около 60 разных узоров и стилизованные надписи. По легенде, мавзолей построил караханидский правитель для своей невесты Айши-Биби, поэтому в народе его знают как памятник любви и верности.",
+      "en": "The Aisha Bibi mausoleum, 18 km west of Taraz, was built in the 11th or 12th century. The whole building is faced with carved terracotta tiles in about 60 different patterns, with stylised calligraphy. According to legend, a Karakhanid ruler built it for his bride Aisha Bibi, which is why it is known locally as a monument to love and faithfulness."
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Aisha_Bibi"
+    ]
+  },
+  {
+    "id": "kipchak-1030",
+    "era": "karakhanid",
+    "year": 1030,
+    "lat": 48.5,
+    "lng": 64.0,
+    "approx": true,
+    "place": {
+      "kk": "Дешті Қыпшақ даласы (болжаммен)",
+      "ru": "Степи Дешт-и-Кипчак (примерно)",
+      "en": "Dasht-i Kipchak steppe (approximate)"
+    },
+    "title": {
+      "kk": "Дешті Қыпшақ",
+      "ru": "Дешт-и-Кипчак",
+      "en": "Dasht-i Kipchak"
+    },
+    "text": {
+      "kk": "1030 жылдан бастап Ертіс бойынан келген қыпшақтар Хорезмнің солтүстік көршісі болып, қазіргі Қазақстан даласын иеленді. XI ғасырда парсы авторы Насир Хосров бұл жерлерді алғаш рет «Дешті Қыпшақ», яғни «Қыпшақ даласы» деп атады; кейін бұл атау Қара теңіздің солтүстік жағалауына дейінгі далаға таралды. Қазақ тілі түркі тілдерінің қыпшақ тобына жатады.",
+      "ru": "С 1030 года кипчаки, пришедшие с Иртыша, стали северными соседями Хорезма и заняли степи нынешнего Казахстана. В XI веке персидский автор Насир Хосров впервые назвал эти земли «Дешт-и-Кипчак» — «Кипчакская степь»; позже название распространилось на степи вплоть до Северного Причерноморья. Казахский язык относится к кипчакской группе тюркских языков.",
+      "en": "From 1030 the Kipchaks, who had come from the Irtysh, became the northern neighbours of Khwarazm and occupied the steppes of present-day Kazakhstan. In the 11th century the Persian author Nasir Khusraw was the first to call these lands Dasht-i Kipchak, “the Kipchak steppe”; the name later spread to the steppes as far as the northern Black Sea coast. Kazakh belongs to the Kipchak branch of the Turkic languages."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Дешт-и-Кипчак",
+      "https://en.wikipedia.org/wiki/Kazakh_language"
+    ]
+  },
+  {
+    "id": "otrar-1218",
+    "era": "mongol",
+    "year": 1218,
+    "lat": 42.8525,
+    "lng": 68.3028,
+    "approx": false,
+    "place": {
+      "kk": "Отырар қалашығы",
+      "ru": "Городище Отрар",
+      "en": "Otrar ruins"
+    },
+    "title": {
+      "kk": "Отырар оқиғасы",
+      "ru": "Отрарская катастрофа",
+      "en": "The Otrar incident"
+    },
+    "text": {
+      "kk": "1218 жылы Отырарға Шыңғыс ханның иелігінен 450-ге жуық адамнан тұратын сауда керуені келді. Отырар әкімі Иналшық хорезмшах Мұхаммед II-нің келісімімен көпестерді тыңшы деп айыптап, бәрін өлтіртті. Бұған жауап ретінде моңғолдар Хорезмге жорық бастап, 1219 жылы Отырарды қоршады және бірнеше айға созылған қоршаудан кейін қаланы алып, қиратты.",
+      "ru": "В 1218 году в Отрар пришёл торговый караван из владений Чингисхана — около 450 человек. Наместник Отрара Инальчук с согласия хорезмшаха Мухаммеда II обвинил купцов в шпионаже и казнил их всех. В ответ монголы начали войну с Хорезмом: в 1219 году они осадили Отрар и после многомесячной осады взяли и разрушили город.",
+      "en": "In 1218 a trade caravan of about 450 men from Genghis Khan's realm arrived at Otrar. The governor of Otrar, Inalchuq, with the assent of the Khwarazmshah Muhammad II, accused the merchants of spying and had them all executed. In response the Mongols went to war with Khwarazm: in 1219 they besieged Otrar and, after a siege of several months, took and destroyed the city."
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Otrar",
+      "https://ru.wikipedia.org/wiki/Отрар"
+    ]
+  },
+  {
+    "id": "jochi-ulus-1224",
+    "era": "mongol",
+    "year": 1224,
+    "lat": 48.5,
+    "lng": 67.5,
+    "approx": true,
+    "place": {
+      "kk": "Шығыс Дешті Қыпшақ (болжаммен)",
+      "ru": "Восточный Дешт-и-Кипчак (примерно)",
+      "en": "Eastern Dasht-i Kipchak (approximate)"
+    },
+    "title": {
+      "kk": "Жошы ұлысы",
+      "ru": "Улус Джучи",
+      "en": "The Ulus of Jochi"
+    },
+    "text": {
+      "kk": "1224 жылы Шыңғыс хан үлкен ұлы Жошыға Хорезмнің солтүстік бөлігі мен Шығыс Дешті Қыпшақты ұлыс етіп берді; ұлыстың алғашқы ордасы Ертіс бойында болды. Жошы қайтыс болғаннан кейін (1225 немесе 1227 ж.) ұлыс оның ұлдары Орда мен Батуға өтті, кейін Жошы ұлысы Алтын Орда деп аталатын ірі мемлекетке айналды. Қазақ хандары осы ұлыстың шығыс бөлігінің билеушісі Орыс ханның ұрпақтары болды.",
+      "ru": "В 1224 году Чингисхан выделил старшему сыну Джучи в улус северную часть Хорезма и Восточный Дешт-и-Кипчак; первая ставка улуса находилась на Иртыше. После смерти Джучи (в 1225 или 1227 году) улус перешёл к его сыновьям Орде и Бату, и со временем Улус Джучи стал огромным государством, известным как Золотая Орда. Казахские ханы происходили от Урус-хана, правителя восточной части этого улуса.",
+      "en": "In 1224 Genghis Khan granted his eldest son Jochi northern Khwarazm and the eastern Dasht-i Kipchak as his ulus; its first headquarters was on the Irtysh. After Jochi's death (in 1225 or 1227) the ulus passed to his sons Orda and Batu, and in time the Ulus of Jochi became the vast state known as the Golden Horde. The Kazakh khans descended from Urus Khan, a ruler of its eastern part."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Золотая_Орда",
+      "https://en.wikipedia.org/wiki/Urus_Khan"
+    ]
+  },
+  {
+    "id": "jochi-mausoleum-1280",
+    "era": "mongol",
+    "year": 1280,
+    "year_end": 1399,
+    "lat": 48.1553,
+    "lng": 67.8175,
+    "approx": false,
+    "place": {
+      "kk": "Ұлытау ауданы, Жезқазғаннан 50 км солтүстік-шығыста",
+      "ru": "Улытауский район, 50 км к северо-востоку от Жезказгана",
+      "en": "Ulytau District, 50 km northeast of Zhezkazgan"
+    },
+    "title": {
+      "kk": "Жошы хан кесенесі",
+      "ru": "Мавзолей Джучи-хана",
+      "en": "The Jochi Khan mausoleum"
+    },
+    "text": {
+      "kk": "Аңыз бойынша Қаракеңгір өзенінің жағасындағы бұл кесенеде Шыңғыс ханның үлкен ұлы Жошы жерленген. Зерттеулер ғимараттың XIII ғасырдың соңы – XIV ғасырда екі кезеңмен салынғанын көрсетті, ал радиокөміртекті талдау жерлеу жәшігін Жошы қайтыс болғаннан кейінгі уақытқа жатқызды. Сондықтан кейбір зерттеушілер Жошының өзі мұнда жерленбеген болуы мүмкін деп санайды.",
+      "ru": "По преданию, в мавзолее на берегу реки Каракенгир похоронен старший сын Чингисхана Джучи. Исследования показали, что здание возводили в два этапа в конце XIII – XIV веке, а радиоуглеродный анализ датировал погребальный ящик временем позже смерти Джучи. Поэтому часть исследователей допускает, что самого Джучи здесь нет.",
+      "en": "According to tradition, Genghis Khan's eldest son Jochi is buried in this mausoleum on the Karakengir River. Research showed the building was raised in two stages between the late 13th and the 14th century, and radiocarbon dating placed the burial box later than Jochi's death. Some researchers therefore think Jochi himself may not be buried here."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Мавзолей_Джучи-хана",
+      "https://evrazstep.ru/index.php/aes/article/download/1260/1147/2397",
+      "https://rep.buketov.edu.kz/bitstreams/0bbc99bf-e17b-43ef-bf81-5f6f75534ae5/download"
+    ]
+  },
+  {
+    "id": "syghanaq-1369",
+    "era": "mongol",
+    "year": 1369,
+    "lat": 44.1567,
+    "lng": 66.9611,
+    "approx": false,
+    "place": {
+      "kk": "Сығанақ қалашығы",
+      "ru": "Городище Сыгнак",
+      "en": "Syghanaq ruins"
+    },
+    "title": {
+      "kk": "Сығанақ — Орыс ханның ордасы",
+      "ru": "Сыгнак — ставка Урус-хана",
+      "en": "Syghanaq, seat of Urus Khan"
+    },
+    "text": {
+      "kk": "1368–1369 жылдары Орыс хан Жошы ұлысының шығыс бөлігінде (қазақстандық тарихнамада — Ақ Орда) билікті алды, оның орталығы Сырдария бойындағы Сығанақ қаласы болды. Орыс хан тұсында Сығанақта мешіттер мен медреселер салынып, қала керуен саудасының ірі орталығына айналды. Қазақ хандары Орыс ханның ұрпақтары еді, ал Сығанақ кейін Қазақ хандығының астаналарының бірі болды.",
+      "ru": "В 1368–1369 годах Урус-хан захватил власть в восточной части Улуса Джучи (в казахстанской историографии — Ак Орда), центром которой был город Сыгнак на Сырдарье. При Урус-хане в Сыгнаке строились мечети и медресе, город стал крупным центром караванной торговли. Ханы Казахского ханства были потомками Урус-хана, а сам Сыгнак позже стал одной из столиц Казахского ханства.",
+      "en": "In 1368–69 Urus Khan seized power in the eastern part of the Ulus of Jochi (called Ak Orda in Kazakh historiography), whose centre was the city of Syghanaq on the Syr Darya. Under Urus mosques and madrasas were built there and the city became a major centre of the caravan trade. The khans of the Kazakh Khanate were Urus Khan's descendants, and Syghanaq later became one of the Kazakh Khanate's capitals."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Сыгнак",
+      "https://en.wikipedia.org/wiki/Urus_Khan"
+    ]
+  },
+  {
     "id": "yasawi-mausoleum-1405",
     "era": "mongol",
     "year": 1405,
@@ -31,6 +415,34 @@
       "license": "Public domain",
       "source_url": "https://commons.wikimedia.org/wiki/File:Mausoleum_of_Khoja_Ahmed_Yasawi,_Turkestan_2007.jpg"
     }
+  },
+  {
+    "id": "timur-otrar-1405",
+    "era": "mongol",
+    "year": 1405,
+    "lat": 42.8525,
+    "lng": 68.3028,
+    "approx": false,
+    "place": {
+      "kk": "Отырар",
+      "ru": "Отрар",
+      "en": "Otrar"
+    },
+    "title": {
+      "kk": "Әмір Темір Отырарда қайтыс болды",
+      "ru": "Смерть Тимура в Отраре",
+      "en": "Timur dies at Otrar"
+    },
+    "text": {
+      "kk": "1404 жылдың желтоқсанында Әмір Темір Мин Қытайына қарсы жорық бастады. Сырдариядан өтіп барып ол ауырып қалды да, 1405 жылы Отырарда қайтыс болды, Қытай шекарасына жете алмады. Оның өлімінен кейін ұрпақтары арасында билік үшін күрес басталды.",
+      "ru": "В декабре 1404 года Тимур начал поход против Минского Китая. Переправившись через Сырдарью, он заболел и в 1405 году умер в Отраре, так и не дойдя до китайской границы. После его смерти среди наследников началась борьба за власть.",
+      "en": "In December 1404 Timur began a campaign against Ming China. After crossing the Syr Darya he fell ill, and in 1405 he died at Otrar without ever reaching the Chinese border. His death set off a struggle for power among his heirs."
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Timur",
+      "https://ru.wikipedia.org/wiki/Отрар",
+      "https://en.wikipedia.org/wiki/Otrar"
+    ]
   },
   {
     "id": "khanate-founded-1465",
@@ -184,6 +596,32 @@
       "license": "Public domain",
       "source_url": "https://commons.wikimedia.org/wiki/File:Safavid_Shah_Abbas_II_%E2%80%99s_letter_to_the_Kazakh_khan_Tauke.png"
     }
+  },
+  {
+    "id": "aktaban-1723",
+    "era": "khanate",
+    "year": 1723,
+    "lat": 42.43,
+    "lng": 68.8,
+    "approx": true,
+    "place": {
+      "kk": "Оңтүстік Қазақстан: Талас, Арыс, Сырдария бойы (болжаммен)",
+      "ru": "Юг Казахстана: Талас, Арысь, Сырдарья (примерно)",
+      "en": "Southern Kazakhstan: Talas, Arys and Syr Darya (approximate)"
+    },
+    "title": {
+      "kk": "Ақтабан шұбырынды",
+      "ru": "Годы великого бедствия",
+      "en": "The Years of Great Disaster"
+    },
+    "text": {
+      "kk": "1723 жылы Цин империясымен бітім жасаған Жоңғар хандығы қазақ жеріне ауқымды шабуыл бастады. Қыстауда отырған ауылдар малы мен мүлкін тастап босты, көп адам Талас, Арыс және Сырдария өткелдерінде қаза тапты, бір бөлігі Самарқан, Бұхара және Хиуа жаққа ауды. Бұл жылдар халық жадында «Ақтабан шұбырынды, Алқакөл сұлама» деген атпен қалды; шығынның мөлшері туралы бағалар әлі де әртүрлі.",
+      "ru": "В 1723 году Джунгарское ханство, заключив мир с империей Цин, начало масштабное наступление на казахские земли. Застигнутые на зимовках аулы бежали, бросая скот и имущество; многие погибли при переправах через Талас, Арысь и Сырдарью, часть людей ушла к Самарканду, Бухаре и Хиве. В народной памяти эти годы остались как «Ақтабан шұбырынды, Алқакөл сұлама», а оценки потерь до сих пор расходятся.",
+      "en": "In 1723 the Dzungar Khanate, having made peace with Qing China, launched a large-scale offensive into the Kazakh lands. Caught in their winter camps, the auls fled, abandoning livestock and belongings; many people died crossing the Talas, Arys and Syr Darya, and some moved on towards Samarkand, Bukhara and Khiva. These years are remembered as “Aqtaban shubyryndy, Alqakol sulama”, and estimates of the losses still differ widely."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Годы_великого_бедствия"
+    ]
   },
   {
     "id": "bulanty-1727",
@@ -358,6 +796,33 @@
     ]
   },
   {
+    "id": "ustav-1822",
+    "era": "russian",
+    "year": 1822,
+    "lat": 49.406,
+    "lng": 75.474,
+    "approx": false,
+    "place": {
+      "kk": "Қарқаралы",
+      "ru": "Каркаралинск",
+      "en": "Karkaraly"
+    },
+    "title": {
+      "kk": "«Сібір қырғыздары туралы жарғы»",
+      "ru": "«Устав о сибирских киргизах»",
+      "en": "The Statute on the Siberian Kirghiz"
+    },
+    "text": {
+      "kk": "1822 жылы I Александр «Сібір қырғыздары туралы жарғыны» бекітті (ол кезде ресми құжаттарда қазақтарды қырғыз деп атаған). Жарғы Орта жүзде округ, болыс және ауылдан тұратын ресейлік үлгідегі басқаруды енгізіп, хан билігін іс жүзінде жойды. 1824 жылы Қарқаралы бекінісі салынып, ол Қарқаралы сыртқы округінің орталығы болды.",
+      "ru": "В 1822 году Александр I утвердил «Устав о сибирских киргизах» (так тогда в официальных документах называли казахов). Устав ввёл в Среднем жузе управление по российскому образцу — округа, волости и аулы — и фактически упразднил там ханскую власть. В 1824 году было основано укрепление Каркаралинск, ставшее центром Каркаралинского внешнего округа.",
+      "en": "In 1822 Alexander I approved the Statute on the Siberian Kirghiz (as official documents then called the Kazakhs). It introduced Russian-style administration in the Middle Jüz, with districts (okrugs), volosts and auls, and in practice abolished the khan's power there. In 1824 the fortification of Karkaralinsk was founded and became the centre of the Karkaraly outer okrug."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Устав_о_сибирских_киргизах",
+      "https://ru.wikipedia.org/wiki/Каркаралинск"
+    ]
+  },
+  {
     "id": "isatai-makhambet-1836",
     "era": "russian",
     "year": 1836,
@@ -443,6 +908,32 @@
       "license": "Public domain",
       "source_url": "https://commons.wikimedia.org/wiki/File:BrullovKP_PtVPerovskogoGTG.jpg"
     }
+  },
+  {
+    "id": "verny-1854",
+    "era": "russian",
+    "year": 1854,
+    "lat": 43.25,
+    "lng": 76.9,
+    "approx": false,
+    "place": {
+      "kk": "Алматы",
+      "ru": "Алматы",
+      "en": "Almaty"
+    },
+    "title": {
+      "kk": "Заилийск бекінісі — болашақ Алматы",
+      "ru": "Укрепление Заилийское — будущая Алматы",
+      "en": "Fort Zailiyskoye, the future Almaty"
+    },
+    "text": {
+      "kk": "1854 жылы Іле Алатауының етегіндегі Алматы деген жерде Ресейдің Заилийск әскери бекінісі салынды, ол көп ұзамай Верное деп аталды. 1867 жылы елді мекен қала құқығын алып, Верный деп аталды және Жетісу облысының орталығы болды. 1921 жылы қала Алма-Ата деп қайта аталды.",
+      "ru": "В 1854 году в урочище Алматы у подножия Заилийского Алатау было заложено российское военное укрепление Заилийское, вскоре получившее название Верное. В 1867 году поселение получило права города под названием Верный и стало центром Семиреченской области. В 1921 году город переименовали в Алма-Ату.",
+      "en": "In 1854 the Russian military fortification of Zailiyskoye was founded at the place called Almaty, at the foot of the Trans-Ili Alatau; it was soon renamed Vernoye. In 1867 the settlement received town rights under the name Verny and became the centre of Semirechye Oblast. In 1921 the city was renamed Alma-Ata."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Алма-Ата"
+    ]
   },
   {
     "id": "altynsarin-school-1864",
@@ -799,6 +1290,34 @@
       "license": "CC BY-SA 3.0",
       "source_url": "https://commons.wikimedia.org/wiki/File:RIAN_archive_440214_A_monument_to_Kurchatov_on_the_background_of_the_Semipalatinsk_nuclear_test_site%27s_Central_Staff.jpg"
     }
+  },
+  {
+    "id": "tselina-1954",
+    "era": "soviet",
+    "year": 1954,
+    "lat": 51.169,
+    "lng": 71.449,
+    "approx": false,
+    "place": {
+      "kk": "Ақмола (Целиноград), Солтүстік Қазақстан",
+      "ru": "Акмолинск (Целиноград), Северный Казахстан",
+      "en": "Akmolinsk (Tselinograd), northern Kazakhstan"
+    },
+    "title": {
+      "kk": "Тың игеру",
+      "ru": "Освоение целины",
+      "en": "The Virgin Lands campaign"
+    },
+    "text": {
+      "kk": "1954 жылы тың жерлерді игеру басталды: сол жылдың жазында ғана КСРО-ның тың аудандарына 300 мың комсомол еріктісі аттанды, ал басты аймақтардың бірі Солтүстік Қазақстан болды. 1960 жылы солтүстіктегі бес облыс орталығы Ақмола болған Тың өлкесіне біріктірілді, қала 1961 жылы Целиноград деп аталды. 1959 жылғы санақ бойынша қазақтар республика халқының 30 %-ын, орыстар 42,7 %-ын құрады; қазақтардың үлесі 1939 жылғы санақта-ақ (шамамен 38 %) жартысынан аз еді.",
+      "ru": "В 1954 году началось освоение целинных земель: только летом того года в целинные районы СССР отправились 300 тысяч добровольцев-комсомольцев, и одним из главных районов освоения стал Северный Казахстан. В 1960 году пять северных областей объединили в Целинный край с центром в Акмолинске, который в 1961 году переименовали в Целиноград. По переписи 1959 года казахи составляли 30 % населения республики, русские — 42,7 %; при этом уже по переписи 1939 года доля казахов (около 38 %) была меньше половины.",
+      "en": "The Virgin Lands campaign began in 1954: in that summer alone 300,000 Komsomol volunteers went to the Soviet virgin-land regions, and northern Kazakhstan was one of the main target areas. In 1960 five northern provinces were merged into the Tselinny Krai centred on Akmolinsk, which was renamed Tselinograd in 1961. In the 1959 census Kazakhs made up 30% of the republic's population and Russians 42.7%; Kazakhs had already been under half (about 38%) in the 1939 census."
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Virgin_Lands_campaign",
+      "https://www.demoscope.ru/weekly/ssp/sng_nac_59.php?reg=91",
+      "https://www.demoscope.ru/weekly/ssp/sng_nac_39.php?reg=10"
+    ]
   },
   {
     "id": "sputnik-1957",

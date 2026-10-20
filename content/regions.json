@@ -1,202 +1,269 @@
 {
   "turkestan": {
     "note": {
-      "kk": "Отырар, Сауран, Ясауи кесенесі және Ордабасы — хандықтың саяси өзегі осында болған.",
-      "ru": "Отрар, Сауран, мавзолей Ясави и Ордабасы — политическое ядро ханства было здесь.",
-      "en": "Otrar, Sauran, the Yasawi mausoleum and Ordabasy — the Khanate's political core sat here."
+      "kk": "Отырар, Сауран және Түркістандағы Қожа Ахмет Ясауи кесенесі осында. Есім хан тұсында Түркістан Қазақ хандығының саяси және рухани орталығы болды.",
+      "ru": "Здесь Отрар, Сауран и мавзолей Ходжи Ахмеда Ясави в Туркестане. При Есим-хане Туркестан стал политическим и духовным центром Казахского ханства.",
+      "en": "Home to Otrar, Sauran and the mausoleum of Khoja Ahmed Yasawi in Turkistan. Under Esim Khan, Turkistan became the political and spiritual centre of the Kazakh Khanate."
     },
     "eras": [
       "karakhanid",
       "mongol",
       "khanate"
     ],
-    "sources": [],
     "reform": {
-      "kk": "2018 жылы Шымкент бөлініп, республикалық маңызы бар қала болды.",
-      "ru": "В 2018 году Шымкент выделен в город республиканского значения.",
-      "en": "In 2018 Shymkent was split off as a city of republican significance."
-    }
+      "kk": "2018 жылдың 19 маусымында Оңтүстік Қазақстан облысы Түркістан облысы болып аталып, орталығы Шымкенттен Түркістанға көшірілді; Шымкент облыс құрамынан шығып, республикалық маңызы бар қала болды.",
+      "ru": "19 июня 2018 года Южно-Казахстанская область переименована в Туркестанскую, а её центр перенесён из Шымкента в Туркестан; Шымкент выведен из состава области и стал городом республиканского значения.",
+      "en": "On 19 June 2018 South Kazakhstan Region was renamed Turkistan Region and its centre moved from Shymkent to Turkistan; Shymkent was separated from the region as a city of republican significance."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Туркестанская_область",
+      "https://ru.wikipedia.org/wiki/Сауран",
+      "https://ru.wikipedia.org/wiki/Есим-хан",
+      "https://ru.wikipedia.org/wiki/Шымкент"
+    ]
   },
   "almaty": {
     "note": {
-      "kk": "Есік қорғаны мен Алтын адам, Жетісу — Батыс түрік қағанатының жүрегі, Аңырақай шайқасы.",
-      "ru": "Иссыкский курган и Золотой человек, Жетысу — сердце Западно-тюркского каганата, Аныракайская битва.",
-      "en": "The Issyk mound and the Golden Man, Jetysu as the heart of the Western Türk Khaganate, the battle of Anyraqai."
+      "kk": "Есік қорғаны мен Алтын адам, Іле бойындағы Бесшатыр сақ қорымы осы өңірде.",
+      "ru": "Здесь Иссыкский курган с «Золотым человеком» и сакский некрополь Бесшатыр на Или.",
+      "en": "Home to the Issyk mound with the Golden Man and the Saka necropolis of Besshatyr on the Ili."
     },
     "eras": [
-      "saka",
-      "turk",
-      "khanate"
+      "saka"
     ],
-    "sources": [],
     "reform": {
-      "kk": "2022 жылы шығыс бөлігінен Жетісу облысы құрылды.",
-      "ru": "В 2022 году из восточной части образована Жетысуская область.",
-      "en": "In 2022 the eastern part became Jetisu Region."
-    }
+      "kk": "2022 жылғы 8 маусымда облыстың бір бөлігінен орталығы Талдықорған болатын Жетісу облысы құрылды; Бесшатыр қазір Жетісу облысының аумағында.",
+      "ru": "8 июня 2022 года из части области выделена Жетысуская область с центром в Талдыкоргане; Бесшатыр теперь на её территории.",
+      "en": "On 8 June 2022 part of the region was split off as Zhetysu Region, centred on Taldykorgan; Besshatyr now lies in Zhetysu Region."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Иссыкский_курган",
+      "https://ru.wikipedia.org/wiki/Бесшатыр",
+      "https://ru.wikipedia.org/wiki/Жетысуская_область"
+    ]
   },
-  "astana": {
+  "almaty-city": {
     "note": {
-      "kk": "Ақмола — Целиноград — Астана. 1997 жылдан бері елорда.",
-      "ru": "Акмолинск — Целиноград — Астана. Столица с 1997 года.",
-      "en": "Akmolinsk, then Tselinograd, then Astana. The capital since 1997."
+      "kk": "1854 жылы мұнда Заилийск бекінісі салынды (кейін Верный қаласы). Алматы 1929 жылдан 1997 жылға дейін астана болды, 1986 жылғы Желтоқсан оқиғалары осында өтті.",
+      "ru": "В 1854 году здесь заложено укрепление Заилийское (позже город Верный). Алматы была столицей с 1929 по 1997 год; здесь произошли события Желтоксана 1986 года.",
+      "en": "The Zailiyskoye fortification (later the town of Verny) was founded here in 1854. Almaty was the capital from 1929 to 1997, and the Zheltoqsan events of 1986 took place here."
     },
     "eras": [
+      "russian",
       "soviet",
       "modern"
     ],
-    "sources": []
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Алма-Ата"
+    ]
+  },
+  "astana": {
+    "note": {
+      "kk": "1838 жылы Кенесары көтерілісшілері Ақмола бекінісін қоршады. Қала Ақмола, Целиноград, Астана, Нұр-Сұлтан деп аталған; 1997 жылдың 10 желтоқсанынан бері елорда.",
+      "ru": "В 1838 году повстанцы Кенесары осаждали Акмолинскую крепость. Город назывался Акмолинском, Целиноградом, Акмолой, Астаной и Нур-Султаном; столица с 10 декабря 1997 года.",
+      "en": "In 1838 Kenesary's insurgents besieged the Akmolinsk fortress. The city has been called Akmolinsk, Tselinograd, Akmola, Astana and Nur-Sultan, and has been the capital since 10 December 1997."
+    },
+    "eras": [
+      "russian",
+      "soviet",
+      "modern"
+    ],
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Астана",
+      "https://en.wikipedia.org/wiki/Siege_of_Akmolinsk_(1838)"
+    ]
   },
   "akmola": {
     "note": {
-      "kk": "1954 жылғы тың игеру және АЛЖИР лагері — кеңес кезеңінің екі беті.",
-      "ru": "Освоение целины 1954 года и лагерь АЛЖИР — две стороны советского периода.",
-      "en": "The 1954 Virgin Lands campaign and the ALZHIR camp — two faces of the Soviet period."
+      "kk": "Солтүстік Қазақстан 1954 жылы басталған тың игерудің басты аймақтарының бірі болды. Мұнда 1938–1953 жылдары «Отанын сатқандардың әйелдеріне» арналған АЛЖИР лагері болды.",
+      "ru": "Северный Казахстан стал одним из главных районов освоения целины, начатого в 1954 году. Здесь в 1938–1953 годах действовал АЛЖИР — Акмолинский лагерь жён изменников Родины.",
+      "en": "Northern Kazakhstan was a main target of the Virgin Lands campaign launched in 1954. ALZhIR, the Akmolinsk camp for wives of “traitors to the Motherland”, operated here from 1938 to 1953."
     },
     "eras": [
       "soviet"
     ],
-    "sources": []
+    "sources": [
+      "https://en.wikipedia.org/wiki/Virgin_Lands_campaign",
+      "https://ru.wikipedia.org/wiki/Акмолинский_лагерь_жён_изменников_Родины"
+    ]
   },
   "karaganda": {
     "note": {
-      "kk": "Ұлытау — Жошы ханның кесенесі және үш жүздің жиналған жері; кейін Қарлаг.",
-      "ru": "Улытау — мавзолей Жошы-хана и место схода трёх жузов; позже Карлаг.",
-      "en": "Ulytau holds Jochi Khan's mausoleum and the meeting place of the three jüz; later, Karlag."
+      "kk": "Ұлытау өңірінде XIV ғасырдағы Жошы хан кесенесі тұр. 1930–1959 жылдары облыс аумағында КСРО-ның ең ірі лагерьлерінің бірі — Қарлаг болды.",
+      "ru": "В Улытау стоит мавзолей Джучи-хана XIV века. В 1930–1959 годах на территории области действовал Карлаг — один из крупнейших лагерей СССР.",
+      "en": "The 14th-century Jochi Khan mausoleum stands in Ulytau. From 1930 to 1959 the region held Karlag, one of the largest camps in the USSR."
     },
     "eras": [
       "mongol",
       "soviet"
     ],
-    "sources": [],
     "reform": {
-      "kk": "2022 жылы Ұлытау облысы бөлек облыс болды.",
-      "ru": "В 2022 году Улытау выделен в отдельную область.",
-      "en": "In 2022 Ulytau became a separate region."
-    }
+      "kk": "2022 жылғы 8 маусымда облыстың бір бөлігінен орталығы Жезқазған болатын Ұлытау облысы құрылды; Жошы хан кесенесі қазір сонда.",
+      "ru": "8 июня 2022 года из части области образована Улытауская область с центром в Жезказгане; мавзолей Джучи-хана теперь на её территории.",
+      "en": "On 8 June 2022 part of the region became Ulytau Region, centred on Zhezkazgan; the Jochi Khan mausoleum now lies there."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Мавзолей_Джучи-хана",
+      "https://ru.wikipedia.org/wiki/Карлаг",
+      "https://ru.wikipedia.org/wiki/Улытауская_область"
+    ]
   },
   "vostochno": {
     "note": {
-      "kk": "Берел қорғандары, Алтай — Түрік қағанатының бесігі; Семей полигоны мен Алаш-Орда.",
-      "ru": "Берельские курганы, Алтай — колыбель Тюркского каганата; Семипалатинский полигон и Алаш-Орда.",
-      "en": "The Berel mounds, the Altai as the Türk Khaganate's cradle, the Semipalatinsk test site and Alash-Orda."
+      "kk": "Берел (б.з.б. V–IV ғғ.) және Шілікті сақ қорғандары осында. Семей (Семипалатинск) Алаш автономиясының астанасы болды, ал бұрынғы Семей ядролық сынақ полигоны жерінің ең үлкен бөлігі осы облысқа тиесілі.",
+      "ru": "Здесь сакские курганы Берел (V–IV вв. до н. э.) и Шиликты. Семипалатинск (Семей) был столицей автономии Алаш, а самая большая часть земель бывшего Семипалатинского ядерного полигона относится к этой области.",
+      "en": "Home to the Saka burial mounds of Berel (5th–4th centuries BCE) and Shilikty. Semipalatinsk (Semey) was the capital of the Alash autonomy, and the largest share of the former Semipalatinsk nuclear test site lies in this region."
     },
     "eras": [
       "saka",
-      "turk",
       "soviet"
     ],
-    "sources": [],
     "reform": {
-      "kk": "2022 жылы батыс бөлігінен Абай облысы құрылды.",
-      "ru": "В 2022 году из западной части образована область Абай.",
-      "en": "In 2022 the western part became Abai Region."
-    }
+      "kk": "2022 жылғы 8 маусымда облыстың бір бөлігінен орталығы Семей болатын Абай облысы құрылды; Семей қазір Абай облысының орталығы.",
+      "ru": "8 июня 2022 года из части области образована область Абай с центром в Семее; Семей теперь центр области Абай.",
+      "en": "On 8 June 2022 part of the region became Abai Region, centred on Semey; Semey is now its centre."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Берельские_курганы",
+      "https://ru.wikipedia.org/wiki/Алаш-Орда",
+      "https://ru.wikipedia.org/wiki/Семипалатинский_испытательный_полигон"
+    ]
   },
   "pavlodar": {
     "note": {
-      "kk": "Ертіс бойы — Кимек қағанатының негізгі аумағы.",
-      "ru": "Прииртышье — основная территория Кимакского каганата.",
-      "en": "The Irtysh basin was the core of the Kimek Khaganate."
+      "kk": "Ертіс бойы қимақ бірлестігінің жерлерінің бірі болды. 1960 жылы Павлодар облысы Тың өлкесінің құрамына енді.",
+      "ru": "Прииртышье входило в земли Кимакского каганата. В 1960 году Павлодарская область вошла в Целинный край.",
+      "en": "The Irtysh valley was part of the lands of the Kimek confederation. In 1960 Pavlodar Region became part of the Tselinny (Virgin Lands) Krai."
     },
     "eras": [
-      "karakhanid"
+      "karakhanid",
+      "soviet"
     ],
-    "sources": []
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Кимакский_каганат",
+      "https://ru.wikipedia.org/wiki/Целинный_край"
+    ]
   },
   "kyzylorda": {
     "note": {
-      "kk": "Жанкент — оғыздардың астанасы, Сығанақ — Ақ Орданың астанасы, кейін Байқоңыр.",
-      "ru": "Янгикент — столица огузов, Сыгнак — столица Ак Орды, позже Байконур.",
-      "en": "Yangikent, the Oghuz capital; Syghanaq, the White Horde's capital; later Baikonur."
+      "kk": "Мұнда оғыз ябғуының ордасы Жанкент (Янгикент) пен Орыс хан ордасы Сығанақтың орны бар. 1957 жылы Байқоңырдан Жердің алғашқы жасанды серігі ұшырылды.",
+      "ru": "Здесь городища Джанкент (Янгикент) — ставка огузского ябгу — и Сыгнак — ставка Урус-хана. В 1957 году с Байконура запустили первый искусственный спутник Земли.",
+      "en": "Home to the ruins of Jankent (Yangikent), seat of the Oghuz yabgu, and of Syghanaq, seat of Urus Khan. In 1957 the first artificial satellite was launched from Baikonur."
     },
     "eras": [
       "karakhanid",
       "mongol",
-      "modern"
+      "soviet"
     ],
-    "sources": []
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jankent",
+      "https://ru.wikipedia.org/wiki/Сыгнак",
+      "https://ru.wikipedia.org/wiki/Байконур"
+    ]
   },
   "zhambyl": {
     "note": {
-      "kk": "Тараз, 751 жылғы Талас шайқасы, Айша бибі кесенесі — ислам осы жерден бекіді.",
-      "ru": "Тараз, Таласская битва 751 года, мавзолей Айша-биби — ислам закрепился отсюда.",
-      "en": "Taraz, the 751 battle of Talas, the Aisha Bibi mausoleum — Islam took hold from here."
+      "kk": "Ежелгі Тараз, оның маңындағы Айша бибі кесенесі (XI–XII ғғ.) осында; 751 жылғы Талас шайқасы да осы өңірде өтуі мүмкін. 1730 жылы Аңырақайда үш жүздің жасағы жоңғарларды жеңді.",
+      "ru": "Здесь древний Тараз и мавзолей Айша-Биби (XI–XII вв.); вероятно, в этих местах прошла и Таласская битва 751 года. В 1730 году у Аныракая ополчение трёх жузов разбило джунгар.",
+      "en": "Home to ancient Taraz and the Aisha Bibi mausoleum (11th–12th centuries); the Battle of Talas in 751 was probably fought nearby. In 1730 the forces of the three jüz defeated the Dzungars at Anyrakay."
     },
     "eras": [
       "turk",
-      "karakhanid"
+      "karakhanid",
+      "khanate"
     ],
-    "sources": []
+    "sources": [
+      "https://en.wikipedia.org/wiki/Aisha_Bibi",
+      "https://en.wikipedia.org/wiki/Battle_of_Talas",
+      "https://ru.wikipedia.org/wiki/Аныракайское_сражение"
+    ]
   },
   "mangystau": {
     "note": {
-      "kk": "Жерасты мешіттері мен Бекет ата — Каспий жолындағы рухани орталық.",
-      "ru": "Подземные мечети и Бекет-ата — духовный центр на каспийском пути.",
-      "en": "Underground mosques and Beket-Ata — a spiritual centre on the Caspian route."
+      "kk": "Бекет ата (шамамен 1750–1813) салдырған жерасты мешіттері осы өңірде; ол өзі Оғланды деген жердегі жерасты мешітінде жерленген.",
+      "ru": "Здесь подземные мечети, построенные Бекет-ата (около 1750–1813); сам он похоронен в подземной мечети в урочище Огланды.",
+      "en": "Home to the underground mosques built by Beket-Ata (c. 1750–1813); he is buried in his underground mosque at Oglandy."
     },
     "eras": [
-      "khanate",
-      "modern"
+      "khanate"
     ],
-    "sources": []
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Бекет-ата"
+    ]
   },
   "atyrau": {
     "note": {
-      "kk": "Сарайшық — Алтын Орда қаласы, кейін Ноғай Ордасының орталығы.",
-      "ru": "Сарайчик — город Золотой Орды, позже центр Ногайской Орды.",
-      "en": "Saraishyq, a Golden Horde city and later a Nogai Horde centre."
+      "kk": "Жайық бойындағы Сарайшық — Алтын Орда қаласы, кейін 1580 жылы қирағанға дейін Ноғай Ордасының астанасы болды.",
+      "ru": "Сарайчик на Урале — город Золотой Орды, позже столица Ногайской Орды вплоть до разрушения в 1580 году.",
+      "en": "Saraishyk on the Ural River was a Golden Horde city and later the capital of the Nogai Horde until its destruction in 1580."
     },
     "eras": [
       "mongol",
       "khanate"
     ],
-    "sources": []
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Сарайчик"
+    ]
   },
   "zapadno": {
     "note": {
-      "kk": "Сырым Датұлы көтерілісі және Бөкей Ордасы — империямен шекараның ең ұзақ тартысы.",
-      "ru": "Восстание Сырыма Датулы и Букеевская орда — самый долгий спор о границе с империей.",
-      "en": "The Syrym Datuly uprising and the Bukey Horde — the longest border argument with the empire."
+      "kk": "1783–1797 жылдары Кіші жүзде Сырым Датұлы көтерілісі болды. 1801 жылы Жайық пен Еділ аралығында Бөкей Ордасы құрылды, оның орталығы Хан Ордасы болды.",
+      "ru": "В 1783–1797 годах в Младшем жузе шло восстание Сырыма Датова. В 1801 году между Уралом и Волгой возникла Букеевская Орда с центром в Хан Ордасы.",
+      "en": "From 1783 to 1797 the Junior Jüz rose under Syrym Datov. In 1801 the Bukey Horde was formed between the Ural and the Volga, with its centre at Khan Ordasy."
     },
     "eras": [
       "khanate",
       "russian"
     ],
-    "sources": []
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Букеевская_Орда",
+      "https://www.inform.kz/ru/datuly-syrym_a238247"
+    ]
   },
   "aktobe": {
     "note": {
-      "kk": "1731 жылы Әбілқайыр хан Ресей бодандығын қабылдады — осы даладан басталды.",
-      "ru": "В 1731 году Абулхаир принял российское подданство — всё началось в этой степи.",
-      "en": "In 1731 Abulkhair accepted Russian suzerainty — it began on this steppe."
+      "kk": "1731 жылдың қазанында Ырғыз өзенінің бойында Әбілқайыр хан мен старшындардың бір бөлігі А. Тевкелев елшілігіне ант берді — қазақ жерінің Ресейге қосылуы осыдан басталды.",
+      "ru": "В октябре 1731 года на реке Иргиз Абулхаир и часть старшин принесли присягу посольству А. Тевкелева — с этого началось присоединение казахских земель к России.",
+      "en": "In October 1731, on the Irgiz River, Abulkhair and some of the elders swore allegiance before A. Tevkelev's embassy, beginning the incorporation of the Kazakh lands into Russia."
     },
     "eras": [
+      "khanate",
       "russian"
     ],
-    "sources": []
+    "sources": [
+      "https://e-history.kz/en/history-of-kazakhstan/show/9565",
+      "https://ru.wikipedia.org/wiki/Абулхаир-хан_(Казахское_ханство)"
+    ]
   },
   "kostanay": {
     "note": {
-      "kk": "Торғай даласы — 1916 жылғы көтеріліс пен тың игерудің аумағы.",
-      "ru": "Тургайская степь — территория восстания 1916 года и целины.",
-      "en": "The Turgai steppe, scene of the 1916 uprising and of the Virgin Lands campaign."
+      "kk": "1916 жылы Амангелді Иманов бастаған көтерілісшілер Торғай қаласын қоршады. 1960 жылы облыс Тың өлкесінің құрамына енді.",
+      "ru": "В 1916 году повстанцы Амангельды Иманова осадили город Тургай. В 1960 году область вошла в Целинный край.",
+      "en": "In 1916 insurgents led by Amangeldy Imanov besieged the town of Turgai. In 1960 the region became part of the Tselinny (Virgin Lands) Krai."
     },
     "eras": [
       "russian",
       "soviet"
     ],
-    "sources": []
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Тургайское_восстание_(1916—1917)",
+      "https://ru.wikipedia.org/wiki/Тургай_(Костанайская_область)",
+      "https://ru.wikipedia.org/wiki/Целинный_край"
+    ]
   },
   "severo": {
     "note": {
-      "kk": "Петропавл және Есіл бойындағы бекіністер желісі — империя шекарасының тірегі.",
-      "ru": "Петропавловск и линия крепостей по Ишиму — опора имперской границы.",
-      "en": "Petropavl and the fort line along the Ishim — the backbone of the imperial frontier."
+      "kk": "Петропавл 1752 жылы Есіл бойындағы жаңа бекіністер шебінің бөлігі ретінде Әулие Петр бекінісі болып салынды. 1960 жылы облыс Тың өлкесінің құрамына енді.",
+      "ru": "Петропавловск основан в 1752 году как крепость Святого Петра на Ишиме, на новой линии укреплений. В 1960 году область вошла в Целинный край.",
+      "en": "Petropavl was founded in 1752 as the fortress of St Peter on the Ishim, part of a new line of fortifications. In 1960 the region became part of the Tselinny (Virgin Lands) Krai."
     },
     "eras": [
-      "russian"
+      "russian",
+      "soviet"
     ],
-    "sources": []
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Петропавловск",
+      "https://ru.wikipedia.org/wiki/Целинный_край"
+    ]
   }
 }
