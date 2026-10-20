@@ -2439,5 +2439,412 @@
     ],
     "difficulty": 2,
     "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "vernoe-square-1857",
+    "pack": [
+      "kz"
+    ],
+    "year": 1857,
+    "lat": 43.258,
+    "lng": 76.95,
+    "place": {
+      "kk": "Верное (Алматы)",
+      "ru": "Верное (Алма-Ата)",
+      "en": "Vernoye (Almaty)"
+    },
+    "image": "images/vernoe-square-1857.jpg",
+    "image_credit": {
+      "author": "Pavel Kosharov",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Square_in_the_village_of_Vernoe_(1857).jpg"
+    },
+    "title": {
+      "kk": "Верное бекінісіндегі алаң",
+      "ru": "Площадь в укреплении Верное",
+      "en": "A square in the Vernoye settlement"
+    },
+    "explanation": {
+      "kk": "Верное бекінісі 1854 жылы Іле Алатауының етегінде салынды – бүгінгі Алматының бастауы. Бұл суретті 1857 жылы Тянь-Шаньға барған Пётр Семёновтың экспедициясымен бірге жүрген суретші Павел Кошаров салған.",
+      "ru": "Укрепление Верное основали в 1854 году у подножия Заилийского Алатау — с него началась нынешняя Алма-Ата. Рисунок сделал в 1857 году художник Павел Кошаров, сопровождавший экспедицию Петра Семёнова на Тянь-Шань.",
+      "en": "The Vernoye fort was founded in 1854 at the foot of the Trans-Ili Alatau, the beginning of today's Almaty. This drawing was made in 1857 by artist Pavel Kosharov, who accompanied Pyotr Semyonov's expedition to the Tian Shan."
+    },
+    "clue": {
+      "kk": "Киіз үй мен ағаш үйлер қатар тұр, таулар, фотосуреттен бұрынғы сурет.",
+      "ru": "Юрта рядом с деревянными домами, горы, рисунок до эпохи фотографии.",
+      "en": "A yurt beside wooden houses, mountains, a drawing from before photography."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Верный_(город)",
+      "https://ru.wikipedia.org/wiki/Семёнов-Тян-Шанский,_Пётр_Петрович"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "verny-earthquake-ruins-1887",
+    "pack": [
+      "kz"
+    ],
+    "year": 1887,
+    "lat": 43.258,
+    "lng": 76.95,
+    "place": {
+      "kk": "Верный (Алматы)",
+      "ru": "Верный (Алма-Ата)",
+      "en": "Verny (Almaty)"
+    },
+    "image": "images/verny-earthquake-ruins-1887.jpg",
+    "image_credit": {
+      "author": "Ф. Ордэн",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%B5%D1%80%D0%BD%D1%8B%D0%B9._%D0%A0%D0%B0%D0%B7%D0%B2%D0%B0%D0%BB%D0%B8%D0%BD%D1%8B_%D1%81%D0%BE%D0%B1%D0%BE%D1%80%D0%B0.(N1136)%D0%9E%D1%80%D0%B4%D1%8D%D0%BD,1887-1888%D0%B3%D0%B3.%D0%90%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC.1-4.%D0%9A%D0%B0%D0%B2%D0%BA%D0%B0%D0%B7_%D0%B8_%D0%A1%D1%80.%D0%90%D0%B7%D0%B8%D1%8F_147b4f9302_o.jpg"
+    },
+    "title": {
+      "kk": "1887 жылғы жер сілкінісінен кейінгі собор",
+      "ru": "Собор после землетрясения 1887 года",
+      "en": "The cathedral after the 1887 earthquake"
+    },
+    "explanation": {
+      "kk": "1887 жылы мамырда болған Верный жер сілкінісі қаланың тас ғимараттарының көбін қиратты. Осыдан кейін қалада ағаштан салу кең тарады: мысалы, 1904–1907 жылдары салынған жаңа Вознесение соборы да ағаштан тұрғызылды.",
+      "ru": "Верненское землетрясение в мае 1887 года разрушило большинство каменных зданий города. После этого в Верном стали широко строить из дерева — например, новый Вознесенский собор 1904–1907 годов тоже возвели деревянным.",
+      "en": "The Verny earthquake of May 1887 destroyed most of the town's stone buildings. Afterwards timber construction became widespread: the new Ascension Cathedral of 1904–1907, for example, was also built of wood."
+    },
+    "clue": {
+      "kk": "Қираған ғимарат, үйінділер және XIX ғасыр соңындағы фотосурет.",
+      "ru": "Разрушенное здание, завалы и фотография конца XIX века.",
+      "en": "A ruined building, rubble and a late 19th-century photograph."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Верненское_землетрясение"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "pavlodar-tatar-sloboda-1910s",
+    "pack": [
+      "kz"
+    ],
+    "year": 1910,
+    "lat": 52.287,
+    "lng": 76.967,
+    "place": {
+      "kk": "Павлодар",
+      "ru": "Павлодар",
+      "en": "Pavlodar"
+    },
+    "image": "images/pavlodar-tatar-sloboda-1910s.jpg",
+    "image_credit": {
+      "author": "Unknown author",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Panorama_of_the_Tatar_Sloboda_and_market_square_in_pre-revolutionary_Pavlodar.png"
+    },
+    "title": {
+      "kk": "Павлодардағы татар слободасы мен базар алаңы",
+      "ru": "Татарская слобода и базарная площадь Павлодара",
+      "en": "The Tatar quarter and market square of Pavlodar"
+    },
+    "explanation": {
+      "kk": "Революцияға дейінгі Павлодардың көрінісі (1905–1917 жж.): татар слободасы, мешіт мұнарасы және базар алаңы. Ертіс бойындағы бұл қала астық, мал және тұз саудасының орталығы болды, оның көпестерінің көбі татарлар еді.",
+      "ru": "Вид дореволюционного Павлодара (1905–1917): Татарская слобода с минаретом мечети и базарная площадь. Город на Иртыше был центром торговли зерном, скотом и солью, среди его купцов было много татар.",
+      "en": "Pre-revolutionary Pavlodar (1905–1917): the Tatar quarter with a mosque minaret and the market square. The town on the Irtysh was a centre of trade in grain, livestock and salt, and many of its merchants were Tatars."
+    },
+    "clue": {
+      "kk": "Мұнара, бір қабатты үйлер, кең базар алаңы, ескі сурет.",
+      "ru": "Минарет, одноэтажная застройка, широкая базарная площадь, старый снимок.",
+      "en": "A minaret, one-storey buildings, a wide market square, an old photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Павлодар"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "akmolinsk-fortress-1911",
+    "pack": [
+      "kz"
+    ],
+    "year": 1911,
+    "lat": 51.18,
+    "lng": 71.446,
+    "place": {
+      "kk": "Ақмола (Астана)",
+      "ru": "Акмолинск (Астана)",
+      "en": "Akmolinsk (Astana)"
+    },
+    "image": "images/akmolinsk-fortress-1911.jpg",
+    "image_credit": {
+      "author": "Unknown author",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fortress_in_Akmolinsk.jpg"
+    },
+    "title": {
+      "kk": "Ақмола бекінісінің қалдықтары",
+      "ru": "Остатки Акмолинской крепости",
+      "en": "Remains of the Akmolinsk fortress"
+    },
+    "explanation": {
+      "kk": "Ақмола 1830 жылы Есіл жағасындағы казак бекінісі ретінде құрылды, кейін уездік қалаға айналды. 1911 жылғы бұл суретте ескі бекіністен қалған ағаш мұнара көрінеді; бүгін бұл жерде Қазақстанның астанасы – Астана орналасқан.",
+      "ru": "Акмолинск основали в 1830 году как казачье укрепление на Ишиме, позже он стал уездным городом. На снимке 1911 года — деревянная башня, оставшаяся от старой крепости; сегодня на этом месте стоит столица Казахстана Астана.",
+      "en": "Akmolinsk was founded in 1830 as a Cossack fort on the Ishim and later became a district town. This 1911 photo shows a wooden tower left from the old fortress; today the capital of Kazakhstan, Astana, stands here."
+    },
+    "clue": {
+      "kk": "Ағаш мұнара, жартылай тас іргетас, ескі ашықхат.",
+      "ru": "Бревенчатая башня на каменном основании, старая открытка.",
+      "en": "A log tower on a stone base, an old postcard."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Астана",
+      "https://ru.wikipedia.org/wiki/История_Астаны"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "alma-ata-kazan-church-1944",
+    "pack": [
+      "kz"
+    ],
+    "year": 1944,
+    "lat": 43.25,
+    "lng": 76.93,
+    "place": {
+      "kk": "Алматы",
+      "ru": "Алма-Ата",
+      "en": "Alma-Ata (Almaty)"
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%85%D1%80%D0%B0%D0%BC_%D0%B3._%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B_%D0%B2_%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4_1944-1945_%D0%B3%D0%B3.jpg",
+    "image_credit": {
+      "author": "Митрополичий округ в Республике Казахстан",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%85%D1%80%D0%B0%D0%BC_%D0%B3._%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B_%D0%B2_%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4_1944-1945_%D0%B3%D0%B3.jpg"
+    },
+    "title": {
+      "kk": "Соғыс жылдарындағы Алматы",
+      "ru": "Алма-Ата в годы войны",
+      "en": "Alma-Ata during the war"
+    },
+    "explanation": {
+      "kk": "Бұл сурет 1944–1945 жылдары Алматыдағы Қазан шіркеуінде түсірілген. Соғыс жылдары қала жүз мыңдаған эвакуацияланған адамды, ондаған зауыт, театр мен киностудияларды қабылдады.",
+      "ru": "Снимок Казанского храма в Алма-Ате 1944–1945 годов. В годы войны город принял сотни тысяч эвакуированных, десятки заводов, театров и киностудий.",
+      "en": "The Kazan church in Alma-Ata, photographed in 1944–1945. During the war the city took in hundreds of thousands of evacuees and dozens of factories, theatres and film studios."
+    },
+    "clue": {
+      "kk": "Ағаш шіркеу, жапырақсыз ағаштар, 1940-жылдардың суреті.",
+      "ru": "Деревянный храм, голые деревья, снимок 1940-х.",
+      "en": "A wooden church, bare trees, a 1940s photo."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/File:Казанский_храм_г._Алматы_в_период_1944-1945_гг.jpg",
+      "https://ru.wikipedia.org/wiki/Казахская_ССР_в_Великой_Отечественной_войне"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "pavlodar-tatar-school-1925",
+    "pack": [
+      "kz"
+    ],
+    "year": 1925,
+    "lat": 52.287,
+    "lng": 76.967,
+    "place": {
+      "kk": "Павлодар",
+      "ru": "Павлодар",
+      "en": "Pavlodar"
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Group_of_students_and_teachers_of_the_Tatar_seven-year_school_in_Pavlodar.png",
+    "image_credit": {
+      "author": "Unknown author",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Group_of_students_and_teachers_of_the_Tatar_seven-year_school_in_Pavlodar.png"
+    },
+    "title": {
+      "kk": "Павлодардағы татар жетіжылдық мектебі",
+      "ru": "Татарская семилетка в Павлодаре",
+      "en": "The Tatar seven-year school in Pavlodar"
+    },
+    "explanation": {
+      "kk": "1925 жылғы топтық сурет: Павлодардағы татар жетіжылдық мектебінің оқушылары мен мұғалімдері. 1920-жылдары сауатсыздықты жою науқаны жүріп, ұлттық тілдерде мектептер ашылды.",
+      "ru": "Групповой снимок 1925 года: ученики и учителя татарской семилетней школы в Павлодаре. В 1920-е годы шла кампания по ликвидации неграмотности, открывались школы на национальных языках.",
+      "en": "A 1925 group portrait of pupils and teachers of the Tatar seven-year school in Pavlodar. In the 1920s a literacy campaign was under way and schools in national languages were opening."
+    },
+    "clue": {
+      "kk": "Көп балалар мен жасөспірімдер, қарапайым киім, 1920-жылдардың суреті.",
+      "ru": "Много детей и подростков, простая одежда, снимок 1920-х.",
+      "en": "Many children and teenagers, simple clothes, a 1920s photo."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/File:Group_of_students_and_teachers_of_the_Tatar_seven-year_school_in_Pavlodar.png",
+      "https://ru.wikipedia.org/wiki/Ликвидация_безграмотности"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "petropavlovsk-panorama-1914",
+    "pack": [
+      "kz"
+    ],
+    "year": 1914,
+    "lat": 54.866,
+    "lng": 69.15,
+    "place": {
+      "kk": "Петропавл",
+      "ru": "Петропавловск",
+      "en": "Petropavlovsk (Petropavl)"
+    },
+    "image": "images/petropavlovsk-panorama-1914.jpg",
+    "image_credit": {
+      "author": "Unknown author",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA._%D0%92%D0%B8%D0%B4_%D1%81_%D0%B2%D0%BE%D0%B4%D0%BE%D0%BD%D0%B0%D0%BF%D0%BE%D1%80%D0%BD%D0%BE%D0%B9_%D0%B1%D0%B0%D1%88%D0%BD%D0%B8._%D0%9F%D0%B5%D1%80%D0%B2%D0%B0%D1%8F_%D1%87%D0%B0%D1%81%D1%82%D1%8C_%D0%BF%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D1%8B.jpg"
+    },
+    "title": {
+      "kk": "Петропавлдың су мұнарасынан көрінісі",
+      "ru": "Петропавловск с водонапорной башни",
+      "en": "Petropavlovsk from the water tower"
+    },
+    "explanation": {
+      "kk": "Петропавл 1752 жылы Есіл жағасында Әулие Петр бекінісі ретінде құрылды. 1896 жылы оған Транссібір темір жолы жетіп, қала Дала өлкесінің ірі сауда орталығына айналды; сурет 1914 жылы түсірілген.",
+      "ru": "Петропавловск основан в 1752 году как крепость Святого Петра на Ишиме. В 1896 году сюда пришла Транссибирская магистраль, и город стал крупным торговым центром Степного края; снимок 1914 года.",
+      "en": "Petropavlovsk was founded in 1752 as the fortress of St Peter on the Ishim. The Trans-Siberian Railway reached it in 1896 and it became a major trading centre of the Steppe region; the photo dates from 1914."
+    },
+    "clue": {
+      "kk": "Жоғарыдан көрінген кең көшелер, мұнара, XX ғасыр басындағы сурет.",
+      "ru": "Широкие улицы сверху, минарет, снимок начала XX века.",
+      "en": "Wide streets from above, a minaret, an early 20th-century photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Петропавловск"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "uralsk-harvesters-1972",
+    "pack": [
+      "kz"
+    ],
+    "year": 1972,
+    "lat": 51.233,
+    "lng": 51.367,
+    "place": {
+      "kk": "Орал",
+      "ru": "Уральск",
+      "en": "Uralsk (Oral)"
+    },
+    "image": "images/uralsk-harvesters-1972.jpg",
+    "image_credit": {
+      "author": "Самочеляев И. Ф.",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kombaini.jpg"
+    },
+    "title": {
+      "kk": "Оралдағы комбайндар",
+      "ru": "Комбайны во дворе в Уральске",
+      "en": "Combine harvesters in a Uralsk courtyard"
+    },
+    "explanation": {
+      "kk": "1972 жылғы Орал: институт жатақханасының ауласында егін жинауға дайындалған комбайндар тұр. Орал – Жайық бойындағы Қазақстанның ең көне қалаларының бірі, ал Батыс Қазақстан облысы ірі астық өндіретін аймақ болды.",
+      "ru": "Уральск, 1972 год: во дворе институтского общежития стоят комбайны, подготовленные к уборке урожая. Уральск на Урале (Жайыке) — один из старейших городов Казахстана, а Западно-Казахстанская область была крупным зерновым районом.",
+      "en": "Uralsk in 1972: combine harvesters ready for the harvest stand in the yard of an institute dormitory. Uralsk on the Ural (Zhaiyk) River is one of Kazakhstan's oldest cities, and the region was a major grain producer."
+    },
+    "clue": {
+      "kk": "Көп қабатты кеңестік ғимарат, жеке үйлер, 1970-жылдардың түсті суреті.",
+      "ru": "Советская многоэтажка рядом с частными домами, цветное фото 1970-х.",
+      "en": "A Soviet multi-storey block next to private houses, a 1970s colour photo."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/File:Kombaini.jpg",
+      "https://ru.wikipedia.org/wiki/Уральск"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "tu104-alma-ata-1958",
+    "pack": [
+      "kz"
+    ],
+    "year": 1958,
+    "lat": 43.352,
+    "lng": 77.04,
+    "place": {
+      "kk": "Алматы әуежайы",
+      "ru": "Аэропорт Алма-Аты",
+      "en": "Alma-Ata airport"
+    },
+    "image": "images/tu104-alma-ata-1958.jpg",
+    "image_credit": {
+      "author": "Главархив Москвы",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tu-104_on_Almaty_airport.jpg"
+    },
+    "title": {
+      "kk": "Мәскеуден ұшып келген алғашқы Ту-104",
+      "ru": "Первый Ту-104 из Москвы",
+      "en": "The first Tu-104 from Moscow"
+    },
+    "explanation": {
+      "kk": "1958 жылы қазанда Мәскеуден Алматыға алғашқы Ту-104 реактивті жолаушылар ұшағы келді, оның экипажын салтанатты түрде қарсы алды. Ту-104 – КСРО-ның алғашқы реактивті жолаушылар ұшағы, ол астаналар арасындағы сапарды бірнеше есе қысқартты.",
+      "ru": "В октябре 1958 года в Алма-Ату прилетел первый реактивный пассажирский Ту-104 из Москвы, его экипаж встречали торжественно. Ту-104 был первым советским реактивным лайнером и в разы сократил время в пути между столицами.",
+      "en": "In October 1958 the first Tu-104 jet airliner arrived in Alma-Ata from Moscow, and its crew was welcomed with a ceremony. The Tu-104 was the first Soviet jet airliner and cut travel time between the capitals several times over."
+    },
+    "clue": {
+      "kk": "Ұшқыштардың формасы, аэровокзал, 1950-жылдардың көліктері.",
+      "ru": "Лётная форма, аэровокзал, автомобили 1950-х.",
+      "en": "Pilots' uniforms, an air terminal, 1950s vehicles."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/File:Tu-104_on_Almaty_airport.jpg",
+      "https://ru.wikipedia.org/wiki/Ту-104"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "aktobe-street-1930s",
+    "pack": [
+      "kz"
+    ],
+    "year": 1935,
+    "lat": 50.283,
+    "lng": 57.167,
+    "place": {
+      "kk": "Ақтөбе",
+      "ru": "Актюбинск (Актобе)",
+      "en": "Aktyubinsk (Aktobe)"
+    },
+    "image": "images/aktobe-street-1930s.jpg",
+    "image_credit": {
+      "author": "Unknown author",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aktobe_1930s_(04).jpg"
+    },
+    "title": {
+      "kk": "Көшедегі түйе керуені",
+      "ru": "Верблюжий караван на улице",
+      "en": "A camel caravan in the street"
+    },
+    "explanation": {
+      "kk": "1930-жылдардағы Ақтөбе: Карл Либкнехт көшесімен түйе керуені өтіп барады. Ақтөбе 1869 жылы әскери бекініс ретінде құрылды, ал 1930-жылдары да түйе мен арба жүк тасудың әдеттегі көлігі болып қала берді.",
+      "ru": "Актюбинск 1930-х: по улице Карла Либкнехта идёт верблюжий караван. Город основан в 1869 году как военное укрепление, и даже в 1930-е годы верблюды и телеги оставались обычным грузовым транспортом.",
+      "en": "Aktyubinsk in the 1930s: a camel caravan walks down Karl Liebknecht Street. The town was founded in 1869 as a military fort, and even in the 1930s camels and carts were still ordinary freight transport."
+    },
+    "clue": {
+      "kk": "Түйелер, кеңестік дүкен маңдайшасы, ескі сурет.",
+      "ru": "Верблюды, вывеска советского магазина, старый снимок.",
+      "en": "Camels, a Soviet shop sign, an old photo."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/Category:Aktobe_in_the_1930s",
+      "https://ru.wikipedia.org/wiki/Актобе"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
   }
 ]
