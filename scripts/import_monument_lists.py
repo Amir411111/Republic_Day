@@ -15,6 +15,7 @@ Usage: python3 scripts/import_monument_lists.py
 """
 import html
 import json
+import math
 import re
 import sys
 import time
@@ -33,6 +34,12 @@ EGOV_URL = "https://data.egov.kz/datasets/view?index=respublikalyk_manyzy_bar_ta
 # act code on adilet.zan.kz -> region ids in content/geo/kz-regions.geojson (pre-2022 division:
 # Abai is inside "vostochno", Zhetysu inside "almaty", Ulytau inside "karaganda", Shymkent inside "turkestan")
 ACTS = [
+    {"code": "V20B0007978", "region": {"kk": "Ақмола облысы", "ru": "Акмолинская область"}, "geo": ["akmola", "astana"]},
+    {"code": "V20Z0006567", "region": {"kk": "Батыс Қазақстан облысы", "ru": "Западно-Казахстанская область"}, "geo": ["zapadno"]},
+    {"code": "V20G0004665", "region": {"kk": "Жамбыл облысы", "ru": "Жамбылская область"}, "geo": ["zhambyl"]},
+    {"code": "V20N0009107", "region": {"kk": "Қостанай облысы", "ru": "Костанайская область"}, "geo": ["kostanay"]},
+    {"code": "V20L0007411", "region": {"kk": "Қызылорда облысы", "ru": "Кызылординская область"}, "geo": ["kyzylorda"]},
+    {"code": "V20S0006296", "region": {"kk": "Солтүстік Қазақстан облысы", "ru": "Северо-Казахстанская область"}, "geo": ["severo"]},
     {"code": "V20U0005804", "region": {"kk": "Түркістан облысы", "ru": "Туркестанская область"}, "geo": ["turkestan"]},
 ]
 
@@ -146,7 +153,35 @@ def parse_values(text):
     return vals
 
 
+UTM = re.compile(r"\b(4[1-5])\s*([TUТУ])\s*(\d{6})\s*(\d{7})\b")
+
+
+def utm_to_latlng(zone, easting, northing):
+    """WGS84 UTM (northern hemisphere) to latitude/longitude, standard series expansion."""
+    a, f, k0 = 6378137.0, 1 / 298.257223563, 0.9996
+    e2 = f * (2 - f)
+    ep2 = e2 / (1 - e2)
+    x, y = easting - 500000.0, northing
+    m = y / k0
+    mu = m / (a * (1 - e2 / 4 - 3 * e2**2 / 64 - 5 * e2**3 / 256))
+    e1 = (1 - math.sqrt(1 - e2)) / (1 + math.sqrt(1 - e2))
+    phi1 = (mu + (3 * e1 / 2 - 27 * e1**3 / 32) * math.sin(2 * mu) + (21 * e1**2 / 16 - 55 * e1**4 / 32) * math.sin(4 * mu)
+            + (151 * e1**3 / 96) * math.sin(6 * mu) + (1097 * e1**4 / 512) * math.sin(8 * mu))
+    n1 = a / math.sqrt(1 - e2 * math.sin(phi1) ** 2)
+    t1 = math.tan(phi1) ** 2
+    c1 = ep2 * math.cos(phi1) ** 2
+    r1 = a * (1 - e2) / (1 - e2 * math.sin(phi1) ** 2) ** 1.5
+    d = x / (n1 * k0)
+    lat = phi1 - (n1 * math.tan(phi1) / r1) * (d**2 / 2 - (5 + 3 * t1 + 10 * c1 - 4 * c1**2 - 9 * ep2) * d**4 / 24
+                                            + (61 + 90 * t1 + 298 * c1 + 45 * t1**2 - 252 * ep2 - 3 * c1**2) * d**6 / 720)
+    lng = (d - (1 + 2 * t1 + c1) * d**3 / 6 + (5 - 2 * c1 + 28 * t1 - 3 * c1**2 + 8 * ep2 + 24 * t1**2) * d**5 / 120) / math.cos(phi1)
+    return math.degrees(lat), (zone - 1) * 6 - 180 + 3 + math.degrees(lng)
+
+
 def first_point(text):
+    u = UTM.search(text)
+    if u:  # Zhambyl region gives grid coordinates such as "42 T 704246 4763153"
+        return tuple(round(v, 5) for v in utm_to_latlng(int(u.group(1)), int(u.group(3)), int(u.group(4))))
     vals = parse_values(text)
     if len(vals) < 2 or vals[0] is None or vals[1] is None:
         return None
@@ -233,11 +268,11 @@ def monument_rows(page):
     for table in parser.tables:
         for h, header in enumerate(table[:4]):
             cols = find_columns(header)
-            if "name" in cols and "coord" in cols:
+            if "name" in cols and ("coord" in cols or "place" in cols):
                 break
         else:
             continue
-        district, out = "", []
+        district, out, width = "", [], len(header)
         for row in table[h + 1:]:
             texts = [c for c in row if c]
             if len(set(texts)) == 1 and len(row) >= 3 and not re.fullmatch(r"\d+", texts[0]):
@@ -247,10 +282,32 @@ def monument_rows(page):
             if len(row) <= max(cols.values()) or re.fullmatch(r"[\d\s]+", "".join(row)):
                 out.append(None)
                 continue
+            name = re.sub(r"\s+", " ", row[cols["name"]]).strip()
+            if not name or len(row) != width:
+                # rows laid out differently from the header (merged cells): read them by content
+                cells = [c for c in row if c.strip()]
+                if cells and re.fullmatch(r"[\d.\-–)\s]+", cells[0]):
+                    cells = cells[1:]
+                if len(cells) < 2:
+                    out.append(None)
+                    continue
+                kind_cell = next((c for c in cells[1:-1] if kind_of(c, "") != "other"), "")
+                out.append({
+                    "name": re.sub(r"\s+", " ", cells[0]).strip(),
+                    "type": re.sub(r"\s+", " ", kind_cell).strip(),
+                    "coord": cells[-1],
+                    "district": district,
+                })
+                continue
+            if name.lower().startswith(("исключ", "алып таст", "алынып")):
+                out.append(None)  # rows removed from the list by a later amendment
+                continue
+            # most lists put the coordinates inside the location cell instead of a column of their own
+            coord = row[cols["coord"]] if "coord" in cols else row[cols.get("place", cols["name"])]
             out.append({
-                "name": row[cols["name"]].replace("\n", " "),
-                "type": row[cols["type"]].replace("\n", " ") if "type" in cols else "",
-                "coord": row[cols["coord"]],
+                "name": name,
+                "type": re.sub(r"\s+", " ", row[cols["type"]]).strip() if "type" in cols else "",
+                "coord": coord,
                 "district": district,
             })
         return out
@@ -266,11 +323,14 @@ def import_act(act):
     for i, r in enumerate(ru):
         if r is None or not r["name"]:
             continue
-        if not r["coord"].strip():
-            nocoord += 1
-            continue
         pt = first_point(r["coord"])
-        if not pt or not in_regions(pt[0], pt[1], act["geo"]):
+        if not pt:
+            if not parse_values(r["coord"]) and not UTM.search(r["coord"]):
+                nocoord += 1
+            else:
+                bad += 1
+            continue
+        if not in_regions(pt[0], pt[1], act["geo"]):
             bad += 1
             continue
         k = kk[i] if paired and kk[i] else None
@@ -288,25 +348,38 @@ def import_act(act):
     return kept
 
 
+def name_key(name):
+    return re.sub(r"[^0-9a-zа-яёәғқңөұүһі]", "", name.lower())[:18]
+
+
 def main():
+    # data.egov.kz first: it is the open-data source for Kostanay; the act for the same region
+    # then only adds monuments the dataset lacks coordinates for
     out = []
-    for act in ACTS:
-        out += import_act(act)
-        time.sleep(1)
-    kostanay = json.loads(KOSTANAY.read_text(encoding="utf-8"))
-    for m in kostanay:
+    for m in json.loads(KOSTANAY.read_text(encoding="utf-8")):
         out.append({
             "lat": m["lat"], "lng": m["lng"], "name": m["name"], "type": m["type"], "district": m["district"],
             "region": {"kk": "Қостанай облысы", "ru": "Костанайская область"},
             "source": EGOV_URL,
         })
-    # one point per place and name: some lists repeat a monument under two districts
-    seen, unique = set(), []
+    for act in ACTS:
+        out += import_act(act)
+        time.sleep(1)
+
+    # one point per monument: the same name within ~500 m is a duplicate
+    unique, buckets = [], {}
     for m in out:
-        key = (m["lat"], m["lng"], m["name"]["ru"])
-        if key not in seen:
-            seen.add(key)
-            unique.append(m)
+        key = name_key(m["name"]["ru"])
+        cell = (round(m["lat"], 1), round(m["lng"], 1))
+        near_same = [
+            u for dx in (-0.1, 0, 0.1) for dy in (-0.1, 0, 0.1)
+            for u in buckets.get((round(cell[0] + dx, 1), round(cell[1] + dy, 1)), [])
+            if u[0] == key and abs(u[1] - m["lat"]) < 0.005 and abs(u[2] - m["lng"]) < 0.007
+        ]
+        if near_same:
+            continue
+        buckets.setdefault(cell, []).append((key, m["lat"], m["lng"]))
+        unique.append(m)
     for i, m in enumerate(unique, 1):
         m["id"] = i
         m["kind"] = kind_of(m["type"]["ru"], m["type"]["kk"])
@@ -316,7 +389,7 @@ def main():
     for m in unique:
         kinds[m["kind"]] = kinds.get(m["kind"], 0) + 1
     META.write_text(json.dumps({"count": len(unique), "regions": len(regions), "kinds": kinds}) + "\n", encoding="utf-8")
-    print(f"{len(unique)} monuments -> {OUT}")
+    print(f"{len(unique)} monuments ({len(out) - len(unique)} duplicates dropped) -> {OUT}")
 
 
 if __name__ == "__main__":
