@@ -42,490 +42,6 @@
     "verified_by": "Claude (сверено по источникам)"
   },
   {
-    "id": "verny-earthquake-1911",
-    "pack": [
-      "kz"
-    ],
-    "year": 1911,
-    "lat": 43.256,
-    "lng": 76.945,
-    "place": {
-      "kk": "Верный (Алматы)",
-      "ru": "Верный (Алматы)",
-      "en": "Verny (Almaty)"
-    },
-    "image": "images/placeholder.svg",
-    "image_credit": {
-      "author": "",
-      "license": "",
-      "source_url": ""
-    },
-    "title": {
-      "kk": "1911 жылғы Кемин жер сілкінісі",
-      "ru": "Кеминское землетрясение 1911 года",
-      "en": "The 1911 Kemin earthquake"
-    },
-    "explanation": {
-      "kk": "1911 жылдың қаңтарында болған қуатты жер сілкінісі Верный қаласының көптеген кірпіш үйлерін қиратты. Ағаштан салынған Вознесенский соборы аман қалды — бұл қала құрылысында сейсмикалық қауіпті ескеруге мысал болды.",
-      "ru": "Мощное землетрясение в январе 1911 года разрушило многие кирпичные дома города Верный. Деревянный Вознесенский собор устоял — пример того, почему в городе стали учитывать сейсмическую опасность.",
-      "en": "A powerful earthquake in January 1911 destroyed many brick buildings in the town of Verny. The wooden Ascension Cathedral survived, showing why the city began to build with earthquakes in mind."
-    },
-    "clue": {
-      "kk": "Қираған кірпіш үйлер, ат арбалар, артында Іле Алатауы.",
-      "ru": "Разрушенные кирпичные дома, конные повозки, на фоне горы Заилийского Алатау.",
-      "en": "Ruined brick houses, horse carts, the Trans-Ili Alatau mountains behind."
-    },
-    "sources": [
-      "https://ru.wikipedia.org/wiki/Кеминское_землетрясение"
-    ],
-    "difficulty": 2,
-    "verified_by": ""
-  },
-  {
-    "id": "rds1-test-1949",
-    "pack": [
-      "kz",
-      "semey"
-    ],
-    "year": 1949,
-    "lat": 50.438,
-    "lng": 77.815,
-    "place": {
-      "kk": "Семей полигоны",
-      "ru": "Семипалатинский полигон",
-      "en": "Semipalatinsk Test Site"
-    },
-    "image": "images/placeholder.svg",
-    "image_credit": {
-      "author": "",
-      "license": "",
-      "source_url": ""
-    },
-    "title": {
-      "kk": "Алғашқы кеңестік атом бомбасының сынағы",
-      "ru": "Испытание первой советской атомной бомбы",
-      "en": "First Soviet atomic bomb test"
-    },
-    "explanation": {
-      "kk": "1949 жылғы 29 тамызда Семей полигонында КСРО-ның алғашқы атом бомбасы РДС-1 жарылды. Келесі 40 жылда мұнда жүздеген ядролық сынақ өткізіліп, өңір тұрғындарының денсаулығына ауыр зардап тиді.",
-      "ru": "29 августа 1949 года на Семипалатинском полигоне взорвали первую советскую атомную бомбу РДС-1. За следующие 40 лет здесь провели сотни ядерных испытаний, которые тяжело отразились на здоровье жителей региона.",
-      "en": "On 29 August 1949 the first Soviet atomic bomb, RDS-1, was detonated at the Semipalatinsk Test Site. Hundreds of nuclear tests followed over 40 years, with severe health consequences for the region's people."
-    },
-    "clue": {
-      "kk": "Жалаң дала, ақ-қара сурет, жарылыс бұлты.",
-      "ru": "Голая степь, чёрно-белый снимок, облако взрыва.",
-      "en": "Bare steppe, black-and-white image, explosion cloud."
-    },
-    "sources": [
-      "https://ru.wikipedia.org/wiki/РДС-1",
-      "https://ru.wikipedia.org/wiki/Семипалатинский_испытательный_полигон"
-    ],
-    "difficulty": 2,
-    "verified_by": ""
-  },
-  {
-    "id": "virgin-lands-1954",
-    "pack": [
-      "kz"
-    ],
-    "year": 1954,
-    "lat": 51.169,
-    "lng": 71.449,
-    "place": {
-      "kk": "Ақмола облысы",
-      "ru": "Акмолинская область",
-      "en": "Akmola Region"
-    },
-    "image": "images/placeholder.svg",
-    "image_credit": {
-      "author": "",
-      "license": "",
-      "source_url": ""
-    },
-    "title": {
-      "kk": "Тың игеру басталды",
-      "ru": "Начало освоения целины",
-      "en": "Start of the Virgin Lands Campaign"
-    },
-    "explanation": {
-      "kk": "1954 жылы КСРО Солтүстік Қазақстанның тың жерлерін жыртып, астық егуге кірісті. Республикаға жүз мыңдаған адам келіп, жаңа совхоздар мен қалалар пайда болды, ал Ақмола кейін Целиноград деп аталды.",
-      "ru": "В 1954 году СССР начал распахивать целинные земли Северного Казахстана под зерно. В республику приехали сотни тысяч человек, появились новые совхозы и посёлки, а Акмолинск позже переименовали в Целиноград.",
-      "en": "In 1954 the USSR began ploughing the virgin steppe of northern Kazakhstan for grain. Hundreds of thousands of people arrived, new state farms and towns appeared, and Akmolinsk was later renamed Tselinograd."
-    },
-    "clue": {
-      "kk": "Тракторлар мен шатырлар, шексіз жазық дала.",
-      "ru": "Тракторы и палатки посреди бескрайней равнины.",
-      "en": "Tractors and tents on an endless plain."
-    },
-    "sources": [
-      "https://ru.wikipedia.org/wiki/Освоение_целины"
-    ],
-    "difficulty": 1,
-    "verified_by": ""
-  },
-  {
-    "id": "sputnik-1957",
-    "pack": [
-      "kz"
-    ],
-    "year": 1957,
-    "lat": 45.92,
-    "lng": 63.342,
-    "place": {
-      "kk": "Байқоңыр",
-      "ru": "Байконур",
-      "en": "Baikonur"
-    },
-    "image": "images/placeholder.svg",
-    "image_credit": {
-      "author": "",
-      "license": "",
-      "source_url": ""
-    },
-    "title": {
-      "kk": "Алғашқы жасанды Жер серігі",
-      "ru": "Первый искусственный спутник Земли",
-      "en": "The first artificial satellite"
-    },
-    "explanation": {
-      "kk": "1957 жылғы 4 қазанда Байқоңырдан әлемдегі алғашқы жасанды Жер серігі ұшырылды. Осы күннен бастап ғарыш дәуірі басталды, ал қазақ даласындағы ғарыш айлағы бүкіл әлемге белгілі болды.",
-      "ru": "4 октября 1957 года с Байконура запустили первый в мире искусственный спутник Земли. С этого дня началась космическая эра, а космодром в казахской степи стал известен всему миру.",
-      "en": "On 4 October 1957 the world's first artificial satellite was launched from Baikonur. It opened the space age and made the cosmodrome in the Kazakh steppe known worldwide."
-    },
-    "clue": {
-      "kk": "Р-7 зымыраны, ұшыру алаңы, айналасы жалпақ шөл дала.",
-      "ru": "Ракета Р-7, стартовая площадка, вокруг плоская пустынная степь.",
-      "en": "An R-7 rocket on its pad, flat desert steppe all around."
-    },
-    "sources": [
-      "https://ru.wikipedia.org/wiki/Спутник-1"
-    ],
-    "difficulty": 1,
-    "verified_by": ""
-  },
-  {
-    "id": "gagarin-1961",
-    "pack": [
-      "kz"
-    ],
-    "year": 1961,
-    "lat": 45.92,
-    "lng": 63.342,
-    "place": {
-      "kk": "Байқоңыр",
-      "ru": "Байконур",
-      "en": "Baikonur"
-    },
-    "image": "images/placeholder.svg",
-    "image_credit": {
-      "author": "",
-      "license": "",
-      "source_url": ""
-    },
-    "title": {
-      "kk": "Гагариннің ғарышқа ұшуы",
-      "ru": "Полёт Гагарина",
-      "en": "Gagarin's flight"
-    },
-    "explanation": {
-      "kk": "1961 жылғы 12 сәуірде Юрий Гагарин «Восток-1» кемесімен Байқоңырдан ұшып, ғарышқа шыққан алғашқы адам атанды. Ол ұшырылған алаң кейін «Гагарин старты» деп аталды.",
-      "ru": "12 апреля 1961 года Юрий Гагарин на корабле «Восток-1» стартовал с Байконура и стал первым человеком в космосе. Площадку, с которой он улетел, называют «Гагаринским стартом».",
-      "en": "On 12 April 1961 Yuri Gagarin lifted off from Baikonur aboard Vostok 1 and became the first human in space. His launch pad is still known as Gagarin's Start."
-    },
-    "clue": {
-      "kk": "Скафандрдағы ғарышкер немесе «Восток» зымыраны.",
-      "ru": "Космонавт в скафандре или ракета «Восток».",
-      "en": "A cosmonaut in a spacesuit or the Vostok rocket."
-    },
-    "sources": [
-      "https://ru.wikipedia.org/wiki/Восток-1"
-    ],
-    "difficulty": 1,
-    "verified_by": ""
-  },
-  {
-    "id": "medeu-1972",
-    "pack": [
-      "kz"
-    ],
-    "year": 1972,
-    "lat": 43.157,
-    "lng": 77.059,
-    "place": {
-      "kk": "Медеу, Алматы",
-      "ru": "Медеу, Алматы",
-      "en": "Medeu, Almaty"
-    },
-    "image": "images/placeholder.svg",
-    "image_credit": {
-      "author": "",
-      "license": "",
-      "source_url": ""
-    },
-    "title": {
-      "kk": "«Медеу» биік таулы мұз айдыны",
-      "ru": "Высокогорный каток «Медеу»",
-      "en": "Medeu high-altitude skating rink"
-    },
-    "explanation": {
-      "kk": "Алматы маңындағы «Медеу» мұз айдыны 1972 жылы ашылды. Теңіз деңгейінен 1600 метрдей биіктікте орналасқан бұл айдында жүздеген әлемдік рекорд орнатылды.",
-      "ru": "Каток «Медеу» под Алматы открылся в 1972 году. На высоте около 1600 метров над уровнем моря здесь были установлены сотни мировых рекордов по конькобежному спорту.",
-      "en": "The Medeu rink near Almaty opened in 1972. Set at about 1,600 metres above sea level, it has seen hundreds of speed-skating world records."
-    },
-    "clue": {
-      "kk": "Таулар арасындағы үлкен мұз алаңы, кеңестік трибуналар.",
-      "ru": "Большое ледовое поле между гор, советские трибуны.",
-      "en": "A large ice field among mountains, Soviet-era stands."
-    },
-    "sources": [
-      "https://ru.wikipedia.org/wiki/Медеу_(каток)"
-    ],
-    "difficulty": 2,
-    "verified_by": ""
-  },
-  {
-    "id": "zheltoqsan-1986",
-    "pack": [
-      "kz"
-    ],
-    "year": 1986,
-    "lat": 43.238,
-    "lng": 76.945,
-    "place": {
-      "kk": "Алматы, Республика алаңы",
-      "ru": "Алматы, площадь Республики",
-      "en": "Almaty, Republic Square"
-    },
-    "image": "images/placeholder.svg",
-    "image_credit": {
-      "author": "",
-      "license": "",
-      "source_url": ""
-    },
-    "title": {
-      "kk": "Желтоқсан көтерілісі",
-      "ru": "Желтоксан",
-      "en": "Jeltoqsan (December 1986 protests)"
-    },
-    "explanation": {
-      "kk": "1986 жылдың желтоқсанында Қазақстан Компартиясының басшысы Дінмұхамед Қонаев орнына Мәскеу Геннадий Колбинді тағайындады. Наразылыққа шыққан жастар күшпен қуылды; бұл оқиға тәуелсіздікке апарған жолдың маңызды белесі саналады.",
-      "ru": "В декабре 1986 года Москва заменила главу Компартии Казахстана Динмухамеда Кунаева на Геннадия Колбина. Вышедшую на протест молодёжь разогнали силой; эти события считают важной вехой на пути к независимости.",
-      "en": "In December 1986 Moscow replaced Kazakhstan's Communist Party leader Dinmukhamed Kunaev with Gennady Kolbin. Young protesters were dispersed by force; the events are seen as a milestone on the road to independence."
-    },
-    "clue": {
-      "kk": "Қысқы киімдегі жастар, үлкен алаң, кеңестік үкімет ғимараты.",
-      "ru": "Молодёжь в зимней одежде, большая площадь, советское здание власти.",
-      "en": "Young people in winter clothes, a large square, a Soviet government building."
-    },
-    "sources": [
-      "https://ru.wikipedia.org/wiki/Желтоксан"
-    ],
-    "difficulty": 2,
-    "verified_by": ""
-  },
-  {
-    "id": "polygon-closure-1991",
-    "pack": [
-      "kz",
-      "semey"
-    ],
-    "year": 1991,
-    "lat": 50.755,
-    "lng": 78.54,
-    "place": {
-      "kk": "Семей полигоны (Курчатов)",
-      "ru": "Семипалатинский полигон (Курчатов)",
-      "en": "Semipalatinsk Test Site (Kurchatov)"
-    },
-    "image": "images/placeholder.svg",
-    "image_credit": {
-      "author": "",
-      "license": "",
-      "source_url": ""
-    },
-    "title": {
-      "kk": "Семей ядролық полигонының жабылуы",
-      "ru": "Закрытие Семипалатинского полигона",
-      "en": "Closure of the Semipalatinsk Test Site"
-    },
-    "explanation": {
-      "kk": "1991 жылғы 29 тамызда Семей ядролық полигоны Жарлықпен жабылды. Бұған Олжас Сүлейменов бастаған «Невада — Семей» қозғалысы үлкен ықпал етті; 29 тамыз кейін БҰҰ-да ядролық сынақтарға қарсы халықаралық күн болып бекітілді.",
-      "ru": "29 августа 1991 года Семипалатинский ядерный полигон закрыли указом. Большую роль сыграло движение «Невада — Семипалатинск» во главе с Олжасом Сулейменовым; позже ООН объявила 29 августа Международным днём действий против ядерных испытаний.",
-      "en": "On 29 August 1991 the Semipalatinsk nuclear test site was closed by decree. The Nevada–Semipalatinsk movement led by Olzhas Suleimenov played a major role; the UN later made 29 August the International Day against Nuclear Tests."
-    },
-    "clue": {
-      "kk": "Қозғалыс белгілері бар митинг немесе бос қалған полигон нысандары.",
-      "ru": "Митинг с символикой движения или заброшенные объекты полигона.",
-      "en": "A rally with the movement's symbols, or abandoned test-site structures."
-    },
-    "sources": [
-      "https://ru.wikipedia.org/wiki/Семипалатинский_испытательный_полигон",
-      "https://ru.wikipedia.org/wiki/Невада_—_Семипалатинск"
-    ],
-    "difficulty": 2,
-    "verified_by": ""
-  },
-  {
-    "id": "aubakirov-1991",
-    "pack": [
-      "kz"
-    ],
-    "year": 1991,
-    "lat": 45.92,
-    "lng": 63.342,
-    "place": {
-      "kk": "Байқоңыр",
-      "ru": "Байконур",
-      "en": "Baikonur"
-    },
-    "image": "images/placeholder.svg",
-    "image_credit": {
-      "author": "",
-      "license": "",
-      "source_url": ""
-    },
-    "title": {
-      "kk": "Тоқтар Әубәкіров — алғашқы қазақ ғарышкері",
-      "ru": "Токтар Аубакиров — первый казахский космонавт",
-      "en": "Toktar Aubakirov, the first Kazakh cosmonaut"
-    },
-    "explanation": {
-      "kk": "1991 жылдың қазанында сынақшы ұшқыш Тоқтар Әубәкіров «Союз ТМ-13» кемесімен Байқоңырдан ғарышқа ұшты. Ол ғарышқа шыққан алғашқы қазақ болды.",
-      "ru": "В октябре 1991 года лётчик-испытатель Токтар Аубакиров стартовал с Байконура на корабле «Союз ТМ-13». Он стал первым казахом в космосе.",
-      "en": "In October 1991 test pilot Toktar Aubakirov launched from Baikonur aboard Soyuz TM-13, becoming the first Kazakh in space."
-    },
-    "clue": {
-      "kk": "«Союз» зымыраны, 1990-жылдардың басындағы түрлі-түсті сурет.",
-      "ru": "Ракета «Союз», цветной снимок начала 1990-х.",
-      "en": "A Soyuz rocket, a colour photo from the early 1990s."
-    },
-    "sources": [
-      "https://ru.wikipedia.org/wiki/Аубакиров,_Токтар_Онгарбаевич"
-    ],
-    "difficulty": 3,
-    "verified_by": ""
-  },
-  {
-    "id": "independence-1991",
-    "pack": [
-      "kz"
-    ],
-    "year": 1991,
-    "lat": 43.238,
-    "lng": 76.945,
-    "place": {
-      "kk": "Алматы",
-      "ru": "Алматы",
-      "en": "Almaty"
-    },
-    "image": "images/placeholder.svg",
-    "image_credit": {
-      "author": "",
-      "license": "",
-      "source_url": ""
-    },
-    "title": {
-      "kk": "Қазақстан тәуелсіздігі",
-      "ru": "Независимость Казахстана",
-      "en": "Independence of Kazakhstan"
-    },
-    "explanation": {
-      "kk": "1991 жылғы 16 желтоқсанда Жоғарғы Кеңес «Қазақстан Республикасының мемлекеттік тәуелсіздігі туралы» Конституциялық заң қабылдады. Ол кезде астана Алматы болатын.",
-      "ru": "16 декабря 1991 года Верховный Совет принял Конституционный закон «О государственной независимости Республики Казахстан». Столицей тогда была Алматы.",
-      "en": "On 16 December 1991 the Supreme Council adopted the Constitutional Law on the State Independence of the Republic of Kazakhstan. Almaty was the capital at the time."
-    },
-    "clue": {
-      "kk": "Жаңа мемлекеттік рәміздер, Алматыдағы үкімет ғимараты.",
-      "ru": "Новая государственная символика, здание власти в Алматы.",
-      "en": "New state symbols, a government building in Almaty."
-    },
-    "sources": [
-      "https://ru.wikipedia.org/wiki/День_независимости_Казахстана"
-    ],
-    "difficulty": 1,
-    "verified_by": ""
-  },
-  {
-    "id": "capital-move-1997",
-    "pack": [
-      "kz"
-    ],
-    "year": 1997,
-    "lat": 51.128,
-    "lng": 71.43,
-    "place": {
-      "kk": "Астана",
-      "ru": "Астана",
-      "en": "Astana"
-    },
-    "image": "images/placeholder.svg",
-    "image_credit": {
-      "author": "",
-      "license": "",
-      "source_url": ""
-    },
-    "title": {
-      "kk": "Астананың Ақмолаға көшуі",
-      "ru": "Перенос столицы в Акмолу",
-      "en": "Capital moves to Akmola"
-    },
-    "explanation": {
-      "kk": "1997 жылғы 10 желтоқсанда Қазақстанның астанасы Алматыдан Ақмолаға көшірілді. 1998 жылы қала Астана деп аталып, жаңа астана ретінде халықаралық деңгейде таныстырылды.",
-      "ru": "10 декабря 1997 года столицу Казахстана перенесли из Алматы в Акмолу. В 1998 году город переименовали в Астану и представили миру как новую столицу.",
-      "en": "On 10 December 1997 Kazakhstan's capital moved from Almaty to Akmola. In 1998 the city was renamed Astana and presented internationally as the new capital."
-    },
-    "clue": {
-      "kk": "Есіл жағалауы, құрылыс крандары, әлі бос жатқан сол жағалау.",
-      "ru": "Берег Ишима, строительные краны, ещё пустой левый берег.",
-      "en": "The Ishim riverbank, construction cranes, a still-empty left bank."
-    },
-    "sources": [
-      "https://ru.wikipedia.org/wiki/Астана"
-    ],
-    "difficulty": 2,
-    "verified_by": ""
-  },
-  {
-    "id": "baiterek-2002",
-    "pack": [
-      "kz"
-    ],
-    "year": 2002,
-    "lat": 51.128,
-    "lng": 71.43,
-    "place": {
-      "kk": "Астана",
-      "ru": "Астана",
-      "en": "Astana"
-    },
-    "image": "images/placeholder.svg",
-    "image_credit": {
-      "author": "",
-      "license": "",
-      "source_url": ""
-    },
-    "title": {
-      "kk": "«Бәйтерек» монументі",
-      "ru": "Монумент «Байтерек»",
-      "en": "Baiterek monument"
-    },
-    "explanation": {
-      "kk": "«Бәйтерек» — жаңа астананың басты символы, өмір ағашы мен Самұрық құс салған алтын жұмыртқа туралы аңызды бейнелейді. Монумент сол жағалаудың жаңа орталығында тұрғызылды.",
-      "ru": "«Байтерек» — главный символ новой столицы, он изображает легенду о древе жизни и золотом яйце птицы Самрук. Монумент построен в новом центре на левом берегу.",
-      "en": "Baiterek is the main symbol of the new capital, depicting the legend of the tree of life and the golden egg of the Samruk bird. It stands in the new centre on the left bank."
-    },
-    "clue": {
-      "kk": "Төбесінде алтын шары бар ақ мұнара.",
-      "ru": "Белая башня с золотым шаром наверху.",
-      "en": "A white tower topped with a golden sphere."
-    },
-    "sources": [
-      "https://ru.wikipedia.org/wiki/Байтерек_(монумент)"
-    ],
-    "difficulty": 3,
-    "verified_by": ""
-  },
-  {
     "id": "expo-2017",
     "pack": [
       "kz"
@@ -4301,6 +3817,249 @@
       "https://ru.wikipedia.org/wiki/Кызылорда"
     ],
     "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "baiterek-handprint-2017",
+    "pack": [
+      "kz"
+    ],
+    "year": 2017,
+    "lat": 51.128,
+    "lng": 71.43,
+    "place": {
+      "kk": "Астана",
+      "ru": "Астана",
+      "en": "Astana"
+    },
+    "image": "images/baiterek-handprint-2017.jpg",
+    "image_credit": {
+      "author": "t_y_l",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kazakhstan_P9130304_(26212733458).jpg"
+    },
+    "title": {
+      "kk": "Бәйтеректегі алақан ізі",
+      "ru": "Отпечаток ладони в Байтереке",
+      "en": "The handprint in Baiterek"
+    },
+    "explanation": {
+      "kk": "Бәйтерек монументі 2002 жылы ашылды; оның биіктігі 97 метр – астананың Астанаға көшкен 1997 жылын білдіреді. Жоғарғы шардағы шолу залында Тұңғыш Президенттің алтын алақан ізі бар; сурет 2017 жылы түсірілген.",
+      "ru": "Монумент «Байтерек» открыт в 2002 году; его высота 97 метров — в честь 1997 года, когда столицу перенесли в Астану. В смотровом зале верхнего шара находится золотой отпечаток ладони первого президента; снимок 2017 года.",
+      "en": "The Baiterek monument opened in 2002; its 97-metre height marks 1997, when the capital moved to Astana. In the observation hall of its top sphere is the first president's golden handprint; the photo was taken in 2017."
+    },
+    "clue": {
+      "kk": "Алтын алақан ізі, жылтыр металл, заманауи сурет.",
+      "ru": "Золотой отпечаток ладони, блестящий металл, современное фото.",
+      "en": "A golden handprint, shiny metal, a modern photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Байтерек_(монумент)"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "kokshetau-zhdanov-cinema-1951",
+    "pack": [
+      "kz"
+    ],
+    "year": 1951,
+    "lat": 53.283,
+    "lng": 69.383,
+    "place": {
+      "kk": "Көкшетау",
+      "ru": "Кокчетав (Кокшетау)",
+      "en": "Kokchetav (Kokshetau)"
+    },
+    "image": "images/kokshetau-zhdanov-cinema-1951.jpg",
+    "image_credit": {
+      "author": "UnknownUnknown",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zhdanov_Cinema_(Kokshetau,_Kazakhstan).jpg"
+    },
+    "title": {
+      "kk": "Көкшетаудағы Жданов атындағы кинотеатр",
+      "ru": "Кинотеатр имени Жданова в Кокчетаве",
+      "en": "The Zhdanov Cinema in Kokchetav"
+    },
+    "explanation": {
+      "kk": "1951 жылғы Көкшетау: қасбеті кеңес басшыларының портреттерімен безендірілген Жданов атындағы кинотеатр. 1944 жылдан бастап Көкшетау облыс орталығы болды, ал соғыстан кейінгі жылдары кино қалалықтардың басты ойын-сауығы еді.",
+      "ru": "Кокчетав, 1951 год: кинотеатр имени Жданова, фасад украшен портретами советских руководителей. С 1944 года город был центром Кокчетавской области, а в послевоенные годы кино было главным развлечением горожан.",
+      "en": "Kokchetav in 1951: the Zhdanov Cinema, its facade decorated with portraits of Soviet leaders. From 1944 the town was the centre of Kokchetav region, and in the post-war years cinema was the townspeople's main entertainment."
+    },
+    "clue": {
+      "kk": "Қасбеттегі портреттер, бағаналар, 1950-жылдардың ақ-қара суреті.",
+      "ru": "Портреты на фасаде, колонны, чёрно-белый снимок 1950-х.",
+      "en": "Portraits on the facade, columns, a 1950s black-and-white photo."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/File:Zhdanov_Cinema_(Kokshetau,_Kazakhstan).jpg",
+      "https://ru.wikipedia.org/wiki/Кокчетавская_область"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "kokshetau-military-hospital-1963",
+    "pack": [
+      "kz"
+    ],
+    "year": 1963,
+    "lat": 53.283,
+    "lng": 69.383,
+    "place": {
+      "kk": "Көкшетау",
+      "ru": "Кокчетав (Кокшетау)",
+      "en": "Kokchetav (Kokshetau)"
+    },
+    "image": "images/kokshetau-military-hospital-1963.jpg",
+    "image_credit": {
+      "author": "Jehonatan Roletschek",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Military_hospital_in_Kokshetau_(Kokchetav),_Kazakhstan.jpg"
+    },
+    "title": {
+      "kk": "Көкшетаудағы әскери госпиталь",
+      "ru": "Военный госпиталь в Кокчетаве",
+      "en": "The military hospital in Kokchetav"
+    },
+    "explanation": {
+      "kk": "1963 жылғы сурет: Көкшетаудағы әскери госпиталь ғимараты. Көкшетау облысы 1997 жылы таратылды, ал 1999 жылдан бастап Көкшетау Ақмола облысының орталығы болды.",
+      "ru": "Снимок 1963 года: здание военного госпиталя в Кокчетаве. Кокчетавскую область упразднили в 1997 году, а с 1999 года Кокшетау стал центром Акмолинской области.",
+      "en": "A 1963 photo of the military hospital building in Kokchetav. Kokchetav region was abolished in 1997, and since 1999 Kokshetau has been the centre of Akmola region."
+    },
+    "clue": {
+      "kk": "Кірпіш ғимарат, бетон бағаналы қоршау, ескі сурет.",
+      "ru": "Кирпичное здание, забор с бетонными столбами, старый снимок.",
+      "en": "A brick building, a fence with concrete posts, an old photo."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/File:Military_hospital_in_Kokshetau_(Kokchetav),_Kazakhstan.jpg",
+      "https://ru.wikipedia.org/wiki/Кокшетау"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "shymkent-aerial-2025",
+    "pack": [
+      "kz"
+    ],
+    "year": 2025,
+    "lat": 42.317,
+    "lng": 69.596,
+    "place": {
+      "kk": "Шымкент",
+      "ru": "Шымкент",
+      "en": "Shymkent"
+    },
+    "image": "images/shymkent-aerial-2025.jpg",
+    "image_credit": {
+      "author": "Rassim",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_Shymkent.jpg"
+    },
+    "title": {
+      "kk": "Шымкент жоғарыдан",
+      "ru": "Шымкент с высоты",
+      "en": "Shymkent from above"
+    },
+    "explanation": {
+      "kk": "Шымкент – халқы миллионнан асқан Қазақстанның үш мегаполисінің бірі. 2018 жылы ол республикалық маңызы бар қала болды; сурет 2025 жылы түсірілген.",
+      "ru": "Шымкент — один из трёх городов-миллионников Казахстана. В 2018 году он получил статус города республиканского значения; снимок 2025 года.",
+      "en": "Shymkent is one of Kazakhstan's three cities with over a million people. In 2018 it became a city of republican significance; the photo was taken in 2025."
+    },
+    "clue": {
+      "kk": "Кең даңғыл, жаңа көп қабатты үйлер, көп жасыл ағаш.",
+      "ru": "Широкий проспект, новые многоэтажки, много зелени.",
+      "en": "A wide avenue, new high-rises, lots of greenery."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Шымкент"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "kapchagay-beach-2009",
+    "pack": [
+      "kz"
+    ],
+    "year": 2009,
+    "lat": 43.87,
+    "lng": 77.07,
+    "place": {
+      "kk": "Қапшағай су қоймасы",
+      "ru": "Капчагайское водохранилище",
+      "en": "Kapchagay Reservoir"
+    },
+    "image": "images/kapchagay-beach-2009.jpg",
+    "image_credit": {
+      "author": "Ds02006",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:KZKapchagay2.JPG"
+    },
+    "title": {
+      "kk": "Қапшағай жағажайы",
+      "ru": "Пляж на Капчагае",
+      "en": "A beach on the Kapchagay Reservoir"
+    },
+    "explanation": {
+      "kk": "Қапшағай су қоймасы Іле өзеніне ГЭС бөгеті салынғаннан кейін пайда болды, ол Алматы тұрғындарының сүйікті демалыс орнына айналды. 2022 жылы Қапшағай қаласы Қонаев болып аталды; сурет 2009 жылы түсірілген.",
+      "ru": "Капчагайское водохранилище появилось после строительства плотины ГЭС на реке Или и стало любимым местом отдыха алматинцев. В 2022 году город Капчагай переименовали в Конаев; снимок 2009 года.",
+      "en": "The Kapchagay Reservoir formed after a hydroelectric dam was built on the Ili River and became a favourite getaway for Almaty residents. In 2022 the town of Kapchagay was renamed Konaev; the photo was taken in 2009."
+    },
+    "clue": {
+      "kk": "Құмды жағажай, демалушылар, үлкен су айдыны.",
+      "ru": "Песчаный пляж, отдыхающие, большая вода.",
+      "en": "A sandy beach, holidaymakers, a big body of water."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Капчагайское_водохранилище",
+      "https://ru.wikipedia.org/wiki/Конаев_(город)"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "karaganda-street-2011",
+    "pack": [
+      "kz"
+    ],
+    "year": 2011,
+    "lat": 49.806,
+    "lng": 73.085,
+    "place": {
+      "kk": "Қарағанды",
+      "ru": "Караганда",
+      "en": "Karaganda"
+    },
+    "image": "images/karaganda-street-2011.jpg",
+    "image_credit": {
+      "author": "Валерий Парфёнов",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:-_panoramio_(2148).jpg"
+    },
+    "title": {
+      "kk": "Қарағанды көшесі",
+      "ru": "Улица Караганды",
+      "en": "A street in Karaganda"
+    },
+    "explanation": {
+      "kk": "Қарағанды 1930–1950 жылдары көмір бассейнінің астанасы ретінде қарқынды салынды, орталықта сол кездің көп үйлері сақталған. 2011 жылғы суретте – ескі тұрғын үйлер мен ағашты аула.",
+      "ru": "Караганду активно строили в 1930–1950-е годы как столицу угольного бассейна, в центре сохранилось много домов той эпохи. На снимке 2011 года — старые жилые дома и тенистый двор.",
+      "en": "Karaganda was built up rapidly in the 1930s–1950s as the capital of the coal basin, and many houses from that era survive in the centre. The 2011 photo shows old apartment buildings and a shady courtyard."
+    },
+    "clue": {
+      "kk": "Ескі кірпіш үйлер, биік ағаштар, 1990-жылдардың көлігі.",
+      "ru": "Старые кирпичные дома, высокие деревья, машина 1990-х.",
+      "en": "Old brick houses, tall trees, a 1990s car."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Караганда"
+    ],
+    "difficulty": 3,
     "verified_by": "Claude (сверено по источникам)"
   }
 ]
