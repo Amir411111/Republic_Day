@@ -3817,5 +3817,490 @@
     ],
     "difficulty": 3,
     "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "hazrat-sultan-construction-2011",
+    "pack": [
+      "kz"
+    ],
+    "year": 2011,
+    "lat": 51.125,
+    "lng": 71.472,
+    "place": {
+      "kk": "Астана",
+      "ru": "Астана",
+      "en": "Astana"
+    },
+    "image": "images/hazrat-sultan-construction-2011.jpg",
+    "image_credit": {
+      "author": "Jirka Dl",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Construction_of_new_mosque_close_to_Palace_of_Peace_and_Reconciliation.jpg"
+    },
+    "title": {
+      "kk": "Әзірет Сұлтан мешітінің құрылысы",
+      "ru": "Строительство мечети «Хазрет Султан»",
+      "en": "Building the Hazrat Sultan Mosque"
+    },
+    "explanation": {
+      "kk": "2011 жылы Астанада Бейбітшілік және келісім сарайының жанында Әзірет Сұлтан мешіті салынып жатты. Мешіт 2012 жылы ашылып, Орталық Азиядағы ең ірі мешіттердің біріне айналды.",
+      "ru": "В 2011 году в Астане рядом с Дворцом мира и согласия строили мечеть «Хазрет Султан». Её открыли в 2012 году, и она стала одной из крупнейших мечетей Центральной Азии.",
+      "en": "In 2011 the Hazrat Sultan Mosque was under construction in Astana next to the Palace of Peace and Reconciliation. It opened in 2012 and became one of the largest mosques in Central Asia."
+    },
+    "clue": {
+      "kk": "Мұнаралар мен күмбез, құрылыс крандары, кең даңғыл.",
+      "ru": "Минареты и купол, строительные краны, широкий проспект.",
+      "en": "Minarets and a dome, construction cranes, a wide avenue."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Хазрет_Султан_(мечеть)"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "astana-opera-2019",
+    "pack": [
+      "kz"
+    ],
+    "year": 2019,
+    "lat": 51.136,
+    "lng": 71.412,
+    "place": {
+      "kk": "Астана",
+      "ru": "Астана",
+      "en": "Astana"
+    },
+    "image": "images/astana-opera-2019.jpg",
+    "image_credit": {
+      "author": "Davide Mauro",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Astana_Opera_02.jpg"
+    },
+    "title": {
+      "kk": "«Астана Опера» және сол жағалау",
+      "ru": "«Астана Опера» и левый берег",
+      "en": "Astana Opera and the Left Bank"
+    },
+    "explanation": {
+      "kk": "«Астана Опера» мемлекеттік опера және балет театры 2013 жылы ашылды. Оның артында Есілдің сол жағалауындағы жаңа іскерлік аудан көрінеді – Астана 1997 жылы астана болғаннан кейін салынған қала бөлігі; сурет 2019 жылы түсірілген.",
+      "ru": "Государственный театр оперы и балета «Астана Опера» открылся в 2013 году. За ним — новый деловой район левого берега Ишима, выросший после переноса столицы в 1997 году; снимок 2019 года.",
+      "en": "The Astana Opera house opened in 2013. Behind it rises the new business district on the left bank of the Ishim, built after the capital moved here in 1997; the photo was taken in 2019."
+    },
+    "clue": {
+      "kk": "Бағаналы театр, шыны зәулім үйлер, ашық көк аспан.",
+      "ru": "Театр с колоннами, стеклянные высотки, ярко-синее небо.",
+      "en": "A colonnaded theatre, glass skyscrapers, a bright blue sky."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Астана_Опера",
+      "https://ru.wikipedia.org/wiki/Астана"
+    ],
+    "difficulty": 1,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "chimkent-nikolsky-cathedral-1915",
+    "pack": [
+      "kz"
+    ],
+    "year": 1915,
+    "lat": 42.317,
+    "lng": 69.596,
+    "place": {
+      "kk": "Шымкент",
+      "ru": "Чимкент (Шымкент)",
+      "en": "Chimkent (Shymkent)"
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B0%D1%84%D0%B5%D0%B4%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80_%D0%A8%D1%8B%D0%BC%D0%BA%D0%B5%D0%BD%D1%82.jpg",
+    "image_credit": {
+      "author": "Anonymous photographer from Russian Empire (before 1917) Public domain image (according to PD-Russia-expired)",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B0%D1%84%D0%B5%D0%B4%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80_%D0%A8%D1%8B%D0%BC%D0%BA%D0%B5%D0%BD%D1%82.jpg"
+    },
+    "title": {
+      "kk": "Шымкенттегі Никольский соборы",
+      "ru": "Никольский собор в Чимкенте",
+      "en": "St Nicholas Cathedral in Chimkent"
+    },
+    "explanation": {
+      "kk": "1915 жылдың көктеміндегі сурет: Шымкенттегі Никольский соборы. 1864 жылы Шымкентті орыс әскері алғаннан кейін қалада жаңа орыс бөлігі пайда болды, ол уездік қалаға айналды.",
+      "ru": "Снимок весны 1915 года: Никольский собор в Чимкенте. После того как в 1864 году город заняли русские войска, в нём вырос новый русский квартал, а Чимкент стал уездным городом.",
+      "en": "A spring 1915 photo of St Nicholas Cathedral in Chimkent. After Russian troops took the town in 1864, a new Russian quarter grew up and Chimkent became a district town."
+    },
+    "clue": {
+      "kk": "Қоңырау мұнарасы мен күмбездер, жапырақсыз ағаштар, ескі сурет.",
+      "ru": "Колокольня и купола, голые деревья, старый снимок.",
+      "en": "A bell tower and domes, bare trees, an old photo."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/File:Никольский_кафедральный_собор_Шымкент.jpg",
+      "https://ru.wikipedia.org/wiki/Шымкент"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "petropavlovsk-oblispolkom-1984",
+    "pack": [
+      "kz"
+    ],
+    "year": 1984,
+    "lat": 54.866,
+    "lng": 69.15,
+    "place": {
+      "kk": "Петропавл",
+      "ru": "Петропавловск",
+      "en": "Petropavlovsk (Petropavl)"
+    },
+    "image": "images/petropavlovsk-oblispolkom-1984.jpg",
+    "image_credit": {
+      "author": "ГАСКО. Ф. 158 « Личный фонд Бенюха М. И.».",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Administrative_building_of_the_North-Kazakhstan_regional_executive_committee_XX.jpg"
+    },
+    "title": {
+      "kk": "Солтүстік Қазақстан облатқару комитетінің ғимараты",
+      "ru": "Здание Северо-Казахстанского облисполкома",
+      "en": "North Kazakhstan regional executive committee building"
+    },
+    "explanation": {
+      "kk": "1984 жылғы Петропавл: Солтүстік Қазақстан облыстық атқару комитетінің ғимараты. Кеңес заманында облатқаркомдар облыстардағы жергілікті биліктің басты органы болды, бүгін олардың орнын әкімдіктер алды.",
+      "ru": "Петропавловск, 1984 год: здание Северо-Казахстанского облисполкома. В советское время облисполкомы были главными органами местной власти в областях, сегодня их роль выполняют акиматы.",
+      "en": "Petropavlovsk in 1984: the building of the North Kazakhstan regional executive committee. In Soviet times such committees were the main organs of local government; today regional akimats fill that role."
+    },
+    "clue": {
+      "kk": "Кеңестік әкімшілік ғимарат, «Жигули» көлігі, ақ-қара сурет.",
+      "ru": "Советское административное здание, «Жигули», чёрно-белый снимок.",
+      "en": "A Soviet administrative building, a Lada car, a black-and-white photo."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/File:The_Administrative_building_of_the_North-Kazakhstan_regional_executive_committee._1984.jpg",
+      "https://ru.wikipedia.org/wiki/Петропавловск"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "kokshetau-last-ussr-match-1991",
+    "pack": [
+      "kz"
+    ],
+    "year": 1991,
+    "lat": 53.283,
+    "lng": 69.383,
+    "place": {
+      "kk": "Көкшетау",
+      "ru": "Кокчетав (Кокшетау)",
+      "en": "Kokchetav (Kokshetau)"
+    },
+    "image": "images/kokshetau-last-ussr-match-1991.jpg",
+    "image_credit": {
+      "author": "StasiQ",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D0%BA%D1%87%D0%B5%D1%82%D0%B0%D0%B2,_%D1%81%D1%82%D0%B0%D0%B4%D0%B8%D0%BE%D0%BD_%22%D0%96%D0%B0%D1%81%D1%82%D0%B0%D1%80%22._%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%BE_%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%B5%D0%B3%D0%BE_%D0%BC%D0%B0%D1%82%D1%87%D0%B0_%22%D0%9A%D0%BE%D0%BA%D1%88%D0%B5%D1%82%D0%B0%D1%83%22_%D0%B2_%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%B0%D1%82%D0%B5_%D0%A1%D0%A1%D0%A1%D0%A0_%D0%BF%D0%BE_%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%83_(04.11.1991).jpg"
+    },
+    "title": {
+      "kk": "КСРО чемпионатындағы соңғы матч",
+      "ru": "Последний матч в чемпионате СССР",
+      "en": "The last match in the USSR championship"
+    },
+    "explanation": {
+      "kk": "1991 жылы «Жастар» стадионында «Көкшетау» командасы КСРО чемпионатындағы соңғы матчын ойнады. Сол жылы Кеңес Одағы ыдырап, келесі маусымнан бастап Қазақстан өз футбол чемпионатын өткізді.",
+      "ru": "1991 год: на стадионе «Жастар» команда «Кокшетау» играет свой последний матч в чемпионате СССР. В том же году Советский Союз распался, и со следующего сезона Казахстан проводил собственный футбольный чемпионат.",
+      "en": "1991: at the Zhastar stadium the Kokshetau team plays its last match in the USSR championship. That same year the Soviet Union collapsed, and from the next season Kazakhstan held its own football championship."
+    },
+    "clue": {
+      "kk": "Қарлы футбол алаңы, кеңестік табло, ескі сурет.",
+      "ru": "Футбольное поле в снегу, советское табло, старый снимок.",
+      "en": "A snowy football pitch, a Soviet scoreboard, an old photo."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/Category:1991_in_Kazakhstan",
+      "https://ru.wikipedia.org/wiki/Чемпионат_Казахстана_по_футболу_1992"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "pavlodar-tram-depot-2004",
+    "pack": [
+      "kz"
+    ],
+    "year": 2004,
+    "lat": 52.287,
+    "lng": 76.967,
+    "place": {
+      "kk": "Павлодар",
+      "ru": "Павлодар",
+      "en": "Pavlodar"
+    },
+    "image": "images/pavlodar-tram-depot-2004.jpg",
+    "image_credit": {
+      "author": "Makoska",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%B5_%D1%82%D1%80%D0%B0%D0%BC%D0%B2%D0%B0%D0%B9%D0%BD%D0%BE%D0%B5_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B4%D0%B0%D1%80%D0%B0,_2004_%D0%B3%D0%BE%D0%B4.jpg"
+    },
+    "title": {
+      "kk": "Павлодар трамвай басқармасы",
+      "ru": "Трамвайное управление Павлодара",
+      "en": "Pavlodar tram administration"
+    },
+    "explanation": {
+      "kk": "Павлодар – Қазақстанда трамвай әлі күнге дейін жүретін санаулы қалалардың бірі, оның желісінің ұзындығы шамамен 90 шақырым. Алматыда трамвай жабылғанда, Павлодарда ол қаланың басты көлігінің бірі болып қалды; сурет 2004 жылы түсірілген.",
+      "ru": "Павлодар — один из немногих городов Казахстана, где до сих пор ходит трамвай, длина сети около 90 километров. Когда в Алма-Ате трамвай закрыли, в Павлодаре он остался одним из главных видов городского транспорта; снимок 2004 года.",
+      "en": "Pavlodar is one of the few Kazakh cities where trams still run, on a network of about 90 kilometres. While Almaty's trams were shut down, in Pavlodar they remained a key form of city transport; the photo was taken in 2004."
+    },
+    "clue": {
+      "kk": "Трамвай сымдары мен рельстер, әкімшілік ғимарат, «Жигули».",
+      "ru": "Трамвайные провода и рельсы, административное здание, «Жигули».",
+      "en": "Tram wires and rails, an office building, a Lada car."
+    },
+    "sources": [
+      "https://inbusiness.kz/ru/last/pavlodar-tam-gde-zhivet-tramvaj",
+      "https://ru.wikipedia.org/wiki/Павлодарский_трамвай"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "oskemen-view-2005",
+    "pack": [
+      "kz"
+    ],
+    "year": 2005,
+    "lat": 49.948,
+    "lng": 82.628,
+    "place": {
+      "kk": "Өскемен",
+      "ru": "Усть-Каменогорск",
+      "en": "Ust-Kamenogorsk (Oskemen)"
+    },
+    "image": "images/oskemen-view-2005.jpg",
+    "image_credit": {
+      "author": "User Maonya on en.wikipedia",
+      "license": "CC BY 1.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ust1.jpg"
+    },
+    "title": {
+      "kk": "Өскемен көрінісі",
+      "ru": "Вид Усть-Каменогорска",
+      "en": "A view of Ust-Kamenogorsk"
+    },
+    "explanation": {
+      "kk": "Өскемен 1720 жылы Ертіс пен Үлбі өзендерінің құйылысында бекініс ретінде құрылды. Кеңес заманында ол түсті металлургияның – қорғасын, мырыш және титанның ірі орталығына айналды; сурет 2005 жылы түсірілген.",
+      "ru": "Усть-Каменогорск основан в 1720 году как крепость при слиянии Иртыша и Ульбы. В советское время он стал крупным центром цветной металлургии — свинца, цинка и титана; снимок 2005 года.",
+      "en": "Ust-Kamenogorsk was founded in 1720 as a fortress at the confluence of the Irtysh and Ulba rivers. In Soviet times it became a major centre of non-ferrous metallurgy: lead, zinc and titanium; the photo was taken in 2005."
+    },
+    "clue": {
+      "kk": "Көп қабатты үйлер, жасыл ағаштар, алыстағы таулар.",
+      "ru": "Многоэтажки, много зелени, горы на горизонте.",
+      "en": "Apartment blocks, lots of greenery, mountains on the horizon."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Усть-Каменогорск"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "karaganda-seifullin-theatre-2008",
+    "pack": [
+      "kz"
+    ],
+    "year": 2008,
+    "lat": 49.806,
+    "lng": 73.085,
+    "place": {
+      "kk": "Қарағанды",
+      "ru": "Караганда",
+      "en": "Karaganda"
+    },
+    "image": "images/karaganda-seifullin-theatre-2008.jpg",
+    "image_credit": {
+      "author": "Kaiyr",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D1%80%D0%B0%D0%B3%D0%B0%D0%BD%D0%B4%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%BD%D0%BE%D0%B9_%D0%BA%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D0%BA%D0%B8%D0%B9_%D0%B4%D1%80%D0%B0%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%82%D0%B5%D0%B0%D1%82%D1%80_%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8_%D0%A1.%D0%A1%D0%B5%D0%B9%D1%84%D1%83%D0%BB%D0%BB%D0%B8%D0%BD%D0%B0.jpg"
+    },
+    "title": {
+      "kk": "С. Сейфуллин атындағы драма театры",
+      "ru": "Драмтеатр имени Сакена Сейфуллина",
+      "en": "Saken Seifullin Drama Theatre"
+    },
+    "explanation": {
+      "kk": "Қарағанды облыстық қазақ драма театры қазақ ақыны әрі мемлекет қайраткері Сәкен Сейфуллиннің атымен аталған. Сейфуллин 1938 жылы саяси қуғын-сүргін кезінде атылған, кейін ақталған; сурет 2008 жылы түсірілген.",
+      "ru": "Карагандинский областной казахский драмтеатр носит имя поэта и государственного деятеля Сакена Сейфуллина. Сейфуллин был расстрелян в 1938 году во время репрессий и позже реабилитирован; снимок 2008 года.",
+      "en": "The Karaganda regional Kazakh drama theatre is named after poet and statesman Saken Seifullin. Seifullin was executed in 1938 during the purges and later rehabilitated; the photo was taken in 2008."
+    },
+    "clue": {
+      "kk": "Дөңгелек шыны фасад, қар, заманауи сурет.",
+      "ru": "Круглый стеклянный фасад, снег, современное фото.",
+      "en": "A round glass facade, snow, a modern photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Сейфуллин,_Сакен"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "almaty-presidential-election-2011",
+    "pack": [
+      "kz"
+    ],
+    "year": 2011,
+    "lat": 43.238,
+    "lng": 76.946,
+    "place": {
+      "kk": "Алматы",
+      "ru": "Алматы",
+      "en": "Almaty"
+    },
+    "image": "images/almaty-presidential-election-2011.jpg",
+    "image_credit": {
+      "author": "Молодёжная информационная служба Казахстана",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kazakhstan_Presidential_Elections-1.jpg"
+    },
+    "title": {
+      "kk": "2011 жылғы президент сайлауы",
+      "ru": "Президентские выборы 2011 года",
+      "en": "The 2011 presidential election"
+    },
+    "explanation": {
+      "kk": "2011 жылы 3 сәуірде Қазақстанда мерзімінен бұрын президент сайлауы өтті. Суретте Алматыдағы сайлау учаскесіндегі кезек; бұл сайлауда Нұрсұлтан Назарбаев қайта сайланды.",
+      "ru": "3 апреля 2011 года в Казахстане прошли досрочные президентские выборы. На снимке — очередь на избирательном участке в Алма-Ате; на этих выборах Нурсултан Назарбаев был переизбран.",
+      "en": "On 3 April 2011 Kazakhstan held an early presidential election. The photo shows a queue at a polling station in Almaty; Nursultan Nazarbayev was re-elected."
+    },
+    "clue": {
+      "kk": "Үстел басындағы кезек, құжаттар, 2010-жылдардың киімі.",
+      "ru": "Очередь у столов с документами, одежда 2010-х.",
+      "en": "A queue at tables with papers, 2010s clothing."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Президентские_выборы_в_Казахстане_(2011)"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "big-almaty-lake-2016",
+    "pack": [
+      "kz"
+    ],
+    "year": 2016,
+    "lat": 43.05,
+    "lng": 76.985,
+    "place": {
+      "kk": "Үлкен Алматы көлі",
+      "ru": "Большое Алматинское озеро",
+      "en": "Big Almaty Lake"
+    },
+    "image": "images/big-almaty-lake-2016.jpg",
+    "image_credit": {
+      "author": "Martin de Lusenet from Heemskerk, Netherlands",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Almaty_(2)_(30064026530).jpg"
+    },
+    "title": {
+      "kk": "Үлкен Алматы көлі",
+      "ru": "Большое Алматинское озеро",
+      "en": "Big Almaty Lake"
+    },
+    "explanation": {
+      "kk": "Үлкен Алматы көлі Іле Алатауында теңіз деңгейінен шамамен 2,5 шақырым биіктікте орналасқан. Көл Алматыны ауыз сумен қамтамасыз етеді, ал оның көгілдір түсі мұздық суының арқасында; сурет 2016 жылы түсірілген.",
+      "ru": "Большое Алматинское озеро лежит в Заилийском Алатау на высоте около 2,5 километра над уровнем моря. Оно снабжает Алматы питьевой водой, а бирюзовый цвет ему дают ледниковые воды; снимок 2016 года.",
+      "en": "Big Almaty Lake lies in the Trans-Ili Alatau at about 2.5 kilometres above sea level. It supplies Almaty with drinking water, and glacial meltwater gives it its turquoise colour; the photo was taken in 2016."
+    },
+    "clue": {
+      "kk": "Көгілдір таулы көл, қарлы шыңдар.",
+      "ru": "Бирюзовое горное озеро, снежные вершины.",
+      "en": "A turquoise mountain lake, snowy peaks."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Большое_Алматинское_озеро"
+    ],
+    "difficulty": 1,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "zhitikara-2016",
+    "pack": [
+      "kz"
+    ],
+    "year": 2016,
+    "lat": 52.19,
+    "lng": 61.2,
+    "place": {
+      "kk": "Жітіқара, Қостанай облысы",
+      "ru": "Житикара, Костанайская область",
+      "en": "Zhitikara, Kostanay region"
+    },
+    "image": "images/zhitikara-2016.jpg",
+    "image_credit": {
+      "author": "Talgautb",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%97%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%90%D0%9E_%D0%9A%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B5_%D0%BC%D0%B8%D0%BD%D0%B5%D1%80%D0%B0%D0%BB%D1%8B.jpg"
+    },
+    "title": {
+      "kk": "Жітіқарадағы «Қостанай минералдары»",
+      "ru": "«Костанайские минералы» в Житикаре",
+      "en": "Kostanay Minerals in Zhitikara"
+    },
+    "explanation": {
+      "kk": "Жітіқара – хризотил-асбест кен орнының маңында өскен шағын қала, «Қостанай минералдары» компаниясы – оның басты кәсіпорны. 2016 жылғы суретте компания ғимараты алдындағы алаңда мереке өтіп жатыр.",
+      "ru": "Житикара — небольшой город, выросший у месторождения хризотил-асбеста; компания «Костанайские минералы» — его главное предприятие. На снимке 2016 года — праздник на площади перед зданием компании.",
+      "en": "Zhitikara is a small town that grew up around a chrysotile asbestos deposit; the Kostanay Minerals company is its main employer. The 2016 photo shows a celebration on the square in front of the company building."
+    },
+    "clue": {
+      "kk": "Кеңсе ғимараты, алаңдағы адамдар, бұлтты аспан.",
+      "ru": "Офисное здание, люди на площади, пасмурное небо.",
+      "en": "An office building, people on a square, an overcast sky."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Житикара"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "kyzylorda-station-2022",
+    "pack": [
+      "kz"
+    ],
+    "year": 2022,
+    "lat": 44.848,
+    "lng": 65.482,
+    "place": {
+      "kk": "Қызылорда",
+      "ru": "Кызылорда",
+      "en": "Kyzylorda"
+    },
+    "image": "images/kyzylorda-station-2022.jpg",
+    "image_credit": {
+      "author": "Nikolai Bulykin",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%9A%D1%8B%D0%B7%D1%8B%D0%BB%D0%BE%D1%80%D0%B4%D0%B0,_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB.jpg"
+    },
+    "title": {
+      "kk": "Қызылорда вокзалы",
+      "ru": "Вокзал Кызылорды",
+      "en": "Kyzylorda railway station"
+    },
+    "explanation": {
+      "kk": "Қызылорда (бұрынғы Ақмешіт пен Перовск) 1925–1929 жылдары Қазақ АКСР-інің астанасы болды. Қала Орынбор – Ташкент темір жолының бойында орналасқан; сурет 2022 жылы түсірілген.",
+      "ru": "Кызылорда (бывшие Ак-Мечеть и Перовск) в 1925–1929 годах была столицей Казахской АССР. Город стоит на железной дороге Оренбург — Ташкент; снимок 2022 года.",
+      "en": "Kyzylorda (formerly Ak-Mechet and Perovsk) was the capital of the Kazakh ASSR in 1925–1929. The city lies on the Orenburg–Tashkent railway; the photo was taken in 2022."
+    },
+    "clue": {
+      "kk": "Ақ-сары вокзал ғимараты, заманауи көліктер, ашық аспан.",
+      "ru": "Бело-жёлтое здание вокзала, современные машины, ясное небо.",
+      "en": "A white-and-yellow station building, modern cars, a clear sky."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Кызылорда"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
   }
 ]
