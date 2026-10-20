@@ -1787,5 +1787,332 @@
     ],
     "difficulty": 3,
     "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "kazakhs-semipalatinsk-region-1879",
+    "pack": [
+      "kz",
+      "semey"
+    ],
+    "year": 1879,
+    "lat": 50.411,
+    "lng": 80.227,
+    "place": {
+      "kk": "Семей облысы",
+      "ru": "Семипалатинская область",
+      "en": "Semipalatinsk region"
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Kazakhs_19th_Century_1.jpg",
+    "image_credit": {
+      "author": "Поляков И. С. , Дудин С. М. имена остальных фотографов не известны. Polyakov I.S. , Dudin S.M. ,the names of other photographers are not known",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kazakhs_19th_Century_1.jpg"
+    },
+    "title": {
+      "kk": "Ұлттық киімдегі қазақтар",
+      "ru": "Казахи в национальной одежде",
+      "en": "Kazakhs in traditional dress"
+    },
+    "explanation": {
+      "kk": "1879 жылы Семей облысында түсірілген ерлі-зайыптылардың портреті. XIX ғасырдағы саяхатшылар мен ғалымдар қазақтардың киімі мен тұрмысын суретке түсіріп, кейінгі ұрпаққа құнды деректер қалдырды.",
+      "ru": "Портрет мужчины и женщины, снятый в Семипалатинской области в 1879 году. Путешественники и учёные XIX века фотографировали одежду и быт казахов и оставили ценные свидетельства для потомков.",
+      "en": "A portrait of a man and a woman taken in Semipalatinsk region in 1879. Nineteenth-century travellers and scholars photographed Kazakh dress and daily life, leaving valuable records for later generations."
+    },
+    "clue": {
+      "kk": "Ақ кимешек, терімен әшекейленген шапан және ерте студиялық портрет.",
+      "ru": "Белый кимешек, шапан с меховой отделкой и ранний студийный портрет.",
+      "en": "A white kimeshek headdress, a fur-trimmed chapan and an early studio portrait."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/File:Kazakhs_19th_Century_1.jpg"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "dudin-kazakh-family-1899",
+    "pack": [
+      "kz",
+      "semey"
+    ],
+    "year": 1899,
+    "lat": 50.411,
+    "lng": 80.227,
+    "place": {
+      "kk": "Семей облысы",
+      "ru": "Семипалатинская область",
+      "en": "Semipalatinsk region"
+    },
+    "image": "images/dudin-kazakh-family-1899.jpg",
+    "image_credit": {
+      "author": "Дудин С. М., Де-Лазари Константин Николаевич.имена остальных фотографов не известно. Dudin S.M., De-Lazari Konstantin Nikolaevich. The names of other photographers are not known.",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kazakhs_19th_Century_7.jpg"
+    },
+    "title": {
+      "kk": "Ауқатты қазақ әйелі балаларымен",
+      "ru": "Состоятельная казашка с детьми",
+      "en": "A wealthy Kazakh woman with her children"
+    },
+    "explanation": {
+      "kk": "Бұл суретті 1899 жылы Семей облысында этнограф әрі фотограф Самуил Дудин түсірген. Дудин қазақ даласында көп жүріп, халықтың тұрмысы мен киімін бейнелейтін жүздеген фотосурет жасады.",
+      "ru": "Снимок сделал в 1899 году в Семипалатинской области этнограф и фотограф Самуил Дудин. Он много ездил по казахской степи и создал сотни фотографий быта и одежды местных жителей.",
+      "en": "The photo was taken in 1899 in Semipalatinsk region by ethnographer and photographer Samuil Dudin. He travelled widely across the Kazakh steppe and made hundreds of photographs of local life and dress."
+    },
+    "clue": {
+      "kk": "Әшекейлі киімдер, балалар және XIX ғасыр соңындағы портрет.",
+      "ru": "Нарядная одежда с украшениями, дети и портрет конца XIX века.",
+      "en": "Ornate clothing, children and a late 19th-century portrait."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/File:Kazakhs_19th_Century_7.jpg",
+      "https://ru.wikipedia.org/wiki/Дудин,_Самуил_Мартынович"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "koyandy-fair-1910s",
+    "pack": [
+      "kz"
+    ],
+    "year": 1910,
+    "lat": 49.868,
+    "lng": 75.671,
+    "place": {
+      "kk": "Қоянды жәрмеңкесі, Қарқаралы маңы",
+      "ru": "Кояндинская ярмарка, близ Каркаралинска",
+      "en": "Koyandy Fair, near Karkaralinsk"
+    },
+    "image": "images/koyandy-fair-1910s.jpg",
+    "image_credit": {
+      "author": "Фото-издательство Ирик, Семипалатинск",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Arrival_to_Koyandino-Botovskaya_Fair.tif"
+    },
+    "title": {
+      "kk": "Қоянды жәрмеңкесіне келу",
+      "ru": "Прибытие на Кояндинскую ярмарку",
+      "en": "Arriving at the Koyandy Fair"
+    },
+    "explanation": {
+      "kk": "Қарқаралы маңындағы Қоянды (Ботов) жәрмеңкесі қазақ даласындағы ең ірі жәрмеңкелердің бірі болды: мұнда мал, жүн, тері және өнеркәсіп тауарлары сатылды. Бұл ашықхат 1910-жылдарда шыққан.",
+      "ru": "Кояндинская (Ботовская) ярмарка под Каркаралинском была одной из крупнейших в казахской степи: здесь торговали скотом, шерстью, кожами и фабричными товарами. Открытка относится к 1910-м годам.",
+      "en": "The Koyandy (Botov) Fair near Karkaralinsk was one of the largest fairs in the Kazakh steppe, trading livestock, wool, hides and manufactured goods. This postcard dates from the 1910s."
+    },
+    "clue": {
+      "kk": "Киіз үйлер, түйелер мен арбалар, ескі ашықхат.",
+      "ru": "Юрты, верблюды и повозки, старая почтовая открытка.",
+      "en": "Yurts, camels and carts on an old postcard."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Кояндинская_ярмарка"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "kokshetau-railway-station-1952",
+    "pack": [
+      "kz"
+    ],
+    "year": 1952,
+    "lat": 53.288,
+    "lng": 69.422,
+    "place": {
+      "kk": "Көкшетау",
+      "ru": "Кокчетав (Кокшетау)",
+      "en": "Kokchetav (Kokshetau)"
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/First_Railway_Station_in_Kokshetau%2C_Kazakhstan.jpg",
+    "image_credit": {
+      "author": "Unknown author",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:First_Railway_Station_in_Kokshetau,_Kazakhstan.jpg"
+    },
+    "title": {
+      "kk": "Көкшетаудың алғашқы теміржол вокзалы",
+      "ru": "Первый вокзал Кокчетава",
+      "en": "Kokchetav's first railway station"
+    },
+    "explanation": {
+      "kk": "1952 жылғы сурет: Көкшетаудағы алғашқы теміржол вокзалы. 1944 жылы Көкшетау облыс орталығы болды, ал 1950-жылдары тың игеру басталғанда қала солтүстік Қазақстанның маңызды көлік торабына айналды.",
+      "ru": "Снимок 1952 года: первый железнодорожный вокзал Кокчетава. В 1944 году город стал областным центром, а с началом освоения целины в 1950-х превратился в важный транспортный узел Северного Казахстана.",
+      "en": "A 1952 photo of Kokchetav's first railway station. The town became a regional centre in 1944, and with the Virgin Lands campaign of the 1950s it grew into an important transport hub of northern Kazakhstan."
+    },
+    "clue": {
+      "kk": "Бір қабатты вокзал ғимараты, кеңестік ақ-қара сурет.",
+      "ru": "Одноэтажное здание вокзала, советский чёрно-белый снимок.",
+      "en": "A single-storey station building, a Soviet black-and-white photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Кокшетау",
+      "https://ru.wikipedia.org/wiki/Кокчетавская_область"
+    ],
+    "difficulty": 3,
+    "verified_by": ""
+  },
+  {
+    "id": "chagan-air-base-1965",
+    "pack": [
+      "kz",
+      "semey"
+    ],
+    "year": 1965,
+    "lat": 50.533,
+    "lng": 79.183,
+    "place": {
+      "kk": "Шаған әуе базасы, Семей маңы",
+      "ru": "Авиабаза Чаган, под Семипалатинском",
+      "en": "Chagan Air Base, near Semipalatinsk"
+    },
+    "image": "images/chagan-air-base-1965.jpg",
+    "image_credit": {
+      "author": "Unknown author",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chagan_Air_Base_1965.jpg"
+    },
+    "title": {
+      "kk": "Шаған әуе базасы ғарыштан",
+      "ru": "Авиабаза Чаган из космоса",
+      "en": "Chagan Air Base from space"
+    },
+    "explanation": {
+      "kk": "Семей маңындағы Шаған (Долон) – алыс қашықтықтағы стратегиялық бомбалаушылардың кеңестік базасы, ол Семей ядролық полигонымен байланысты болды. 1965 жылы қазанда оны американың KH-7 барлау спутнигі суретке түсірді.",
+      "ru": "Чаган (Долонь) под Семипалатинском — советская база стратегических бомбардировщиков дальней авиации, связанная с Семипалатинским ядерным полигоном. В октябре 1965 года её сфотографировал американский разведывательный спутник KH-7.",
+      "en": "Chagan (Dolon) near Semipalatinsk was a Soviet base for long-range strategic bombers, linked to the Semipalatinsk nuclear test site. In October 1965 it was photographed by an American KH-7 reconnaissance satellite."
+    },
+    "clue": {
+      "kk": "Жоғарыдан түсірілген ұзын ұшу-қону жолағы, ақ-қара спутник суреті.",
+      "ru": "Длинная взлётная полоса сверху, чёрно-белый спутниковый снимок.",
+      "en": "A long runway from above, a black-and-white satellite image."
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chagan_Air_Base"
+    ],
+    "difficulty": 3,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "leninsk-baikonur-1975",
+    "pack": [
+      "kz"
+    ],
+    "year": 1975,
+    "lat": 45.63,
+    "lng": 63.304,
+    "place": {
+      "kk": "Ленинск (Байқоңыр қаласы)",
+      "ru": "Ленинск (город Байконур)",
+      "en": "Leninsk (Baikonur city)"
+    },
+    "image": "images/leninsk-baikonur-1975.jpg",
+    "image_credit": {
+      "author": "Vyacheslav Argenberg / Transfer from A. S.",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%A1%D0%A1%D0%A0,_1975,_%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D1%81%D0%BA,_%D0%91%D0%B0%D0%B9%D0%BA%D0%BE%D0%BD%D1%83%D1%80,_%D0%A1%D1%82%D0%B5%D0%BB%D0%B0_%D0%9D%D0%B0%D1%83%D0%BA%D0%B0_%D0%B8_%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D1%81,_Leninsk,_Baikonur,_Soviet_Union.jpg"
+    },
+    "title": {
+      "kk": "Ленинск қаласы",
+      "ru": "Город Ленинск",
+      "en": "The town of Leninsk"
+    },
+    "explanation": {
+      "kk": "Ленинск – ғарыш айлағына қызмет көрсететін адамдар тұрған жабық қала, ол 1995 жылы Байқоңыр болып аталды. 1975 жылғы сурет «Ғылым мен ғарыш» стеласын көрсетеді.",
+      "ru": "Ленинск — закрытый город, где жили люди, обслуживавшие космодром; в 1995 году его переименовали в Байконур. На снимке 1975 года — стела «Наука и космос».",
+      "en": "Leninsk was a closed town where the cosmodrome's staff lived; in 1995 it was renamed Baikonur. This 1975 photo shows the 'Science and Space' stele."
+    },
+    "clue": {
+      "kk": "Ғарыш тақырыбындағы ескерткіш және 1970-жылдардың түсті суреті.",
+      "ru": "Памятник на космическую тему и цветное фото 1970-х.",
+      "en": "A space-themed monument and a 1970s colour photo."
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Байконур_(город)"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "pavlodar-pioneer-camp-1978",
+    "pack": [
+      "kz"
+    ],
+    "year": 1978,
+    "lat": 52.287,
+    "lng": 76.967,
+    "place": {
+      "kk": "Павлодар маңы, Ертіс өзені",
+      "ru": "Под Павлодаром, река Иртыш",
+      "en": "Near Pavlodar, Irtysh River"
+    },
+    "image": "images/pavlodar-pioneer-camp-1978.jpg",
+    "image_credit": {
+      "author": "Фёдор Фёдорович Любезнов",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%9B%D1%8E%D0%B1%D0%B5%D0%B7%D0%BD%D0%BE%D0%B2-%D0%BF%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D0%B9-%D0%BB%D0%B0%D0%B3%D0%B5%D1%80%D1%8C.jpg"
+    },
+    "title": {
+      "kk": "Ертіс жағасындағы пионер лагері",
+      "ru": "Пионерский лагерь на Иртыше",
+      "en": "A Pioneer camp on the Irtysh"
+    },
+    "explanation": {
+      "kk": "1978 жылы шілдеде Павлодар маңындағы Ертіс жағасында орналасқан пионер лагері. Кеңес заманында мектеп оқушылары жазғы демалысты осындай лагерьлерде өткізетін.",
+      "ru": "Июль 1978 года, пионерский лагерь на берегу Иртыша под Павлодаром. В советское время школьники проводили летние каникулы в таких лагерях.",
+      "en": "July 1978: a Pioneer camp on the bank of the Irtysh near Pavlodar. In Soviet times schoolchildren spent their summer holidays in camps like this."
+    },
+    "clue": {
+      "kk": "Пионер галстуктары, өзен жағасы және 1970-жылдардың түсті суреті.",
+      "ru": "Пионерские галстуки, берег реки и цветное фото 1970-х.",
+      "en": "Pioneer neckerchiefs, a riverbank and a 1970s colour photo."
+    },
+    "sources": [
+      "https://commons.wikimedia.org/wiki/File:Любезнов-пионерский-лагерь.jpg",
+      "https://ru.wikipedia.org/wiki/Павлодар"
+    ],
+    "difficulty": 2,
+    "verified_by": "Claude (сверено по источникам)"
+  },
+  {
+    "id": "semey-suspension-bridge-2005",
+    "pack": [
+      "kz",
+      "semey"
+    ],
+    "year": 2005,
+    "lat": 50.42,
+    "lng": 80.27,
+    "place": {
+      "kk": "Семей, Ертіс өзені",
+      "ru": "Семей, река Иртыш",
+      "en": "Semey, Irtysh River"
+    },
+    "image": "images/semey-suspension-bridge-2005.jpg",
+    "image_credit": {
+      "author": "Evgeny Gerashchenko",
+      "license": "CC BY 2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Semipalatinsk_Bridge.jpg"
+    },
+    "title": {
+      "kk": "Семейдегі аспалы көпір",
+      "ru": "Подвесной мост в Семее",
+      "en": "The suspension bridge in Semey"
+    },
+    "explanation": {
+      "kk": "Ертіс арқылы өтетін 750 метрлік аспалы көпір 2000 жылдың қазанында пайдалануға берілді, оны жапон және түрік компаниялары салды. Көпір Семейдің символына айналды; сурет 2005 жылы түсірілген.",
+      "ru": "Подвесной мост через Иртыш длиной 750 метров сдали в октябре 2000 года, его строили при участии японских и турецких компаний. Мост стал символом Семея; снимок сделан в 2005 году.",
+      "en": "The 750-metre suspension bridge across the Irtysh opened in October 2000, built with Japanese and Turkish companies. It became a symbol of Semey; the photo was taken in 2005."
+    },
+    "clue": {
+      "kk": "Биік пилондар мен аспалы арқандар, кең өзен.",
+      "ru": "Высокие пилоны, ванты и широкая река.",
+      "en": "Tall pylons, suspension cables and a wide river."
+    },
+    "sources": [
+      "https://tengrinews.kz/kazakhstan_news/simvolu-semeya-podvesnomu-mostu-irtyish-trebuetsya-polnaya-466226/"
+    ],
+    "difficulty": 1,
+    "verified_by": "Claude (сверено по источникам)"
   }
 ]
