@@ -54,7 +54,7 @@ interface TunnelEntry {
 const TUNNEL = tunnel as TunnelEntry[];
 const TUNNEL_IMAGES = TUNNEL.map((e) => ({ src: import.meta.env.BASE_URL + e.image, title: e.title }));
 
-// written by scripts/import_monument_lists.py, so the counter needs no thousand points loaded
+// written by scripts/import_monuments.py, so the counter needs no points loaded
 const MONUMENTS = monumentsMeta.count;
 
 const STEPS: TextItem[] = [
@@ -78,14 +78,7 @@ const SOURCES: SourceItem[] = [
     name: 'Әділет (adilet.zan.kz)',
     license: 'Official acts',
     what: 'srcAdilet',
-    url: 'https://adilet.zan.kz',
-  },
-  {
-    id: 'egov',
-    name: 'data.egov.kz',
-    license: 'Open data',
-    what: 'srcEgov',
-    url: 'https://data.egov.kz/datasets/view?index=respublikalyk_manyzy_bar_tarih',
+    url: 'https://adilet.zan.kz/rus/docs/G25KS000318',
   },
   { id: 'ne', name: 'Natural Earth', license: 'Public domain', what: 'srcNaturalEarth', url: 'https://www.naturalearthdata.com' },
   {

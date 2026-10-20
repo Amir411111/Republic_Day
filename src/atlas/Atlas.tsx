@@ -40,11 +40,12 @@ interface Monument {
   lng: number;
   name: KkRu;
   type: KkRu;
-  district: KkRu;
   region: KkRu;
   // location as worded in the list
   place: KkRu;
-  // true when placed at the settlement named in the description, not by coordinates
+  // how the point was found: the list itself gives addresses, not coordinates
+  how: 'osm' | 'address' | 'settlement';
+  // true when the point is the settlement or street rather than the object itself
   approx: boolean;
   kind: MonumentKind;
   // the act or dataset this point comes from
@@ -206,7 +207,7 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
     [period, showEvents, showPhotos],
   );
 
-  // ~1000+ points from open data and the state lists: loaded only when the layer is switched on
+  // the state list of monuments of republican significance: loaded only when the layer is switched on
   useEffect(() => {
     if (showMon && !monuments)
       import('../../content/monuments.json').then((m) => setMonuments(m.default as Monument[]));
@@ -300,7 +301,7 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
 
     if (sel.type === 'monument') {
       const [m, ...more] = sel.mons;
-      const place = [ml(m.district), ml(m.region)].filter(Boolean).join(', ');
+      const place = ml(m.region);
       return (
         <Panel key={`m${m.id}`} onClose={close} color={MONUMENT_COLORS[m.kind]}>
           {more.length > 0 && (
@@ -322,12 +323,17 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
             ))}
           </ol>
           <p className="mt-2 text-sm text-muted-foreground">{place}</p>
-          {m.approx && <p className="mt-2 text-xs leading-relaxed text-primary/90">≈ {t('monApproxNote')}</p>}
-          <p className="mt-3 text-xs text-muted-foreground">
+          {m.approx && (
+            <p className="mt-2 text-xs leading-relaxed text-primary/90">
+              ≈ {t(m.how === 'address' ? 'monApproxAddress' : 'monApproxNote')}
+            </p>
+          )}
+          <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
             {t('monumentsSource')}:{' '}
             <a href={m.source} target="_blank" rel="noreferrer">
-              {new URL(m.source).hostname}
+              {t('monumentsList')}
             </a>
+            {` · ${t('monCoords')}: OpenStreetMap`}
           </p>
         </Panel>
       );

@@ -9,7 +9,7 @@
 - Карточки в `content/cards.json`, картинки в `content/images/` (Vite отдаёт `content/` как статику, путь в карточке: `images/<file>`)
 - События карты истории и режимов «Ханы и битвы» / «Вид со спутника» в `content/events.json` (`era` — id эпохи из `content/periods.json`, `approx: true` — место примерное, год до н.э. — отрицательный, такие события только на карте)
 - Эпохи и их контуры: `content/periods.json`, `content/geo/eras/*.geojson`; граница и области: `content/geo/`; заметки по областям: `content/regions.json`
-- Памятники Костанайской области с data.egov.kz: `content/monuments-kostanay.json` (`python3 scripts/import_monuments.py`)
+- Памятники республиканского значения (государственный список 2025 года, Әділет G25KS000318): `content/monuments.json`, импорт `python3 scripts/import_monuments.py` (см. описание в начале скрипта)
 - Прогресс в localStorage, без базы данных
 - Деплой: Vercel, ИИ-гид в `api/guide.ts` (Claude API, модель `claude-opus-5-5`), ключ `ANTHROPIC_API_KEY` только в переменных окружения Vercel. Без ключа гид отвечает поиском по базе игры прямо в браузере (`src/guide/`)
 - Квест по Семею: маршрут в `content/quest-semey.json`, экран в `src/quest/`

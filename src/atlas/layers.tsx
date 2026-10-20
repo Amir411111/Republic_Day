@@ -113,7 +113,7 @@ export function RegionsLayer({ selectedId }: { selectedId: string | null }) {
 
 export const MONUMENT_LAYER_ID = 'monuments';
 
-// Classes from the Law on historical and cultural heritage; set by scripts/import_monument_lists.py
+// Classes from the Law on historical and cultural heritage; set by scripts/import_monuments.py
 export const MONUMENT_KINDS = ['archaeology', 'architecture', 'monumental', 'ensemble', 'sacral', 'history', 'other'] as const;
 export type MonumentKind = (typeof MONUMENT_KINDS)[number];
 
@@ -135,8 +135,8 @@ const COLOR_BY_KIND = [
   MONUMENT_COLORS.other,
 ] as unknown as ExpressionSpecification;
 
-// Several thousand points: one GeoJSON layer, filtered on the GPU instead of DOM markers.
-// Approximate sites (placed at the settlement named in the list) are drawn as hollow rings.
+// One GeoJSON layer, filtered on the GPU instead of DOM markers.
+// Approximate sites (placed at a settlement or street, not the object) are drawn as hollow rings.
 export function MonumentsLayer({
   data,
   kinds,
@@ -155,11 +155,11 @@ export function MonumentsLayer({
         type="circle"
         filter={showApprox ? byKind : ['all', byKind, ['!', approx]]}
         paint={{
-          'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 2.8, 8, 5, 12, 8],
+          'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 4.5, 8, 7, 12, 10],
           'circle-color': COLOR_BY_KIND,
           'circle-opacity': ['case', approx, 0.15, 0.9],
           'circle-stroke-color': ['case', approx, COLOR_BY_KIND, '#070d18'],
-          'circle-stroke-width': ['case', approx, 1.4, 1],
+          'circle-stroke-width': ['case', approx, 1.8, 1.2],
         }}
       />
     </Source>
