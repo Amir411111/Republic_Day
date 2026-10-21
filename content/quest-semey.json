@@ -1,62 +1,588 @@
 [
-{
- "id": "yamyshev-gate", "lat": 50.40937, "lng": 80.23899,
- "title": {"kk": "Ямышев қақпасы", "ru": "Ямышевские ворота", "en": "Yamyshev Gate"},
- "story": {
-  "kk": "Семей 1718 жылы Ертіс бойындағы бекініс ретінде құрылды. Ямышев қақпасы – сол бекіністен сақталған жалғыз бөлік, ол 1776 жылмен белгіленеді. 1970 жылы қақпаны бөлшектеп, Ертіске 50 метр жақын жерге қайта құрастырды.",
-  "ru": "Семипалатинск основан в 1718 году как крепость на Иртыше. Ямышевские ворота — единственная сохранившаяся часть крепости, они датируются 1776 годом. В 1970 году ворота разобрали и собрали заново на 50 метров ближе к Иртышу.",
-  "en": "Semipalatinsk was founded in 1718 as a fortress on the Irtysh. The Yamyshev Gate, dated 1776, is the only surviving part of the fortress. In 1970 it was taken apart and rebuilt 50 metres closer to the river."
- },
- "question": {"kk": "Семей бекінісі қай жылы құрылды?", "ru": "В каком году основана Семипалатинская крепость?", "en": "When was the Semipalatinsk fortress founded?"},
- "options": ["1718", "1776", "1854"], "answer": 0,
- "sources": ["https://archaeology.kz/en/heritages/yamyshev-bekinis-qaqpasy"]
-},
-{
- "id": "abai-museum", "lat": 50.40998, "lng": 80.25451,
- "title": {"kk": "Абай мұражайы", "ru": "Музей Абая", "en": "Abai Museum"},
- "story": {
-  "kk": "Абай Құнанбайұлының әдеби-мемориалдық мұражайы 1940 жылы ашылды. Оның құрамына Абай 1855–1859 жылдары оқыған Ахмет Риза медресесі кіреді.",
-  "ru": "Литературно-мемориальный музей Абая Кунанбаева открылся в 1940 году. В его комплекс входит медресе Ахмета Ризы, где Абай учился в 1855–1859 годах.",
-  "en": "The Abai Kunanbayev literary memorial museum opened in 1940. It includes the Akhmet Riza madrasa, where Abai studied in 1855–1859."
- },
- "question": {"kk": "Абай қай медреседе оқыды?", "ru": "В каком медресе учился Абай?", "en": "Which madrasa did Abai study at?"},
- "options": ["Ахмет Риза", "Мир-Араб", "Көкелташ"], "answer": 0,
- "sources": ["https://www.inform.kz/ru/kak-rabotal-muzey-abaya-v-semee-v-gody-voyny_a3647931", "https://kazakhstan.travel/en/attractions/563"]
-},
-{
- "id": "shakarim-monument", "lat": 50.40909, "lng": 80.2518,
- "title": {"kk": "Шәкәрім ескерткіші", "ru": "Памятник Шакариму", "en": "Shakarim Monument"},
- "story": {
-  "kk": "Шәкәрім Құдайбердіұлы (1858–1931) – ақын, философ, Абайдың інісі әрі шәкірті. 1931 жылы ол саяси қуғын-сүргін кезінде өлтірілді, кейін ақталды; бүгін оның шығармалары қазақ әдебиетінің алтын қорында.",
-  "ru": "Шакарим Кудайбердиулы (1858–1931) — поэт и философ, племянник и ученик Абая. В 1931 году он был убит во время репрессий и позже реабилитирован; сегодня его произведения — золотой фонд казахской литературы.",
-  "en": "Shakarim Kudaiberdiuly (1858–1931) was a poet and philosopher, Abai's nephew and disciple. He was killed in 1931 during the repressions and later rehabilitated; his works are now classics of Kazakh literature."
- },
- "question": {"kk": "Шәкәрім Абайға кім болып келеді?", "ru": "Кем Шакарим приходился Абаю?", "en": "How was Shakarim related to Abai?"},
- "options": {"kk": ["Інісі әрі шәкірті", "Ұстазы", "Ұлы"], "ru": ["Племянник и ученик", "Учитель", "Сын"], "en": ["Nephew and disciple", "Teacher", "Son"]}, "answer": 0,
- "sources": ["https://ru.wikipedia.org/wiki/Кудайбердиев,_Шакарим"]
-},
-{
- "id": "dostoevsky-museum", "lat": 50.40445, "lng": 80.2523,
- "title": {"kk": "Достоевский мұражайы", "ru": "Музей Достоевского", "en": "Dostoevsky Museum"},
- "story": {
-  "kk": "Фёдор Достоевский каторгадан кейін Семейде шамамен бес жыл әскери қызметте болды. Ол тұрған үйде 1971 жылы 7 мамырда әдеби-мемориалдық мұражай ашылды. Мұнда ол Шоқан Уәлихановпен дос болған.",
-  "ru": "После каторги Фёдор Достоевский около пяти лет служил в Семипалатинске. В доме, где он жил, 7 мая 1971 года открыли литературно-мемориальный музей. Здесь же он дружил с Чоканом Валихановым.",
-  "en": "After penal servitude Fyodor Dostoevsky served in Semipalatinsk for about five years. A literary memorial museum opened in the house where he lived on 7 May 1971. Here he befriended Shokan Valikhanov."
- },
- "question": {"kk": "Достоевский Семейде қай қазақ ғалымымен дос болды?", "ru": "С каким казахским учёным дружил Достоевский в Семипалатинске?", "en": "Which Kazakh scholar did Dostoevsky befriend in Semipalatinsk?"},
- "options": {"kk": ["Шоқан Уәлиханов", "Ыбырай Алтынсарин", "Әлихан Бөкейхан"], "ru": ["Чокан Валиханов", "Ибрай Алтынсарин", "Алихан Букейханов"], "en": ["Shokan Valikhanov", "Ibrai Altynsarin", "Alikhan Bukeikhanov"]}, "answer": 0,
- "sources": ["https://www.inform.kz/ru/istoriya-doma-dostoevskogo-muzey-vserdtse-semeya-bc524d"]
-},
-{
- "id": "stronger-than-death", "lat": 50.392785, "lng": 80.262501,
- "title": {"kk": "«Өлімнен де күшті» монументі", "ru": "Монумент «Сильнее смерти»", "en": "'Stronger than Death' monument"},
- "story": {
-  "kk": "Семей ядролық полигонындағы сынақтар құрбандарына арналған монумент 2001 жылы 29 тамызда – полигон жабылғанына 10 жыл толған күні Полковничий аралында ашылды.",
-  "ru": "Мемориал жертвам ядерных испытаний на Семипалатинском полигоне открыли 29 августа 2001 года — через 10 лет после закрытия полигона — на острове Полковничьем.",
-  "en": "The memorial to the victims of nuclear testing at the Semipalatinsk site opened on 29 August 2001, ten years after the site closed, on Polkovnichy Island."
- },
- "question": {"kk": "Семей полигоны қай жылы жабылды?", "ru": "В каком году закрыли Семипалатинский полигон?", "en": "When was the Semipalatinsk test site closed?"},
- "options": ["1989", "1991", "2001"], "answer": 1,
- "sources": ["https://ru.wikipedia.org/wiki/Сильнее_смерти", "https://ru.wikipedia.org/wiki/Семипалатинский_испытательный_полигон"]
-}
+  {
+    "id": "yamyshev-gate",
+    "lat": 50.40937,
+    "lng": 80.23899,
+    "title": {
+      "kk": "Ямышев қақпасы",
+      "ru": "Ямышевские ворота",
+      "en": "Yamyshev Gate"
+    },
+    "story": {
+      "kk": "Семей 1718 жылы Ертіс бойындағы бекініс ретінде құрылды. Ямышев қақпасы – сол бекіністен сақталған жалғыз бөлік, ол 1776 жылмен белгіленеді. 1970 жылы қақпаны бөлшектеп, Ертіске 50 метр жақын жерге қайта құрастырды.",
+      "ru": "Семипалатинск основан в 1718 году как крепость на Иртыше. Ямышевские ворота — единственная сохранившаяся часть крепости, они датируются 1776 годом. В 1970 году ворота разобрали и собрали заново на 50 метров ближе к Иртышу.",
+      "en": "Semipalatinsk was founded in 1718 as a fortress on the Irtysh. The Yamyshev Gate, dated 1776, is the only surviving part of the fortress. In 1970 it was taken apart and rebuilt 50 metres closer to the river."
+    },
+    "question": {
+      "kk": "Семей бекінісі қай жылы құрылды?",
+      "ru": "В каком году основана Семипалатинская крепость?",
+      "en": "When was the Semipalatinsk fortress founded?"
+    },
+    "options": [
+      "1718",
+      "1854",
+      "1776"
+    ],
+    "answer": 0,
+    "year": {
+      "answer": 1776,
+      "min": 1700,
+      "max": 1900
+    },
+    "yearQuestion": {
+      "kk": "Ямышев қақпасы қай жылмен белгіленеді?",
+      "ru": "Каким годом датируются Ямышевские ворота?",
+      "en": "What year are the Yamyshev Gates dated to?"
+    },
+    "detail": {
+      "question": {
+        "kk": "Қақпа қандай пішінде салынған?",
+        "ru": "Какую форму имеют ворота?",
+        "en": "What shape are the gates?"
+      },
+      "options": {
+        "kk": [
+          "Ағаш шарбақ",
+          "Күмбез шатырлы үлкен арка",
+          "Дөңгелек мұнара"
+        ],
+        "ru": [
+          "Деревянный частокол",
+          "Большая арка с купольной крышей",
+          "Круглая башня"
+        ],
+        "en": [
+          "A wooden palisade",
+          "A large arch with a domed roof",
+          "A round tower"
+        ]
+      },
+      "answer": 1,
+      "sources": [
+        "https://archaeology.kz/en/heritages/yamyshev-bekinis-qaqpasy"
+      ]
+    },
+    "sources": [
+      "https://archaeology.kz/en/heritages/yamyshev-bekinis-qaqpasy"
+    ]
+  },
+  {
+    "id": "governor-house",
+    "lat": 50.40574,
+    "lng": 80.24583,
+    "title": {
+      "kk": "Губернатор үйі",
+      "ru": "Дом губернатора",
+      "en": "Governor's House"
+    },
+    "story": {
+      "kk": "Әскери губернатордың үйі шамамен 1856 жылы салынған, сәулетшісі белгісіз. Төңкерістен кейін ол Бостандық үйі деп аталды, ал бүгін мұнда облыстық тарихи-өлкетану мұражайы орналасқан. Мұражайды 1883 жылы саяси жер аударылғандар құрды, оның қорын толықтыруға Абай, Шәкәрім және Мұхтар Әуезов үлес қосты.",
+      "ru": "Дом военного губернатора построен, предположительно, в 1856 году, архитектор неизвестен. После революции его переименовали в Дом свободы, а сегодня здесь областной историко-краеведческий музей. Музей основали в 1883 году политические ссыльные, а пополнять его коллекцию помогали Абай, Шакарим и Мухтар Ауэзов.",
+      "en": "The military governor's house was probably built in 1856; its architect is unknown. After the revolution it was renamed the House of Freedom, and today it holds the regional history museum. The museum was founded in 1883 by political exiles, and Abai, Shakarim and Mukhtar Auezov helped build its collection."
+    },
+    "question": {
+      "kk": "Төңкерістен кейін губернатор үйі қалай аталды?",
+      "ru": "Как назвали дом губернатора после революции?",
+      "en": "What was the governor's house called after the revolution?"
+    },
+    "options": {
+      "kk": [
+        "Көпес үйі",
+        "Бостандық үйі",
+        "Кеңестер үйі"
+      ],
+      "ru": [
+        "Купеческий дом",
+        "Дом свободы",
+        "Дом Советов"
+      ],
+      "en": [
+        "Merchant's House",
+        "House of Freedom",
+        "House of Soviets"
+      ]
+    },
+    "answer": 1,
+    "year": {
+      "answer": 1883,
+      "min": 1800,
+      "max": 2000
+    },
+    "yearQuestion": {
+      "kk": "Қазір осы үйде орналасқан өлкетану мұражайы қай жылы құрылды?",
+      "ru": "В каком году основан краеведческий музей, который сейчас работает в этом доме?",
+      "en": "In which year was the local history museum now housed here founded?"
+    },
+    "detail": {
+      "question": {
+        "kk": "Ғимарат неше қабатты?",
+        "ru": "Сколько этажей у здания?",
+        "en": "How many storeys does the building have?"
+      },
+      "options": [
+        "3",
+        "2",
+        "1"
+      ],
+      "answer": 2,
+      "sources": [
+        "https://archaeology.kz/en/heritages/gubernator-uii",
+        "https://welcome.kz/en/info-cities/abay-region/semej/oblastnoj-istoriko-kraevedcheskij-muzej-goroda-semej"
+      ]
+    },
+    "sources": [
+      "https://archaeology.kz/en/heritages/gubernator-uii",
+      "https://kazakhstan.travel/en/attractions/564",
+      "https://adilet.zan.kz/rus/docs/G25KS000318"
+    ]
+  },
+  {
+    "id": "dostoevsky-museum",
+    "lat": 50.40445,
+    "lng": 80.2523,
+    "title": {
+      "kk": "Достоевский мұражайы",
+      "ru": "Музей Достоевского",
+      "en": "Dostoevsky Museum"
+    },
+    "story": {
+      "kk": "Фёдор Достоевский каторгадан кейін Семейде шамамен бес жыл әскери қызметте болды. Ол тұрған үйде 1971 жылы 7 мамырда әдеби-мемориалдық мұражай ашылды. Мұнда ол Шоқан Уәлихановпен дос болған.",
+      "ru": "После каторги Фёдор Достоевский около пяти лет служил в Семипалатинске. В доме, где он жил, 7 мая 1971 года открыли литературно-мемориальный музей. Здесь же он дружил с Чоканом Валихановым.",
+      "en": "After penal servitude Fyodor Dostoevsky served in Semipalatinsk for about five years. A literary memorial museum opened in the house where he lived on 7 May 1971. Here he befriended Shokan Valikhanov."
+    },
+    "question": {
+      "kk": "Достоевский Семейде қай қазақ ғалымымен дос болды?",
+      "ru": "С каким казахским учёным дружил Достоевский в Семипалатинске?",
+      "en": "Which Kazakh scholar did Dostoevsky befriend in Semipalatinsk?"
+    },
+    "options": {
+      "kk": [
+        "Әлихан Бөкейхан",
+        "Ыбырай Алтынсарин",
+        "Шоқан Уәлиханов"
+      ],
+      "ru": [
+        "Алихан Букейханов",
+        "Ибрай Алтынсарин",
+        "Чокан Валиханов"
+      ],
+      "en": [
+        "Alikhan Bukeikhanov",
+        "Ibrai Altynsarin",
+        "Shokan Valikhanov"
+      ]
+    },
+    "answer": 2,
+    "year": {
+      "answer": 1838,
+      "min": 1750,
+      "max": 1950
+    },
+    "yearQuestion": {
+      "kk": "Достоевский тұрған үй қай жылы салынған?",
+      "ru": "В каком году построен дом, где жил Достоевский?",
+      "en": "In which year was the house where Dostoevsky lived built?"
+    },
+    "detail": {
+      "question": {
+        "kk": "Достоевский тұрған ескі үй неден салынған?",
+        "ru": "Из чего построен старый дом, где жил Достоевский?",
+        "en": "What is the old house where Dostoevsky lived built of?"
+      },
+      "options": {
+        "kk": [
+          "Ағаштан",
+          "Кірпіштен",
+          "Тастан"
+        ],
+        "ru": [
+          "Из дерева",
+          "Из кирпича",
+          "Из камня"
+        ],
+        "en": [
+          "Wood",
+          "Brick",
+          "Stone"
+        ]
+      },
+      "answer": 0,
+      "sources": [
+        "https://archaeology.kz/en/heritages/717-poshtashy-lipuhinnin-uii"
+      ]
+    },
+    "then": "dostoevsky-valikhanov-1858",
+    "sources": [
+      "https://www.inform.kz/ru/istoriya-doma-dostoevskogo-muzey-vserdtse-semeya-bc524d"
+    ]
+  },
+  {
+    "id": "aniyar-house",
+    "lat": 50.40699,
+    "lng": 80.2562,
+    "title": {
+      "kk": "Әнияр Молдабаевтың үйі",
+      "ru": "Дом Анияра Молдабаева",
+      "en": "Aniyar Moldabaev's House"
+    },
+    "story": {
+      "kk": "Екі қабатты үй көпес Москвиннің меншігінде болған, ал XIX ғасырдың соңында оны Абайдың шәкірті Әнияр Молдабаев ақынның көмегімен сатып алды. Абай Семейге келгенде әрдайым дерлік осында тоқтайтын, ал ХХ ғасырдың басында бұл үйде Алаш көшбасшылары Ахмет Байтұрсынұлы, Әлихан Бөкейхан және Міржақып Дулатұлы болған. 1997 жылдың қыркүйегінде Мұхтар Әуезовтің 100 жылдығына орай мұнда «Алаш арыстары – Мұхтар Әуезов» мұражайы ашылды.",
+      "ru": "Двухэтажный дом принадлежал купцу Москвину, а в конце XIX века его с помощью Абая купил ученик поэта Анияр Молдабаев. Приезжая в Семипалатинск, Абай почти всегда останавливался здесь, а в начале XX века в доме бывали лидеры «Алаша» Ахмет Байтурсынов, Алихан Букейханов и Миржакып Дулатов. В сентябре 1997 года, к 100-летию Мухтара Ауэзова, здесь открыли музей «Алаш арыстары — Мухтар Ауэзов».",
+      "en": "The two-storey house belonged to the merchant Moskvin; at the end of the 19th century Abai's student Aniyar Moldabaev bought it with the poet's help. Abai almost always stayed here when he came to Semipalatinsk, and in the early 20th century Alash leaders Akhmet Baitursynov, Alikhan Bokeikhanov and Mirzhakyp Dulatov visited the house. In September 1997, for Mukhtar Auezov's centenary, the 'Alash Arystary – Mukhtar Auezov' museum opened here."
+    },
+    "question": {
+      "kk": "Әнияр Молдабаев Абайдың кімі болған?",
+      "ru": "Кем Анияр Молдабаев приходился Абаю?",
+      "en": "Who was Aniyar Moldabaev to Abai?"
+    },
+    "options": {
+      "kk": [
+        "Шәкірті",
+        "Ұстазы",
+        "Әкесі"
+      ],
+      "ru": [
+        "Учеником",
+        "Учителем",
+        "Отцом"
+      ],
+      "en": [
+        "His student",
+        "His teacher",
+        "His father"
+      ]
+    },
+    "answer": 0,
+    "year": {
+      "answer": 1997,
+      "min": 1900,
+      "max": 2025
+    },
+    "yearQuestion": {
+      "kk": "Бұл үйде «Алаш арыстары – Мұхтар Әуезов» мұражайы қай жылы ашылды?",
+      "ru": "В каком году в доме открыли музей «Алаш арыстары — Мухтар Ауэзов»?",
+      "en": "In which year did the 'Alash Arystary – Mukhtar Auezov' museum open in this house?"
+    },
+    "detail": {
+      "question": {
+        "kk": "Үй неше қабатты?",
+        "ru": "Сколько этажей в доме?",
+        "en": "How many storeys does the house have?"
+      },
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "sources": [
+        "https://kazpravda.kz/n/tayna-pisma-abaya/",
+        "https://astanatimes.com/2018/11/semey-a-historic-city-abundant-with-museums/"
+      ]
+    },
+    "sources": [
+      "https://kazpravda.kz/n/tayna-pisma-abaya/",
+      "https://kazpravda.kz/n/zdes-byl-abay/",
+      "https://astanatimes.com/2018/11/semey-a-historic-city-abundant-with-museums/",
+      "https://adilet.zan.kz/rus/docs/G25KS000318"
+    ]
+  },
+  {
+    "id": "akhmet-riza-madrasa",
+    "lat": 50.40957,
+    "lng": 80.25487,
+    "title": {
+      "kk": "Ахмет Риза медресесі",
+      "ru": "Медресе Ахмета Ризы",
+      "en": "Akhmet Riza Madrasa"
+    },
+    "story": {
+      "kk": "Медресені діни ойшыл, шығыс әдебиетінің білгірі Ахмет Риза ашқан, 1855–1859 жылдары мұнда жас Абай оқыды. Ғимарат бұрын Солдатская (қазіргі Найманбаев) көшесінде тұрған, кеңес заманында тұрғын үйге айналдырылған. 1992 жылы медресені Абай мұражайының аумағына көшіру туралы шешім қабылданды: әр арқалық нөмірленіп, 1995 жылы ғимарат өзгеріссіз қайта құрастырылды.",
+      "ru": "Медресе основал религиозный мыслитель и знаток восточной литературы Ахмет Риза, в 1855–1859 годах здесь учился юный Абай. Здание стояло на улице Солдатской (ныне Найманбаева), в советское время его переделали в жилой дом. В 1992 году медресе решили перенести к музею Абая: каждую балку пронумеровали, и в 1995 году здание собрали заново без изменений.",
+      "en": "The madrasa was founded by Akhmet Riza, a religious thinker and expert in Eastern literature; young Abai studied here in 1855–1859. It originally stood on Soldatskaya Street (now Naimanbaev Street) and in Soviet times was turned into a dwelling. In 1992 it was decided to move it to the Abai Museum: every beam was numbered, and by 1995 the building had been reassembled unchanged."
+    },
+    "question": {
+      "kk": "1992–1995 жылдары медресемен не істелді?",
+      "ru": "Что сделали с медресе в 1992–1995 годах?",
+      "en": "What happened to the madrasa in 1992–1995?"
+    },
+    "options": {
+      "kk": [
+        "Кірпіштен жаңадан салынды",
+        "Абай мұражайының аумағына көшірілді",
+        "Мешітке айналдырылды"
+      ],
+      "ru": [
+        "Заново построили из кирпича",
+        "Перенесли к музею Абая",
+        "Превратили в мечеть"
+      ],
+      "en": [
+        "It was rebuilt in brick",
+        "It was moved to the Abai Museum",
+        "It was turned into a mosque"
+      ]
+    },
+    "answer": 1,
+    "year": {
+      "answer": 1995,
+      "min": 1900,
+      "max": 2025
+    },
+    "yearQuestion": {
+      "kk": "Медресені Абай мұражайына көшіру жұмыстары қай жылы аяқталды?",
+      "ru": "В каком году завершили перенос медресе к музею Абая?",
+      "en": "In which year was the move of the madrasa to the Abai Museum completed?"
+    },
+    "detail": {
+      "question": {
+        "kk": "Медресенің ескі есігіне (ол қазір бір залда сақтаулы) шәкірттер не ойып жазған?",
+        "ru": "Что шакирды вырезали на старой двери медресе (она хранится в одном из залов)?",
+        "en": "What did students carve into the old madrasa door (now kept in one of the halls)?"
+      },
+      "options": {
+        "kk": [
+          "Емтихан күндерін",
+          "Қаланың картасын",
+          "Өз есімдерін"
+        ],
+        "ru": [
+          "Даты экзаменов",
+          "Карту города",
+          "Свои имена"
+        ],
+        "en": [
+          "Exam dates",
+          "A map of the city",
+          "Their own names"
+        ]
+      },
+      "answer": 2,
+      "sources": [
+        "https://kazpravda.kz/n/zdes-byl-abay/"
+      ]
+    },
+    "sources": [
+      "https://kazpravda.kz/n/zdes-byl-abay/",
+      "https://archaeology.kz/en/heritages/ahmet-riza-medresesi"
+    ]
+  },
+  {
+    "id": "abai-museum",
+    "lat": 50.40998,
+    "lng": 80.25451,
+    "title": {
+      "kk": "Абай мұражайы",
+      "ru": "Музей Абая",
+      "en": "Abai Museum"
+    },
+    "story": {
+      "kk": "Абай Құнанбайұлының әдеби-мемориалдық мұражайы 1940 жылы ашылды. Оның құрамына Абай 1855–1859 жылдары оқыған Ахмет Риза медресесі кіреді.",
+      "ru": "Литературно-мемориальный музей Абая Кунанбаева открылся в 1940 году. В его комплекс входит медресе Ахмета Ризы, где Абай учился в 1855–1859 годах.",
+      "en": "The Abai Kunanbayev literary memorial museum opened in 1940. It includes the Akhmet Riza madrasa, where Abai studied in 1855–1859."
+    },
+    "question": {
+      "kk": "Абай қай медреседе оқыды?",
+      "ru": "В каком медресе учился Абай?",
+      "en": "Which madrasa did Abai study at?"
+    },
+    "options": [
+      "Мир-Араб",
+      "Көкелташ",
+      "Ахмет Риза"
+    ],
+    "answer": 2,
+    "detail": {
+      "question": {
+        "kk": "Мұражай аумағындағы ескерткіште Абай кіммен бірге бейнеленген?",
+        "ru": "С кем изображён Абай в памятнике на территории музея?",
+        "en": "Who is shown with Abai in the monument on the museum grounds?"
+      },
+      "options": {
+        "kk": [
+          "Ұлдары Ақылбай және Тұрағұлмен",
+          "Шәкәрім және Мұхтар Әуезовпен",
+          "Әкесі Құнанбаймен"
+        ],
+        "ru": [
+          "С сыновьями Акылбаем и Турагулом",
+          "С Шакаримом и Мухтаром Ауэзовым",
+          "С отцом Кунанбаем"
+        ],
+        "en": [
+          "His sons Akylbai and Turagul",
+          "Shakarim and Mukhtar Auezov",
+          "His father Kunanbai"
+        ]
+      },
+      "answer": 0,
+      "sources": [
+        "https://www.zakon.kz/kultura-shoubiz/5044010-tokaev-otkryl-pamyatnik-abayu-v-semee.html",
+        "https://newtimes.kz/vlast/118740-prezident-prinial-uchastie-v-tseremonii-otkrytiia-pamiatnika-abaiu-v-semee"
+      ]
+    },
+    "sources": [
+      "https://www.inform.kz/ru/kak-rabotal-muzey-abaya-v-semee-v-gody-voyny_a3647931",
+      "https://kazakhstan.travel/en/attractions/563"
+    ]
+  },
+  {
+    "id": "shakarim-monument",
+    "lat": 50.40909,
+    "lng": 80.2518,
+    "title": {
+      "kk": "Шәкәрім ескерткіші",
+      "ru": "Памятник Шакариму",
+      "en": "Shakarim Monument"
+    },
+    "story": {
+      "kk": "Шәкәрім Құдайбердіұлы (1858–1931) – ақын, философ, Абайдың інісі әрі шәкірті. 1931 жылы ол саяси қуғын-сүргін кезінде өлтірілді, кейін ақталды; бүгін оның шығармалары қазақ әдебиетінің алтын қорында.",
+      "ru": "Шакарим Кудайбердиулы (1858–1931) — поэт и философ, племянник и ученик Абая. В 1931 году он был убит во время репрессий и позже реабилитирован; сегодня его произведения — золотой фонд казахской литературы.",
+      "en": "Shakarim Kudaiberdiuly (1858–1931) was a poet and philosopher, Abai's nephew and disciple. He was killed in 1931 during the repressions and later rehabilitated; his works are now classics of Kazakh literature."
+    },
+    "question": {
+      "kk": "Шәкәрім Абайға кім болып келеді?",
+      "ru": "Кем Шакарим приходился Абаю?",
+      "en": "How was Shakarim related to Abai?"
+    },
+    "options": {
+      "kk": [
+        "Інісі әрі шәкірті",
+        "Ұлы",
+        "Ұстазы"
+      ],
+      "ru": [
+        "Племянник и ученик",
+        "Сын",
+        "Учитель"
+      ],
+      "en": [
+        "Nephew and disciple",
+        "Son",
+        "Teacher"
+      ]
+    },
+    "answer": 0,
+    "year": {
+      "answer": 1858,
+      "min": 1800,
+      "max": 1950
+    },
+    "yearQuestion": {
+      "kk": "Шәкәрім қай жылы туған?",
+      "ru": "В каком году родился Шакарим?",
+      "en": "In which year was Shakarim born?"
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Кудайбердиев,_Шакарим"
+    ]
+  },
+  {
+    "id": "two-minaret-mosque",
+    "lat": 50.40147,
+    "lng": 80.2623,
+    "title": {
+      "kk": "Екі мұнаралы мешіт",
+      "ru": "Двухминаретная мечеть",
+      "en": "Two-Minaret Mosque"
+    },
+    "story": {
+      "kk": "Екі мұнаралы мешіт 1856–1862 жылдары семейлік көпестердің қаражатына салынды, жобасына түрік мешіттерінің ерекшеліктері негіз болды. Кеңес заманында мешіт жабылып, 1975 жылдан бастап ғимаратта көрме залы жұмыс істеді. 1995 жылы ол діндарларға қайтарылды, бүгін мешіт қайтадан өз мақсатында қызмет етеді.",
+      "ru": "Двухминаретную мечеть построили в 1856–1862 годах на средства семипалатинских купцов, за основу проекта взяли черты турецких мечетей. В советское время мечеть закрыли, а с 1975 года в здании работал выставочный зал. В 1995 году её вернули верующим, и сегодня она снова действует.",
+      "en": "The Two-Minaret Mosque was built in 1856–1862 with money from Semipalatinsk merchants, and its design drew on Turkish mosques. In Soviet times it was closed, and from 1975 the building housed an exhibition hall. In 1995 it was returned to believers and is a working mosque again."
+    },
+    "question": {
+      "kk": "1975 жылдан бастап мешіт ғимаратында не болды?",
+      "ru": "Что находилось в здании мечети с 1975 года?",
+      "en": "What was in the mosque building from 1975?"
+    },
+    "options": {
+      "kk": [
+        "Мектеп",
+        "Көрме залы",
+        "Астық қоймасы"
+      ],
+      "ru": [
+        "Школа",
+        "Выставочный зал",
+        "Зернохранилище"
+      ],
+      "en": [
+        "A school",
+        "An exhibition hall",
+        "A grain store"
+      ]
+    },
+    "answer": 1,
+    "year": {
+      "answer": 1862,
+      "min": 1750,
+      "max": 1950
+    },
+    "yearQuestion": {
+      "kk": "Екі мұнаралы мешіттің құрылысы қай жылы аяқталды?",
+      "ru": "В каком году достроили Двухминаретную мечеть?",
+      "en": "In which year was the Two-Minaret Mosque completed?"
+    },
+    "detail": {
+      "question": {
+        "kk": "Мешіттің неше күмбезі бар?",
+        "ru": "Сколько куполов у мечети?",
+        "en": "How many domes does the mosque have?"
+      },
+      "options": [
+        "2",
+        "3",
+        "1"
+      ],
+      "answer": 2,
+      "sources": [
+        "https://archaeology.kz/en/heritages/semei-qalasyndagy-eki-munaraly-meshit"
+      ]
+    },
+    "sources": [
+      "https://archaeology.kz/en/heritages/semei-qalasyndagy-eki-munaraly-meshit",
+      "https://adilet.zan.kz/rus/docs/G25KS000318"
+    ]
+  },
+  {
+    "id": "stronger-than-death",
+    "lat": 50.392785,
+    "lng": 80.262501,
+    "title": {
+      "kk": "«Өлімнен де күшті» монументі",
+      "ru": "Монумент «Сильнее смерти»",
+      "en": "'Stronger than Death' monument"
+    },
+    "story": {
+      "kk": "Семей ядролық полигонындағы сынақтар құрбандарына арналған монумент 2001 жылы 29 тамызда – полигон жабылғанына 10 жыл толған күні Полковничий аралында ашылды.",
+      "ru": "Мемориал жертвам ядерных испытаний на Семипалатинском полигоне открыли 29 августа 2001 года — через 10 лет после закрытия полигона — на острове Полковничьем.",
+      "en": "The memorial to the victims of nuclear testing at the Semipalatinsk site opened on 29 August 2001, ten years after the site closed, on Polkovnichy Island."
+    },
+    "question": {
+      "kk": "Семей полигоны қай жылы жабылды?",
+      "ru": "В каком году закрыли Семипалатинский полигон?",
+      "en": "When was the Semipalatinsk test site closed?"
+    },
+    "options": [
+      "2001",
+      "1989",
+      "1991"
+    ],
+    "answer": 2,
+    "year": {
+      "answer": 1949,
+      "min": 1900,
+      "max": 2000
+    },
+    "yearQuestion": {
+      "kk": "Семей полигонында алғашқы ядролық сынақ қай жылы өтті?",
+      "ru": "В каком году на Семипалатинском полигоне провели первое ядерное испытание?",
+      "en": "In which year was the first nuclear test carried out at the Semipalatinsk site?"
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Сильнее_смерти",
+      "https://ru.wikipedia.org/wiki/Семипалатинский_испытательный_полигон"
+    ]
+  }
 ]
