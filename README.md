@@ -4,6 +4,8 @@
 
 Веб-игра об истории Казахстана для Republic Day Hackathon, трек 1 «Тарих тірілді». Игрок видит настоящую архивную фотографию, картину или документ, ставит год на ползунке и точку на карте Казахстана, а потом читает разбор события с источниками. Кроме игры есть интерактивная карта истории от саков до наших дней, ИИ-гид и пешеходный квест по Семею. Интерфейс на казахском, русском и английском.
 
+**Играть:** https://republic-day-nu.vercel.app/ · **Репозиторий:** https://github.com/Dulat-maker/Republic_Day
+
 ![Главная страница](docs/screenshots/02-landing-hero.jpg)
 
 | | |
@@ -44,7 +46,7 @@
 ### Запуск за три команды
 
 ```bash
-git clone https://github.com/Amir411111/Republic_Day.git
+git clone https://github.com/Dulat-maker/Republic_Day.git
 cd Republic_Day
 npm install
 npm run dev
