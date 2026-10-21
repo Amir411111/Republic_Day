@@ -232,6 +232,21 @@ def distance_km(text):
     return best
 
 
+DISTRICT = re.compile(r"([А-ЯЁӘҒҚҢӨҰҮҺІ][а-яёәғқңөұүһі-]+?)(?:ский|ской|ского|ск)? район|район ([А-ЯЁӘҒҚҢӨҰҮҺІ][\w-]+)")
+
+
+def district_key(text):
+    """First letters of the district named in a description ("Созакский район" -> "созак"), or ""."""
+    m = DISTRICT.search(text)
+    name = (m.group(1) or m.group(2)) if m else ""
+    return name.lower().translate(KZ_TO_RU)[:5] if len(name) >= 4 else ""
+
+
+def in_district(display_name, key):
+    """OpenStreetMap's address line mentions the district (in Russian or Kazakh spelling)."""
+    return not key or key in display_name.lower().translate(KZ_TO_RU).replace("ё", "е")
+
+
 class Geocoder:
     def __init__(self, online):
         self.online = online
@@ -251,7 +266,8 @@ class Geocoder:
                 hits = json.loads(urllib.request.urlopen(req, timeout=60).read())
             except OSError:
                 return None
-            self.cache[query] = [[float(h["lat"]), float(h["lon"]), h.get("class", ""), h.get("type", ""), h.get("name", "")] for h in hits]
+            self.cache[query] = [[float(h["lat"]), float(h["lon"]), h.get("class", ""), h.get("type", ""), h.get("name", ""),
+                                  h.get("display_name", "")] for h in hits]
             self.asked += 1
             if self.asked % 50 == 0:
                 self.save()
@@ -275,10 +291,13 @@ class Geocoder:
             if not m or distance_km(flat) > MAX_KM_FROM_SETTLEMENT:
                 return None
             queries = [f"{m.group(1)}, {act['region']['ru']}", m.group(1)]
+        # a village name repeats across the country: when the description names a district, stay in it
+        key = "" if city else district_key(flat)
         for q in queries:
-            for lat, lng, cls, typ, *_ in self.lookup(q) or []:
+            for lat, lng, cls, typ, *rest in self.lookup(q) or []:
+                display = rest[1] if len(rest) > 1 else ""
                 if cls in ("place", "boundary", "highway", "building", "amenity", "tourism", "historic", "landuse") \
-                        and in_regions(lat, lng, act["geo"]):
+                        and in_regions(lat, lng, act["geo"]) and in_district(display, key):
                     return round(lat, 5), round(lng, 5)
         return None
 
@@ -314,6 +333,8 @@ STOP = {
     "могила", "архитекторы", "архитектор", "скульптор", "мастера", "города", "город", "улица", "годы", "года",
     "века", "век", "имени", "казахской", "республики", "казахстан", "казахстана", "государственный", "наскальные",
     "изображения", "петроглифы", "купца", "церкви", "дома",
+    # parts of many saints' names: "Баба ата", "Айша биби" - not distinctive on their own
+    "баба", "биби", "бибі", "әулие", "аулие",
 }
 
 
@@ -325,7 +346,7 @@ def search_name(name):
 
 
 def tokens(text):
-    words = re.findall(r"[а-яёa-z0-9-]{4,}", text.lower().translate(KZ_TO_RU).replace("ё", "е"))
+    words = re.findall(r"[а-яёa-z0-9]{4,}", text.lower().translate(KZ_TO_RU).replace("ё", "е"))
     return {w[:5] for w in words if w not in STOP}
 
 
@@ -343,7 +364,7 @@ def distinct_name(name):
     return " ".join(keep)
 
 
-def from_osm(names, region_ru, geo_ids, geo):
+def from_osm(names, region_ru, geo_ids, geo, place=""):
     """An OpenStreetMap object named like the monument (Russian or Kazakh name), inside its region."""
     want = set().union(*(tokens(search_name(n)) for n in names if n))
     if not want:
@@ -357,7 +378,8 @@ def from_osm(names, region_ru, geo_ids, geo):
             hit_name = rest[0] if rest else ""
             # necropolises are mapped as cemeteries, remote sites as named localities
             kind_ok = cls in OSM_OBJECT or (cls, typ) in {("landuse", "cemetery"), ("place", "locality")}
-            if kind_ok and in_regions(lat, lng, geo_ids) and tokens(hit_name) & want:
+            display = rest[1] if len(rest) > 1 else ""
+            if kind_ok and in_regions(lat, lng, geo_ids) and tokens(hit_name) & want and in_district(display, district_key(place)):
                 return round(lat, 5), round(lng, 5)
     return None
 
@@ -478,7 +500,7 @@ def main():
             }
             how = None
             # the Kazakh name keeps letters like қ and ұ, which OpenStreetMap names often use
-            o = from_osm([r["name"], k.get("name", "")], region["ru"], geo_ids, geo)
+            o = from_osm([r["name"], k.get("name", "")], region["ru"], geo_ids, geo, r["place"])
             w = None if o else from_wikidata([r["name"], k.get("name", "")], geo_ids, wd)
             if o:
                 (lat, lng), approx, how = o, False, "osm"
