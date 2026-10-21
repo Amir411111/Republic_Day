@@ -3,6 +3,7 @@ import Map, { AttributionControl, NavigationControl, type MapRef } from 'react-m
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useI18n } from '../i18n';
 import { FLAT_STYLE, KZ_BOUNDS, PIXEL_RATIO, TERRAIN_STYLE } from '../map/styles';
+import { addMapImages } from './layers';
 import type { Period } from './periods';
 
 type Status = 'loading' | 'ready' | 'failed';
@@ -65,7 +66,10 @@ export default function MapCanvas({ period, interactiveLayerIds, onFeatureClick,
           const hit = e.features?.[0];
           onFeatureClick?.(hit ? hit.layer.id : null, hit ? (hit.properties as Record<string, unknown>) : null);
         }}
-        onLoad={() => {
+        // images are part of the style: add them again whenever a style (3D relief on/off) loads
+        onStyleData={(e) => addMapImages(e.target)}
+        onLoad={(e) => {
+          addMapImages(e.target);
           setStatus('ready');
           // compact attribution starts expanded and would sit over the era title; keep it as the (i) button
           ref.current

@@ -55,7 +55,8 @@ const TUNNEL = tunnel as TunnelEntry[];
 const TUNNEL_IMAGES = TUNNEL.map((e) => ({ src: import.meta.env.BASE_URL + e.image, title: e.title }));
 
 // written by scripts/import_monuments.py, so the counter needs no points loaded
-const MONUMENTS = monumentsMeta.count;
+// the size of the state list; the map shows the ones with a reliable point (monumentsMeta.count)
+const MONUMENTS = monumentsMeta.listed;
 
 const STEPS: TextItem[] = [
   { id: 'look', icon: Image, title: 'step1Title', text: 'step1Text' },
@@ -79,6 +80,13 @@ const SOURCES: SourceItem[] = [
     license: 'Official acts',
     what: 'srcAdilet',
     url: 'https://adilet.zan.kz/rus/docs/G25KS000318',
+  },
+  {
+    id: 'egov',
+    name: 'data.egov.kz',
+    license: 'Open data',
+    what: 'srcEgov',
+    url: 'https://data.egov.kz/datasets/view?index=respublikalyk_manyzy_bar_tarih',
   },
   { id: 'ne', name: 'Natural Earth', license: 'Public domain', what: 'srcNaturalEarth', url: 'https://www.naturalearthdata.com' },
   {

@@ -165,3 +165,70 @@ export function MonumentsLayer({
     </Source>
   );
 }
+
+export const EVENT_LAYER_ID = 'items-event';
+export const PHOTO_LAYER_ID = 'items-photo';
+
+// A lozenge, as in Kazakh ornament, as a signed-distance image: drawn and coloured on the GPU
+// like any other layer, instead of one DOM element per point moved on every frame.
+const DIAMOND = (() => {
+  const size = 48;
+  const c = (size - 1) / 2;
+  const r = size * 0.36;
+  const data = new Uint8Array(size * size * 4);
+  for (let y = 0; y < size; y++)
+    for (let x = 0; x < size; x++) {
+      const d = Math.abs(x - c) + Math.abs(y - c);
+      // MapLibre reads the alpha of an SDF image as distance: 192 is the edge
+      data[(y * size + x) * 4 + 3] = Math.max(0, Math.min(255, Math.round(192 + (r - d) * 16)));
+    }
+  return { width: size, height: size, data };
+})();
+
+export function addMapImages(map: { hasImage(id: string): boolean; addImage(id: string, img: typeof DIAMOND, o: { sdf: boolean }): void }) {
+  if (!map.hasImage('diamond')) map.addImage('diamond', DIAMOND, { sdf: true });
+}
+
+// Events and photos of the current era. `active` marks the selected point.
+export function ItemsLayer({ data, color }: { data: FeatureCollection; color: string }) {
+  const active: ExpressionSpecification = ['==', ['get', 'active'], true];
+  return (
+    <Source id="items" type="geojson" data={data}>
+      {/* a thin ring around events whose exact site is unknown */}
+      <Layer
+        id="items-approx"
+        type="circle"
+        filter={['all', ['==', ['get', 'kind'], 'event'], ['==', ['get', 'approx'], true]]}
+        paint={{ 'circle-radius': 14, 'circle-opacity': 0, 'circle-stroke-color': color, 'circle-stroke-width': 1, 'circle-stroke-opacity': 0.7 }}
+      />
+      <Layer
+        id={PHOTO_LAYER_ID}
+        type="circle"
+        filter={['==', ['get', 'kind'], 'photo']}
+        paint={{
+          'circle-radius': ['case', active, 7, 4.5],
+          'circle-color': '#e9eef7',
+          'circle-stroke-color': color,
+          'circle-stroke-width': 2,
+        }}
+      />
+      <Layer
+        id={EVENT_LAYER_ID}
+        type="symbol"
+        filter={['==', ['get', 'kind'], 'event']}
+        layout={{
+          'icon-image': 'diamond',
+          'icon-size': ['case', active, 0.75, 0.5],
+          'icon-allow-overlap': true,
+          'icon-ignore-placement': true,
+          'symbol-sort-key': ['case', active, 1, 0],
+        }}
+        paint={{
+          'icon-color': ['case', active, color, 'rgba(7,13,24,0.85)'],
+          'icon-halo-color': color,
+          'icon-halo-width': 2.5,
+        }}
+      />
+    </Source>
+  );
+}

@@ -1,7 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { Camera, Landmark, List, MessageCircle, Mountain, X } from 'lucide-react';
+import { Camera, Database, Landmark, List, MessageCircle, Mountain, X } from 'lucide-react';
 import { useEffect, useMemo, useState, type ReactNode } from 'react';
-import { Marker } from 'react-map-gl/maplibre';
 import type { FeatureCollection } from 'geojson';
 import regionsRaw from '../../content/regions.json';
 import { ALL_CARDS, imageUrl, isVerified } from '../game/cards';
@@ -15,17 +14,21 @@ import { TopBar } from '../ui/TopBar';
 import { EVENTS, yearLabel, type HistEvent } from './events';
 import {
   CountryOutline,
+  EVENT_LAYER_ID,
   EraOverlay,
+  ItemsLayer,
   MONUMENT_COLORS,
   MONUMENT_KINDS,
   MONUMENT_LAYER_ID,
   ModernWithin,
   MonumentsLayer,
+  PHOTO_LAYER_ID,
   REGION_LAYER_ID,
   RegionsLayer,
   type MonumentKind,
 } from './layers';
 import MapCanvas, { type Camera as Cam } from './MapCanvas';
+import { monumentPhoto, type MonumentPhoto } from './monumentPhoto';
 import { PERIODS, formatRange, periodById, periodOfYear, type PeriodId } from './periods';
 import Timeline from './Timeline';
 
@@ -35,7 +38,8 @@ interface KkRu {
 }
 
 interface Monument {
-  id: number;
+  // a number in the state list, or "egov-N" for the data.egov.kz layer
+  id: number | string;
   lat: number;
   lng: number;
   name: KkRu;
@@ -44,7 +48,7 @@ interface Monument {
   // location as worded in the list
   place: KkRu;
   // how the point was found: the list itself gives addresses, not coordinates
-  how: 'osm' | 'wikidata' | 'address' | 'settlement';
+  how: 'osm' | 'wikidata' | 'address' | 'settlement' | 'egov';
   // true when the point is the settlement or street rather than the object itself
   approx: boolean;
   kind: MonumentKind;
@@ -82,7 +86,8 @@ function loadTerrain(): boolean {
   } catch {
     /* storage unavailable */
   }
-  return window.innerWidth >= 1024;
+  // off by default: the 3D relief is the heaviest part of the map
+  return false;
 }
 
 // Text events and photo cards share the map and the era list
@@ -181,6 +186,33 @@ function Panel({ children, onClose, color }: { children: ReactNode; onClose: () 
   );
 }
 
+// Commons photo for a monument card; nothing at all when no trustworthy photo is found
+function MonumentImage({ name, lat, lng, approx }: { name: string; lat: number; lng: number; approx: boolean }) {
+  const { t } = useI18n();
+  const [photo, setPhoto] = useState<MonumentPhoto | null | undefined>(undefined);
+  useEffect(() => {
+    let live = true;
+    setPhoto(undefined);
+    monumentPhoto({ name, at: { lat, lng }, approx }).then((p) => live && setPhoto(p));
+    return () => {
+      live = false;
+    };
+  }, [name, lat, lng, approx]);
+  if (photo === undefined) return <div aria-hidden="true" className="mt-3 h-36 animate-pulse rounded-xl bg-accent/60" />;
+  if (!photo) return null;
+  return (
+    <figure className="mt-3">
+      <img src={photo.src} alt={name} loading="lazy" className="max-h-56 w-full rounded-xl bg-black object-contain" />
+      <figcaption className="mt-1 text-xs text-muted-foreground">
+        {t('imageBy')}: {photo.author} ·{' '}
+        <a href={photo.page} target="_blank" rel="noreferrer">
+          {photo.license || 'Wikimedia Commons'}
+        </a>
+      </figcaption>
+    </figure>
+  );
+}
+
 function SourceLinks({ urls }: { urls: string[] }) {
   const { t } = useI18n();
   if (!urls.length) return null;
@@ -204,6 +236,8 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
   const [showPhotos, setShowPhotos] = useState(true);
   const [showMon, setShowMon] = useState(false);
   const [monuments, setMonuments] = useState<Monument[] | null>(null);
+  const [showEgov, setShowEgov] = useState(false);
+  const [egov, setEgov] = useState<Monument[] | null>(null);
   const [monKinds, setMonKinds] = useState<MonumentKind[]>([...MONUMENT_KINDS]);
   const [showApprox, setShowApprox] = useState(true);
   const [terrain, setTerrain] = useState(loadTerrain);
@@ -234,28 +268,38 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
     if (showMon && !monuments)
       import('../../content/monuments.json').then((m) => setMonuments(m.default as Monument[]));
   }, [showMon, monuments]);
+  // data.egov.kz open data, a layer of its own
+  useEffect(() => {
+    if (showEgov && !egov) import('../../content/monuments-egov.json').then((m) => setEgov(m.default as Monument[]));
+  }, [showEgov, egov]);
+  const visibleMons = useMemo(
+    () => [...(showMon ? (monuments ?? []) : []), ...(showEgov ? (egov ?? []) : [])],
+    [showMon, monuments, showEgov, egov],
+  );
 
   // classes present in the data, with counts, in the fixed legend order
   const kindCounts = useMemo(() => {
     const n = new Map<MonumentKind, number>();
-    monuments?.forEach((m) => n.set(m.kind, (n.get(m.kind) ?? 0) + 1));
+    visibleMons.forEach((m) => n.set(m.kind, (n.get(m.kind) ?? 0) + 1));
     return MONUMENT_KINDS.filter((k) => n.has(k)).map((k) => [k, n.get(k)!] as const);
-  }, [monuments]);
-  const approxCount = useMemo(() => monuments?.filter((m) => m.approx).length ?? 0, [monuments]);
+  }, [visibleMons]);
+  const approxCount = useMemo(() => visibleMons.filter((m) => m.approx).length, [visibleMons]);
   const toggleKind = (k: MonumentKind) =>
     setMonKinds((ks) => (ks.includes(k) ? ks.filter((x) => x !== k) : [...ks, k]));
 
   const monumentGeo = useMemo<FeatureCollection | null>(
     () =>
-      monuments && {
+      visibleMons.length === 0
+        ? null
+        : {
         type: 'FeatureCollection',
-        features: monuments.map((m) => ({
+        features: visibleMons.map((m) => ({
           type: 'Feature',
-          properties: { id: m.id, kind: m.kind, approx: m.approx },
+          properties: { id: String(m.id), kind: m.kind, approx: m.approx },
           geometry: { type: 'Point', coordinates: [m.lng, m.lat] },
         })),
       },
-    [monuments],
+    [visibleMons],
   );
 
   useEffect(() => {
@@ -282,8 +326,24 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
   };
 
   const ml = (x: KkRu) => (lang === 'kk' ? x.kk : x.ru) || x.ru || x.kk;
-  const interactive = [...(regionsOn ? [REGION_LAYER_ID] : []), ...(showMon && monumentGeo ? [MONUMENT_LAYER_ID] : [])];
   const selectedKey = sel?.type === 'item' ? sel.item.key : null;
+  const interactive = [
+    EVENT_LAYER_ID,
+    PHOTO_LAYER_ID,
+    ...(regionsOn ? [REGION_LAYER_ID] : []),
+    ...(monumentGeo ? [MONUMENT_LAYER_ID] : []),
+  ];
+  const itemGeo = useMemo<FeatureCollection>(
+    () => ({
+      type: 'FeatureCollection',
+      features: items.map((i) => ({
+        type: 'Feature',
+        properties: { key: i.key, kind: i.kind, approx: i.approx, active: i.key === selectedKey },
+        geometry: { type: 'Point', coordinates: [i.lng, i.lat] },
+      })),
+    }),
+    [items, selectedKey],
+  );
 
   const panel = () => {
     if (!sel) return null;
@@ -344,6 +404,7 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
               </li>
             ))}
           </ol>
+          <MonumentImage name={m.name.ru} lat={m.lat} lng={m.lng} approx={m.approx} />
           <p className="mt-2 text-sm text-muted-foreground">{place}</p>
           {m.approx && (
             <p className="mt-2 text-xs leading-relaxed text-primary/90">
@@ -353,9 +414,9 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
           <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
             {t('monumentsSource')}:{' '}
             <a href={m.source} target="_blank" rel="noreferrer">
-              {t('monumentsList')}
+              {m.how === 'egov' ? 'data.egov.kz' : t('monumentsList')}
             </a>
-            {` · ${t('monCoords')}: ${m.how === 'wikidata' ? 'Wikidata' : 'OpenStreetMap'}`}
+            {` · ${t('monCoords')}: ${{ egov: 'data.egov.kz', wikidata: 'Wikidata' }[m.how as string] ?? 'OpenStreetMap'}`}
           </p>
         </Panel>
       );
@@ -452,12 +513,15 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
         period={period}
         terrain={terrain}
         flyTo={camera}
-        interactiveLayerIds={interactive.length ? interactive : undefined}
+        interactiveLayerIds={interactive}
         onFeatureClick={(layer, props) => {
-          if (layer === MONUMENT_LAYER_ID && props) {
-            const hit = monuments?.find((m) => m.id === Number(props.id));
+          if ((layer === EVENT_LAYER_ID || layer === PHOTO_LAYER_ID) && props) {
+            const it = items.find((i) => i.key === props.key);
+            if (it) selectItem(it);
+          } else if (layer === MONUMENT_LAYER_ID && props) {
+            const hit = visibleMons.find((m) => String(m.id) === String(props.id));
             // monuments placed at the same settlement share one dot: list them all
-            const mons = hit ? monuments!.filter((m) => m.lat === hit.lat && m.lng === hit.lng) : [];
+            const mons = hit ? visibleMons.filter((m) => m.lat === hit.lat && m.lng === hit.lng) : [];
             if (hit) setSel({ type: 'monument', mons: [hit, ...mons.filter((m) => m !== hit)] });
           } else if (layer === REGION_LAYER_ID && props) {
             const id = String(props.id);
@@ -475,49 +539,8 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
         {withinEmpire && <ModernWithin />}
         {regionsOn && <RegionsLayer selectedId={sel?.type === 'region' ? sel.id : null} />}
         <CountryOutline />
-        {showMon && monumentGeo && <MonumentsLayer data={monumentGeo} kinds={monKinds} showApprox={showApprox} />}
-        {items.map((i) => {
-          const active = i.key === selectedKey;
-          return (
-            <Marker
-              key={i.key}
-              longitude={i.lng}
-              latitude={i.lat}
-              anchor="center"
-              onClick={(e) => {
-                e.originalEvent.stopPropagation();
-                selectItem(i);
-              }}
-              style={{ zIndex: active ? 2 : i.kind === 'event' ? 1 : 0 }}
-            >
-              <button type="button" aria-label={`${yearLabel(i, lang)} ${l(i.title)}`} title={`${yearLabel(i, lang)} · ${l(i.title)}`} className="group grid size-11 place-items-center">
-                {i.kind === 'event' ? (
-                  // a lozenge, as in Kazakh ornament; a dashed ring around it marks an approximate site
-                  <span className="relative grid place-items-center">
-                    {i.approx && (
-                      <span
-                        className="absolute size-8 rounded-full border border-dashed opacity-80"
-                        style={{ borderColor: period.color }}
-                      />
-                    )}
-                    <span
-                      className={cn(
-                        'block rotate-45 rounded-[3px] border-2 transition-all duration-200',
-                        active ? 'size-5 shadow-[0_0_0_6px_rgba(216,175,79,0.2)]' : 'size-3.5 group-hover:size-4.5',
-                      )}
-                      style={{ borderColor: period.color, backgroundColor: active ? period.color : 'rgba(7,13,24,0.75)' }}
-                    />
-                  </span>
-                ) : (
-                  <span
-                    className={cn('block rounded-full border-2 transition-all duration-200', active ? 'size-4' : 'size-2.5 group-hover:size-3.5')}
-                    style={{ borderColor: period.color, backgroundColor: '#e9eef7' }}
-                  />
-                )}
-              </button>
-            </Marker>
-          );
-        })}
+        {monumentGeo && <MonumentsLayer data={monumentGeo} kinds={monKinds} showApprox={showApprox} />}
+        <ItemsLayer data={itemGeo} color={period.color} />
       </MapCanvas>
 
       <TopBar onBack={onBack} className="absolute inset-x-0 top-0 z-20" />
@@ -553,6 +576,11 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
                 {t('monumentsNote')} {monuments ? `· ${monuments.length}` : '…'}
               </p>
             )}
+            {showEgov && (
+              <p className="mt-1 text-xs text-muted-foreground drop-shadow-[0_2px_8px_rgba(7,13,24,0.95)]">
+                {t('egovNote')} {egov ? `· ${egov.length}` : '…'}
+              </p>
+            )}
           </motion.div>
         </AnimatePresence>
       </div>
@@ -561,7 +589,7 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-5 sm:pb-5">
         <div className="mx-auto flex max-w-6xl flex-col gap-2">
           <AnimatePresence mode="wait">{panel()}</AnimatePresence>
-          {showMon && kindCounts.length > 0 && (
+          {kindCounts.length > 0 && (
             <div className="pointer-events-auto flex gap-1.5 overflow-x-auto [scrollbar-width:none]">
               {kindCounts.map(([k, n]) => (
                 <Button
@@ -602,6 +630,9 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
               className="shrink-0 px-3"
             >
               <Landmark aria-hidden="true" className="size-4" /> {t('layerMonuments')}
+            </Button>
+            <Button variant="chip" on={showEgov} onClick={() => setShowEgov(!showEgov)} className="shrink-0 px-3">
+              <Database aria-hidden="true" className="size-4" /> {t('layerEgov')}
             </Button>
             <Button variant="chip" on={terrain} onClick={toggleTerrain} className="shrink-0 px-3">
               <Mountain aria-hidden="true" className="size-4" /> {t('relief3d')}
