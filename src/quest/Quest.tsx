@@ -324,7 +324,8 @@ function StopCard({
         visited(p) ? "border-good/50" : "border-border/80",
       )}
     >
-      {s.image && (
+      {/* the photo would give away the on-site answer, so it opens once that task is done */}
+      {s.image && (!s.detail || p.detail) && (
         <figure>
           <img
             src={import.meta.env.BASE_URL + s.image.file}

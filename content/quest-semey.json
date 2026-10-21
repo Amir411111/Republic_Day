@@ -20,8 +20,8 @@
     },
     "options": [
       "1718",
-      "1854",
-      "1776"
+      "1776",
+      "1854"
     ],
     "answer": 0,
     "year": {
@@ -42,25 +42,31 @@
       },
       "options": {
         "kk": [
-          "Ағаш шарбақ",
-          "Күмбез шатырлы үлкен арка",
-          "Дөңгелек мұнара"
+          "Дөңгелек мұнара",
+          "Үлкен арка",
+          "Ағаш шарбақ"
         ],
         "ru": [
-          "Деревянный частокол",
-          "Большая арка с купольной крышей",
-          "Круглая башня"
+          "Круглая башня",
+          "Большая арка",
+          "Деревянный частокол"
         ],
         "en": [
-          "A wooden palisade",
-          "A large arch with a domed roof",
-          "A round tower"
+          "A round tower",
+          "A large arch",
+          "A wooden palisade"
         ]
       },
       "answer": 1,
       "sources": [
         "https://archaeology.kz/en/heritages/yamyshev-bekinis-qaqpasy"
       ]
+    },
+    "image": {
+      "file": "images/quest-yamyshev-gate.jpg",
+      "author": "Yakov Fedorov (Mheidegger)",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Yamyshev_Gates_in_Semey.JPG"
     },
     "sources": [
       "https://archaeology.kz/en/heritages/yamyshev-bekinis-qaqpasy"
@@ -87,19 +93,19 @@
     },
     "options": {
       "kk": [
-        "Көпес үйі",
+        "Кеңестер үйі",
         "Бостандық үйі",
-        "Кеңестер үйі"
+        "Көпес үйі"
       ],
       "ru": [
-        "Купеческий дом",
+        "Дом Советов",
         "Дом свободы",
-        "Дом Советов"
+        "Купеческий дом"
       ],
       "en": [
-        "Merchant's House",
+        "House of Soviets",
         "House of Freedom",
-        "House of Soviets"
+        "Merchant's House"
       ]
     },
     "answer": 1,
@@ -120,8 +126,8 @@
         "en": "How many storeys does the building have?"
       },
       "options": [
-        "3",
         "2",
+        "3",
         "1"
       ],
       "answer": 2,
@@ -129,6 +135,12 @@
         "https://archaeology.kz/en/heritages/gubernator-uii",
         "https://welcome.kz/en/info-cities/abay-region/semej/oblastnoj-istoriko-kraevedcheskij-muzej-goroda-semej"
       ]
+    },
+    "image": {
+      "file": "images/quest-governor-house.jpg",
+      "author": "Yakov Fedorov (Mheidegger)",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Governor's_House_Semey.JPG"
     },
     "sources": [
       "https://archaeology.kz/en/heritages/gubernator-uii",
@@ -157,18 +169,18 @@
     },
     "options": {
       "kk": [
-        "Әлихан Бөкейхан",
         "Ыбырай Алтынсарин",
+        "Әлихан Бөкейхан",
         "Шоқан Уәлиханов"
       ],
       "ru": [
-        "Алихан Букейханов",
         "Ибрай Алтынсарин",
+        "Алихан Букейханов",
         "Чокан Валиханов"
       ],
       "en": [
-        "Alikhan Bukeikhanov",
         "Ibrai Altynsarin",
+        "Alikhan Bukeikhanov",
         "Shokan Valikhanov"
       ]
     },
@@ -211,9 +223,211 @@
         "https://archaeology.kz/en/heritages/717-poshtashy-lipuhinnin-uii"
       ]
     },
+    "image": {
+      "file": "images/quest-dostoevsky-museum.jpg",
+      "author": "Yakov Fedorov (Mheidegger)",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dostoevsky_House_in_Semey.JPG"
+    },
     "then": "dostoevsky-valikhanov-1858",
     "sources": [
       "https://www.inform.kz/ru/istoriya-doma-dostoevskogo-muzey-vserdtse-semeya-bc524d"
+    ]
+  },
+  {
+    "id": "shakarim-monument",
+    "lat": 50.40909,
+    "lng": 80.2518,
+    "title": {
+      "kk": "Шәкәрім ескерткіші",
+      "ru": "Памятник Шакариму",
+      "en": "Shakarim Monument"
+    },
+    "story": {
+      "kk": "Шәкәрім Құдайбердіұлы (1858–1931) – ақын, философ, Абайдың інісі әрі шәкірті. 1931 жылы ол саяси қуғын-сүргін кезінде өлтірілді, кейін ақталды; бүгін оның шығармалары қазақ әдебиетінің алтын қорында.",
+      "ru": "Шакарим Кудайбердиулы (1858–1931) — поэт и философ, племянник и ученик Абая. В 1931 году он был убит во время репрессий и позже реабилитирован; сегодня его произведения — золотой фонд казахской литературы.",
+      "en": "Shakarim Kudaiberdiuly (1858–1931) was a poet and philosopher, Abai's nephew and disciple. He was killed in 1931 during the repressions and later rehabilitated; his works are now classics of Kazakh literature."
+    },
+    "question": {
+      "kk": "Шәкәрім Абайға кім болып келеді?",
+      "ru": "Кем Шакарим приходился Абаю?",
+      "en": "How was Shakarim related to Abai?"
+    },
+    "options": {
+      "kk": [
+        "Інісі әрі шәкірті",
+        "Ұстазы",
+        "Ұлы"
+      ],
+      "ru": [
+        "Племянник и ученик",
+        "Учитель",
+        "Сын"
+      ],
+      "en": [
+        "Nephew and disciple",
+        "Teacher",
+        "Son"
+      ]
+    },
+    "answer": 0,
+    "year": {
+      "answer": 1858,
+      "min": 1800,
+      "max": 1950
+    },
+    "yearQuestion": {
+      "kk": "Шәкәрім қай жылы туған?",
+      "ru": "В каком году родился Шакарим?",
+      "en": "In which year was Shakarim born?"
+    },
+    "sources": [
+      "https://ru.wikipedia.org/wiki/Кудайбердиев,_Шакарим"
+    ]
+  },
+  {
+    "id": "abai-museum",
+    "lat": 50.40998,
+    "lng": 80.25451,
+    "title": {
+      "kk": "Абай мұражайы",
+      "ru": "Музей Абая",
+      "en": "Abai Museum"
+    },
+    "story": {
+      "kk": "Абай Құнанбайұлының әдеби-мемориалдық мұражайы 1940 жылы ашылды. Оның құрамына Абай 1855–1859 жылдары оқыған Ахмет Риза медресесі кіреді.",
+      "ru": "Литературно-мемориальный музей Абая Кунанбаева открылся в 1940 году. В его комплекс входит медресе Ахмета Ризы, где Абай учился в 1855–1859 годах.",
+      "en": "The Abai Kunanbayev literary memorial museum opened in 1940. It includes the Akhmet Riza madrasa, where Abai studied in 1855–1859."
+    },
+    "question": {
+      "kk": "Абай қай медреседе оқыды?",
+      "ru": "В каком медресе учился Абай?",
+      "en": "Which madrasa did Abai study at?"
+    },
+    "options": [
+      "Мир-Араб",
+      "Ахмет Риза",
+      "Көкелташ"
+    ],
+    "answer": 1,
+    "detail": {
+      "question": {
+        "kk": "Мұражай аумағындағы ескерткіште Абай кіммен бірге бейнеленген?",
+        "ru": "С кем изображён Абай в памятнике на территории музея?",
+        "en": "Who is shown with Abai in the monument on the museum grounds?"
+      },
+      "options": {
+        "kk": [
+          "Шәкәрім және Мұхтар Әуезовпен",
+          "Әкесі Құнанбаймен",
+          "Ұлдары Ақылбай және Тұрағұлмен"
+        ],
+        "ru": [
+          "С Шакаримом и Мухтаром Ауэзовым",
+          "С отцом Кунанбаем",
+          "С сыновьями Акылбаем и Турагулом"
+        ],
+        "en": [
+          "Shakarim and Mukhtar Auezov",
+          "His father Kunanbai",
+          "His sons Akylbai and Turagul"
+        ]
+      },
+      "answer": 2,
+      "sources": [
+        "https://www.zakon.kz/kultura-shoubiz/5044010-tokaev-otkryl-pamyatnik-abayu-v-semee.html",
+        "https://newtimes.kz/vlast/118740-prezident-prinial-uchastie-v-tseremonii-otkrytiia-pamiatnika-abaiu-v-semee"
+      ]
+    },
+    "image": {
+      "file": "images/quest-abai-museum.jpg",
+      "author": "Мазур Владимир",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Дом-музей_Абая_2014.jpg"
+    },
+    "sources": [
+      "https://www.inform.kz/ru/kak-rabotal-muzey-abaya-v-semee-v-gody-voyny_a3647931",
+      "https://kazakhstan.travel/en/attractions/563"
+    ]
+  },
+  {
+    "id": "akhmet-riza-madrasa",
+    "lat": 50.40957,
+    "lng": 80.25487,
+    "title": {
+      "kk": "Ахмет Риза медресесі",
+      "ru": "Медресе Ахмета Ризы",
+      "en": "Akhmet Riza Madrasa"
+    },
+    "story": {
+      "kk": "Медресені діни ойшыл, шығыс әдебиетінің білгірі Ахмет Риза ашқан, 1855–1859 жылдары мұнда жас Абай оқыды. Ғимарат бұрын Солдатская (қазіргі Найманбаев) көшесінде тұрған, кеңес заманында тұрғын үйге айналдырылған. 1992 жылы медресені Абай мұражайының аумағына көшіру туралы шешім қабылданды: әр арқалық нөмірленіп, 1995 жылы ғимарат өзгеріссіз қайта құрастырылды.",
+      "ru": "Медресе основал религиозный мыслитель и знаток восточной литературы Ахмет Риза, в 1855–1859 годах здесь учился юный Абай. Здание стояло на улице Солдатской (ныне Найманбаева), в советское время его переделали в жилой дом. В 1992 году медресе решили перенести к музею Абая: каждую балку пронумеровали, и в 1995 году здание собрали заново без изменений.",
+      "en": "The madrasa was founded by Akhmet Riza, a religious thinker and expert in Eastern literature; young Abai studied here in 1855–1859. It originally stood on Soldatskaya Street (now Naimanbaev Street) and in Soviet times was turned into a dwelling. In 1992 it was decided to move it to the Abai Museum: every beam was numbered, and by 1995 the building had been reassembled unchanged."
+    },
+    "question": {
+      "kk": "1992–1995 жылдары медресемен не істелді?",
+      "ru": "Что сделали с медресе в 1992–1995 годах?",
+      "en": "What happened to the madrasa in 1992–1995?"
+    },
+    "options": {
+      "kk": [
+        "Кірпіштен жаңадан салынды",
+        "Мешітке айналдырылды",
+        "Абай мұражайының аумағына көшірілді"
+      ],
+      "ru": [
+        "Заново построили из кирпича",
+        "Превратили в мечеть",
+        "Перенесли к музею Абая"
+      ],
+      "en": [
+        "It was rebuilt in brick",
+        "It was turned into a mosque",
+        "It was moved to the Abai Museum"
+      ]
+    },
+    "answer": 2,
+    "year": {
+      "answer": 1995,
+      "min": 1900,
+      "max": 2025
+    },
+    "yearQuestion": {
+      "kk": "Медресені Абай мұражайына көшіру жұмыстары қай жылы аяқталды?",
+      "ru": "В каком году завершили перенос медресе к музею Абая?",
+      "en": "In which year was the move of the madrasa to the Abai Museum completed?"
+    },
+    "detail": {
+      "question": {
+        "kk": "Медресенің ескі есігіне (ол қазір бір залда сақтаулы) шәкірттер не ойып жазған?",
+        "ru": "Что шакирды вырезали на старой двери медресе (она хранится в одном из залов)?",
+        "en": "What did students carve into the old madrasa door (now kept in one of the halls)?"
+      },
+      "options": {
+        "kk": [
+          "Өз есімдерін",
+          "Қаланың картасын",
+          "Емтихан күндерін"
+        ],
+        "ru": [
+          "Свои имена",
+          "Карту города",
+          "Даты экзаменов"
+        ],
+        "en": [
+          "Their own names",
+          "A map of the city",
+          "Exam dates"
+        ]
+      },
+      "answer": 0,
+      "sources": [
+        "https://kazpravda.kz/n/zdes-byl-abay/"
+      ]
+    },
+    "sources": [
+      "https://kazpravda.kz/n/zdes-byl-abay/",
+      "https://archaeology.kz/en/heritages/ahmet-riza-medresesi"
     ]
   },
   {
@@ -221,35 +435,35 @@
     "lat": 50.40699,
     "lng": 80.2562,
     "title": {
-      "kk": "Әнияр Молдабаевтың үйі",
+      "kk": "Анияр Молдабаевтың үйі",
       "ru": "Дом Анияра Молдабаева",
       "en": "Aniyar Moldabaev's House"
     },
     "story": {
-      "kk": "Екі қабатты үй көпес Москвиннің меншігінде болған, ал XIX ғасырдың соңында оны Абайдың шәкірті Әнияр Молдабаев ақынның көмегімен сатып алды. Абай Семейге келгенде әрдайым дерлік осында тоқтайтын, ал ХХ ғасырдың басында бұл үйде Алаш көшбасшылары Ахмет Байтұрсынұлы, Әлихан Бөкейхан және Міржақып Дулатұлы болған. 1997 жылдың қыркүйегінде Мұхтар Әуезовтің 100 жылдығына орай мұнда «Алаш арыстары – Мұхтар Әуезов» мұражайы ашылды.",
+      "kk": "Екі қабатты үй көпес Москвиннің меншігінде болған, ал XIX ғасырдың соңында оны Абайдың шәкірті Анияр Молдабаев ақынның көмегімен сатып алды. Абай Семейге келгенде әрдайым дерлік осында тоқтайтын, ал ХХ ғасырдың басында бұл үйде Алаш көшбасшылары Ахмет Байтұрсынұлы, Әлихан Бөкейхан және Міржақып Дулатұлы болған. 1997 жылдың қыркүйегінде Мұхтар Әуезовтің 100 жылдығына орай мұнда «Алаш арыстары – Мұхтар Әуезов» мұражайы ашылды.",
       "ru": "Двухэтажный дом принадлежал купцу Москвину, а в конце XIX века его с помощью Абая купил ученик поэта Анияр Молдабаев. Приезжая в Семипалатинск, Абай почти всегда останавливался здесь, а в начале XX века в доме бывали лидеры «Алаша» Ахмет Байтурсынов, Алихан Букейханов и Миржакып Дулатов. В сентябре 1997 года, к 100-летию Мухтара Ауэзова, здесь открыли музей «Алаш арыстары — Мухтар Ауэзов».",
       "en": "The two-storey house belonged to the merchant Moskvin; at the end of the 19th century Abai's student Aniyar Moldabaev bought it with the poet's help. Abai almost always stayed here when he came to Semipalatinsk, and in the early 20th century Alash leaders Akhmet Baitursynov, Alikhan Bokeikhanov and Mirzhakyp Dulatov visited the house. In September 1997, for Mukhtar Auezov's centenary, the 'Alash Arystary – Mukhtar Auezov' museum opened here."
     },
     "question": {
-      "kk": "Әнияр Молдабаев Абайдың кімі болған?",
+      "kk": "Анияр Молдабаев Абайдың кімі болған?",
       "ru": "Кем Анияр Молдабаев приходился Абаю?",
       "en": "Who was Aniyar Moldabaev to Abai?"
     },
     "options": {
       "kk": [
         "Шәкірті",
-        "Ұстазы",
-        "Әкесі"
+        "Әкесі",
+        "Ұстазы"
       ],
       "ru": [
         "Учеником",
-        "Учителем",
-        "Отцом"
+        "Отцом",
+        "Учителем"
       ],
       "en": [
         "His student",
-        "His teacher",
-        "His father"
+        "His father",
+        "His teacher"
       ]
     },
     "answer": 0,
@@ -280,201 +494,17 @@
         "https://astanatimes.com/2018/11/semey-a-historic-city-abundant-with-museums/"
       ]
     },
+    "image": {
+      "file": "images/quest-aniyar-house.jpg",
+      "author": "Ерден Карсыбеков",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Alash_arystary_museum_b.jpg"
+    },
     "sources": [
       "https://kazpravda.kz/n/tayna-pisma-abaya/",
       "https://kazpravda.kz/n/zdes-byl-abay/",
       "https://astanatimes.com/2018/11/semey-a-historic-city-abundant-with-museums/",
       "https://adilet.zan.kz/rus/docs/G25KS000318"
-    ]
-  },
-  {
-    "id": "akhmet-riza-madrasa",
-    "lat": 50.40957,
-    "lng": 80.25487,
-    "title": {
-      "kk": "Ахмет Риза медресесі",
-      "ru": "Медресе Ахмета Ризы",
-      "en": "Akhmet Riza Madrasa"
-    },
-    "story": {
-      "kk": "Медресені діни ойшыл, шығыс әдебиетінің білгірі Ахмет Риза ашқан, 1855–1859 жылдары мұнда жас Абай оқыды. Ғимарат бұрын Солдатская (қазіргі Найманбаев) көшесінде тұрған, кеңес заманында тұрғын үйге айналдырылған. 1992 жылы медресені Абай мұражайының аумағына көшіру туралы шешім қабылданды: әр арқалық нөмірленіп, 1995 жылы ғимарат өзгеріссіз қайта құрастырылды.",
-      "ru": "Медресе основал религиозный мыслитель и знаток восточной литературы Ахмет Риза, в 1855–1859 годах здесь учился юный Абай. Здание стояло на улице Солдатской (ныне Найманбаева), в советское время его переделали в жилой дом. В 1992 году медресе решили перенести к музею Абая: каждую балку пронумеровали, и в 1995 году здание собрали заново без изменений.",
-      "en": "The madrasa was founded by Akhmet Riza, a religious thinker and expert in Eastern literature; young Abai studied here in 1855–1859. It originally stood on Soldatskaya Street (now Naimanbaev Street) and in Soviet times was turned into a dwelling. In 1992 it was decided to move it to the Abai Museum: every beam was numbered, and by 1995 the building had been reassembled unchanged."
-    },
-    "question": {
-      "kk": "1992–1995 жылдары медресемен не істелді?",
-      "ru": "Что сделали с медресе в 1992–1995 годах?",
-      "en": "What happened to the madrasa in 1992–1995?"
-    },
-    "options": {
-      "kk": [
-        "Кірпіштен жаңадан салынды",
-        "Абай мұражайының аумағына көшірілді",
-        "Мешітке айналдырылды"
-      ],
-      "ru": [
-        "Заново построили из кирпича",
-        "Перенесли к музею Абая",
-        "Превратили в мечеть"
-      ],
-      "en": [
-        "It was rebuilt in brick",
-        "It was moved to the Abai Museum",
-        "It was turned into a mosque"
-      ]
-    },
-    "answer": 1,
-    "year": {
-      "answer": 1995,
-      "min": 1900,
-      "max": 2025
-    },
-    "yearQuestion": {
-      "kk": "Медресені Абай мұражайына көшіру жұмыстары қай жылы аяқталды?",
-      "ru": "В каком году завершили перенос медресе к музею Абая?",
-      "en": "In which year was the move of the madrasa to the Abai Museum completed?"
-    },
-    "detail": {
-      "question": {
-        "kk": "Медресенің ескі есігіне (ол қазір бір залда сақтаулы) шәкірттер не ойып жазған?",
-        "ru": "Что шакирды вырезали на старой двери медресе (она хранится в одном из залов)?",
-        "en": "What did students carve into the old madrasa door (now kept in one of the halls)?"
-      },
-      "options": {
-        "kk": [
-          "Емтихан күндерін",
-          "Қаланың картасын",
-          "Өз есімдерін"
-        ],
-        "ru": [
-          "Даты экзаменов",
-          "Карту города",
-          "Свои имена"
-        ],
-        "en": [
-          "Exam dates",
-          "A map of the city",
-          "Their own names"
-        ]
-      },
-      "answer": 2,
-      "sources": [
-        "https://kazpravda.kz/n/zdes-byl-abay/"
-      ]
-    },
-    "sources": [
-      "https://kazpravda.kz/n/zdes-byl-abay/",
-      "https://archaeology.kz/en/heritages/ahmet-riza-medresesi"
-    ]
-  },
-  {
-    "id": "abai-museum",
-    "lat": 50.40998,
-    "lng": 80.25451,
-    "title": {
-      "kk": "Абай мұражайы",
-      "ru": "Музей Абая",
-      "en": "Abai Museum"
-    },
-    "story": {
-      "kk": "Абай Құнанбайұлының әдеби-мемориалдық мұражайы 1940 жылы ашылды. Оның құрамына Абай 1855–1859 жылдары оқыған Ахмет Риза медресесі кіреді.",
-      "ru": "Литературно-мемориальный музей Абая Кунанбаева открылся в 1940 году. В его комплекс входит медресе Ахмета Ризы, где Абай учился в 1855–1859 годах.",
-      "en": "The Abai Kunanbayev literary memorial museum opened in 1940. It includes the Akhmet Riza madrasa, where Abai studied in 1855–1859."
-    },
-    "question": {
-      "kk": "Абай қай медреседе оқыды?",
-      "ru": "В каком медресе учился Абай?",
-      "en": "Which madrasa did Abai study at?"
-    },
-    "options": [
-      "Мир-Араб",
-      "Көкелташ",
-      "Ахмет Риза"
-    ],
-    "answer": 2,
-    "detail": {
-      "question": {
-        "kk": "Мұражай аумағындағы ескерткіште Абай кіммен бірге бейнеленген?",
-        "ru": "С кем изображён Абай в памятнике на территории музея?",
-        "en": "Who is shown with Abai in the monument on the museum grounds?"
-      },
-      "options": {
-        "kk": [
-          "Ұлдары Ақылбай және Тұрағұлмен",
-          "Шәкәрім және Мұхтар Әуезовпен",
-          "Әкесі Құнанбаймен"
-        ],
-        "ru": [
-          "С сыновьями Акылбаем и Турагулом",
-          "С Шакаримом и Мухтаром Ауэзовым",
-          "С отцом Кунанбаем"
-        ],
-        "en": [
-          "His sons Akylbai and Turagul",
-          "Shakarim and Mukhtar Auezov",
-          "His father Kunanbai"
-        ]
-      },
-      "answer": 0,
-      "sources": [
-        "https://www.zakon.kz/kultura-shoubiz/5044010-tokaev-otkryl-pamyatnik-abayu-v-semee.html",
-        "https://newtimes.kz/vlast/118740-prezident-prinial-uchastie-v-tseremonii-otkrytiia-pamiatnika-abaiu-v-semee"
-      ]
-    },
-    "sources": [
-      "https://www.inform.kz/ru/kak-rabotal-muzey-abaya-v-semee-v-gody-voyny_a3647931",
-      "https://kazakhstan.travel/en/attractions/563"
-    ]
-  },
-  {
-    "id": "shakarim-monument",
-    "lat": 50.40909,
-    "lng": 80.2518,
-    "title": {
-      "kk": "Шәкәрім ескерткіші",
-      "ru": "Памятник Шакариму",
-      "en": "Shakarim Monument"
-    },
-    "story": {
-      "kk": "Шәкәрім Құдайбердіұлы (1858–1931) – ақын, философ, Абайдың інісі әрі шәкірті. 1931 жылы ол саяси қуғын-сүргін кезінде өлтірілді, кейін ақталды; бүгін оның шығармалары қазақ әдебиетінің алтын қорында.",
-      "ru": "Шакарим Кудайбердиулы (1858–1931) — поэт и философ, племянник и ученик Абая. В 1931 году он был убит во время репрессий и позже реабилитирован; сегодня его произведения — золотой фонд казахской литературы.",
-      "en": "Shakarim Kudaiberdiuly (1858–1931) was a poet and philosopher, Abai's nephew and disciple. He was killed in 1931 during the repressions and later rehabilitated; his works are now classics of Kazakh literature."
-    },
-    "question": {
-      "kk": "Шәкәрім Абайға кім болып келеді?",
-      "ru": "Кем Шакарим приходился Абаю?",
-      "en": "How was Shakarim related to Abai?"
-    },
-    "options": {
-      "kk": [
-        "Інісі әрі шәкірті",
-        "Ұлы",
-        "Ұстазы"
-      ],
-      "ru": [
-        "Племянник и ученик",
-        "Сын",
-        "Учитель"
-      ],
-      "en": [
-        "Nephew and disciple",
-        "Son",
-        "Teacher"
-      ]
-    },
-    "answer": 0,
-    "year": {
-      "answer": 1858,
-      "min": 1800,
-      "max": 1950
-    },
-    "yearQuestion": {
-      "kk": "Шәкәрім қай жылы туған?",
-      "ru": "В каком году родился Шакарим?",
-      "en": "In which year was Shakarim born?"
-    },
-    "sources": [
-      "https://ru.wikipedia.org/wiki/Кудайбердиев,_Шакарим"
     ]
   },
   {
@@ -526,19 +556,38 @@
     },
     "detail": {
       "question": {
-        "kk": "Мешіттің неше күмбезі бар?",
-        "ru": "Сколько куполов у мечети?",
-        "en": "How many domes does the mosque have?"
+        "kk": "Мешіттің күмбездері мен мұнара төбелері қандай түсті?",
+        "ru": "Какого цвета купола и шатры минаретов?",
+        "en": "What colour are the domes and minaret spires?"
       },
-      "options": [
-        "2",
-        "3",
-        "1"
-      ],
+      "options": {
+        "kk": [
+          "Көк",
+          "Алтын",
+          "Жасыл"
+        ],
+        "ru": [
+          "Синие",
+          "Золотые",
+          "Зелёные"
+        ],
+        "en": [
+          "Blue",
+          "Gold",
+          "Green"
+        ]
+      },
       "answer": 2,
       "sources": [
-        "https://archaeology.kz/en/heritages/semei-qalasyndagy-eki-munaraly-meshit"
+        "https://commons.wikimedia.org/wiki/File:2-minaret_mosque_in_Semey.jpg",
+        "https://commons.wikimedia.org/wiki/File:Мечеть_города_Семей.jpg"
       ]
+    },
+    "image": {
+      "file": "images/quest-two-minaret-mosque.jpg",
+      "author": "Alexey Zhadanov",
+      "license": "Attribution",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2-minaret_mosque_in_Semey.jpg"
     },
     "sources": [
       "https://archaeology.kz/en/heritages/semei-qalasyndagy-eki-munaraly-meshit",
@@ -565,8 +614,8 @@
       "en": "When was the Semipalatinsk test site closed?"
     },
     "options": [
-      "2001",
       "1989",
+      "2001",
       "1991"
     ],
     "answer": 2,
@@ -579,6 +628,12 @@
       "kk": "Семей полигонында алғашқы ядролық сынақ қай жылы өтті?",
       "ru": "В каком году на Семипалатинском полигоне провели первое ядерное испытание?",
       "en": "In which year was the first nuclear test carried out at the Semipalatinsk site?"
+    },
+    "image": {
+      "file": "images/quest-stronger-than-death.jpg",
+      "author": "Lex (lexsemsk.narod.ru)",
+      "license": "Attribution",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monument_Silnee_Smerti.jpg"
     },
     "sources": [
       "https://ru.wikipedia.org/wiki/Сильнее_смерти",
