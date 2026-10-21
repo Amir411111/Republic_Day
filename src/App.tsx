@@ -9,7 +9,6 @@ import GuideScreen from './guide/GuideScreen';
 import { useI18n } from './i18n';
 import Landing, { type Mode, type Place } from './landing/Landing';
 import { mistakeIds } from './progress/storage';
-import { introSeen, openIntro } from './ui/intro';
 
 // Map screens carry MapLibre (~300 KB gzipped): loaded on first use, so the landing page opens fast
 const Atlas = lazy(() => import('./atlas/Atlas'));
@@ -123,8 +122,7 @@ export default function App() {
       onPack={setPack}
       poolSize={pool.length}
       notice={notice}
-      // the first game starts after a short "how to play"
-      onStart={(mode) => (introSeen() ? start(mode) : openIntro(() => start(mode)))}
+      onStart={start}
       onOpen={(p) => {
         setNotice('');
         setPlace(p);

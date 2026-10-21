@@ -5,6 +5,7 @@ import './styles/app.css';
 import App from './App';
 import { I18nProvider } from './i18n';
 import { useComfort } from './ui/comfort';
+import { introSeen, openIntro } from './ui/intro';
 import { IntroDialog } from './ui/IntroDialog';
 
 // "Less motion" in the comfort settings switches framer-motion animations off everywhere
@@ -12,6 +13,9 @@ function Motion({ children }: { children: ReactNode }) {
   const { calm } = useComfort();
   return <MotionConfig reducedMotion={calm ? 'always' : 'user'}>{children}</MotionConfig>;
 }
+
+// the site tour opens on the first visit
+if (!introSeen()) openIntro();
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

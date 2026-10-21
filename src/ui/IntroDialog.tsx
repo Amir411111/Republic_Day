@@ -1,5 +1,7 @@
-import { BookOpenText, Image, Map as MapIcon, MapPin, type LucideIcon } from 'lucide-react';
+import { ALargeSmall, Footprints, Gamepad2, Image, Map as MapIcon, Sparkles, type LucideIcon } from 'lucide-react';
 import { useState } from 'react';
+import monumentsMeta from '../../content/monuments-meta.json';
+import { EVENTS } from '../atlas/events';
 import { useI18n } from '../i18n';
 import type { StringKey } from '../i18n/strings';
 import { Button } from './Button';
@@ -7,12 +9,14 @@ import { cn } from './cn';
 import { Dialog } from './Dialog';
 import { closeIntro, useIntroOpen } from './intro';
 
-// The same steps as "How it works" on the landing page, one at a time
+// A tour of the whole site, shown on the first visit and again from the comfort panel
 const STEPS: { icon: LucideIcon; title: StringKey; text: StringKey }[] = [
-  { icon: Image, title: 'step1Title', text: 'step1Text' },
-  { icon: MapPin, title: 'step2Title', text: 'step2Text' },
-  { icon: BookOpenText, title: 'step3Title', text: 'step3Text' },
-  { icon: MapIcon, title: 'step4Title', text: 'step4Text' },
+  { icon: Sparkles, title: 'tour1Title', text: 'tour1Text' },
+  { icon: Image, title: 'tour2Title', text: 'tour2Text' },
+  { icon: Gamepad2, title: 'tour3Title', text: 'tour3Text' },
+  { icon: MapIcon, title: 'tour4Title', text: 'tour4Text' },
+  { icon: Footprints, title: 'tour5Title', text: 'tour5Text' },
+  { icon: ALargeSmall, title: 'tour6Title', text: 'tour6Text' },
 ];
 
 export function IntroDialog() {
@@ -28,7 +32,7 @@ function Intro() {
   const last = i === STEPS.length - 1;
 
   return (
-    <Dialog title={t('introTitle')} onClose={closeIntro}>
+    <Dialog title={t('introTitle')} onClose={closeIntro} className="sm:max-w-lg">
       <div className="flex items-start gap-4">
         <span className="grid size-14 shrink-0 place-items-center rounded-2xl bg-primary/12 text-primary ring-1 ring-primary/25">
           <Icon aria-hidden="true" className="size-7" />
@@ -38,7 +42,9 @@ function Intro() {
             {t('introStep', { n: i + 1, total: STEPS.length })}
           </p>
           <h3 className="mt-1 text-lg font-semibold">{t(step.title)}</h3>
-          <p className="mt-1 text-pretty text-muted-foreground">{t(step.text)}</p>
+          <p className="mt-1 text-pretty text-muted-foreground">
+            {t(step.text, { events: EVENTS.length, monuments: monumentsMeta.listed })}
+          </p>
         </div>
       </div>
       <div className="mt-5 flex justify-center gap-2" aria-hidden="true">
@@ -51,7 +57,7 @@ function Intro() {
       </div>
       <div className="mt-5 flex gap-3">
         {i > 0 && (
-          <Button variant="outline" onClick={() => setI(i - 1)}>
+          <Button variant="outline" onClick={() => setI(i - 1)} aria-label={t('introBack')}>
             ←
           </Button>
         )}
@@ -59,6 +65,15 @@ function Intro() {
           {last ? t('introStart') : t('introNext')}
         </Button>
       </div>
+      {!last && (
+        <button
+          type="button"
+          onClick={closeIntro}
+          className="mx-auto mt-3 block min-h-12 px-4 text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
+        >
+          {t('introSkip')}
+        </button>
+      )}
     </Dialog>
   );
 }

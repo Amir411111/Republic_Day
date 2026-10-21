@@ -1,6 +1,6 @@
 import { useSyncExternalStore } from 'react';
 
-// The short "how to play" shown before the first game, and again from the comfort panel
+// The site tour: opens on the first visit (main.tsx) and again from the comfort panel
 const KEY = 'tg_intro_seen';
 
 let open = false;
