@@ -98,8 +98,7 @@ function Tour() {
 
   // the card goes to the half of the screen the highlighted part leaves free; a part taller than
   // the screen is scrolled to its top, so the card goes below its beginning
-  const cardAtTop =
-    !!box && box.height < window.innerHeight * 0.6 && box.top + box.height / 2 > window.innerHeight / 2;
+  const cardAtTop = !!box && box.height < window.innerHeight * 0.6 && box.top + box.height / 2 > window.innerHeight / 2;
 
   return (
     <div className="fixed inset-0 z-[100]">
@@ -124,13 +123,14 @@ function Tour() {
         aria-labelledby={titleId}
         tabIndex={-1}
         className={cn(
-          'absolute inset-x-3 mx-auto max-h-[calc(100svh-1.5rem)] max-w-lg overflow-y-auto rounded-2xl border border-border bg-popover p-5 shadow-2xl outline-none sm:p-6',
+          // compact, so the card and the highlighted part fit on a short laptop screen together
+          'absolute inset-x-3 mx-auto max-h-[calc(100svh-1.5rem)] max-w-2xl overflow-y-auto rounded-2xl border border-border bg-popover p-4 shadow-2xl outline-none sm:px-5',
           !box ? 'top-1/2 -translate-y-1/2' : cardAtTop ? 'top-3' : 'bottom-3',
         )}
       >
-        <div className="mb-4 flex items-center justify-between gap-3">
-          <h2 id={titleId} className="font-display text-xl leading-tight font-bold sm:text-2xl">
-            {t('introTitle')}
+        <div className="flex items-center justify-between gap-3">
+          <h2 id={titleId} className="text-xs tracking-[0.14em] text-muted-foreground uppercase">
+            {t('introTitle')} · {t('introStep', { n: i + 1, total: STEPS.length })}
           </h2>
           <div className="flex items-center gap-1">
             <LangButtons />
@@ -145,48 +145,45 @@ function Tour() {
           </div>
         </div>
 
-        <div className="flex items-start gap-4">
-          <span className="grid size-14 shrink-0 place-items-center rounded-2xl bg-primary/12 text-primary ring-1 ring-primary/25">
-            <Icon aria-hidden="true" className="size-7" />
+        <div className="mt-2 flex items-start gap-4" aria-live="polite">
+          <span className="hidden size-12 shrink-0 place-items-center rounded-2xl bg-primary/12 text-primary ring-1 ring-primary/25 sm:grid">
+            <Icon aria-hidden="true" className="size-6" />
           </span>
-          <div className="min-w-0" aria-live="polite">
-            <p className="text-xs tracking-[0.14em] text-muted-foreground uppercase">
-              {t('introStep', { n: i + 1, total: STEPS.length })}
-            </p>
-            <h3 className="mt-1 text-lg font-semibold">{t(step.title)}</h3>
+          <div className="min-w-0">
+            <h3 className="font-display text-xl leading-tight font-bold">{t(step.title)}</h3>
             <p className="mt-1 text-pretty text-muted-foreground">
               {t(step.text, { events: EVENTS.length, monuments: monumentsMeta.listed })}
             </p>
           </div>
         </div>
 
-        <div className="mt-5 flex justify-center gap-2" aria-hidden="true">
-          {STEPS.map((s, k) => (
-            <span
-              key={s.title}
-              className={cn('h-1.5 rounded-full transition-all', k === i ? 'w-6 bg-primary' : 'w-1.5 bg-border')}
-            />
-          ))}
-        </div>
-        <div className="mt-5 flex gap-3">
+        <div className="mt-4 flex flex-wrap items-center gap-2">
+          <div className="mr-auto flex gap-2" aria-hidden="true">
+            {STEPS.map((s, k) => (
+              <span
+                key={s.title}
+                className={cn('h-1.5 rounded-full transition-all', k === i ? 'w-6 bg-primary' : 'w-1.5 bg-border')}
+              />
+            ))}
+          </div>
+          {!last && (
+            <button
+              type="button"
+              onClick={closeIntro}
+              className="min-h-12 px-3 text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
+            >
+              {t('introSkip')}
+            </button>
+          )}
           {i > 0 && (
             <Button variant="outline" onClick={() => setI(i - 1)} aria-label={t('introBack')}>
               ←
             </Button>
           )}
-          <Button className="flex-1" onClick={() => (last ? closeIntro() : setI(i + 1))}>
+          <Button className="min-w-36" onClick={() => (last ? closeIntro() : setI(i + 1))}>
             {last ? t('introStart') : t('introNext')}
           </Button>
         </div>
-        {!last && (
-          <button
-            type="button"
-            onClick={closeIntro}
-            className="mx-auto mt-3 block min-h-12 px-4 text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
-          >
-            {t('introSkip')}
-          </button>
-        )}
       </div>
     </div>
   );

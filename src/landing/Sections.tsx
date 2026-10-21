@@ -55,13 +55,14 @@ export function SectionHead({ title, lead }: { title: StringKey; lead?: StringKe
   );
 }
 
-export function HowItWorks({ steps }: { steps: TextItem[] }) {
+// `tour` marks the step cards for the site tour (src/ui/IntroDialog.tsx)
+export function HowItWorks({ steps, tour }: { steps: TextItem[]; tour?: string }) {
   const { t } = useI18n();
   const reveal = useReveal();
   return (
     <SectionShell className="bg-card/30">
       <SectionHead title="howTitle" lead="howLead" />
-      <ol className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <ol data-tour={tour} className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {steps.map((step, i) => {
           const Icon = step.icon;
           return (

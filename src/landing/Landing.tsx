@@ -269,9 +269,7 @@ export default function Landing({ pack, onPack, poolSize, notice, onStart, onOpe
         </SectionShell>
       </div>
 
-      <div data-tour="how">
-        <HowItWorks steps={STEPS} />
-      </div>
+      <HowItWorks steps={STEPS} tour="how" />
       <Eras />
       <Honesty points={HONESTY} />
       <Sources sources={SOURCES}>
