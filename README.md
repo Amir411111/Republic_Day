@@ -80,11 +80,17 @@ npm run preview    # http://localhost:4173
 
 ```bash
 ANTHROPIC_API_KEY=sk-ant-...
-# или ключ OpenAI (если заданы оба, используется Claude):
+# или ключ OpenAI:
 OPENAI_API_KEY=sk-...
 # необязательно, модель OpenAI (по умолчанию gpt-5.5):
 OPENAI_MODEL=gpt-5.5
+# или бесплатный ключ Google AI Studio (Gemini):
+GEMINI_API_KEY=...
+# необязательно, модель Gemini (по умолчанию gemini-3-flash-preview):
+GEMINI_MODEL=gemini-3-flash-preview
 ```
+
+Если задано несколько ключей, используется первый по порядку: Claude, OpenAI, Gemini.
 
 и перезапустите `npm run dev`. Ключ читается только на стороне сервера разработки (`vite.config.ts` отдаёт `api/guide.ts` по адресу `/api/guide`, как Vercel на проде) и никогда не попадает в браузер. В `npm run preview` гид всегда работает офлайн.
 
@@ -334,7 +340,7 @@ docs/screenshots/       скриншоты для этого README
 ## Деплой на Vercel
 
 1. Импортируйте репозиторий в Vercel — фреймворк Vite определится автоматически (build: `npm run build`, output: `dist`).
-2. В Settings → Environment Variables добавьте `ANTHROPIC_API_KEY` или `OPENAI_API_KEY` (без ключа гид работает в офлайн-режиме; модель OpenAI можно задать в `OPENAI_MODEL`).
+2. В Settings → Environment Variables добавьте один из ключей: `ANTHROPIC_API_KEY`, `OPENAI_API_KEY` или `GEMINI_API_KEY` (Google AI Studio) — без ключа гид работает в офлайн-режиме; модель можно задать в `OPENAI_MODEL` / `GEMINI_MODEL`.
 3. `vercel.json` уже включает `content/events.json` и `content/cards.json` в серверную функцию гида.
 
 Непроверенные карточки на проде можно посмотреть, добавив к адресу `?dev=1`.

@@ -1,7 +1,9 @@
 // AI history guide: POST /api/guide { question, lang, focus?, history? } -> { answer }
 // Answers are grounded in content/events.json and content/cards.json.
-// Needs ANTHROPIC_API_KEY or OPENAI_API_KEY in the Vercel project environment (never in the client).
-// With both set, Claude is used. OPENAI_MODEL picks the OpenAI model (default below).
+// Needs ANTHROPIC_API_KEY, OPENAI_API_KEY or GEMINI_API_KEY (Google AI Studio) in the Vercel project
+// environment (never in the client). With several set, the first in that order is used.
+// OPENAI_MODEL and GEMINI_MODEL pick the model (defaults below).
+import { ApiError as GeminiError, GoogleGenAI } from '@google/genai';
 import Anthropic from '@anthropic-ai/sdk';
 import OpenAI from 'openai';
 import { readFileSync } from 'node:fs';
@@ -26,6 +28,7 @@ interface Turn {
 
 const MODEL = 'claude-opus-5-5';
 const OPENAI_MODEL = process.env.OPENAI_MODEL || 'gpt-5.5';
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-3-flash-preview';
 const MAX_QUESTION = 500;
 const MAX_HISTORY = 6;
 const LANG_NAME: Record<Lang, string> = {
@@ -109,6 +112,7 @@ interface Res {
 // Created on first use, so a missing key for the provider not in use is not an error
 let anthropic: Anthropic | null = null;
 let openai: OpenAI | null = null;
+let gemini: GoogleGenAI | null = null;
 
 async function askClaude(lang: Lang, messages: Turn[]): Promise<{ answer: string; refused?: boolean }> {
   anthropic ??= new Anthropic();
@@ -147,13 +151,30 @@ async function askOpenAI(lang: Lang, messages: Turn[]): Promise<{ answer: string
   return { answer: response.output_text.trim() };
 }
 
+async function askGemini(lang: Lang, messages: Turn[]): Promise<{ answer: string }> {
+  gemini ??= new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+  const response = await gemini.models.generateContent({
+    model: GEMINI_MODEL,
+    contents: messages.map((t) => ({ role: t.role === 'assistant' ? 'model' : 'user', parts: [{ text: t.text }] })),
+    config: { systemInstruction: systemPrompt(lang), maxOutputTokens: 2000 },
+  });
+  return { answer: (response.text ?? '').trim() };
+}
+
+function provider() {
+  if (process.env.ANTHROPIC_API_KEY) return askClaude;
+  if (process.env.OPENAI_API_KEY) return askOpenAI;
+  if (process.env.GEMINI_API_KEY) return askGemini;
+  return null;
+}
+
 export default async function handler(req: Req, res: Res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
     return res.status(405).json({ error: 'method_not_allowed' });
   }
-  const useClaude = !!process.env.ANTHROPIC_API_KEY;
-  if (!useClaude && !process.env.OPENAI_API_KEY) return res.status(503).json({ error: 'not_configured' });
+  const ask = provider();
+  if (!ask) return res.status(503).json({ error: 'not_configured' });
 
   const body = (typeof req.body === 'string' ? JSON.parse(req.body) : req.body) as Record<string, unknown> | undefined;
   const question = typeof body?.question === 'string' ? body.question.trim().slice(0, MAX_QUESTION) : '';
@@ -174,10 +195,18 @@ export default async function handler(req: Req, res: Res) {
   while (messages.length && messages[0].role !== 'user') messages.shift();
 
   try {
-    return res.status(200).json(useClaude ? await askClaude(lang, messages) : await askOpenAI(lang, messages));
+    return res.status(200).json(await ask(lang, messages));
   } catch (error) {
-    if (error instanceof Anthropic.RateLimitError || error instanceof OpenAI.RateLimitError)
+    if (
+      error instanceof Anthropic.RateLimitError ||
+      error instanceof OpenAI.RateLimitError ||
+      (error instanceof GeminiError && error.status === 429)
+    )
       return res.status(429).json({ error: 'rate_limited' });
+    if (error instanceof GeminiError) {
+      console.error('guide: API error', error.status, error.message);
+      return res.status(502).json({ error: 'upstream' });
+    }
     if (error instanceof Anthropic.APIError || error instanceof OpenAI.APIError) {
       console.error('guide: API error', error.status, error.message);
       return res.status(502).json({ error: 'upstream' });
