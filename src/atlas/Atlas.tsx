@@ -31,6 +31,7 @@ import MapCanvas, { type Camera as Cam } from './MapCanvas';
 import { monumentPhoto, type MonumentPhoto } from './monumentPhoto';
 import { PERIODS, formatRange, periodById, periodOfYear, type PeriodId } from './periods';
 import Timeline from './Timeline';
+import monumentsMeta from '../../content/monuments-meta.json';
 
 interface KkRu {
   kk: string;
@@ -563,7 +564,7 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
             </p>
             {showMon && (
               <p className="mt-1 text-xs text-muted-foreground drop-shadow-[0_2px_8px_rgba(7,13,24,0.95)]">
-                {t('monumentsNote')} {monuments ? `· ${monuments.length}` : '…'}
+                {t('monumentsNote')} · {monumentsMeta.listed}
               </p>
             )}
           </motion.div>
