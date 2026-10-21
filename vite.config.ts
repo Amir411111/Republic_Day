@@ -4,7 +4,7 @@ import type { IncomingMessage, ServerResponse } from 'node:http';
 import { defineConfig, loadEnv, type Plugin } from 'vite';
 
 // Serves api/guide.ts in `npm run dev` the way Vercel serves it in production, so the AI guide
-// can be tried locally. Without ANTHROPIC_API_KEY it answers 503 and the game falls back to
+// can be tried locally. Without ANTHROPIC_API_KEY or OPENAI_API_KEY it answers 503 and the game falls back to
 // searching its own data, exactly as on a deployment without a key.
 function localApi(): Plugin {
   return {
@@ -42,7 +42,7 @@ function localApi(): Plugin {
 export default defineConfig(({ mode }) => {
   // The key may live in .env.local (git-ignored); it is read on the server side only, never bundled
   const env = loadEnv(mode, process.cwd(), '');
-  if (env.ANTHROPIC_API_KEY) process.env.ANTHROPIC_API_KEY ??= env.ANTHROPIC_API_KEY;
+  for (const name of ['ANTHROPIC_API_KEY', 'OPENAI_API_KEY', 'OPENAI_MODEL']) if (env[name]) process.env[name] ??= env[name];
 
   return {
     plugins: [react(), tailwindcss(), localApi()],

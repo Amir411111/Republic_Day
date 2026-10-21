@@ -11,7 +11,7 @@
 - Эпохи и их контуры: `content/periods.json`, `content/geo/eras/*.geojson`; граница и области: `content/geo/`; заметки по областям: `content/regions.json`
 - Памятники республиканского значения (государственный список 2025 года, Әділет G25KS000318): `content/monuments.json`, импорт `python3 scripts/import_monuments.py` (см. описание в начале скрипта)
 - Прогресс в localStorage, без базы данных
-- Деплой: Vercel, ИИ-гид в `api/guide.ts` (Claude API, модель `claude-opus-5-5`), ключ `ANTHROPIC_API_KEY` только в переменных окружения Vercel. Без ключа гид отвечает поиском по базе игры прямо в браузере (`src/guide/`)
+- Деплой: Vercel, ИИ-гид в `api/guide.ts` (Claude API, модель `claude-opus-5-5`, или OpenAI Responses API, модель из `OPENAI_MODEL`), ключ `ANTHROPIC_API_KEY` или `OPENAI_API_KEY` только в переменных окружения Vercel. Без ключа гид отвечает поиском по базе игры прямо в браузере (`src/guide/`)
 - Квест по Семею: маршрут в `content/quest-semey.json`, экран в `src/quest/`
 
 ## Команды

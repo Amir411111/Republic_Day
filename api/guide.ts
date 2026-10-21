@@ -1,7 +1,9 @@
 // AI history guide: POST /api/guide { question, lang, focus?, history? } -> { answer }
 // Answers are grounded in content/events.json and content/cards.json.
-// Needs ANTHROPIC_API_KEY in the Vercel project environment (never in the client).
+// Needs ANTHROPIC_API_KEY or OPENAI_API_KEY in the Vercel project environment (never in the client).
+// With both set, Claude is used. OPENAI_MODEL picks the OpenAI model (default below).
 import Anthropic from '@anthropic-ai/sdk';
+import OpenAI from 'openai';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -23,9 +25,14 @@ interface Turn {
 }
 
 const MODEL = 'claude-opus-5-5';
+const OPENAI_MODEL = process.env.OPENAI_MODEL || 'gpt-5.5';
 const MAX_QUESTION = 500;
 const MAX_HISTORY = 6;
-const LANG_NAME: Record<Lang, string> = { kk: 'Kazakh', ru: 'Russian', en: 'English' };
+const LANG_NAME: Record<Lang, string> = {
+  kk: 'Kazakh',
+  ru: 'Russian',
+  en: 'English',
+};
 
 function loadEntries(): Entry[] {
   const dir = join(process.cwd(), 'content');
@@ -42,7 +49,13 @@ function loadEntries(): Entry[] {
     ...events.map((e) => ({ ...e, key: `e:${e.id}` })),
     ...cards
       .filter((c) => c.verified_by.trim())
-      .map((c) => ({ key: `p:${c.id}`, year: c.year, place: c.place, title: c.title, text: c.explanation })),
+      .map((c) => ({
+        key: `p:${c.id}`,
+        year: c.year,
+        place: c.place,
+        title: c.title,
+        text: c.explanation,
+      })),
   ].sort((a, b) => a.year - b.year);
 }
 
@@ -93,14 +106,54 @@ interface Res {
   setHeader(name: string, value: string): void;
 }
 
-const client = new Anthropic();
+// Created on first use, so a missing key for the provider not in use is not an error
+let anthropic: Anthropic | null = null;
+let openai: OpenAI | null = null;
+
+async function askClaude(lang: Lang, messages: Turn[]): Promise<{ answer: string; refused?: boolean }> {
+  anthropic ??= new Anthropic();
+  const response = await anthropic.beta.messages.create({
+    model: MODEL,
+    max_tokens: 2000,
+    betas: ['server-side-fallback-2026-07-01'],
+    fallbacks: 'default',
+    output_config: { effort: 'low' },
+    system: [
+      {
+        type: 'text',
+        text: systemPrompt(lang),
+        cache_control: { type: 'ephemeral' },
+      },
+    ],
+    messages: messages.map((t) => ({ role: t.role, content: t.text })),
+  });
+  if (response.stop_reason === 'refusal') return { answer: '', refused: true };
+  const answer = response.content
+    .filter((b): b is Anthropic.Beta.BetaTextBlock => b.type === 'text')
+    .map((b) => b.text)
+    .join('\n')
+    .trim();
+  return { answer };
+}
+
+async function askOpenAI(lang: Lang, messages: Turn[]): Promise<{ answer: string }> {
+  openai ??= new OpenAI();
+  const response = await openai.responses.create({
+    model: OPENAI_MODEL,
+    instructions: systemPrompt(lang),
+    input: messages.map((t) => ({ role: t.role, content: t.text })),
+    max_output_tokens: 2000,
+  });
+  return { answer: response.output_text.trim() };
+}
 
 export default async function handler(req: Req, res: Res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
     return res.status(405).json({ error: 'method_not_allowed' });
   }
-  if (!process.env.ANTHROPIC_API_KEY) return res.status(503).json({ error: 'not_configured' });
+  const useClaude = !!process.env.ANTHROPIC_API_KEY;
+  if (!useClaude && !process.env.OPENAI_API_KEY) return res.status(503).json({ error: 'not_configured' });
 
   const body = (typeof req.body === 'string' ? JSON.parse(req.body) : req.body) as Record<string, unknown> | undefined;
   const question = typeof body?.question === 'string' ? body.question.trim().slice(0, MAX_QUESTION) : '';
@@ -113,34 +166,19 @@ export default async function handler(req: Req, res: Res) {
   const focus = typeof body?.focus === 'string' ? body.focus.slice(0, 120) : '';
   const prompt = focus ? `(The player is looking at the entry [${focus}].)\n\n${question}` : question;
 
-  const messages: Anthropic.Beta.BetaMessageParam[] = [
-    ...history.map((t) => ({ role: t.role, content: t.text.slice(0, 2000) })),
-    { role: 'user', content: prompt },
+  const messages: Turn[] = [
+    ...history.map((t) => ({ role: t.role, text: t.text.slice(0, 2000) })),
+    { role: 'user' as const, text: prompt },
   ];
   // History must start with the player
   while (messages.length && messages[0].role !== 'user') messages.shift();
 
   try {
-    const response = await client.beta.messages.create({
-      model: MODEL,
-      max_tokens: 2000,
-      betas: ['server-side-fallback-2026-07-01'],
-      fallbacks: 'default',
-      output_config: { effort: 'low' },
-      system: [{ type: 'text', text: systemPrompt(lang), cache_control: { type: 'ephemeral' } }],
-      messages,
-    });
-
-    if (response.stop_reason === 'refusal') return res.status(200).json({ answer: '', refused: true });
-    const answer = response.content
-      .filter((b): b is Anthropic.Beta.BetaTextBlock => b.type === 'text')
-      .map((b) => b.text)
-      .join('\n')
-      .trim();
-    return res.status(200).json({ answer });
+    return res.status(200).json(useClaude ? await askClaude(lang, messages) : await askOpenAI(lang, messages));
   } catch (error) {
-    if (error instanceof Anthropic.RateLimitError) return res.status(429).json({ error: 'rate_limited' });
-    if (error instanceof Anthropic.APIError) {
+    if (error instanceof Anthropic.RateLimitError || error instanceof OpenAI.RateLimitError)
+      return res.status(429).json({ error: 'rate_limited' });
+    if (error instanceof Anthropic.APIError || error instanceof OpenAI.APIError) {
       console.error('guide: API error', error.status, error.message);
       return res.status(502).json({ error: 'upstream' });
     }
