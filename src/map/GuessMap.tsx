@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import Map, { AttributionControl, Layer, Marker, NavigationControl, Source, type MapRef } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import type { LatLng } from '../game/types';
-import { GUESS_STYLE, KZ_VIEW, geoUrl } from './styles';
+import { GUESS_STYLE, KZ_VIEW, PIXEL_RATIO, geoUrl } from './styles';
 
 interface Props {
   guess: LatLng | null;
@@ -58,6 +58,7 @@ export default function GuessMap({ guess, answer, onGuess, guessLabel, answerLab
     <Map
       ref={ref}
       mapStyle={GUESS_STYLE}
+      pixelRatio={PIXEL_RATIO}
       initialViewState={KZ_VIEW}
       minZoom={2}
       maxZoom={11}

@@ -5,8 +5,9 @@ type Variant = 'primary' | 'outline' | 'ghost' | 'chip';
 
 const VARIANTS: Record<Variant, string> = {
   primary: 'bg-primary text-primary-foreground font-semibold hover:bg-primary/90',
-  outline: 'border border-border bg-card/60 text-foreground font-semibold backdrop-blur-sm hover:bg-accent',
-  ghost: 'border border-border/80 bg-card/70 text-foreground backdrop-blur-xl hover:bg-accent',
+  outline: 'border border-border bg-card/80 text-foreground font-semibold hover:bg-accent',
+  // no backdrop blur: over a WebGL map the browser would re-blur on every frame
+  ghost: 'border border-border/80 bg-card/90 text-foreground hover:bg-accent',
   chip: 'border border-border/80 bg-card/60 text-muted-foreground text-sm hover:bg-accent hover:text-foreground',
 };
 

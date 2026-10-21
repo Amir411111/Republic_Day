@@ -10,7 +10,7 @@ export function LangSwitch({ className }: { className?: string }) {
     <div
       role="group"
       aria-label="Тіл / Язык / Language"
-      className={cn('flex items-center gap-0.5 rounded-xl border border-border/80 bg-card/70 p-1 backdrop-blur-xl', className)}
+      className={cn('flex items-center gap-0.5 rounded-xl border border-border/80 bg-card/90 p-1', className)}
     >
       {LANGS.map((code) => (
         <button

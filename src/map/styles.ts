@@ -30,7 +30,8 @@ export const TERRAIN_STYLE: StyleSpecification = {
       tiles: ['https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'],
       encoding: 'terrarium',
       tileSize: 256,
-      maxzoom: 13,
+      // relief at country and region zoom does not need street-level elevation; fewer tiles to decode
+      maxzoom: 11,
       attribution: '<a href="https://registry.opendata.aws/terrain-tiles/">AWS Terrain Tiles</a>',
     },
   },
@@ -64,6 +65,17 @@ export const TERRAIN_STYLE: StyleSpecification = {
     'fog-ground-blend': 0.4,
   },
 };
+
+// The same imagery without 3D relief: for weaker devices, toggled on the history map
+export const FLAT_STYLE: StyleSpecification = {
+  version: 8,
+  glyphs: GLYPHS,
+  sources: { satellite: ESRI },
+  layers: [TERRAIN_STYLE.layers[0], TERRAIN_STYLE.layers[1]],
+};
+
+// Rendering above 1.5x pixel density costs up to 4x the GPU work on retina screens for little visible gain
+export const PIXEL_RATIO = Math.min(window.devicePixelRatio || 1, 1.5);
 
 // The guessing map carries no place names at any zoom: on a guessing map a label is the answer
 export const GUESS_STYLE: StyleSpecification = {

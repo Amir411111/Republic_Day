@@ -37,7 +37,7 @@ export default function Timeline({ index, onChange, demo, onToggleDemo }: Props)
   }, [index, reduced]);
 
   return (
-    <div className="rounded-2xl border border-border/80 bg-card/75 p-2 shadow-2xl backdrop-blur-xl sm:p-2.5">
+    <div className="rounded-2xl border border-border/80 bg-card/92 p-2 shadow-2xl sm:p-2.5">
       <div className="mb-1.5 flex items-center justify-between gap-3 px-1">
         <span className="text-[11px] tracking-[0.14em] text-muted-foreground uppercase">{t('timeline')}</span>
         <button

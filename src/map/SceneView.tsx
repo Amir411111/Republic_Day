@@ -1,7 +1,7 @@
 import Map, { AttributionControl } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import type { LatLng } from '../game/types';
-import { TERRAIN_STYLE } from './styles';
+import { PIXEL_RATIO, TERRAIN_STYLE } from './styles';
 
 // Deterministic camera angle from the id, so the same place never spins between renders
 function bearingFor(id: string): number {
@@ -18,6 +18,7 @@ export default function SceneView({ id, at }: { id: string; at: LatLng }) {
       // a fresh camera per round instead of a visible flight that would leak the distance
       key={id}
       mapStyle={TERRAIN_STYLE}
+      pixelRatio={PIXEL_RATIO}
       initialViewState={{ longitude: at.lng, latitude: at.lat, zoom: 11.8, pitch: 58, bearing: bearingFor(id) }}
       interactive={false}
       attributionControl={false}

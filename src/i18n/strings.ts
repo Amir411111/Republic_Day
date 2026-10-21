@@ -353,6 +353,7 @@ export const STRINGS = {
     en: 'No points in this era on the selected layers',
   },
   layers: { kk: 'Қабаттар', ru: 'Слои', en: 'Layers' },
+  relief3d: { kk: '3D бедер', ru: '3D-рельеф', en: '3D relief' },
 
   // Game, new design
   pointsWord: { kk: 'ұпай', ru: 'очков', en: 'points' },

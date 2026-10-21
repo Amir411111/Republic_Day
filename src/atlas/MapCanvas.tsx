@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, type ReactNode } from 'react';
 import Map, { AttributionControl, NavigationControl, type MapRef } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useI18n } from '../i18n';
-import { KZ_BOUNDS, TERRAIN_STYLE } from '../map/styles';
+import { FLAT_STYLE, KZ_BOUNDS, PIXEL_RATIO, TERRAIN_STYLE } from '../map/styles';
 import type { Period } from './periods';
 
 type Status = 'loading' | 'ready' | 'failed';
@@ -18,10 +18,12 @@ interface Props {
   onFeatureClick?: (layerId: string | null, properties: Record<string, unknown> | null) => void;
   // overrides the era camera, e.g. when a point or a region is selected
   flyTo?: Camera | null;
+  // 3D relief; off on weaker devices
+  terrain: boolean;
   children?: ReactNode;
 }
 
-export default function MapCanvas({ period, interactiveLayerIds, onFeatureClick, flyTo, children }: Props) {
+export default function MapCanvas({ period, interactiveLayerIds, onFeatureClick, flyTo, terrain, children }: Props) {
   const { t } = useI18n();
   const ref = useRef<MapRef | null>(null);
   const [status, setStatus] = useState<Status>('loading');
@@ -50,7 +52,8 @@ export default function MapCanvas({ period, interactiveLayerIds, onFeatureClick,
     <div className="atlas-map absolute inset-0">
       <Map
         ref={ref}
-        mapStyle={TERRAIN_STYLE}
+        mapStyle={terrain ? TERRAIN_STYLE : FLAT_STYLE}
+        pixelRatio={PIXEL_RATIO}
         initialViewState={{ longitude: cam.center[0], latitude: cam.center[1], zoom: cam.zoom, pitch: cam.pitch, bearing: cam.bearing }}
         maxBounds={KZ_BOUNDS}
         minZoom={2.5}

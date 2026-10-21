@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { Camera, Landmark, List, MessageCircle, X } from 'lucide-react';
+import { Camera, Landmark, List, MessageCircle, Mountain, X } from 'lucide-react';
 import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { Marker } from 'react-map-gl/maplibre';
 import type { FeatureCollection } from 'geojson';
@@ -44,7 +44,7 @@ interface Monument {
   // location as worded in the list
   place: KkRu;
   // how the point was found: the list itself gives addresses, not coordinates
-  how: 'osm' | 'address' | 'settlement';
+  how: 'osm' | 'wikidata' | 'address' | 'settlement';
   // true when the point is the settlement or street rather than the object itself
   approx: boolean;
   kind: MonumentKind;
@@ -71,6 +71,19 @@ interface RegionInfo {
 
 const REGIONS = regionsRaw as Record<string, RegionInfo>;
 const DEMO_STEP_MS = 5200;
+const TERRAIN_KEY = 'tg_terrain';
+
+// 3D relief is the heaviest part of the map: on by default only on a large screen,
+// and the viewer's own choice is remembered
+function loadTerrain(): boolean {
+  try {
+    const saved = localStorage.getItem(TERRAIN_KEY);
+    if (saved === '1' || saved === '0') return saved === '1';
+  } catch {
+    /* storage unavailable */
+  }
+  return window.innerWidth >= 1024;
+}
 
 // Text events and photo cards share the map and the era list
 interface Item {
@@ -152,7 +165,7 @@ function Panel({ children, onClose, color }: { children: ReactNode; onClose: () 
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 24 }}
       transition={{ duration: 0.22 }}
-      className="pointer-events-auto relative max-h-[46svh] w-full overflow-y-auto rounded-2xl border border-border/80 bg-card/90 p-4 shadow-2xl backdrop-blur-xl sm:ml-auto sm:max-w-md sm:p-5"
+      className="pointer-events-auto relative max-h-[46svh] w-full overflow-y-auto rounded-2xl border border-border/80 bg-card/95 p-4 shadow-2xl sm:ml-auto sm:max-w-md sm:p-5"
       style={color ? { borderTopColor: color, borderTopWidth: 3 } : undefined}
     >
       <button
@@ -193,6 +206,15 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
   const [monuments, setMonuments] = useState<Monument[] | null>(null);
   const [monKinds, setMonKinds] = useState<MonumentKind[]>([...MONUMENT_KINDS]);
   const [showApprox, setShowApprox] = useState(true);
+  const [terrain, setTerrain] = useState(loadTerrain);
+  const toggleTerrain = () => {
+    setTerrain(!terrain);
+    try {
+      localStorage.setItem(TERRAIN_KEY, terrain ? '0' : '1');
+    } catch {
+      /* storage unavailable */
+    }
+  };
   const [sel, setSel] = useState<Selection | null>(null);
   const [camera, setCamera] = useState<Cam | null>(null);
   const [ask, setAsk] = useState(false);
@@ -333,7 +355,7 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
             <a href={m.source} target="_blank" rel="noreferrer">
               {t('monumentsList')}
             </a>
-            {` · ${t('monCoords')}: OpenStreetMap`}
+            {` · ${t('monCoords')}: ${m.how === 'wikidata' ? 'Wikidata' : 'OpenStreetMap'}`}
           </p>
         </Panel>
       );
@@ -428,6 +450,7 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
     <div className="relative h-full w-full overflow-hidden bg-background">
       <MapCanvas
         period={period}
+        terrain={terrain}
         flyTo={camera}
         interactiveLayerIds={interactive.length ? interactive : undefined}
         onFeatureClick={(layer, props) => {
@@ -579,6 +602,9 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
               className="shrink-0 px-3"
             >
               <Landmark aria-hidden="true" className="size-4" /> {t('layerMonuments')}
+            </Button>
+            <Button variant="chip" on={terrain} onClick={toggleTerrain} className="shrink-0 px-3">
+              <Mountain aria-hidden="true" className="size-4" /> {t('relief3d')}
             </Button>
             <Button
               variant="chip"

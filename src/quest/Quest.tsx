@@ -86,7 +86,7 @@ export default function Quest({ onBack }: { onBack: () => void }) {
 
   return (
     <div className="h-full overflow-y-auto bg-background">
-      <TopBar onBack={onBack} className="sticky top-0 z-20 bg-background/80 backdrop-blur-xl" />
+      <TopBar onBack={onBack} className="sticky top-0 z-20 bg-background/95" />
       <div className="mx-auto max-w-2xl px-4 pb-10">
         <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">{t('questTitle')}</h1>
         <p className="mt-2 text-sm text-pretty text-muted-foreground sm:text-base">{t('questLead')}</p>

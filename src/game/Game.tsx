@@ -96,7 +96,7 @@ export default function Game({ cards, kind, shareTitle, onPlayAgain, onHome }: P
           {!revealed && kind !== 'photo' && (
             <div
               className={cn(
-                'absolute inset-x-3 z-10 rounded-2xl border border-border/80 bg-card/85 p-3 backdrop-blur-xl sm:inset-x-5 sm:max-w-lg sm:p-4',
+                'absolute inset-x-3 z-10 rounded-2xl border border-border/80 bg-card/95 p-3 sm:inset-x-5 sm:max-w-lg sm:p-4',
                 card.image || kind === 'scene' ? 'bottom-3 sm:bottom-5' : 'top-1/2 -translate-y-1/2 sm:mx-auto',
               )}
             >
@@ -115,7 +115,7 @@ export default function Game({ cards, kind, shareTitle, onPlayAgain, onHome }: P
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 16 }}
-                className="absolute inset-x-3 bottom-3 z-10 flex max-h-[calc(100%-5.5rem)] flex-col rounded-2xl border border-border/80 bg-card/90 shadow-2xl backdrop-blur-xl sm:inset-x-5 sm:bottom-5 sm:max-w-lg"
+                className="absolute inset-x-3 bottom-3 z-10 flex max-h-[calc(100%-5.5rem)] flex-col rounded-2xl border border-border/80 bg-card/95 shadow-2xl sm:inset-x-5 sm:bottom-5 sm:max-w-lg"
               >
                 <button
                   type="button"
@@ -191,7 +191,7 @@ export default function Game({ cards, kind, shareTitle, onPlayAgain, onHome }: P
       </div>
 
       {/* the year, and the one button that ends the round */}
-      <div className="shrink-0 border-t border-border bg-card/60 px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur-xl sm:px-6">
+      <div className="shrink-0 border-t border-border bg-card px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-6">
         <div className="mx-auto max-w-6xl">
           <div className="mb-2 flex items-center justify-between text-xs text-muted-foreground">
             <span className="tracking-[0.16em] uppercase">{t('round', { n: idx + 1, total: cards.length })}</span>
