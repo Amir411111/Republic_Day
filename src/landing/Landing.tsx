@@ -143,7 +143,7 @@ export default function Landing({ pack, onPack, poolSize, notice, onStart, onOpe
     const Icon = m.icon;
     const disabled = PHOTO_MODES.has(m.key) && poolSize === 0;
     return (
-      <motion.li key={m.key} {...reveal(i * 0.05)} className={cn(m.wide && 'sm:col-span-2')}>
+      <motion.li key={m.key} {...reveal(i * 0.05)} data-tour={m.key} className={cn(m.wide && 'sm:col-span-2')}>
         <button
           type="button"
           disabled={disabled}
@@ -185,7 +185,9 @@ export default function Landing({ pack, onPack, poolSize, notice, onStart, onOpe
         >
           {t('appTitle')}
         </button>
-        <LangSwitch />
+        <div data-tour="comfort">
+          <LangSwitch />
+        </div>
       </div>
 
       <PerspectiveTunnelHero
@@ -260,12 +262,16 @@ export default function Landing({ pack, onPack, poolSize, notice, onStart, onOpe
             </p>
           )}
 
-          <ul className="grid gap-4 sm:grid-cols-2">{GAME_MODES.map(card)}</ul>
+          <ul data-tour="modes" className="grid gap-4 sm:grid-cols-2">
+            {GAME_MODES.map(card)}
+          </ul>
           <ul className="mt-4 grid gap-4 sm:grid-cols-3">{PLACES.map((m, i) => card(m, i + GAME_MODES.length))}</ul>
         </SectionShell>
       </div>
 
-      <HowItWorks steps={STEPS} />
+      <div data-tour="how">
+        <HowItWorks steps={STEPS} />
+      </div>
       <Eras />
       <Honesty points={HONESTY} />
       <Sources sources={SOURCES}>
