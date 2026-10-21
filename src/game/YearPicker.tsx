@@ -1,5 +1,5 @@
-import { useI18n } from "../i18n";
-import { YEAR_MAX, YEAR_MIN } from "./scoring";
+import { useI18n } from '../i18n';
+import { YEAR_MAX, YEAR_MIN } from './scoring';
 
 interface Props {
   value: number;
@@ -18,7 +18,7 @@ export default function YearPicker({
   min = YEAR_MIN,
   max = YEAR_MAX,
   label,
-  id = "year-slider",
+  id = 'year-slider',
 }: Props) {
   const { t } = useI18n();
   const clamp = (y: number) => Math.min(max, Math.max(min, y));
@@ -29,12 +29,9 @@ export default function YearPicker({
     <div className="w-full min-w-0">
       <div className="mb-1 flex items-baseline justify-between gap-3">
         <label htmlFor={id} className="text-sm text-muted-foreground">
-          {label ?? t("whatYear")}
+          {label ?? t('whatYear')}
         </label>
-        <output
-          htmlFor={id}
-          className="font-display text-3xl font-bold text-primary tabular-nums"
-        >
+        <output htmlFor={id} className="font-display text-3xl font-bold text-primary tabular-nums">
           {value}
         </output>
       </div>
@@ -42,7 +39,7 @@ export default function YearPicker({
         id={id}
         type="range"
         className="year-slider"
-        style={{ ["--fill" as string]: `${fill}%` }}
+        style={{ ['--fill' as string]: `${fill}%` }}
         min={min}
         max={max}
         step={1}
