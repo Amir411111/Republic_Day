@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { Camera, Database, Landmark, List, MessageCircle, Mountain, X } from 'lucide-react';
+import { Camera, Landmark, List, MessageCircle, Mountain, X } from 'lucide-react';
 import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import type { FeatureCollection } from 'geojson';
 import regionsRaw from '../../content/regions.json';
@@ -38,8 +38,7 @@ interface KkRu {
 }
 
 interface Monument {
-  // a number in the state list, or "egov-N" for the data.egov.kz layer
-  id: number | string;
+  id: number;
   lat: number;
   lng: number;
   name: KkRu;
@@ -48,7 +47,7 @@ interface Monument {
   // location as worded in the list
   place: KkRu;
   // how the point was found: the list itself gives addresses, not coordinates
-  how: 'osm' | 'wikidata' | 'address' | 'settlement' | 'egov';
+  how: 'osm' | 'wikidata' | 'address' | 'settlement';
   // true when the point is the settlement or street rather than the object itself
   approx: boolean;
   kind: MonumentKind;
@@ -236,8 +235,6 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
   const [showPhotos, setShowPhotos] = useState(true);
   const [showMon, setShowMon] = useState(false);
   const [monuments, setMonuments] = useState<Monument[] | null>(null);
-  const [showEgov, setShowEgov] = useState(false);
-  const [egov, setEgov] = useState<Monument[] | null>(null);
   const [monKinds, setMonKinds] = useState<MonumentKind[]>([...MONUMENT_KINDS]);
   const [showApprox, setShowApprox] = useState(true);
   const [terrain, setTerrain] = useState(loadTerrain);
@@ -268,14 +265,7 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
     if (showMon && !monuments)
       import('../../content/monuments.json').then((m) => setMonuments(m.default as Monument[]));
   }, [showMon, monuments]);
-  // data.egov.kz open data, a layer of its own
-  useEffect(() => {
-    if (showEgov && !egov) import('../../content/monuments-egov.json').then((m) => setEgov(m.default as Monument[]));
-  }, [showEgov, egov]);
-  const visibleMons = useMemo(
-    () => [...(showMon ? (monuments ?? []) : []), ...(showEgov ? (egov ?? []) : [])],
-    [showMon, monuments, showEgov, egov],
-  );
+  const visibleMons = useMemo(() => (showMon ? (monuments ?? []) : []), [showMon, monuments]);
 
   // classes present in the data, with counts, in the fixed legend order
   const kindCounts = useMemo(() => {
@@ -414,9 +404,9 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
           <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
             {t('monumentsSource')}:{' '}
             <a href={m.source} target="_blank" rel="noreferrer">
-              {m.how === 'egov' ? 'data.egov.kz' : t('monumentsList')}
+              {t('monumentsList')}
             </a>
-            {` · ${t('monCoords')}: ${{ egov: 'data.egov.kz', wikidata: 'Wikidata' }[m.how as string] ?? 'OpenStreetMap'}`}
+            {` · ${t('monCoords')}: ${m.how === 'wikidata' ? 'Wikidata' : 'OpenStreetMap'}`}
           </p>
         </Panel>
       );
@@ -576,11 +566,6 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
                 {t('monumentsNote')} {monuments ? `· ${monuments.length}` : '…'}
               </p>
             )}
-            {showEgov && (
-              <p className="mt-1 text-xs text-muted-foreground drop-shadow-[0_2px_8px_rgba(7,13,24,0.95)]">
-                {t('egovNote')} {egov ? `· ${egov.length}` : '…'}
-              </p>
-            )}
           </motion.div>
         </AnimatePresence>
       </div>
@@ -630,9 +615,6 @@ export default function Atlas({ onBack }: { onBack: () => void }) {
               className="shrink-0 px-3"
             >
               <Landmark aria-hidden="true" className="size-4" /> {t('layerMonuments')}
-            </Button>
-            <Button variant="chip" on={showEgov} onClick={() => setShowEgov(!showEgov)} className="shrink-0 px-3">
-              <Database aria-hidden="true" className="size-4" /> {t('layerEgov')}
             </Button>
             <Button variant="chip" on={terrain} onClick={toggleTerrain} className="shrink-0 px-3">
               <Mountain aria-hidden="true" className="size-4" /> {t('relief3d')}

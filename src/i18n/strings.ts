@@ -104,12 +104,6 @@ export const STRINGS = {
     en: 'State list of national monuments',
   },
   monCoords: { kk: 'координаттар', ru: 'координаты', en: 'coordinates' },
-  layerEgov: { kk: 'data.egov.kz ескерткіштері', ru: 'Памятники data.egov.kz', en: 'data.egov.kz monuments' },
-  egovNote: {
-    kk: 'data.egov.kz ашық деректері: Қостанай облысының координаттары бар тарих және мәдениет ескерткіштері',
-    ru: 'Открытые данные data.egov.kz: памятники истории и культуры Костанайской области с координатами',
-    en: 'data.egov.kz open data: historical and cultural monuments of Kostanay region, with coordinates',
-  },
   monApproxAddress: {
     kk: 'Тізімде мекенжай ғана бар: нүкте көше бойынша қойылған.',
     ru: 'В списке только адрес: точка поставлена по улице, а не по самому зданию.',
@@ -314,11 +308,6 @@ export const STRINGS = {
     kk: 'Республикалық маңызы бар тарих және мәдениет ескерткіштерінің мемлекеттік тізімі (2025)',
     ru: 'Государственный список памятников истории и культуры республиканского значения (2025)',
     en: 'State list of monuments of history and culture of national significance (2025)',
-  },
-  srcEgov: {
-    kk: 'Қостанай облысының тарих және мәдениет ескерткіштері (координаттарымен)',
-    ru: 'Памятники истории и культуры Костанайской области с координатами',
-    en: 'Historical and cultural monuments of Kostanay region, with coordinates',
   },
   srcNaturalEarth: { kk: 'Бүгінгі шекара және облыстар', ru: 'Современная граница и области', en: "Today's border and the regions" },
   srcBasemaps: {

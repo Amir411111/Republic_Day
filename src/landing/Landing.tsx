@@ -81,13 +81,6 @@ const SOURCES: SourceItem[] = [
     what: 'srcAdilet',
     url: 'https://adilet.zan.kz/rus/docs/G25KS000318',
   },
-  {
-    id: 'egov',
-    name: 'data.egov.kz',
-    license: 'Open data',
-    what: 'srcEgov',
-    url: 'https://data.egov.kz/datasets/view?index=respublikalyk_manyzy_bar_tarih',
-  },
   { id: 'ne', name: 'Natural Earth', license: 'Public domain', what: 'srcNaturalEarth', url: 'https://www.naturalearthdata.com' },
   {
     id: 'hb',

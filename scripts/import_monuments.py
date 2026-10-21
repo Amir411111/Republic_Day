@@ -235,16 +235,22 @@ def distance_km(text):
 DISTRICT = re.compile(r"([А-ЯЁӘҒҚҢӨҰҮҺІ][а-яёәғқңөұүһі-]+?)(?:ский|ской|ского|ск)? район|район ([А-ЯЁӘҒҚҢӨҰҮҺІ][\w-]+)")
 
 
+def consonants(text):
+    """Consonants only: Russian and Kazakh spellings of a name differ mostly in vowels (Отырар/Отрар, Созак/Сузак)."""
+    return re.sub(r"[^бвгджзйклмнпрстфхцчшщ]", "", text.lower().translate(KZ_TO_RU))
+
+
 def district_key(text):
-    """First letters of the district named in a description ("Созакский район" -> "созак"), or ""."""
+    """Consonants of the district named in a description ("Созакский район" -> "сзк"), or ""."""
     m = DISTRICT.search(text)
     name = (m.group(1) or m.group(2)) if m else ""
-    return name.lower().translate(KZ_TO_RU)[:5] if len(name) >= 4 else ""
+    key = consonants(name)[:4]
+    return key if len(key) >= 3 else ""
 
 
 def in_district(display_name, key):
     """OpenStreetMap's address line mentions the district (in Russian or Kazakh spelling)."""
-    return not key or key in display_name.lower().translate(KZ_TO_RU).replace("ё", "е")
+    return not key or any(consonants(part).startswith(key) for part in re.split(r"[,\s]+", display_name))
 
 
 class Geocoder:
