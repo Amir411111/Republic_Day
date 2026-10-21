@@ -30,6 +30,30 @@
   --ring: #d8af4f;
 }
 
+/* Comfortable view (src/ui/comfort.ts). Sizes are in rem, so a larger root scales the whole UI */
+:root[data-big-text] {
+  font-size: 118.75%;
+}
+
+:root[data-contrast] {
+  --foreground: #ffffff;
+  --muted-foreground: #d6deeb;
+  --card: #0a1120;
+  --popover: #0d1628;
+  --accent: #1d2e48;
+  --primary: #f2c95f;
+  --border: #5a6f96;
+}
+
+:root[data-calm] *,
+:root[data-calm] *::before,
+:root[data-calm] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

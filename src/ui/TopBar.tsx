@@ -9,9 +9,10 @@ export function TopBar({ onBack, children, className }: { onBack: () => void; ch
   const { t } = useI18n();
   return (
     <div className={cn('pointer-events-none flex items-start justify-between gap-3 p-3 sm:p-4', className)}>
-      <Button variant="ghost" onClick={onBack} className="pointer-events-auto px-3">
+      <Button variant="ghost" onClick={onBack} aria-label={t('home')} className="pointer-events-auto shrink-0 px-3">
         <span aria-hidden="true">←</span>
-        {t('home')}
+        {/* on narrow phones, and with the larger text, the arrow alone leaves room for the switches */}
+        <span className="whitespace-nowrap max-[430px]:hidden">{t('home')}</span>
       </Button>
       {children}
       <LangSwitch className="pointer-events-auto" />

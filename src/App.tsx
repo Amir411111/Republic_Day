@@ -9,11 +9,13 @@ import GuideScreen from './guide/GuideScreen';
 import { useI18n } from './i18n';
 import Landing, { type Mode, type Place } from './landing/Landing';
 import { mistakeIds } from './progress/storage';
+import { introSeen, openIntro } from './ui/intro';
 
 // Map screens carry MapLibre (~300 KB gzipped): loaded on first use, so the landing page opens fast
 const Atlas = lazy(() => import('./atlas/Atlas'));
 const Game = lazy(() => import('./game/Game'));
 const Quest = lazy(() => import('./quest/Quest'));
+const SourcesPage = lazy(() => import('./landing/SourcesPage'));
 
 const Loading = ({ children }: { children: ReactNode }) => (
   <Suspense fallback={<div className="grid h-full place-items-center text-muted-foreground">…</div>}>{children}</Suspense>
@@ -108,6 +110,12 @@ export default function App() {
       </Loading>
     );
   if (place === 'guide') return <GuideScreen onBack={home} />;
+  if (place === 'sources')
+    return (
+      <Loading>
+        <SourcesPage onBack={home} />
+      </Loading>
+    );
 
   return (
     <Landing
@@ -115,7 +123,8 @@ export default function App() {
       onPack={setPack}
       poolSize={pool.length}
       notice={notice}
-      onStart={start}
+      // the first game starts after a short "how to play"
+      onStart={(mode) => (introSeen() ? start(mode) : openIntro(() => start(mode)))}
       onOpen={(p) => {
         setNotice('');
         setPlace(p);
