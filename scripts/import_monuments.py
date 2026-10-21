@@ -10,7 +10,8 @@ monument is placed, in this order:
                   in its region (Nominatim);
   2. wikidata   - a Wikidata item found by the monument's name, with coordinates in its region
                   (one small search per monument, only for those OSM does not have);
-  3. address    - the street address, for monuments in towns (approximate);
+  3. address    - the street address, for monuments in towns: exact when OpenStreetMap has the
+                  building with that house number, approximate (the street) otherwise;
   4. settlement - the settlement named in the description ("12 km south of the village of X"),
                   only when it is within 15 km (approximate).
 Anything else is left off the map and reported.
@@ -284,14 +285,18 @@ class Geocoder:
         CACHE.write_text(json.dumps(self.cache, ensure_ascii=False, indent=0, sort_keys=True) + "\n", encoding="utf-8")
 
     def place(self, text, act):
-        """Approximate point for a description, or None when it cannot be placed honestly."""
+        """(lat, lng, exact) for a description, or None when it cannot be placed honestly.
+        exact: OpenStreetMap has the very building of the address (same street and house number)."""
         flat = re.sub(r"\s+", " ", text)
+        house = None
         city = act.get("city")
         if city or (STREET.search(flat) and SETTLEMENT.search(flat) and "город" in flat.lower()):
             # a street address: geocode it inside its city
             town = city or SETTLEMENT.search(flat).group(1)
             street = STREET_PART.search(re.sub(r"\(.*?\)", "", flat))
             queries = [f"{street.group(1).strip(' ,.')}, {town}", town] if street else [town]
+            m = street and re.search(r",\s*№?\s*(\d+[\w/]*)$", street.group(1).strip(' ,.'))
+            house = (queries[0], m.group(1).lower()) if m else None
         else:
             m = SETTLEMENT.search(flat)
             if not m or distance_km(flat) > MAX_KM_FROM_SETTLEMENT:
@@ -304,7 +309,9 @@ class Geocoder:
                 display = rest[1] if len(rest) > 1 else ""
                 if cls in ("place", "boundary", "highway", "building", "amenity", "tourism", "historic", "landuse") \
                         and in_regions(lat, lng, act["geo"]) and in_district(display, key):
-                    return round(lat, 5), round(lng, 5)
+                    exact = bool(house) and q == house[0] and cls != "highway" \
+                        and house[1] in [part.strip().lower() for part in display.split(",")[:3]]
+                    return round(lat, 5), round(lng, 5), exact
         return None
 
 
@@ -517,7 +524,8 @@ def main():
             else:
                 p = geo.place(r["place"], {"region": region, "geo": geo_ids, "city": city})
                 if p:
-                    (lat, lng), approx = p, True
+                    lat, lng, exact = p
+                    approx = not exact
                     how = "address" if STREET.search(r["place"]) else "settlement"
             if not how:
                 missed.append((num, r["name"], r["place"]))
